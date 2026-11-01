@@ -1,0 +1,34 @@
+{
+  "variant": "HouseThree",
+  "blender": "5.2.2 LTS",
+  "source": "GeometryNodesFrenchHous.blend",
+  "group": "GenerateHouse",
+  "footprint_vertices": 10,
+  "vertices": 52567,
+  "faces": 38223,
+  "triangles": 93818,
+  "uv_layers": [
+    "UVMap"
+  ],
+  "materials": [
+    null,
+    "Roof",
+    "GroundFloorWalls",
+    "UpperFloorsPaint",
+    "Beam",
+    "Stone"
+  ],
+  "dimensions_m": [
+    6.403,
+    9.649,
+    7.183
+  ],
+  "evaluation_seconds": 0.011,
+  "export_bake_offset_local_m": [
+    1.061,
+    3.315,
+    -0.541
+  ],
+  "glb_bytes": 8141508,
+  "screenshot_bytes": 401688
+}

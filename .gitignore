@@ -1,1 +1,4 @@
 GeometryNodesFrenchHous.blend1
+*.blend1
+godot-test/.godot/
+*.tmp

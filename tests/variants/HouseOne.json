@@ -1,0 +1,34 @@
+{
+  "variant": "HouseOne",
+  "blender": "5.2.2 LTS",
+  "source": "GeometryNodesFrenchHous.blend",
+  "group": "GenerateHouse",
+  "footprint_vertices": 4,
+  "vertices": 27919,
+  "faces": 20003,
+  "triangles": 50944,
+  "uv_layers": [
+    "UVMap"
+  ],
+  "materials": [
+    null,
+    "Roof",
+    "GroundFloorWalls",
+    "UpperFloorsPaint",
+    "Beam",
+    "Stone"
+  ],
+  "dimensions_m": [
+    3.928,
+    6.485,
+    8.15
+  ],
+  "evaluation_seconds": 0.006,
+  "export_bake_offset_local_m": [
+    0.275,
+    -0.046,
+    -0.242
+  ],
+  "glb_bytes": 4277728,
+  "screenshot_bytes": 423332
+}
