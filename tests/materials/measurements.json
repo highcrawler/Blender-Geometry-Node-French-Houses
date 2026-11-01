@@ -1,0 +1,2092 @@
+{
+  "source": "GeometryNodesFrenchHous.blend",
+  "source_sha256": "f44b4be96176204ada3fd768327e2a86129f536c6412129eca0478c72b3d5ae5",
+  "blender_version": "5.2.2 LTS",
+  "object": "HouseOne",
+  "actual_modifier_inputs": {
+    "Object": {
+      "identifier": "Socket_2",
+      "value": "HouseOne",
+      "default": "None"
+    },
+    "Seed": {
+      "identifier": "Socket_3",
+      "value": 29,
+      "default": "0"
+    },
+    "NumberFloor": {
+      "identifier": "Socket_4",
+      "value": 2,
+      "default": "1"
+    },
+    "RoofCurvature": {
+      "identifier": "Socket_5",
+      "value": 1.659999966621399,
+      "default": "1.2999999523162842"
+    },
+    "RoofColor": {
+      "identifier": "Socket_6",
+      "value": [
+        0.479231595993042,
+        0.05529474467039108,
+        0.11055033653974533,
+        1.0
+      ],
+      "default": [
+        0.2982522249221802,
+        0.2982522249221802,
+        0.2982522249221802,
+        1.0
+      ]
+    },
+    "PaintColor": {
+      "identifier": "Socket_7",
+      "value": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "default": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "BeamCollor": {
+      "identifier": "Socket_8",
+      "value": [
+        0.2705988585948944,
+        0.21413731575012207,
+        0.22043994069099426,
+        1.0
+      ],
+      "default": [
+        0.29613834619522095,
+        0.29613834619522095,
+        0.29613834619522095,
+        1.0
+      ]
+    },
+    "DisableRoofExrudeBack": {
+      "identifier": "Socket_10",
+      "value": false,
+      "default": "False"
+    },
+    "DisableRoofExrudeFront": {
+      "identifier": "Socket_9",
+      "value": false,
+      "default": "False"
+    },
+    "SpawnIVY": {
+      "identifier": "Socket_12",
+      "value": true,
+      "default": "False"
+    },
+    "RoofGeometryType": {
+      "identifier": "Socket_13",
+      "value": "Real Geometry ",
+      "default": "Real Geometry "
+    },
+    "High Polz Plants": {
+      "identifier": "Socket_14",
+      "value": true,
+      "default": "True"
+    }
+  },
+  "source_file_images": [
+    {
+      "name": "billboardgrass0001.png",
+      "packed": true,
+      "filepath": "C:/tmp/billboardgrass0001.png"
+    },
+    {
+      "name": "LeafTexture",
+      "packed": true,
+      "filepath": "C:/Users/Shsha/AppData/Local/LeafsTextureWithAlpha.tif"
+    },
+    {
+      "name": "plantsTextureLowRes.png",
+      "packed": true,
+      "filepath": "G:/Shared drives/PuzzlingPlaces/GeneralResources/Meshes + Processing/Special_Events/2DDemoPuzzles/CozyCornerHouse/Attachments/Flowers_PersianGarden/plantsTextureLowRes.png"
+    }
+  ],
+  "materials": {
+    "Roof": [
+      {
+        "tree": "Shader Nodetree",
+        "node": "Principled BSDF",
+        "type": "ShaderNodeBsdfPrincipled",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Material Output",
+        "type": "ShaderNodeOutputMaterial",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Attribute",
+        "type": "ShaderNodeAttribute",
+        "attribute": "TileRandom",
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Noise Texture",
+        "type": "ShaderNodeTexNoise",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Map Range",
+        "type": "ShaderNodeMapRange",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Texture Coordinate",
+        "type": "ShaderNodeTexCoord",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Mix",
+        "type": "ShaderNodeMix",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Noise Texture.001",
+        "type": "ShaderNodeTexNoise",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Map Range.001",
+        "type": "ShaderNodeMapRange",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Attribute.001",
+        "type": "ShaderNodeAttribute",
+        "attribute": "RoofColor",
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Group.001",
+        "type": "ShaderNodeGroup",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Group Output",
+        "type": "NodeGroupOutput",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Group Input",
+        "type": "NodeGroupInput",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Geometry",
+        "type": "ShaderNodeNewGeometry",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Mix Shader",
+        "type": "ShaderNodeMixShader",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Color",
+        "type": "ShaderNodeRGB",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Mix Shader.001",
+        "type": "ShaderNodeMixShader",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Value",
+        "type": "ShaderNodeValue",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Mix.002",
+        "type": "ShaderNodeMix",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Noise Texture.002",
+        "type": "ShaderNodeTexNoise",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Map Range.002",
+        "type": "ShaderNodeMapRange",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Vector Math",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Reroute",
+        "type": "NodeReroute",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Map Range.003",
+        "type": "ShaderNodeMapRange",
+        "attribute": null,
+        "image": null
+      }
+    ],
+    "GroundFloorWalls": [
+      {
+        "tree": "Shader Nodetree",
+        "node": "Principled BSDF",
+        "type": "ShaderNodeBsdfPrincipled",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Material Output",
+        "type": "ShaderNodeOutputMaterial",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Group.004",
+        "type": "ShaderNodeGroup",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "StonesTriplanar",
+        "node": "Group Output",
+        "type": "NodeGroupOutput",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "StonesTriplanar",
+        "node": "Group Input",
+        "type": "NodeGroupInput",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "StonesTriplanar",
+        "node": "Group",
+        "type": "ShaderNodeGroup",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "TriplanarMap",
+        "node": "Group Output",
+        "type": "NodeGroupOutput",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "TriplanarMap",
+        "node": "Group Input",
+        "type": "NodeGroupInput",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "TriplanarMap",
+        "node": "Attribute",
+        "type": "ShaderNodeAttribute",
+        "attribute": "LocalNormal",
+        "image": null
+      },
+      {
+        "tree": "TriplanarMap",
+        "node": "Attribute.001",
+        "type": "ShaderNodeAttribute",
+        "attribute": "LocalPosition",
+        "image": null
+      },
+      {
+        "tree": "TriplanarMap",
+        "node": "Vector Math",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "TriplanarMap",
+        "node": "Vector Math.001",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "TriplanarMap",
+        "node": "Vector Math.002",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "TriplanarMap",
+        "node": "Separate XYZ.001",
+        "type": "ShaderNodeSeparateXYZ",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "TriplanarMap",
+        "node": "Combine XYZ",
+        "type": "ShaderNodeCombineXYZ",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "TriplanarMap",
+        "node": "Combine XYZ.001",
+        "type": "ShaderNodeCombineXYZ",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "TriplanarMap",
+        "node": "Combine XYZ.002",
+        "type": "ShaderNodeCombineXYZ",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "TriplanarMap",
+        "node": "Vector Math.003",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "StonesTriplanar",
+        "node": "Group.001",
+        "type": "ShaderNodeGroup",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "WalltextureMonoDirection",
+        "node": "Group Input",
+        "type": "NodeGroupInput",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "WalltextureMonoDirection",
+        "node": "Group Output",
+        "type": "NodeGroupOutput",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "WalltextureMonoDirection",
+        "node": "Brick Texture",
+        "type": "ShaderNodeTexBrick",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "WalltextureMonoDirection",
+        "node": "Map Range",
+        "type": "ShaderNodeMapRange",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "WalltextureMonoDirection",
+        "node": "Mix",
+        "type": "ShaderNodeMix",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "WalltextureMonoDirection",
+        "node": "Voronoi Texture",
+        "type": "ShaderNodeTexVoronoi",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "WalltextureMonoDirection",
+        "node": "Map Range.001",
+        "type": "ShaderNodeMapRange",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "WalltextureMonoDirection",
+        "node": "Mix.001",
+        "type": "ShaderNodeMix",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "WalltextureMonoDirection",
+        "node": "Map Range.002",
+        "type": "ShaderNodeMapRange",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "WalltextureMonoDirection",
+        "node": "Vector Math",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "WalltextureMonoDirection",
+        "node": "Math",
+        "type": "ShaderNodeMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "WalltextureMonoDirection",
+        "node": "Mix.002",
+        "type": "ShaderNodeMix",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "WalltextureMonoDirection",
+        "node": "Reroute",
+        "type": "NodeReroute",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "WalltextureMonoDirection",
+        "node": "Mix.003",
+        "type": "ShaderNodeMix",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "WalltextureMonoDirection",
+        "node": "Brightness/Contrast",
+        "type": "ShaderNodeBrightContrast",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "StonesTriplanar",
+        "node": "Group.002",
+        "type": "ShaderNodeGroup",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "StonesTriplanar",
+        "node": "Group.003",
+        "type": "ShaderNodeGroup",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "StonesTriplanar",
+        "node": "Vector Math",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "StonesTriplanar",
+        "node": "Separate XYZ",
+        "type": "ShaderNodeSeparateXYZ",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "StonesTriplanar",
+        "node": "Vector Math.001",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "StonesTriplanar",
+        "node": "Vector Math.002",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "StonesTriplanar",
+        "node": "Vector Math.003",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "StonesTriplanar",
+        "node": "Vector Math.004",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "StonesTriplanar",
+        "node": "Noise Texture",
+        "type": "ShaderNodeTexNoise",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "StonesTriplanar",
+        "node": "Vector Math.005",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "StonesTriplanar",
+        "node": "Vector Math.006",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "StonesTriplanar",
+        "node": "Vector Math.007",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "StonesTriplanar",
+        "node": "Vector Math.008",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "StonesTriplanar",
+        "node": "Vector Math.009",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "StonesTriplanar",
+        "node": "Attribute.001",
+        "type": "ShaderNodeAttribute",
+        "attribute": "LocalPosition",
+        "image": null
+      },
+      {
+        "tree": "StonesTriplanar",
+        "node": "Math",
+        "type": "ShaderNodeMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "StonesTriplanar",
+        "node": "Math.001",
+        "type": "ShaderNodeMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "StonesTriplanar",
+        "node": "Math.002",
+        "type": "ShaderNodeMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "StonesTriplanar",
+        "node": "Math.003",
+        "type": "ShaderNodeMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "StonesTriplanar",
+        "node": "Math.004",
+        "type": "ShaderNodeMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "StonesTriplanar",
+        "node": "Math.005",
+        "type": "ShaderNodeMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "StonesTriplanar",
+        "node": "Bump",
+        "type": "ShaderNodeBump",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "StonesTriplanar",
+        "node": "Noise Texture.001",
+        "type": "ShaderNodeTexNoise",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "StonesTriplanar",
+        "node": "Attribute.002",
+        "type": "ShaderNodeAttribute",
+        "attribute": "LocalPosition",
+        "image": null
+      },
+      {
+        "tree": "StonesTriplanar",
+        "node": "Map Range",
+        "type": "ShaderNodeMapRange",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "StonesTriplanar",
+        "node": "Mix",
+        "type": "ShaderNodeMix",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "StonesTriplanar",
+        "node": "Geometry",
+        "type": "ShaderNodeNewGeometry",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Group.001",
+        "type": "ShaderNodeGroup",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Group Output",
+        "type": "NodeGroupOutput",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Group Input",
+        "type": "NodeGroupInput",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Geometry",
+        "type": "ShaderNodeNewGeometry",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Mix Shader",
+        "type": "ShaderNodeMixShader",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Color",
+        "type": "ShaderNodeRGB",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Mix Shader.001",
+        "type": "ShaderNodeMixShader",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Value",
+        "type": "ShaderNodeValue",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Vector Math",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      }
+    ],
+    "UpperFloorsPaint": [
+      {
+        "tree": "Shader Nodetree",
+        "node": "Principled BSDF",
+        "type": "ShaderNodeBsdfPrincipled",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Material Output",
+        "type": "ShaderNodeOutputMaterial",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Texture Coordinate",
+        "type": "ShaderNodeTexCoord",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Noise Texture",
+        "type": "ShaderNodeTexNoise",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Map Range",
+        "type": "ShaderNodeMapRange",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Color Ramp",
+        "type": "ShaderNodeValToRGB",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Noise Texture.001",
+        "type": "ShaderNodeTexNoise",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Map Range.001",
+        "type": "ShaderNodeMapRange",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Mix",
+        "type": "ShaderNodeMix",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Mix.001",
+        "type": "ShaderNodeMix",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Reroute",
+        "type": "NodeReroute",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Math",
+        "type": "ShaderNodeMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Geometry",
+        "type": "ShaderNodeNewGeometry",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "BricksTriplanar.001",
+        "type": "ShaderNodeGroup",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BricksTriplanarBricks",
+        "node": "Group Output",
+        "type": "NodeGroupOutput",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BricksTriplanarBricks",
+        "node": "Group Input",
+        "type": "NodeGroupInput",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BricksTriplanarBricks",
+        "node": "Group",
+        "type": "ShaderNodeGroup",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "TriplanarMap",
+        "node": "Group Output",
+        "type": "NodeGroupOutput",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "TriplanarMap",
+        "node": "Group Input",
+        "type": "NodeGroupInput",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "TriplanarMap",
+        "node": "Attribute",
+        "type": "ShaderNodeAttribute",
+        "attribute": "LocalNormal",
+        "image": null
+      },
+      {
+        "tree": "TriplanarMap",
+        "node": "Attribute.001",
+        "type": "ShaderNodeAttribute",
+        "attribute": "LocalPosition",
+        "image": null
+      },
+      {
+        "tree": "TriplanarMap",
+        "node": "Vector Math",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "TriplanarMap",
+        "node": "Vector Math.001",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "TriplanarMap",
+        "node": "Vector Math.002",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "TriplanarMap",
+        "node": "Separate XYZ.001",
+        "type": "ShaderNodeSeparateXYZ",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "TriplanarMap",
+        "node": "Combine XYZ",
+        "type": "ShaderNodeCombineXYZ",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "TriplanarMap",
+        "node": "Combine XYZ.001",
+        "type": "ShaderNodeCombineXYZ",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "TriplanarMap",
+        "node": "Combine XYZ.002",
+        "type": "ShaderNodeCombineXYZ",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "TriplanarMap",
+        "node": "Vector Math.003",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BricksTriplanarBricks",
+        "node": "Group.001",
+        "type": "ShaderNodeGroup",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "WalltextureMonoDirection.Brick",
+        "node": "Group Input",
+        "type": "NodeGroupInput",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "WalltextureMonoDirection.Brick",
+        "node": "Group Output",
+        "type": "NodeGroupOutput",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "WalltextureMonoDirection.Brick",
+        "node": "Brick Texture",
+        "type": "ShaderNodeTexBrick",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "WalltextureMonoDirection.Brick",
+        "node": "Map Range",
+        "type": "ShaderNodeMapRange",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "WalltextureMonoDirection.Brick",
+        "node": "Mix",
+        "type": "ShaderNodeMix",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "WalltextureMonoDirection.Brick",
+        "node": "Voronoi Texture",
+        "type": "ShaderNodeTexVoronoi",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "WalltextureMonoDirection.Brick",
+        "node": "Map Range.001",
+        "type": "ShaderNodeMapRange",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "WalltextureMonoDirection.Brick",
+        "node": "Mix.001",
+        "type": "ShaderNodeMix",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "WalltextureMonoDirection.Brick",
+        "node": "Map Range.002",
+        "type": "ShaderNodeMapRange",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "WalltextureMonoDirection.Brick",
+        "node": "Vector Math",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "WalltextureMonoDirection.Brick",
+        "node": "Math",
+        "type": "ShaderNodeMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "WalltextureMonoDirection.Brick",
+        "node": "Mix.002",
+        "type": "ShaderNodeMix",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "WalltextureMonoDirection.Brick",
+        "node": "Reroute",
+        "type": "NodeReroute",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "WalltextureMonoDirection.Brick",
+        "node": "Mix.003",
+        "type": "ShaderNodeMix",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "WalltextureMonoDirection.Brick",
+        "node": "Brightness/Contrast",
+        "type": "ShaderNodeBrightContrast",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "WalltextureMonoDirection.Brick",
+        "node": "Mix.004",
+        "type": "ShaderNodeMix",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BricksTriplanarBricks",
+        "node": "Vector Math",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BricksTriplanarBricks",
+        "node": "Separate XYZ",
+        "type": "ShaderNodeSeparateXYZ",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BricksTriplanarBricks",
+        "node": "Vector Math.001",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BricksTriplanarBricks",
+        "node": "Vector Math.002",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BricksTriplanarBricks",
+        "node": "Vector Math.003",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BricksTriplanarBricks",
+        "node": "Vector Math.004",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BricksTriplanarBricks",
+        "node": "Noise Texture",
+        "type": "ShaderNodeTexNoise",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BricksTriplanarBricks",
+        "node": "Vector Math.005",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BricksTriplanarBricks",
+        "node": "Vector Math.006",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BricksTriplanarBricks",
+        "node": "Vector Math.007",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BricksTriplanarBricks",
+        "node": "Vector Math.008",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BricksTriplanarBricks",
+        "node": "Vector Math.009",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BricksTriplanarBricks",
+        "node": "Attribute.001",
+        "type": "ShaderNodeAttribute",
+        "attribute": "LocalPosition",
+        "image": null
+      },
+      {
+        "tree": "BricksTriplanarBricks",
+        "node": "Math",
+        "type": "ShaderNodeMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BricksTriplanarBricks",
+        "node": "Math.001",
+        "type": "ShaderNodeMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BricksTriplanarBricks",
+        "node": "Math.002",
+        "type": "ShaderNodeMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BricksTriplanarBricks",
+        "node": "Math.003",
+        "type": "ShaderNodeMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BricksTriplanarBricks",
+        "node": "Math.004",
+        "type": "ShaderNodeMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BricksTriplanarBricks",
+        "node": "Math.005",
+        "type": "ShaderNodeMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BricksTriplanarBricks",
+        "node": "Bump",
+        "type": "ShaderNodeBump",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BricksTriplanarBricks",
+        "node": "Noise Texture.001",
+        "type": "ShaderNodeTexNoise",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BricksTriplanarBricks",
+        "node": "Attribute.002",
+        "type": "ShaderNodeAttribute",
+        "attribute": "LocalPosition",
+        "image": null
+      },
+      {
+        "tree": "BricksTriplanarBricks",
+        "node": "Map Range",
+        "type": "ShaderNodeMapRange",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BricksTriplanarBricks",
+        "node": "Mix",
+        "type": "ShaderNodeMix",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BricksTriplanarBricks",
+        "node": "Group.004",
+        "type": "ShaderNodeGroup",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BricksTriplanarBricks",
+        "node": "Reroute",
+        "type": "NodeReroute",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BricksTriplanarBricks",
+        "node": "Group.005",
+        "type": "ShaderNodeGroup",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Mix.002",
+        "type": "ShaderNodeMix",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Attribute",
+        "type": "ShaderNodeAttribute",
+        "attribute": "PaintColor",
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Group",
+        "type": "ShaderNodeGroup",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Group Output",
+        "type": "NodeGroupOutput",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Group Input",
+        "type": "NodeGroupInput",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Geometry",
+        "type": "ShaderNodeNewGeometry",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Mix Shader",
+        "type": "ShaderNodeMixShader",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Color",
+        "type": "ShaderNodeRGB",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Mix Shader.001",
+        "type": "ShaderNodeMixShader",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Value",
+        "type": "ShaderNodeValue",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Vector Math",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      }
+    ],
+    "Beam": [
+      {
+        "tree": "Shader Nodetree",
+        "node": "Principled BSDF",
+        "type": "ShaderNodeBsdfPrincipled",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Material Output",
+        "type": "ShaderNodeOutputMaterial",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Noise Texture",
+        "type": "ShaderNodeTexNoise",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Texture Coordinate",
+        "type": "ShaderNodeTexCoord",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Attribute",
+        "type": "ShaderNodeAttribute",
+        "attribute": "BeamDirection",
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Vector Math",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Vector Math.001",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Vector Math.002",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Color Ramp",
+        "type": "ShaderNodeValToRGB",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Mix",
+        "type": "ShaderNodeMix",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Attribute.001",
+        "type": "ShaderNodeAttribute",
+        "attribute": "BeamColor",
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Group.001",
+        "type": "ShaderNodeGroup",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Group Output",
+        "type": "NodeGroupOutput",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Group Input",
+        "type": "NodeGroupInput",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Geometry",
+        "type": "ShaderNodeNewGeometry",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Mix Shader",
+        "type": "ShaderNodeMixShader",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Color",
+        "type": "ShaderNodeRGB",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Mix Shader.001",
+        "type": "ShaderNodeMixShader",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Value",
+        "type": "ShaderNodeValue",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Vector Math.003",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      }
+    ],
+    "Stone": [
+      {
+        "tree": "Shader Nodetree",
+        "node": "Principled BSDF",
+        "type": "ShaderNodeBsdfPrincipled",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Material Output",
+        "type": "ShaderNodeOutputMaterial",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Color",
+        "type": "ShaderNodeRGB",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Noise Texture",
+        "type": "ShaderNodeTexNoise",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Map Range",
+        "type": "ShaderNodeMapRange",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Vector Math",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Group.001",
+        "type": "ShaderNodeGroup",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Group Output",
+        "type": "NodeGroupOutput",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Group Input",
+        "type": "NodeGroupInput",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Geometry",
+        "type": "ShaderNodeNewGeometry",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Mix Shader",
+        "type": "ShaderNodeMixShader",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Color",
+        "type": "ShaderNodeRGB",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Mix Shader.001",
+        "type": "ShaderNodeMixShader",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "BackFaceCheckerShader",
+        "node": "Value",
+        "type": "ShaderNodeValue",
+        "attribute": null,
+        "image": null
+      },
+      {
+        "tree": "Shader Nodetree",
+        "node": "Vector Math.001",
+        "type": "ShaderNodeVectorMath",
+        "attribute": null,
+        "image": null
+      }
+    ]
+  },
+  "variants": {
+    "BASELINE": {
+      "modifier_inputs": {
+        "Object": "<bpy_struct, Object(\"HouseOne\") at 0x789f15899620>",
+        "Seed": 29,
+        "NumberFloor": 2,
+        "RoofCurvature": 1.659999966621399,
+        "RoofColor": "<bpy_float[4], Socket_6.value>",
+        "PaintColor": "<bpy_float[4], Socket_7.value>",
+        "BeamCollor": "<bpy_float[4], Socket_8.value>",
+        "DisableRoofExrudeBack": false,
+        "DisableRoofExrudeFront": false,
+        "SpawnIVY": true,
+        "RoofGeometryType": "Real Geometry ",
+        "High Polz Plants": true
+      },
+      "vertices": 27919,
+      "faces": 20003,
+      "triangles": 50944,
+      "materials": [
+        "Roof",
+        "GroundFloorWalls",
+        "UpperFloorsPaint",
+        "Beam",
+        "Stone"
+      ],
+      "material_counts": {
+        "Roof": {
+          "faces": 3628,
+          "triangles": 7256
+        },
+        "GroundFloorWalls": {
+          "faces": 8,
+          "triangles": 20
+        },
+        "UpperFloorsPaint": {
+          "faces": 1105,
+          "triangles": 2210
+        },
+        "Beam": {
+          "faces": 2319,
+          "triangles": 4718
+        },
+        "Stone": {
+          "faces": 12943,
+          "triangles": 36740
+        }
+      },
+      "evaluation_seconds": 0.016,
+      "attributes": [
+        {
+          "name": "position",
+          "domain": "POINT",
+          "type": "FLOAT_VECTOR"
+        },
+        {
+          "name": ".edge_verts",
+          "domain": "EDGE",
+          "type": "INT32_2D"
+        },
+        {
+          "name": ".corner_vert",
+          "domain": "CORNER",
+          "type": "INT"
+        },
+        {
+          "name": ".corner_edge",
+          "domain": "CORNER",
+          "type": "INT"
+        },
+        {
+          "name": "id",
+          "domain": "POINT",
+          "type": "INT"
+        },
+        {
+          "name": "sharp_face",
+          "domain": "FACE",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": ".select_edge",
+          "domain": "POINT",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "UpperFloorExpandVector",
+          "domain": "POINT",
+          "type": "FLOAT_VECTOR"
+        },
+        {
+          "name": ".select_vert",
+          "domain": "POINT",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": ".uv_select_face",
+          "domain": "POINT",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "FundationUp",
+          "domain": "POINT",
+          "type": "FLOAT_VECTOR"
+        },
+        {
+          "name": "FundationForward",
+          "domain": "POINT",
+          "type": "FLOAT_VECTOR"
+        },
+        {
+          "name": "UVMap",
+          "domain": "CORNER",
+          "type": "FLOAT2"
+        },
+        {
+          "name": ".uv_select_vert",
+          "domain": "CORNER",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": ".uv_select_edge",
+          "domain": "CORNER",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "IndexPerWIndow",
+          "domain": "POINT",
+          "type": "INT"
+        },
+        {
+          "name": "sharp_edge",
+          "domain": "EDGE",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "TileRandom",
+          "domain": "POINT",
+          "type": "FLOAT"
+        },
+        {
+          "name": "BeamDirection",
+          "domain": "POINT",
+          "type": "FLOAT_VECTOR"
+        },
+        {
+          "name": "material_index",
+          "domain": "FACE",
+          "type": "INT"
+        },
+        {
+          "name": "LocalPosition",
+          "domain": "POINT",
+          "type": "FLOAT_VECTOR"
+        },
+        {
+          "name": "LocalNormal",
+          "domain": "CORNER",
+          "type": "FLOAT_VECTOR"
+        },
+        {
+          "name": "RoofColor",
+          "domain": "POINT",
+          "type": "FLOAT_COLOR"
+        },
+        {
+          "name": "PaintColor",
+          "domain": "POINT",
+          "type": "FLOAT_COLOR"
+        },
+        {
+          "name": "BeamColor",
+          "domain": "POINT",
+          "type": "FLOAT_COLOR"
+        }
+      ],
+      "local_bake_offset": [
+        0.2749263048171997,
+        -0.04589724540710449,
+        -0.24189691245555878
+      ],
+      "local_dimensions": [
+        3.927816152572632,
+        6.485448360443115,
+        8.150175094604492
+      ],
+      "export_seconds": 0.389,
+      "glb_bytes": 4277724,
+      "glb_sha256": "fb2947ec6a0ff6219d450619ebcec7a198fedaceb8848abfeaab2cfeea6334c8",
+      "views": {
+        "iso": {
+          "camera": [
+            12,
+            -15,
+            12
+          ],
+          "target": [
+            0,
+            0,
+            3.7
+          ],
+          "ortho_scale": 15,
+          "png_bytes": 797217,
+          "render_seconds": 5.76
+        },
+        "front": {
+          "camera": [
+            16,
+            0,
+            5.2
+          ],
+          "target": [
+            0,
+            0,
+            3.7
+          ],
+          "ortho_scale": 12,
+          "png_bytes": 789245,
+          "render_seconds": 7.32
+        },
+        "facade": {
+          "camera": [
+            11,
+            -5,
+            4.8
+          ],
+          "target": [
+            0,
+            -0.4,
+            4.2
+          ],
+          "ortho_scale": 6,
+          "png_bytes": 804836,
+          "render_seconds": 12.34
+        }
+      }
+    },
+    "REDUCED": {
+      "modifier_inputs": {
+        "Object": "<bpy_struct, Object(\"HouseOne\") at 0x789f15899620>",
+        "Seed": 29,
+        "NumberFloor": 2,
+        "RoofCurvature": 1.659999966621399,
+        "RoofColor": "<bpy_float[4], Socket_6.value>",
+        "PaintColor": "<bpy_float[4], Socket_7.value>",
+        "BeamCollor": "<bpy_float[4], Socket_8.value>",
+        "DisableRoofExrudeBack": false,
+        "DisableRoofExrudeFront": false,
+        "SpawnIVY": false,
+        "RoofGeometryType": "Real Geometry ",
+        "High Polz Plants": false
+      },
+      "vertices": 27827,
+      "faces": 19927,
+      "triangles": 50764,
+      "materials": [
+        "Roof",
+        "GroundFloorWalls",
+        "UpperFloorsPaint",
+        "Beam",
+        "Stone"
+      ],
+      "material_counts": {
+        "Roof": {
+          "faces": 3628,
+          "triangles": 7256
+        },
+        "GroundFloorWalls": {
+          "faces": 8,
+          "triangles": 20
+        },
+        "UpperFloorsPaint": {
+          "faces": 1105,
+          "triangles": 2210
+        },
+        "Beam": {
+          "faces": 2319,
+          "triangles": 4718
+        },
+        "Stone": {
+          "faces": 12867,
+          "triangles": 36560
+        }
+      },
+      "evaluation_seconds": 0.011,
+      "attributes": [
+        {
+          "name": "position",
+          "domain": "POINT",
+          "type": "FLOAT_VECTOR"
+        },
+        {
+          "name": ".edge_verts",
+          "domain": "EDGE",
+          "type": "INT32_2D"
+        },
+        {
+          "name": ".corner_vert",
+          "domain": "CORNER",
+          "type": "INT"
+        },
+        {
+          "name": ".corner_edge",
+          "domain": "CORNER",
+          "type": "INT"
+        },
+        {
+          "name": "id",
+          "domain": "POINT",
+          "type": "INT"
+        },
+        {
+          "name": "UpperFloorExpandVector",
+          "domain": "POINT",
+          "type": "FLOAT_VECTOR"
+        },
+        {
+          "name": ".select_vert",
+          "domain": "POINT",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": ".select_edge",
+          "domain": "POINT",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "IndexPerWIndow",
+          "domain": "POINT",
+          "type": "INT"
+        },
+        {
+          "name": "sharp_face",
+          "domain": "FACE",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "sharp_edge",
+          "domain": "EDGE",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": ".uv_select_face",
+          "domain": "POINT",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "FundationUp",
+          "domain": "POINT",
+          "type": "FLOAT_VECTOR"
+        },
+        {
+          "name": "FundationForward",
+          "domain": "POINT",
+          "type": "FLOAT_VECTOR"
+        },
+        {
+          "name": ".uv_select_vert",
+          "domain": "CORNER",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": ".uv_select_edge",
+          "domain": "CORNER",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "UVMap",
+          "domain": "CORNER",
+          "type": "FLOAT2"
+        },
+        {
+          "name": "TileRandom",
+          "domain": "POINT",
+          "type": "FLOAT"
+        },
+        {
+          "name": "BeamDirection",
+          "domain": "POINT",
+          "type": "FLOAT_VECTOR"
+        },
+        {
+          "name": "material_index",
+          "domain": "FACE",
+          "type": "INT"
+        },
+        {
+          "name": "LocalPosition",
+          "domain": "POINT",
+          "type": "FLOAT_VECTOR"
+        },
+        {
+          "name": "LocalNormal",
+          "domain": "CORNER",
+          "type": "FLOAT_VECTOR"
+        },
+        {
+          "name": "RoofColor",
+          "domain": "POINT",
+          "type": "FLOAT_COLOR"
+        },
+        {
+          "name": "PaintColor",
+          "domain": "POINT",
+          "type": "FLOAT_COLOR"
+        },
+        {
+          "name": "BeamColor",
+          "domain": "POINT",
+          "type": "FLOAT_COLOR"
+        }
+      ],
+      "local_bake_offset": [
+        0.2749263048171997,
+        -0.04589724540710449,
+        -0.24189691245555878
+      ],
+      "local_dimensions": [
+        3.927816152572632,
+        6.485448360443115,
+        8.150175094604492
+      ],
+      "export_seconds": 0.233,
+      "glb_bytes": 4263356,
+      "glb_sha256": "888b3838e25509f5c103c643c1fcd2c8b53b350c54c48e22e8308682d329d9a0",
+      "views": {
+        "iso": {
+          "camera": [
+            12,
+            -15,
+            12
+          ],
+          "target": [
+            0,
+            0,
+            3.7
+          ],
+          "ortho_scale": 15,
+          "png_bytes": 797220,
+          "render_seconds": 5.68
+        },
+        "front": {
+          "camera": [
+            16,
+            0,
+            5.2
+          ],
+          "target": [
+            0,
+            0,
+            3.7
+          ],
+          "ortho_scale": 12,
+          "png_bytes": 789248,
+          "render_seconds": 7.3
+        },
+        "facade": {
+          "camera": [
+            11,
+            -5,
+            4.8
+          ],
+          "target": [
+            0,
+            -0.4,
+            4.2
+          ],
+          "ortho_scale": 6,
+          "png_bytes": 804839,
+          "render_seconds": 12.43
+        }
+      }
+    }
+  }
+}

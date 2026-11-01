@@ -1,0 +1,28 @@
+00:00.043  translation      | WARNING Falling back to standard locale ("C")
+00:01.918  blend            | Read blend: "/home/alexander-both/Dokumente/Generation/ircss-fork/GeometryNodesFrenchHous.blend"
+Reloading external rigs...
+Reloading external metarigs...
+BlenderMCP: cannot start server in background mode (blender -b) - commands would never execute
+BlenderMCP: run Blender with a GUI, or use a virtual display: xvfb-run -a blender
+BlenderMCP addon registered
+ ╔═╡ RetopoFlow ╞══════════════════════╗
+ ║                                     ║
+ ║ Blender is running in background    ║
+ ║ Skipping any further initialization ║
+ ║                                     ║
+ ╚═════════════════════════════════════╝
+register_class(...):
+Warning: 'Remi_PT_MainPanel' does not have upper case alphanumeric prefix
+register_class(...):
+Warning: 'Remi_PT_EditToolsPanel' does not have upper case alphanumeric prefix
+Remi: Registered
+TOGGLE_PROBE True True 27919 20003 50944 {'Roof': 7256, 'UpperFloorsPaint': 2210, 'Beam': 4718, 'GroundFloorWalls': 20, 'Stone': 36740}
+TOGGLE_PROBE True False 27827 19927 50764 {'Roof': 7256, 'UpperFloorsPaint': 2210, 'Beam': 4718, 'GroundFloorWalls': 20, 'Stone': 36560}
+TOGGLE_PROBE False True 27919 20003 50944 {'Roof': 7256, 'UpperFloorsPaint': 2210, 'Beam': 4718, 'GroundFloorWalls': 20, 'Stone': 36740}
+TOGGLE_PROBE False False 27827 19927 50764 {'Roof': 7256, 'UpperFloorsPaint': 2210, 'Beam': 4718, 'GroundFloorWalls': 20, 'Stone': 36560}
+BlenderMCP server stopped
+BlenderMCP addon unregistered
+Remi: Unregistered
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:34:58)
+
+Blender quit

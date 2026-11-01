@@ -1,0 +1,11 @@
+Godot Engine v4.7.stable.official.5b4e0cb0f - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 595.99.02 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3060
+
+PHASE2_GODOT_IMPORT variant=BASELINE meshes=1 surfaces=5 triangles=50944 materials=["Roof", "GroundFloorWalls", "UpperFloorsPaint", "Beam", "Stone"]
+PHASE2_GODOT_SCREENSHOT /home/alexander-both/Dokumente/Generation/ircss-fork/tests/materials/godot/baseline_iso.png 960x720
+PHASE2_GODOT_SCREENSHOT /home/alexander-both/Dokumente/Generation/ircss-fork/tests/materials/godot/baseline_front.png 960x720
+PHASE2_GODOT_SCREENSHOT /home/alexander-both/Dokumente/Generation/ircss-fork/tests/materials/godot/baseline_facade.png 960x720
+PHASE2_GODOT_IMPORT variant=REDUCED meshes=1 surfaces=5 triangles=50764 materials=["Roof", "GroundFloorWalls", "UpperFloorsPaint", "Beam", "Stone"]
+PHASE2_GODOT_SCREENSHOT /home/alexander-both/Dokumente/Generation/ircss-fork/tests/materials/godot/reduced_iso.png 960x720
+PHASE2_GODOT_SCREENSHOT /home/alexander-both/Dokumente/Generation/ircss-fork/tests/materials/godot/reduced_front.png 960x720
+PHASE2_GODOT_SCREENSHOT /home/alexander-both/Dokumente/Generation/ircss-fork/tests/materials/godot/reduced_facade.png 960x720

@@ -1,0 +1,1451 @@
+{
+  "inputs": [
+    {
+      "name": "Input",
+      "id": "Socket_11",
+      "value": "ERROR this type doesn't support IDProperties",
+      "default": ""
+    },
+    {
+      "name": "Object",
+      "id": "Socket_2",
+      "value": "ERROR this type doesn't support IDProperties",
+      "default": "None"
+    },
+    {
+      "name": "Seed",
+      "id": "Socket_3",
+      "value": "ERROR this type doesn't support IDProperties",
+      "default": "0"
+    },
+    {
+      "name": "NumberFloor",
+      "id": "Socket_4",
+      "value": "ERROR this type doesn't support IDProperties",
+      "default": "1"
+    },
+    {
+      "name": "RoofCurvature",
+      "id": "Socket_5",
+      "value": "ERROR this type doesn't support IDProperties",
+      "default": "1.2999999523162842"
+    },
+    {
+      "name": "RoofColor",
+      "id": "Socket_6",
+      "value": "ERROR this type doesn't support IDProperties",
+      "default": "<bpy_float[4], NodeTreeInterfaceSocketColor.default_value>"
+    },
+    {
+      "name": "PaintColor",
+      "id": "Socket_7",
+      "value": "ERROR this type doesn't support IDProperties",
+      "default": "<bpy_float[4], NodeTreeInterfaceSocketColor.default_value>"
+    },
+    {
+      "name": "BeamCollor",
+      "id": "Socket_8",
+      "value": "ERROR this type doesn't support IDProperties",
+      "default": "<bpy_float[4], NodeTreeInterfaceSocketColor.default_value>"
+    },
+    {
+      "name": "DisableRoofExrudeBack",
+      "id": "Socket_10",
+      "value": "ERROR this type doesn't support IDProperties",
+      "default": "False"
+    },
+    {
+      "name": "DisableRoofExrudeFront",
+      "id": "Socket_9",
+      "value": "ERROR this type doesn't support IDProperties",
+      "default": "False"
+    },
+    {
+      "name": "SpawnIVY",
+      "id": "Socket_12",
+      "value": "ERROR this type doesn't support IDProperties",
+      "default": "False"
+    },
+    {
+      "name": "RoofGeometryType",
+      "id": "Socket_13",
+      "value": "ERROR this type doesn't support IDProperties",
+      "default": "Real Geometry "
+    },
+    {
+      "name": "High Polz Plants",
+      "id": "Socket_14",
+      "value": "ERROR this type doesn't support IDProperties",
+      "default": "True"
+    }
+  ],
+  "materials": [
+    {
+      "name": "Roof",
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "Metallic": "0.0",
+            "IOR": "1.5",
+            "Alpha": "1.0",
+            "Thin Wall": "False",
+            "Normal": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Weight": "0.0",
+            "Diffuse Roughness": "0.0",
+            "Subsurface Weight": "0.0",
+            "Subsurface Radius": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Subsurface Scale": "0.05000000074505806",
+            "Subsurface IOR": "1.399999976158142",
+            "Subsurface Anisotropy": "0.0",
+            "Specular IOR Level": "0.5",
+            "Specular Tint": "<bpy_float[4], NodeSocketColor.default_value>",
+            "Anisotropic": "0.0",
+            "Anisotropic Rotation": "0.0",
+            "Tangent": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Transmission Weight": "0.0",
+            "Coat Weight": "0.0",
+            "Coat Roughness": "0.029999999329447746",
+            "Coat IOR": "1.5",
+            "Coat Tint": "<bpy_float[4], NodeSocketColor.default_value>",
+            "Coat Normal": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Sheen Weight": "0.0",
+            "Sheen Roughness": "0.5",
+            "Sheen Tint": "<bpy_float[4], NodeSocketColor.default_value>",
+            "Emission Color": "<bpy_float[4], NodeSocketColor.default_value>",
+            "Emission Strength": "0.0",
+            "Thin Film Thickness": "0.0",
+            "Thin Film IOR": "1.3300000429153442"
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "Displacement": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Thickness": "0.0"
+          }
+        },
+        {
+          "name": "Attribute",
+          "type": "ShaderNodeAttribute",
+          "label": "",
+          "attribute": "TileRandom",
+          "image": null,
+          "inputs": {}
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "W": "0.0",
+            "Scale": "1.4000000953674316",
+            "Detail": "3.6999990940093994",
+            "Roughness": "1.0",
+            "Lacunarity": "2.0",
+            "Offset": "0.0",
+            "Gain": "1.0",
+            "Distortion": "0.0"
+          }
+        },
+        {
+          "name": "Map Range",
+          "type": "ShaderNodeMapRange",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+            "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+            "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+            "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+          }
+        },
+        {
+          "name": "Texture Coordinate",
+          "type": "ShaderNodeTexCoord",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {}
+        },
+        {
+          "name": "Mix",
+          "type": "ShaderNodeMix",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "Factor": "<bpy_float[3], NodeSocketVectorFactor.default_value>",
+            "A": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>",
+            "B": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+          }
+        },
+        {
+          "name": "Noise Texture.001",
+          "type": "ShaderNodeTexNoise",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "W": "0.0",
+            "Scale": "7.599999904632568",
+            "Detail": "3.6999990940093994",
+            "Roughness": "1.0",
+            "Lacunarity": "2.0",
+            "Offset": "0.0",
+            "Gain": "1.0",
+            "Distortion": "0.0"
+          }
+        },
+        {
+          "name": "Map Range.001",
+          "type": "ShaderNodeMapRange",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+            "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+            "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+            "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+          }
+        },
+        {
+          "name": "Attribute.001",
+          "type": "ShaderNodeAttribute",
+          "label": "",
+          "attribute": "RoofColor",
+          "image": null,
+          "inputs": {}
+        },
+        {
+          "name": "Group.001",
+          "type": "ShaderNodeGroup",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {}
+        },
+        {
+          "name": "Mix.002",
+          "type": "ShaderNodeMix",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "Factor": "<bpy_float[3], NodeSocketVectorFactor.default_value>",
+            "A": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>",
+            "B": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+          }
+        },
+        {
+          "name": "Noise Texture.002",
+          "type": "ShaderNodeTexNoise",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Scale": "39.89999771118164",
+            "Detail": "2.0",
+            "Roughness": "0.0",
+            "Lacunarity": "2.0",
+            "Offset": "0.0",
+            "Gain": "1.0",
+            "Distortion": "0.0"
+          }
+        },
+        {
+          "name": "Map Range.002",
+          "type": "ShaderNodeMapRange",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+            "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+            "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+            "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+          }
+        },
+        {
+          "name": "Vector Math",
+          "type": "ShaderNodeVectorMath",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+          }
+        },
+        {
+          "name": "Reroute",
+          "type": "NodeReroute",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {}
+        },
+        {
+          "name": "Map Range.003",
+          "type": "ShaderNodeMapRange",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+            "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+            "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+            "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+          }
+        }
+      ],
+      "links": [
+        [
+          "Group.001",
+          "Shader",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Noise Texture",
+          "Factor",
+          "Map Range",
+          "Value"
+        ],
+        [
+          "Texture Coordinate",
+          "Generated",
+          "Noise Texture",
+          "Vector"
+        ],
+        [
+          "Noise Texture.001",
+          "Factor",
+          "Map Range.001",
+          "Value"
+        ],
+        [
+          "Texture Coordinate",
+          "Generated",
+          "Noise Texture.001",
+          "Vector"
+        ],
+        [
+          "Attribute.001",
+          "Color",
+          "Mix.002",
+          "A"
+        ],
+        [
+          "Attribute",
+          "Factor",
+          "Noise Texture.002",
+          "W"
+        ],
+        [
+          "Noise Texture.002",
+          "Factor",
+          "Map Range.002",
+          "Value"
+        ],
+        [
+          "Vector Math",
+          "Vector",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Mix.002",
+          "Result",
+          "Mix",
+          "A"
+        ],
+        [
+          "Map Range",
+          "Result",
+          "Mix",
+          "Factor"
+        ],
+        [
+          "Mix",
+          "Result",
+          "Vector Math",
+          "Vector"
+        ],
+        [
+          "Map Range.002",
+          "Result",
+          "Vector Math",
+          "Scale"
+        ],
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Group.001",
+          "Shader"
+        ],
+        [
+          "Map Range.001",
+          "Result",
+          "Reroute",
+          "Input"
+        ],
+        [
+          "Reroute",
+          "Output",
+          "Principled BSDF",
+          "Roughness"
+        ],
+        [
+          "Noise Texture.001",
+          "Factor",
+          "Map Range.003",
+          "Value"
+        ],
+        [
+          "Map Range.003",
+          "Result",
+          "Mix.002",
+          "Factor"
+        ]
+      ]
+    },
+    {
+      "name": "GroundFloorWalls",
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "Metallic": "0.0",
+            "Roughness": "1.0",
+            "IOR": "1.5",
+            "Alpha": "1.0",
+            "Thin Wall": "False",
+            "Weight": "0.0",
+            "Diffuse Roughness": "0.0",
+            "Subsurface Weight": "0.0",
+            "Subsurface Radius": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Subsurface Scale": "0.05000000074505806",
+            "Subsurface IOR": "1.399999976158142",
+            "Subsurface Anisotropy": "0.0",
+            "Specular IOR Level": "0.5",
+            "Specular Tint": "<bpy_float[4], NodeSocketColor.default_value>",
+            "Anisotropic": "0.0",
+            "Anisotropic Rotation": "0.0",
+            "Tangent": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Transmission Weight": "0.0",
+            "Coat Weight": "0.0",
+            "Coat Roughness": "0.029999999329447746",
+            "Coat IOR": "1.5",
+            "Coat Tint": "<bpy_float[4], NodeSocketColor.default_value>",
+            "Coat Normal": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Sheen Weight": "0.0",
+            "Sheen Roughness": "0.5",
+            "Sheen Tint": "<bpy_float[4], NodeSocketColor.default_value>",
+            "Emission Color": "<bpy_float[4], NodeSocketColor.default_value>",
+            "Emission Strength": "0.0",
+            "Thin Film Thickness": "0.0",
+            "Thin Film IOR": "1.3300000429153442"
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "Displacement": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Thickness": "0.0"
+          }
+        },
+        {
+          "name": "Group.004",
+          "type": "ShaderNodeGroup",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {}
+        },
+        {
+          "name": "Group.001",
+          "type": "ShaderNodeGroup",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {}
+        },
+        {
+          "name": "Vector Math",
+          "type": "ShaderNodeVectorMath",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Scale": "0.25"
+          }
+        }
+      ],
+      "links": [
+        [
+          "Group.001",
+          "Shader",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Group.004",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ],
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Group.001",
+          "Shader"
+        ],
+        [
+          "Vector Math",
+          "Vector",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Group.004",
+          "Result",
+          "Vector Math",
+          "Vector"
+        ]
+      ]
+    },
+    {
+      "name": "UpperFloorsPaint",
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "Metallic": "0.0",
+            "Roughness": "1.0",
+            "IOR": "1.5",
+            "Alpha": "1.0",
+            "Thin Wall": "False",
+            "Weight": "0.0",
+            "Diffuse Roughness": "0.0",
+            "Subsurface Weight": "0.0",
+            "Subsurface Radius": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Subsurface Scale": "0.05000000074505806",
+            "Subsurface IOR": "1.399999976158142",
+            "Subsurface Anisotropy": "0.0",
+            "Specular IOR Level": "0.5",
+            "Specular Tint": "<bpy_float[4], NodeSocketColor.default_value>",
+            "Anisotropic": "0.0",
+            "Anisotropic Rotation": "0.0",
+            "Tangent": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Transmission Weight": "0.0",
+            "Coat Weight": "0.0",
+            "Coat Roughness": "0.029999999329447746",
+            "Coat IOR": "1.5",
+            "Coat Tint": "<bpy_float[4], NodeSocketColor.default_value>",
+            "Coat Normal": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Sheen Weight": "0.0",
+            "Sheen Roughness": "0.5",
+            "Sheen Tint": "<bpy_float[4], NodeSocketColor.default_value>",
+            "Emission Color": "<bpy_float[4], NodeSocketColor.default_value>",
+            "Emission Strength": "0.0",
+            "Thin Film Thickness": "0.0",
+            "Thin Film IOR": "1.3300000429153442"
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "Displacement": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Thickness": "0.0"
+          }
+        },
+        {
+          "name": "Texture Coordinate",
+          "type": "ShaderNodeTexCoord",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {}
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "W": "0.0",
+            "Scale": "1.6000001430511475",
+            "Detail": "6.400000095367432",
+            "Roughness": "0.9359999895095825",
+            "Lacunarity": "2.0",
+            "Offset": "0.0",
+            "Gain": "1.0",
+            "Distortion": "0.0"
+          }
+        },
+        {
+          "name": "Map Range",
+          "type": "ShaderNodeMapRange",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+            "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+            "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+            "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+          }
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {}
+        },
+        {
+          "name": "Noise Texture.001",
+          "type": "ShaderNodeTexNoise",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "W": "0.0",
+            "Scale": "0.5000001788139343",
+            "Detail": "6.399999618530273",
+            "Roughness": "0.5280000567436218",
+            "Lacunarity": "2.0",
+            "Offset": "0.0",
+            "Gain": "1.0",
+            "Distortion": "0.0"
+          }
+        },
+        {
+          "name": "Map Range.001",
+          "type": "ShaderNodeMapRange",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+            "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+            "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+            "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+          }
+        },
+        {
+          "name": "Mix",
+          "type": "ShaderNodeMix",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "Factor": "<bpy_float[3], NodeSocketVectorFactor.default_value>",
+            "A": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>",
+            "B": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+          }
+        },
+        {
+          "name": "Mix.001",
+          "type": "ShaderNodeMix",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "Factor": "<bpy_float[3], NodeSocketVectorFactor.default_value>",
+            "A": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>",
+            "B": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+          }
+        },
+        {
+          "name": "Reroute",
+          "type": "NodeReroute",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {}
+        },
+        {
+          "name": "Math",
+          "type": "ShaderNodeMath",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "Value": "0.5"
+          }
+        },
+        {
+          "name": "Geometry",
+          "type": "ShaderNodeNewGeometry",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {}
+        },
+        {
+          "name": "BricksTriplanar.001",
+          "type": "ShaderNodeGroup",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {}
+        },
+        {
+          "name": "Mix.002",
+          "type": "ShaderNodeMix",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "Factor": "<bpy_float[3], NodeSocketVectorFactor.default_value>",
+            "A": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>",
+            "B": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+          }
+        },
+        {
+          "name": "Attribute",
+          "type": "ShaderNodeAttribute",
+          "label": "",
+          "attribute": "PaintColor",
+          "image": null,
+          "inputs": {}
+        },
+        {
+          "name": "Group",
+          "type": "ShaderNodeGroup",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {}
+        },
+        {
+          "name": "Vector Math",
+          "type": "ShaderNodeVectorMath",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Scale": "0.25"
+          }
+        }
+      ],
+      "links": [
+        [
+          "Texture Coordinate",
+          "Generated",
+          "Noise Texture",
+          "Vector"
+        ],
+        [
+          "Noise Texture",
+          "Factor",
+          "Map Range",
+          "Value"
+        ],
+        [
+          "Map Range",
+          "Result",
+          "Color Ramp",
+          "Factor"
+        ],
+        [
+          "Group",
+          "Shader",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Noise Texture.001",
+          "Factor",
+          "Map Range.001",
+          "Value"
+        ],
+        [
+          "Texture Coordinate",
+          "Generated",
+          "Noise Texture.001",
+          "Vector"
+        ],
+        [
+          "Reroute",
+          "Output",
+          "Mix",
+          "Factor"
+        ],
+        [
+          "Map Range.001",
+          "Result",
+          "Reroute",
+          "Input"
+        ],
+        [
+          "Mix.001",
+          "Result",
+          "Principled BSDF",
+          "Normal"
+        ],
+        [
+          "Noise Texture.001",
+          "Factor",
+          "Math",
+          "Value"
+        ],
+        [
+          "Math",
+          "Value",
+          "Mix.001",
+          "Factor"
+        ],
+        [
+          "Geometry",
+          "Normal",
+          "Mix.001",
+          "A"
+        ],
+        [
+          "BricksTriplanar.001",
+          "Result",
+          "Mix",
+          "B"
+        ],
+        [
+          "BricksTriplanar.001",
+          "Normal",
+          "Mix.001",
+          "B"
+        ],
+        [
+          "Mix.002",
+          "Result",
+          "Mix",
+          "A"
+        ],
+        [
+          "Attribute",
+          "Color",
+          "Mix.002",
+          "B"
+        ],
+        [
+          "Map Range",
+          "Result",
+          "Mix.002",
+          "A"
+        ],
+        [
+          "Vector Math",
+          "Vector",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Group",
+          "Shader"
+        ],
+        [
+          "Mix",
+          "Result",
+          "Vector Math",
+          "Vector"
+        ]
+      ]
+    },
+    {
+      "name": "Beam",
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "Metallic": "0.0",
+            "Roughness": "1.0",
+            "IOR": "1.5",
+            "Alpha": "1.0",
+            "Thin Wall": "False",
+            "Normal": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Weight": "0.0",
+            "Diffuse Roughness": "0.0",
+            "Subsurface Weight": "0.0",
+            "Subsurface Radius": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Subsurface Scale": "0.05000000074505806",
+            "Subsurface IOR": "1.399999976158142",
+            "Subsurface Anisotropy": "0.0",
+            "Specular IOR Level": "0.5",
+            "Specular Tint": "<bpy_float[4], NodeSocketColor.default_value>",
+            "Anisotropic": "0.0",
+            "Anisotropic Rotation": "0.0",
+            "Tangent": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Transmission Weight": "0.0",
+            "Coat Weight": "0.0",
+            "Coat Roughness": "0.029999999329447746",
+            "Coat IOR": "1.5",
+            "Coat Tint": "<bpy_float[4], NodeSocketColor.default_value>",
+            "Coat Normal": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Sheen Weight": "0.0",
+            "Sheen Roughness": "0.5",
+            "Sheen Tint": "<bpy_float[4], NodeSocketColor.default_value>",
+            "Emission Color": "<bpy_float[4], NodeSocketColor.default_value>",
+            "Emission Strength": "0.0",
+            "Thin Film Thickness": "0.0",
+            "Thin Film IOR": "1.3300000429153442"
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "Displacement": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Thickness": "0.0"
+          }
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "W": "0.0",
+            "Scale": "2.0",
+            "Detail": "4.999999523162842",
+            "Roughness": "0.5600000023841858",
+            "Lacunarity": "2.5",
+            "Offset": "0.0",
+            "Gain": "1.0",
+            "Distortion": "0.0"
+          }
+        },
+        {
+          "name": "Texture Coordinate",
+          "type": "ShaderNodeTexCoord",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {}
+        },
+        {
+          "name": "Attribute",
+          "type": "ShaderNodeAttribute",
+          "label": "",
+          "attribute": "BeamDirection",
+          "image": null,
+          "inputs": {}
+        },
+        {
+          "name": "Vector Math",
+          "type": "ShaderNodeVectorMath",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Scale": "1.0"
+          }
+        },
+        {
+          "name": "Vector Math.001",
+          "type": "ShaderNodeVectorMath",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Scale": "29.799999237060547"
+          }
+        },
+        {
+          "name": "Vector Math.002",
+          "type": "ShaderNodeVectorMath",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Scale": "1.0"
+          }
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {}
+        },
+        {
+          "name": "Mix",
+          "type": "ShaderNodeMix",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "Factor": "<bpy_float[3], NodeSocketVectorFactor.default_value>",
+            "A": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>",
+            "B": "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+          }
+        },
+        {
+          "name": "Attribute.001",
+          "type": "ShaderNodeAttribute",
+          "label": "",
+          "attribute": "BeamColor",
+          "image": null,
+          "inputs": {}
+        },
+        {
+          "name": "Group.001",
+          "type": "ShaderNodeGroup",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {}
+        },
+        {
+          "name": "Vector Math.003",
+          "type": "ShaderNodeVectorMath",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Scale": "0.25"
+          }
+        }
+      ],
+      "links": [
+        [
+          "Group.001",
+          "Shader",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Attribute",
+          "Vector",
+          "Vector Math.001",
+          "Vector"
+        ],
+        [
+          "Vector Math.001",
+          "Vector",
+          "Vector Math",
+          "Vector"
+        ],
+        [
+          "Vector Math",
+          "Vector",
+          "Vector Math.002",
+          "Vector"
+        ],
+        [
+          "Vector Math.002",
+          "Vector",
+          "Noise Texture",
+          "Vector"
+        ],
+        [
+          "Noise Texture",
+          "Factor",
+          "Color Ramp",
+          "Factor"
+        ],
+        [
+          "Color Ramp",
+          "Color",
+          "Mix",
+          "A"
+        ],
+        [
+          "Attribute.001",
+          "Color",
+          "Mix",
+          "B"
+        ],
+        [
+          "Texture Coordinate",
+          "Object",
+          "Vector Math",
+          "Vector"
+        ],
+        [
+          "Texture Coordinate",
+          "Object",
+          "Vector Math.002",
+          "Vector"
+        ],
+        [
+          "Vector Math.003",
+          "Vector",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Group.001",
+          "Shader"
+        ],
+        [
+          "Mix",
+          "Result",
+          "Vector Math.003",
+          "Vector"
+        ]
+      ]
+    },
+    {
+      "name": "Stone",
+      "nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "Metallic": "0.0",
+            "Roughness": "1.0",
+            "IOR": "1.5",
+            "Alpha": "1.0",
+            "Thin Wall": "False",
+            "Normal": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Weight": "0.0",
+            "Diffuse Roughness": "0.0",
+            "Subsurface Weight": "0.0",
+            "Subsurface Radius": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Subsurface Scale": "0.05000000074505806",
+            "Subsurface IOR": "1.399999976158142",
+            "Subsurface Anisotropy": "0.0",
+            "Specular IOR Level": "0.5",
+            "Specular Tint": "<bpy_float[4], NodeSocketColor.default_value>",
+            "Anisotropic": "0.0",
+            "Anisotropic Rotation": "0.0",
+            "Tangent": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Transmission Weight": "0.0",
+            "Coat Weight": "0.0",
+            "Coat Roughness": "0.029999999329447746",
+            "Coat IOR": "1.5",
+            "Coat Tint": "<bpy_float[4], NodeSocketColor.default_value>",
+            "Coat Normal": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Sheen Weight": "0.0",
+            "Sheen Roughness": "0.5",
+            "Sheen Tint": "<bpy_float[4], NodeSocketColor.default_value>",
+            "Emission Color": "<bpy_float[4], NodeSocketColor.default_value>",
+            "Emission Strength": "0.0",
+            "Thin Film Thickness": "0.0",
+            "Thin Film IOR": "1.3300000429153442"
+          }
+        },
+        {
+          "name": "Material Output",
+          "type": "ShaderNodeOutputMaterial",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "Displacement": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Thickness": "0.0"
+          }
+        },
+        {
+          "name": "Color",
+          "type": "ShaderNodeRGB",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {}
+        },
+        {
+          "name": "Noise Texture",
+          "type": "ShaderNodeTexNoise",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+            "W": "0.0",
+            "Scale": "12.59999942779541",
+            "Detail": "2.0",
+            "Roughness": "0.5",
+            "Lacunarity": "2.0",
+            "Offset": "0.0",
+            "Gain": "1.0",
+            "Distortion": "0.0"
+          }
+        },
+        {
+          "name": "Map Range",
+          "type": "ShaderNodeMapRange",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "From Min": "<bpy_float[3], NodeSocketVector.default_value>",
+            "From Max": "<bpy_float[3], NodeSocketVector.default_value>",
+            "To Min": "<bpy_float[3], NodeSocketVector.default_value>",
+            "To Max": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Steps": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+          }
+        },
+        {
+          "name": "Vector Math",
+          "type": "ShaderNodeVectorMath",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "Vector": "<bpy_float[3], NodeSocketVector.default_value>"
+          }
+        },
+        {
+          "name": "Group.001",
+          "type": "ShaderNodeGroup",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {}
+        },
+        {
+          "name": "Vector Math.001",
+          "type": "ShaderNodeVectorMath",
+          "label": "",
+          "attribute": "",
+          "image": null,
+          "inputs": {
+            "Vector": "<bpy_float[3], NodeSocketVector.default_value>",
+            "Scale": "0.25"
+          }
+        }
+      ],
+      "links": [
+        [
+          "Noise Texture",
+          "Factor",
+          "Map Range",
+          "Value"
+        ],
+        [
+          "Color",
+          "Color",
+          "Vector Math",
+          "Vector"
+        ],
+        [
+          "Map Range",
+          "Result",
+          "Vector Math",
+          "Scale"
+        ],
+        [
+          "Group.001",
+          "Shader",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Vector Math.001",
+          "Vector",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Group.001",
+          "Shader"
+        ],
+        [
+          "Vector Math",
+          "Vector",
+          "Vector Math.001",
+          "Vector"
+        ]
+      ]
+    }
+  ],
+  "attributes": [
+    {
+      "name": "position",
+      "type": "FLOAT_VECTOR",
+      "domain": "POINT"
+    },
+    {
+      "name": ".edge_verts",
+      "type": "INT32_2D",
+      "domain": "EDGE"
+    },
+    {
+      "name": ".corner_vert",
+      "type": "INT",
+      "domain": "CORNER"
+    },
+    {
+      "name": ".corner_edge",
+      "type": "INT",
+      "domain": "CORNER"
+    },
+    {
+      "name": "id",
+      "type": "INT",
+      "domain": "POINT"
+    },
+    {
+      "name": ".select_vert",
+      "type": "BOOLEAN",
+      "domain": "POINT"
+    },
+    {
+      "name": ".uv_select_face",
+      "type": "BOOLEAN",
+      "domain": "POINT"
+    },
+    {
+      "name": "FundationUp",
+      "type": "FLOAT_VECTOR",
+      "domain": "POINT"
+    },
+    {
+      "name": "FundationForward",
+      "type": "FLOAT_VECTOR",
+      "domain": "POINT"
+    },
+    {
+      "name": ".uv_select_vert",
+      "type": "BOOLEAN",
+      "domain": "CORNER"
+    },
+    {
+      "name": ".uv_select_edge",
+      "type": "BOOLEAN",
+      "domain": "CORNER"
+    },
+    {
+      "name": "UVMap",
+      "type": "FLOAT2",
+      "domain": "CORNER"
+    },
+    {
+      "name": "TileRandom",
+      "type": "FLOAT",
+      "domain": "POINT"
+    },
+    {
+      "name": "sharp_face",
+      "type": "BOOLEAN",
+      "domain": "FACE"
+    },
+    {
+      "name": "sharp_edge",
+      "type": "BOOLEAN",
+      "domain": "EDGE"
+    },
+    {
+      "name": ".select_edge",
+      "type": "BOOLEAN",
+      "domain": "POINT"
+    },
+    {
+      "name": "UpperFloorExpandVector",
+      "type": "FLOAT_VECTOR",
+      "domain": "POINT"
+    },
+    {
+      "name": "BeamDirection",
+      "type": "FLOAT_VECTOR",
+      "domain": "POINT"
+    },
+    {
+      "name": "IndexPerWIndow",
+      "type": "INT",
+      "domain": "POINT"
+    },
+    {
+      "name": "material_index",
+      "type": "INT",
+      "domain": "FACE"
+    },
+    {
+      "name": "LocalPosition",
+      "type": "FLOAT_VECTOR",
+      "domain": "POINT"
+    },
+    {
+      "name": "LocalNormal",
+      "type": "FLOAT_VECTOR",
+      "domain": "CORNER"
+    },
+    {
+      "name": "RoofColor",
+      "type": "FLOAT_COLOR",
+      "domain": "POINT"
+    },
+    {
+      "name": "PaintColor",
+      "type": "FLOAT_COLOR",
+      "domain": "POINT"
+    },
+    {
+      "name": "BeamColor",
+      "type": "FLOAT_COLOR",
+      "domain": "POINT"
+    }
+  ],
+  "environment": {
+    "version": "5.2.2 LTS"
+  }
+}
