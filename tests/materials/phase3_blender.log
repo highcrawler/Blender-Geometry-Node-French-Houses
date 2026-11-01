@@ -1,0 +1,48 @@
+00:00.044  translation      | WARNING Falling back to standard locale ("C")
+00:01.947  blend            | Read blend: "/home/alexander-both/Dokumente/Generation/ircss-fork/GeometryNodesFrenchHous.blend"
+/home/alexander-both/Dokumente/Generation/ircss-fork/scripts/export_houseone_materials.py:74: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat.use_nodes = True
+Reloading external rigs...
+Reloading external metarigs...
+BlenderMCP: cannot start server in background mode (blender -b) - commands would never execute
+BlenderMCP: run Blender with a GUI, or use a virtual display: xvfb-run -a blender
+BlenderMCP addon registered
+ ╔═╡ RetopoFlow ╞══════════════════════╗ 
+ ║                                     ║ 
+ ║ Blender is running in background    ║ 
+ ║ Skipping any further initialization ║ 
+ ║                                     ║ 
+ ╚═════════════════════════════════════╝ 
+register_class(...):
+Warning: 'Remi_PT_MainPanel' does not have upper case alphanumeric prefix
+register_class(...):
+Warning: 'Remi_PT_EditToolsPanel' does not have upper case alphanumeric prefix
+Remi: Registered
+INFO Draco is available, use library at /snap/blender/7803/lib/libbf_intern_draco_bridge.so
+INFO MeshOptimizer is available, use library at /snap/blender/7803/lib/libbf_intern_meshopt_bridge.so
+15:54:41 | INFO: Starting glTF 2.0 export
+15:54:41 | INFO: Extracting primitive: Mesh
+15:54:41 | INFO: Primitives created: 5
+15:54:41 | INFO: Finished glTF 2.0 export in 0.08568072319030762 s
+
+PHASE3_EXPORT /home/alexander-both/Dokumente/Generation/ircss-fork/tests/materials/phase3/HouseOne_PBR.json bytes 2424884 triangles 50944
+/home/alexander-both/Dokumente/Generation/ircss-fork/scripts/export_houseone_materials.py:128: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world.use_nodes = True
+00:09.274  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/tests/materials/phase3/blender_original_iso.png'
+PHASE3_BLENDER_SCREENSHOT /home/alexander-both/Dokumente/Generation/ircss-fork/tests/materials/phase3/blender_original_iso.png
+00:16.604  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/tests/materials/phase3/blender_original_front.png'
+PHASE3_BLENDER_SCREENSHOT /home/alexander-both/Dokumente/Generation/ircss-fork/tests/materials/phase3/blender_original_front.png
+00:28.960  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/tests/materials/phase3/blender_original_facade.png'
+PHASE3_BLENDER_SCREENSHOT /home/alexander-both/Dokumente/Generation/ircss-fork/tests/materials/phase3/blender_original_facade.png
+00:33.374  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/tests/materials/phase3/blender_pbr_iso.png'
+PHASE3_BLENDER_SCREENSHOT /home/alexander-both/Dokumente/Generation/ircss-fork/tests/materials/phase3/blender_pbr_iso.png
+00:38.597  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/tests/materials/phase3/blender_pbr_front.png'
+PHASE3_BLENDER_SCREENSHOT /home/alexander-both/Dokumente/Generation/ircss-fork/tests/materials/phase3/blender_pbr_front.png
+00:45.473  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/tests/materials/phase3/blender_pbr_facade.png'
+PHASE3_BLENDER_SCREENSHOT /home/alexander-both/Dokumente/Generation/ircss-fork/tests/materials/phase3/blender_pbr_facade.png
+BlenderMCP server stopped
+BlenderMCP addon unregistered
+Remi: Unregistered
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:34:58)
+
+Blender quit

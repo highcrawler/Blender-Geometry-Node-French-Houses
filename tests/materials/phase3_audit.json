@@ -1,0 +1,355 @@
+{
+  "mesh": {
+    "slots": [
+      null,
+      "Roof",
+      "GroundFloorWalls",
+      "UpperFloorsPaint",
+      "Beam",
+      "Stone"
+    ],
+    "faces_per_slot": {
+      "1": 3628,
+      "3": 1105,
+      "4": 2319,
+      "2": 8,
+      "5": 12943
+    },
+    "triangles_per_slot": {
+      "1": 7256,
+      "3": 2210,
+      "4": 4718,
+      "2": 20,
+      "5": 36740
+    },
+    "colors": {
+      "RoofColor": {
+        "type": "FLOAT_COLOR",
+        "domain": "POINT",
+        "samples": [
+          [
+            0.479231595993042,
+            0.05529474467039108,
+            0.11055033653974533,
+            1.0
+          ],
+          [
+            0.479231595993042,
+            0.05529474467039108,
+            0.11055033653974533,
+            1.0
+          ],
+          [
+            0.479231595993042,
+            0.05529474467039108,
+            0.11055033653974533,
+            1.0
+          ]
+        ]
+      },
+      "PaintColor": {
+        "type": "FLOAT_COLOR",
+        "domain": "POINT",
+        "samples": [
+          [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        ]
+      },
+      "BeamColor": {
+        "type": "FLOAT_COLOR",
+        "domain": "POINT",
+        "samples": [
+          [
+            0.2705988585948944,
+            0.21413731575012207,
+            0.22043994069099426,
+            1.0
+          ],
+          [
+            0.2705988585948944,
+            0.21413731575012207,
+            0.22043994069099426,
+            1.0
+          ],
+          [
+            0.2705988585948944,
+            0.21413731575012207,
+            0.22043994069099426,
+            1.0
+          ]
+        ]
+      }
+    },
+    "uv_layers": [
+      "UVMap"
+    ]
+  },
+  "materials": {
+    "Roof": {
+      "principled": {
+        "Base Color": {
+          "default": [
+            0.06842831522226334,
+            0.1554282158613205,
+            0.20258888602256775,
+            1.0
+          ],
+          "links": [
+            "Vector Math.Vector"
+          ]
+        },
+        "Roughness": {
+          "default": 0.8772727251052856,
+          "links": [
+            "Reroute.Output"
+          ]
+        },
+        "Metallic": {
+          "default": 0.0,
+          "links": []
+        }
+      },
+      "rgb_nodes": {},
+      "group_inputs": {
+        "Group.001": {}
+      },
+      "image_nodes": []
+    },
+    "GroundFloorWalls": {
+      "principled": {
+        "Base Color": {
+          "default": [
+            0.40355154871940613,
+            0.30638378858566284,
+            0.21388259530067444,
+            1.0
+          ],
+          "links": [
+            "Vector Math.Vector"
+          ]
+        },
+        "Roughness": {
+          "default": 1.0,
+          "links": []
+        },
+        "Metallic": {
+          "default": 0.0,
+          "links": []
+        }
+      },
+      "rgb_nodes": {},
+      "group_inputs": {
+        "Group.004": {},
+        "Group.001": {}
+      },
+      "image_nodes": []
+    },
+    "UpperFloorsPaint": {
+      "principled": {
+        "Base Color": {
+          "default": [
+            0.9444014430046082,
+            0.8715059757232666,
+            0.8402702808380127,
+            1.0
+          ],
+          "links": [
+            "Vector Math.Vector"
+          ]
+        },
+        "Roughness": {
+          "default": 1.0,
+          "links": []
+        },
+        "Metallic": {
+          "default": 0.0,
+          "links": []
+        }
+      },
+      "rgb_nodes": {},
+      "group_inputs": {
+        "BricksTriplanar.001": {},
+        "Group": {}
+      },
+      "image_nodes": []
+    },
+    "Beam": {
+      "principled": {
+        "Base Color": {
+          "default": [
+            0.21069657802581787,
+            0.11613531410694122,
+            0.058324605226516724,
+            1.0
+          ],
+          "links": [
+            "Vector Math.003.Vector"
+          ]
+        },
+        "Roughness": {
+          "default": 1.0,
+          "links": []
+        },
+        "Metallic": {
+          "default": 0.0,
+          "links": []
+        }
+      },
+      "rgb_nodes": {},
+      "group_inputs": {
+        "Group.001": {}
+      },
+      "image_nodes": []
+    },
+    "Stone": {
+      "principled": {
+        "Base Color": {
+          "default": [
+            0.5088814496994019,
+            0.4019778072834015,
+            0.3467040956020355,
+            1.0
+          ],
+          "links": [
+            "Vector Math.001.Vector"
+          ]
+        },
+        "Roughness": {
+          "default": 1.0,
+          "links": []
+        },
+        "Metallic": {
+          "default": 0.0,
+          "links": []
+        }
+      },
+      "rgb_nodes": {
+        "Color": [
+          0.5087772011756897,
+          0.4585316777229309,
+          0.37516725063323975,
+          1.0
+        ]
+      },
+      "group_inputs": {
+        "Group.001": {}
+      },
+      "image_nodes": []
+    }
+  },
+  "glb": {
+    "bytes": 4277724,
+    "materials": [
+      {
+        "name": "Roof",
+        "pbr": {
+          "metallicFactor": 0
+        }
+      },
+      {
+        "name": "GroundFloorWalls",
+        "pbr": {
+          "metallicFactor": 0
+        }
+      },
+      {
+        "name": "UpperFloorsPaint",
+        "pbr": {
+          "metallicFactor": 0
+        }
+      },
+      {
+        "name": "Beam",
+        "pbr": {
+          "metallicFactor": 0
+        }
+      },
+      {
+        "name": "Stone",
+        "pbr": {
+          "metallicFactor": 0
+        }
+      }
+    ],
+    "images": [],
+    "textures": [],
+    "primitives": [
+      {
+        "material": 0,
+        "attributes": [
+          "POSITION",
+          "NORMAL",
+          "TEXCOORD_0",
+          "COLOR_0",
+          "COLOR_1",
+          "COLOR_2",
+          "COLOR_3"
+        ]
+      },
+      {
+        "material": 1,
+        "attributes": [
+          "POSITION",
+          "NORMAL",
+          "TEXCOORD_0",
+          "COLOR_0",
+          "COLOR_1",
+          "COLOR_2",
+          "COLOR_3"
+        ]
+      },
+      {
+        "material": 2,
+        "attributes": [
+          "POSITION",
+          "NORMAL",
+          "TEXCOORD_0",
+          "COLOR_0",
+          "COLOR_1",
+          "COLOR_2",
+          "COLOR_3"
+        ]
+      },
+      {
+        "material": 3,
+        "attributes": [
+          "POSITION",
+          "NORMAL",
+          "TEXCOORD_0",
+          "COLOR_0",
+          "COLOR_1",
+          "COLOR_2",
+          "COLOR_3"
+        ]
+      },
+      {
+        "material": 4,
+        "attributes": [
+          "POSITION",
+          "NORMAL",
+          "TEXCOORD_0",
+          "COLOR_0",
+          "COLOR_1",
+          "COLOR_2",
+          "COLOR_3"
+        ]
+      }
+    ]
+  }
+}

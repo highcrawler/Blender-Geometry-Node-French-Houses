@@ -1,0 +1,183 @@
+{
+  "source_sha256": "f44b4be96176204ada3fd768327e2a86129f536c6412129eca0478c72b3d5ae5",
+  "blender": "5.2.2 LTS",
+  "house": "HouseOne",
+  "export": "tests/materials/phase3/HouseOne_PBR.glb",
+  "glb_bytes": 2424884,
+  "glb_sha256": "4493674653e06f394c46689a158d4c1ad7c67db6692758df1d775b5dd397201a",
+  "vertices": 27919,
+  "faces": 20003,
+  "triangles": 50944,
+  "material_triangles": {
+    "Roof": 7256,
+    "UpperFloorsPaint": 2210,
+    "Beam": 4718,
+    "GroundFloorWalls": 20,
+    "Stone": 36740
+  },
+  "material_count": 5,
+  "original_linear_colors": {
+    "Roof": [
+      0.479231595993042,
+      0.05529474467039108,
+      0.11055033653974533,
+      1.0
+    ],
+    "Beam": [
+      0.2705988585948944,
+      0.21413731575012207,
+      0.22043994069099426,
+      1.0
+    ],
+    "UpperFloorsPaint": [
+      0.9444014430046082,
+      0.8715059757232666,
+      0.8402702808380127,
+      1.0
+    ],
+    "GroundFloorWalls": [
+      0.40355154871940613,
+      0.30638378858566284,
+      0.21388259530067444,
+      1.0
+    ],
+    "Stone": [
+      0.5087772011756897,
+      0.4585316777229309,
+      0.37516725063323975,
+      1.0
+    ]
+  },
+  "roughness": {
+    "Roof": 0.8772727251052856,
+    "Beam": 1.0,
+    "UpperFloorsPaint": 1.0,
+    "GroundFloorWalls": 1.0,
+    "Stone": 1.0
+  },
+  "mesh_slot_names": [
+    null,
+    "Roof_PBR",
+    "GroundFloorWalls_PBR",
+    "UpperFloorsPaint_PBR",
+    "Beam_PBR",
+    "Stone_PBR"
+  ],
+  "offset": [
+    0.2749263048171997,
+    -0.04589724540710449,
+    -0.24189691245555878
+  ],
+  "glb_materials": [
+    {
+      "doubleSided": true,
+      "name": "Roof_PBR",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.479231595993042,
+          0.05529474467039108,
+          0.11055033653974533,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.8772727251052856
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "GroundFloorWalls_PBR",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.40355154871940613,
+          0.30638378858566284,
+          0.21388259530067444,
+          1
+        ],
+        "metallicFactor": 0
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "UpperFloorsPaint_PBR",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.9444014430046082,
+          0.8715059757232666,
+          0.8402702808380127,
+          1
+        ],
+        "metallicFactor": 0
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Beam_PBR",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.2705988585948944,
+          0.21413731575012207,
+          0.22043994069099426,
+          1
+        ],
+        "metallicFactor": 0
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Stone_PBR",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.5087772011756897,
+          0.4585316777229309,
+          0.37516725063323975,
+          1
+        ],
+        "metallicFactor": 0
+      }
+    }
+  ],
+  "glb_primitives": [
+    {
+      "material": 0,
+      "attributes": [
+        "POSITION",
+        "NORMAL",
+        "TEXCOORD_0"
+      ]
+    },
+    {
+      "material": 1,
+      "attributes": [
+        "POSITION",
+        "NORMAL",
+        "TEXCOORD_0"
+      ]
+    },
+    {
+      "material": 2,
+      "attributes": [
+        "POSITION",
+        "NORMAL",
+        "TEXCOORD_0"
+      ]
+    },
+    {
+      "material": 3,
+      "attributes": [
+        "POSITION",
+        "NORMAL",
+        "TEXCOORD_0"
+      ]
+    },
+    {
+      "material": 4,
+      "attributes": [
+        "POSITION",
+        "NORMAL",
+        "TEXCOORD_0"
+      ]
+    }
+  ],
+  "glb_images": 0,
+  "glb_textures": 0
+}
