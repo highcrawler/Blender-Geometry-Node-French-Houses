@@ -1,0 +1,185 @@
+{
+  "polygon_bijective_match": {
+    "tolerance": 0.0001,
+    "unmatched_original": 0,
+    "unmatched_realized": 0,
+    "max_corner_error": 1.1680077279964342e-06
+  },
+  "source_sha256": "f44b4be96176204ada3fd768327e2a86129f536c6412129eca0478c72b3d5ae5",
+  "blender": "5.2.2 LTS",
+  "original": {
+    "vertices": 110320,
+    "faces": 97060,
+    "triangles": 154602,
+    "material_triangles": {
+      "Roof": 7256,
+      "UpperFloorsPaint": 2210,
+      "Beam": 7778,
+      "GroundFloorWalls": 20,
+      "Stone": 36740,
+      "WindowGlass": 38,
+      "GreenSta.001": 2224,
+      "Material.005": 5004,
+      "Greenery": 33536,
+      "Material.002": 2496,
+      "Material.001": 5760,
+      "Material.003": 51540
+    },
+    "materials": 12,
+    "bounds": [
+      [
+        1.4598937034606934,
+        5.387709617614746
+      ],
+      [
+        -15.295217514038086,
+        -8.734048843383789
+      ],
+      [
+        -0.40253013372421265,
+        7.747645378112793
+      ]
+    ]
+  },
+  "phase4": {
+    "vertices": 27919,
+    "faces": 20003,
+    "triangles": 50944,
+    "material_triangles": {
+      "Roof": 7256,
+      "UpperFloorsPaint": 2210,
+      "Beam": 4718,
+      "GroundFloorWalls": 20,
+      "Stone": 36740
+    },
+    "materials": 5,
+    "bounds": [
+      [
+        1.4598937034606934,
+        5.387709617614746
+      ],
+      [
+        -15.258977890014648,
+        -8.773530006408691
+      ],
+      [
+        -0.40253013372421265,
+        7.747645378112793
+      ]
+    ]
+  },
+  "realized": {
+    "vertices": 110320,
+    "faces": 97060,
+    "triangles": 154602,
+    "material_triangles": {
+      "Roof": 7256,
+      "UpperFloorsPaint": 2210,
+      "Beam": 7778,
+      "GroundFloorWalls": 20,
+      "Stone": 36740,
+      "WindowGlass": 38,
+      "GreenSta.001": 2224,
+      "Material.005": 5004,
+      "Greenery": 33536,
+      "Material.002": 2496,
+      "Material.001": 5760,
+      "Material.003": 51540
+    },
+    "materials": 12,
+    "bounds": [
+      [
+        1.4598937034606934,
+        5.387709617614746
+      ],
+      [
+        -15.295217514038086,
+        -8.734048843383789
+      ],
+      [
+        -0.40253013372421265,
+        7.747645378112793
+      ]
+    ]
+  },
+  "instance_count": 2595,
+  "unique_leaf_mesh_datablocks": 30,
+  "unique_persistent_paths": 2595,
+  "instance_mesh_types": {
+    "(14, 9, ['Beam'])": 26,
+    "(4, 1, [None, 'WindowGlass'])": 19,
+    "(8, 6, ['Beam'])": 203,
+    "(63, 34, ['GreenSta.001', 'Material.005'])": 139,
+    "(10, 7, [None, 'Greenery'])": 2096,
+    "(70, 34, ['Material.002'])": 52,
+    "(783, 907, ['Material.001', 'Material.003'])": 60
+  },
+  "surface_polygon_symmetric_difference": 16626,
+  "original_matrix": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      3.1488754749298096
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      -11.970356941223145
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      -0.16063322126865387
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "source_texspace": {
+    "location": [
+      0.26025718450546265,
+      -0.04533123970031738,
+      -0.015438228845596313
+    ],
+    "size": [
+      1.543424367904663,
+      2.9279062747955322,
+      0.015438228845596313
+    ]
+  },
+  "phase4_texspace": {
+    "location": [
+      0.2749263048171997,
+      -0.04589724540710449,
+      3.833190679550171
+    ],
+    "size": [
+      1.963908076286316,
+      3.2427241802215576,
+      4.075087547302246
+    ]
+  },
+  "generated_plaster_float_comparison": {
+    "phase4": {
+      "visible_plaster_pixels": 101588,
+      "mae": 0.0,
+      "max_abs": 0.0
+    },
+    "realized": {
+      "visible_plaster_pixels": 101588,
+      "mae": 0.0008922778897261147,
+      "max_abs": 0.005219142884016037
+    },
+    "corrected": {
+      "visible_plaster_pixels": 101588,
+      "mae": 0.0,
+      "max_abs": 0.0
+    }
+  }
+}

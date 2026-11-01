@@ -1,0 +1,68 @@
+{
+  "iso": {
+    "original_realized_rgba_mae": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "original_realized_identical": true,
+    "phase4_silhouette_iou": 0.9927462553318123,
+    "phase4_missing_silhouette_pixels": 585
+  },
+  "front": {
+    "original_realized_rgba_mae": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "original_realized_identical": true,
+    "phase4_silhouette_iou": 0.988664139714478,
+    "phase4_missing_silhouette_pixels": 1600
+  },
+  "side": {
+    "original_realized_rgba_mae": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "original_realized_identical": true,
+    "phase4_silhouette_iou": 0.973334462033353,
+    "phase4_missing_silhouette_pixels": 1890
+  },
+  "facade": {
+    "original_realized_rgba_mae": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "original_realized_identical": true,
+    "phase4_silhouette_iou": 0.9962392139258816,
+    "phase4_missing_silhouette_pixels": 1131
+  },
+  "bake4_facade.png": {
+    "heuristic_warm_brick_mask_iou": 0.9076625247613902,
+    "reference_pixels": 20381,
+    "test_pixels": 21992,
+    "note": "lit RGB heuristic, not ground truth segmentation; R-B>7 and R-G>1/255 within eroded visible plaster"
+  },
+  "bake4b_corrected_facade.png": {
+    "heuristic_warm_brick_mask_iou": 0.9197477263379188,
+    "reference_pixels": 20381,
+    "test_pixels": 21625,
+    "note": "lit RGB heuristic, not ground truth segmentation; R-B>7 and R-G>1/255 within eroded visible plaster"
+  },
+  "shader_corrected_facade.png": {
+    "heuristic_warm_brick_mask_iou": 0.9935427061931318,
+    "reference_pixels": 20381,
+    "test_pixels": 20371,
+    "note": "lit RGB heuristic, not ground truth segmentation; R-B>7 and R-G>1/255 within eroded visible plaster"
+  },
+  "independent_process_repeat": {
+    "png_identical": true,
+    "glb_identical": true
+  }
+}

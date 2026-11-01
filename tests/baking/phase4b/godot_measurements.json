@@ -1,0 +1,92 @@
+{
+  "phase4": {
+    "aabb": "[P: (-1.963908, 0.0, -3.242724), S: (3.927816, 8.150175, 6.485448)]",
+    "materials": [
+      {
+        "material": "Roof_Phase4",
+        "triangles": 7256
+      },
+      {
+        "material": "GroundFloorWalls_Phase4",
+        "triangles": 20
+      },
+      {
+        "material": "UpperFloorsPaint_Phase4",
+        "texture_size": "(1024.0, 1024.0)",
+        "triangles": 2210,
+        "uv1_scale": "(1.0, 1.0, 1.0)"
+      },
+      {
+        "material": "Beam_Phase4",
+        "triangles": 4718
+      },
+      {
+        "material": "Stone_Phase4",
+        "triangles": 36740
+      }
+    ],
+    "meshes": 1,
+    "surfaces": 5,
+    "texture_count": 1,
+    "triangles": 50944
+  },
+  "phase4b": {
+    "aabb": "[P: (-1.963908, 0.0, -3.282205), S: (3.927816, 8.150175, 6.561168)]",
+    "materials": [
+      {
+        "material": "Roof_Phase4B",
+        "triangles": 7256
+      },
+      {
+        "material": "GroundFloorWalls_Phase4B",
+        "triangles": 20
+      },
+      {
+        "material": "UpperFloorsPaint_Phase4B",
+        "texture_size": "(1024.0, 1024.0)",
+        "triangles": 2210,
+        "uv1_scale": "(1.0, 1.0, 1.0)"
+      },
+      {
+        "material": "Beam_Phase4B",
+        "triangles": 7778
+      },
+      {
+        "material": "Stone_Phase4B",
+        "triangles": 36740
+      },
+      {
+        "material": "WindowGlass_Phase4B",
+        "triangles": 38
+      },
+      {
+        "material": "GreenSta.001_Phase4B",
+        "triangles": 2224
+      },
+      {
+        "material": "Material.005_Phase4B",
+        "triangles": 5004
+      },
+      {
+        "material": "Greenery_Phase4B",
+        "triangles": 33536
+      },
+      {
+        "material": "Material.002_Phase4B",
+        "triangles": 2496
+      },
+      {
+        "material": "Material.001_Phase4B",
+        "triangles": 5760
+      },
+      {
+        "material": "Material.003_Phase4B",
+        "triangles": 51540
+      }
+    ],
+    "meshes": 1,
+    "surfaces": 12,
+    "texture_count": 1,
+    "triangles": 154602
+  }
+}
