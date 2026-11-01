@@ -1,0 +1,21 @@
+00:01.332  blend            | Read blend: "/home/alexander-both/Dokumente/Generation/ircss-fork/GeometryNodesFrenchHous.blend"
+/home/alexander-both/Dokumente/Generation/ircss-fork/scripts/bake_houseone_plaster.py:42: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world=bpy.data.worlds.new('Phase4_World'); scene.world.use_nodes=True
+/home/alexander-both/Dokumente/Generation/ircss-fork/scripts/bake_houseone_plaster.py:101: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new(m.name+'_Phase4'); mat.use_nodes=True
+Info: No active image found in material slot (0) for object "HouseOne_Phase4"
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: No active image found in material slot (0) for object "HouseOne_Phase4"
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+INFO Draco is available, use library at /snap/blender/7803/lib/libbf_intern_draco_bridge.so
+INFO MeshOptimizer is available, use library at /snap/blender/7803/lib/libbf_intern_meshopt_bridge.so
+17:39:58 | INFO: Starting glTF 2.0 export
+17:39:58 | INFO: Extracting primitive: Mesh
+17:39:58 | INFO: Primitives created: 5
+17:39:58 | INFO: Finished glTF 2.0 export in 0.08484601974487305 s
+
+PHASE4_COMPLETE {"blender": "5.2.2 LTS", "source_sha256": "f44b4be96176204ada3fd768327e2a86129f536c6412129eca0478c72b3d5ae5", "geometry_sha256_before": "80884a95bd2535f6b9118572bf5a953eec3660820d02254d62b59a5d6d7fcb15", "geometry_sha256_after": "80884a95bd2535f6b9118572bf5a953eec3660820d02254d62b59a5d6d7fcb15", "vertices": 27919, "faces": 20003, "triangles": 50944, "glb_bytes": 3803968, "materials": 5, "images": 1, "texture_resolution": [1024, 1024], "png_bytes": 98405, "png_sha256_runs": ["1fef33e7b37104a491fe53584ff1e1b2284d0e169c3334e8d455a14d6bb7e2fd", "1fef33e7b37104a491fe53584ff1e1b2284d0e169c3334e8d455a14d6bb7e2fd"], "bake_seconds": [6.8963999400000375, 6.880690117999848], "export_seconds": 0.3838592960000824, "bake_margin": 8, "uv_island_margin_fraction": 0.02, "glb_texture_reference": {"index": 0, "texCoord": 1}, "embedded_png_identical": true}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:34:58)
+pa_write() failed while trying to wake up the mainloop: Operation not permitted

@@ -1,0 +1,13 @@
+Godot Engine v4.7.stable.official.5b4e0cb0f - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 595.99.02 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 3060
+
+PHASE4_GODOT_MATERIAL Roof_Phase4 color=(0.7215, 0.2608, 0.3664, 1.0) roughness=0.87727272510529 metallic=0.0
+PHASE4_GODOT_MATERIAL GroundFloorWalls_Phase4 color=(0.6678, 0.5895, 0.4998, 1.0) roughness=1.0 metallic=0.0
+PHASE4_GODOT_TEXTURE UpperFloorsPaint_Phase4 size=(1024.0, 1024.0)
+PHASE4_GODOT_MATERIAL UpperFloorsPaint_Phase4 color=(1.0, 1.0, 1.0, 1.0) roughness=1.0 metallic=0.0
+PHASE4_GODOT_MATERIAL Beam_Phase4 color=(0.557, 0.5001, 0.5069, 1.0) roughness=1.0 metallic=0.0
+PHASE4_GODOT_MATERIAL Stone_Phase4 color=(0.7411, 0.7074, 0.6462, 1.0) roughness=1.0 metallic=0.0
+PHASE4_GODOT_IMPORT meshes=1 surfaces=5 triangles=50944
+PHASE4_GODOT_SCREENSHOT /home/alexander-both/Dokumente/Generation/ircss-fork/tests/baking/phase4/godot_pbr_iso.png 960x720
+PHASE4_GODOT_SCREENSHOT /home/alexander-both/Dokumente/Generation/ircss-fork/tests/baking/phase4/godot_pbr_front.png 960x720
+PHASE4_GODOT_SCREENSHOT /home/alexander-both/Dokumente/Generation/ircss-fork/tests/baking/phase4/godot_pbr_facade.png 960x720

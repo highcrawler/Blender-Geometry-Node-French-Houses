@@ -1,0 +1,5 @@
+00:01.279  blend            | Read blend: "/home/alexander-both/Dokumente/Generation/ircss-fork/GeometryNodesFrenchHous.blend"
+PHASE4_AUDIT 1105 [('UVMap', {'loops': 4420, 'unique_coordinates': 32, 'min': [0.0, 0.0], 'max': [1.0, 1.0]})]
+TEXSPACE_SOURCE [0.26025718450546265, -0.04533123970031738, -0.015438228845596313] [1.543424367904663, 2.9279062747955322, 0.015438228845596313] EVAL [0.2749263048171997, -0.04589724540710449, 3.833190679550171] [1.963908076286316, 3.2427241802215576, 4.075087547302246]
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:34:58)
+pa_write() failed while trying to wake up the mainloop: Operation not permitted

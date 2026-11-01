@@ -1,0 +1,16 @@
+{
+  "original": {
+    "overlapping_face_pairs": 0,
+    "summed_pairwise_overlap_uv_area": 0,
+    "all_polygons_convex": true
+  },
+  "bake": {
+    "overlapping_face_pairs": 0,
+    "summed_pairwise_overlap_uv_area": 0,
+    "all_polygons_convex": true,
+    "uv_islands_by_shared_edges": 49,
+    "minimum_island_gap_pixels": 40.95897600000001,
+    "edge_scale_anisotropy_max": 1.002908406653376,
+    "edge_scale_anisotropy_median": 1.0000134703525687
+  }
+}

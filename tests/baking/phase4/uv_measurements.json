@@ -1,0 +1,20 @@
+{
+  "original": {
+    "faces": 1105,
+    "unique_uv_polygons": 38,
+    "exact_duplicate_faces": 1067,
+    "zero_area_faces": 1104,
+    "total_uv_area": 1.0,
+    "min_face_area_pixels": 0.0,
+    "max_face_area_pixels": 1048576.0
+  },
+  "bake": {
+    "faces": 1105,
+    "unique_uv_polygons": 1105,
+    "exact_duplicate_faces": 0,
+    "zero_area_faces": 0,
+    "total_uv_area": 0.437449882692719,
+    "min_face_area_pixels": 5.100334465503693,
+    "max_face_area_pixels": 74247.30558538169
+  }
+}

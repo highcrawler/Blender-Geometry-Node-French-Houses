@@ -1,0 +1,33 @@
+00:01.322  blend            | Read blend: "/home/alexander-both/Dokumente/Generation/ircss-fork/GeometryNodesFrenchHous.blend"
+/home/alexander-both/Dokumente/Generation/ircss-fork/scripts/bake_houseone_plaster.py:42: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene.world=bpy.data.worlds.new('Phase4_World'); scene.world.use_nodes=True
+00:08.398  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/tests/baking/phase4/blender_gn_control_iso.png'
+00:16.086  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/tests/baking/phase4/blender_gn_control_front.png'
+00:28.258  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/tests/baking/phase4/blender_gn_control_facade.png'
+00:33.972  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/tests/baking/phase4/blender_original_iso.png'
+00:41.292  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/tests/baking/phase4/blender_original_front.png'
+00:53.703  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/tests/baking/phase4/blender_original_facade.png'
+/home/alexander-both/Dokumente/Generation/ircss-fork/scripts/bake_houseone_plaster.py:99: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new(m.name+'_Phase4'); mat.use_nodes=True
+01:12.328  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/tests/baking/phase4/blender_phase3_iso.png'
+01:17.536  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/tests/baking/phase4/blender_phase3_front.png'
+01:24.669  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/tests/baking/phase4/blender_phase3_facade.png'
+01:29.403  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/tests/baking/phase4/blender_phase4_iso.png'
+01:34.703  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/tests/baking/phase4/blender_phase4_front.png'
+01:41.818  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/tests/baking/phase4/blender_phase4_facade.png'
+Info: No active image found in material slot (0) for object "HouseOne_Phase4"
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+Info: No active image found in material slot (0) for object "HouseOne_Phase4"
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+INFO Draco is available, use library at /snap/blender/7803/lib/libbf_intern_draco_bridge.so
+INFO MeshOptimizer is available, use library at /snap/blender/7803/lib/libbf_intern_meshopt_bridge.so
+17:32:38 | INFO: Starting glTF 2.0 export
+17:32:38 | INFO: Extracting primitive: Mesh
+17:32:38 | INFO: Primitives created: 5
+17:32:38 | INFO: Finished glTF 2.0 export in 0.0933232307434082 s
+
+PHASE4_COMPLETE {"blender": "5.2.2 LTS", "source_sha256": "f44b4be96176204ada3fd768327e2a86129f536c6412129eca0478c72b3d5ae5", "geometry_sha256_before": "80884a95bd2535f6b9118572bf5a953eec3660820d02254d62b59a5d6d7fcb15", "geometry_sha256_after": "80884a95bd2535f6b9118572bf5a953eec3660820d02254d62b59a5d6d7fcb15", "vertices": 27919, "faces": 20003, "triangles": 50944, "glb_bytes": 3803968, "materials": 5, "images": 1, "texture_resolution": [1024, 1024], "png_bytes": 98405, "png_sha256_runs": ["1fef33e7b37104a491fe53584ff1e1b2284d0e169c3334e8d455a14d6bb7e2fd", "1fef33e7b37104a491fe53584ff1e1b2284d0e169c3334e8d455a14d6bb7e2fd"], "bake_seconds": [6.833328277999954, 6.848494370000026], "export_seconds": 0.3970961499999248, "bake_margin": 8, "uv_island_margin_fraction": 0.02, "glb_texture_reference": {"index": 0, "texCoord": 1}, "embedded_png_identical": true}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:34:58)
+pa_write() failed while trying to wake up the mainloop: Operation not permitted
