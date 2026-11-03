@@ -1,1 +1,6 @@
 phase5/runtime/
+phase6/runtime/
+# Reproducible duplicate/control GLBs; keep the two Godot reference variants.
+phase6/*.glb
+!phase6/house3.glb
+!phase6/house5.glb

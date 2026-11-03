@@ -1,0 +1,8 @@
+{
+  "dirty_before_export": false,
+  "dirty_after_export": false,
+  "no_active_poll": true,
+  "foreign_poll": true,
+  "wrong_house_object_input": "Der Object-Eingang verweist nicht auf dieses Haus. Keine sichere Exportzuordnung.",
+  "edit_mode_poll": true
+}

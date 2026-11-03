@@ -1,6 +1,6 @@
 schema_version = "1.0.0"
 id = "medieval_building_generator"
-version = "0.1.0"
+version = "0.2.0"
 name = "Medieval Building Generator"
 tagline = "Create medieval houses with IRCSS GenerateHouse"
 maintainer = "highcrawler"
@@ -11,7 +11,7 @@ blender_version_min = "5.2.0"
 license = ["SPDX:MIT"]
 
 [permissions]
-files = "Read the selected IRCSS blend library and its dependencies"
+files = "Read IRCSS assets and write the selected house as GLB"
 
 [build]
 paths_exclude_pattern = ["__pycache__/", "*.pyc"]

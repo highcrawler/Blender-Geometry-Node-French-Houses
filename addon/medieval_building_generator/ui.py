@@ -1,6 +1,7 @@
 import bpy
 from .assets import HOUSE_TAG, AssetError, generator_modifier, socket
 from .properties import preferences
+from .exporter import valid_house
 
 
 class MBG_PT_buildings(bpy.types.Panel):
@@ -44,3 +45,8 @@ class MBG_PT_buildings(bpy.types.Panel):
                     box.prop(obj.mbg_settings, prop)
                 except AssetError as exc:
                     box.label(text=str(exc), icon='ERROR')
+        box = layout.box()
+        box.label(text='Export', icon='EXPORT')
+        row = box.row()
+        row.enabled = valid_house(context, obj)
+        row.operator('mbg.export_house', icon='EXPORT')

@@ -1,5 +1,7 @@
 # Installation und Bedienung
 
+**Aktuell seit Phase 6:** [Version 0.2.0 als ZIP](../tests/addon/phase6/medieval_building_generator-0.2.0.zip) enthält zusätzlich **Export Selected House (.glb)**. Installation und Haus-Erstellung funktionieren wie unten; Export-Bedienung und Abnahme stehen in [PHASE6_RESULT.md](PHASE6_RESULT.md). Die folgenden 0.1.0-Artefakt-/Testangaben dokumentieren weiterhin den abgeschlossenen Phase-5-Stand.
+
 ## Voraussetzungen
 
 - Getestet mit **Blender 5.2.2 LTS**. Manifest-Mindestversion 5.2.0; ältere Modifier-APIs werden nicht unterstützt.

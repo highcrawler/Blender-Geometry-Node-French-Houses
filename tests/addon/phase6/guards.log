@@ -1,0 +1,13 @@
+00:00.043  translation      | WARNING Falling back to standard locale ("C")
+00:01.275  blend            | Read blend: "/home/alexander-both/Dokumente/Generation/ircss-fork/tests/addon/phase6/runtime/library.blend"
+INFO Draco is available, use library at /snap/blender/7803/lib/libbf_intern_draco_bridge.so
+INFO MeshOptimizer is available, use library at /snap/blender/7803/lib/libbf_intern_meshopt_bridge.so
+18:18:14 | INFO: Starting glTF 2.0 export
+18:18:14 | INFO: Extracting primitive: Mesh
+18:18:14 | INFO: Primitives created: 12
+18:18:14 | INFO: Finished glTF 2.0 export in 0.13943862915039062 s
+
+PHASE6_GUARDS_PASS {'dirty_before_export': False, 'dirty_after_export': False, 'no_active_poll': True, 'foreign_poll': True, 'wrong_house_object_input': 'Der Object-Eingang verweist nicht auf dieses Haus. Keine sichere Exportzuordnung.', 'edit_mode_poll': True}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:34:58)
+
+Blender quit

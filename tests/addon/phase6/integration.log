@@ -1,0 +1,59 @@
+00:00.045  translation      | WARNING Falling back to standard locale ("C")
+Info: Medieval House erstellt. Einstellungen im Medieval-Buildings-Panel.
+INFO Draco is available, use library at /snap/blender/7803/lib/libbf_intern_draco_bridge.so
+INFO MeshOptimizer is available, use library at /snap/blender/7803/lib/libbf_intern_meshopt_bridge.so
+18:17:38 | INFO: Starting glTF 2.0 export
+18:17:38 | INFO: Extracting primitive: Mesh
+18:17:38 | INFO: Primitives created: 12
+18:17:39 | INFO: Finished glTF 2.0 export in 0.39606380462646484 s
+
+Info: Medieval House erstellt. Einstellungen im Medieval-Buildings-Panel.
+Info: Medieval House erstellt. Einstellungen im Medieval-Buildings-Panel.
+Info: Medieval House erstellt. Einstellungen im Medieval-Buildings-Panel.
+Info: Medieval House erstellt. Einstellungen im Medieval-Buildings-Panel.
+18:17:42 | INFO: Starting glTF 2.0 export
+18:17:42 | INFO: Extracting primitive: Mesh
+18:17:42 | INFO: Primitives created: 12
+18:17:42 | INFO: Finished glTF 2.0 export in 0.10580635070800781 s
+
+18:17:45 | INFO: Starting glTF 2.0 export
+18:17:45 | INFO: Extracting primitive: Mesh
+18:17:45 | INFO: Primitives created: 12
+18:17:45 | INFO: Finished glTF 2.0 export in 0.1865065097808838 s
+
+18:17:52 | INFO: Starting glTF 2.0 export
+18:17:52 | INFO: Extracting primitive: Mesh
+18:17:53 | INFO: Primitives created: 12
+18:17:53 | INFO: Finished glTF 2.0 export in 0.42000412940979004 s
+
+18:18:00 | INFO: Starting glTF 2.0 export
+18:18:00 | INFO: Extracting primitive: Mesh
+18:18:00 | INFO: Primitives created: 12
+18:18:00 | INFO: Finished glTF 2.0 export in 0.3431885242462158 s
+
+18:18:02 | INFO: Starting glTF 2.0 export
+18:18:02 | INFO: Extracting primitive: Mesh
+18:18:02 | INFO: Primitives created: 12
+18:18:02 | INFO: Finished glTF 2.0 export in 0.09540796279907227 s
+
+18:18:04 | INFO: Starting glTF 2.0 export
+18:18:04 | INFO: Extracting primitive: Mesh
+18:18:04 | INFO: Primitives created: 12
+18:18:04 | INFO: Finished glTF 2.0 export in 0.1708662509918213 s
+
+18:18:06 | INFO: Starting glTF 2.0 export
+18:18:06 | INFO: Extracting primitive: Mesh
+18:18:06 | INFO: Primitives created: 12
+18:18:07 | INFO: Finished glTF 2.0 export in 0.09714460372924805 s
+
+18:18:07 | INFO: Starting glTF 2.0 export
+18:18:07 | INFO: Extracting primitive: Mesh
+18:18:07 | INFO: Primitives created: 12
+18:18:07 | INFO: Finished glTF 2.0 export in 0.09340429306030273 s
+
+Info: Haus exportiert: /home/alexander-both/Dokumente/Generation/ircss-fork/tests/addon/phase6/runtime/operator.glb (106,735 Dreiecke). PBR-Farbannäherung, kein Baking.
+Info: Saved as "library.blend"
+PHASE6_INTEGRATION_PASS {"single_house": {"triangles": 335775, "bytes": 14311676, "instances": 1761}, "house3": {"triangles": 106735, "bytes": 5137440, "instances": 1480}, "house1": {"triangles": 187021, "bytes": 8851672, "instances": 3056}, "house5": {"triangles": 378786, "bytes": 16230960, "instances": 2284}, "transformed_house2": {"triangles": 338825, "bytes": 15175728, "instances": 3067}, "fallback_house3": {"triangles": 106735, "bytes": 5137440, "instances": 1480}, "house3_repeat": {"triangles": 106735, "bytes": 5137440, "instances": 1480}}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:34:58)
+
+Blender quit

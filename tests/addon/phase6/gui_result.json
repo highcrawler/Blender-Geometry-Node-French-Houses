@@ -1,0 +1,16 @@
+{
+  "result": "PASS",
+  "real_gui": true,
+  "method": "Window.event_simulate",
+  "file_dialog": true,
+  "sanitized_filename": "Renamed_Castle_03.glb",
+  "cancel_unchanged": true,
+  "explicit_overwrite_popup": true,
+  "overwrite_cancel_preserved_sentinel": true,
+  "overwrite_confirmed": true,
+  "original_scene_unchanged": true,
+  "saved_blend_sha256": "5e085a26df8fbe46391a0723169d2c2e46eebdb3b1789017076b5d776cc1e4c4",
+  "exported_sha256": "feaf8aca23d638cccbb5d807b7431521d1fcdc177cb9079aea1eb2637d996e08",
+  "selected_objects": 6,
+  "active": "Renamed / Castle : 03"
+}

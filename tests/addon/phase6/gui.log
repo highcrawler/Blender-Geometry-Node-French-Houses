@@ -1,0 +1,19 @@
+00:01.778  blend            | Read blend: "/home/alexander-both/Dokumente/Generation/ircss-fork/tests/addon/phase6/runtime/library.blend"
+INFO Draco is available, use library at /snap/blender/7803/lib/libbf_intern_draco_bridge.so
+INFO MeshOptimizer is available, use library at /snap/blender/7803/lib/libbf_intern_meshopt_bridge.so
+18:19:06 | INFO: Starting glTF 2.0 export
+18:19:06 | INFO: Extracting primitive: Mesh
+18:19:06 | INFO: Primitives created: 12
+18:19:06 | INFO: Finished glTF 2.0 export in 0.13262677192687988 s
+
+18:19:18 | INFO: Starting glTF 2.0 export
+18:19:18 | INFO: Extracting primitive: Mesh
+18:19:18 | INFO: Primitives created: 12
+18:19:18 | INFO: Finished glTF 2.0 export in 0.10370349884033203 s
+00:31.998  operator         | Haus exportiert: /home/alexander-both/Dokumente/Generation/ircss-fork/tests/addon/phase6/runtime/Renamed_Castle_03.glb (106,735 Dreiecke). PBR-Farbannäherung, kein Baking.
+03:55.184  blend            | Saved session recovery to "/tmp/quit.blend"
+03:55.189  blend            | Writing user preferences: "/home/alexander-both/Dokumente/Generation/ircss-fork/tests/addon/phase6/runtime/config/userpref.blend"
+03:55.189  reports          | Preferences saved
+
+
+Blender quit
