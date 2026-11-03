@@ -1,0 +1,265 @@
+{
+  "version": "5.2.2 LTS",
+  "source_sha256": "f44b4be96176204ada3fd768327e2a86129f536c6412129eca0478c72b3d5ae5",
+  "matrix": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      3.1488754749298096
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      -11.970356941223145
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      -0.16063322126865387
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "vertices": [
+    [
+      -0.8794164061546326,
+      -2.9732375144958496,
+      -0.030876457691192627
+    ],
+    [
+      1.8036816120147705,
+      -2.9732375144958496,
+      -0.030876457691192627
+    ],
+    [
+      -1.2831672430038452,
+      2.882575035095215,
+      0.0
+    ],
+    [
+      1.5735543966293335,
+      2.882575035095215,
+      0.0
+    ]
+  ],
+  "edges": [
+    [
+      2,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      3,
+      2
+    ]
+  ],
+  "faces": [
+    [
+      0,
+      1,
+      3,
+      2
+    ]
+  ],
+  "modifiers": [
+    [
+      "Geometry Nodes",
+      "NODES"
+    ]
+  ],
+  "inputs": [
+    {
+      "name": "Input",
+      "identifier": "Socket_11",
+      "type": "NodeSocketGeometry",
+      "error": "'Socket_11' object has no attribute 'value'"
+    },
+    {
+      "name": "Object",
+      "identifier": "Socket_2",
+      "type": "NodeSocketObject",
+      "value": "<bpy_struct, Object(\"HouseOne\") at 0x721d161df920>",
+      "rna": [
+        "rna_type",
+        "name",
+        "value",
+        "type"
+      ]
+    },
+    {
+      "name": "Seed",
+      "identifier": "Socket_3",
+      "type": "NodeSocketInt",
+      "value": 29,
+      "rna": [
+        "rna_type",
+        "name",
+        "value",
+        "type",
+        "attribute_name"
+      ]
+    },
+    {
+      "name": "NumberFloor",
+      "identifier": "Socket_4",
+      "type": "NodeSocketInt",
+      "value": 2,
+      "rna": [
+        "rna_type",
+        "name",
+        "value",
+        "type",
+        "attribute_name"
+      ]
+    },
+    {
+      "name": "RoofCurvature",
+      "identifier": "Socket_5",
+      "type": "NodeSocketFloat",
+      "value": 1.659999966621399,
+      "rna": [
+        "rna_type",
+        "name",
+        "value",
+        "type",
+        "attribute_name"
+      ]
+    },
+    {
+      "name": "RoofColor",
+      "identifier": "Socket_6",
+      "type": "NodeSocketColor",
+      "value": [
+        0.479231595993042,
+        0.05529474467039108,
+        0.11055033653974533,
+        1.0
+      ],
+      "rna": [
+        "rna_type",
+        "name",
+        "value",
+        "type",
+        "attribute_name"
+      ]
+    },
+    {
+      "name": "PaintColor",
+      "identifier": "Socket_7",
+      "type": "NodeSocketColor",
+      "value": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "rna": [
+        "rna_type",
+        "name",
+        "value",
+        "type",
+        "attribute_name"
+      ]
+    },
+    {
+      "name": "BeamCollor",
+      "identifier": "Socket_8",
+      "type": "NodeSocketColor",
+      "value": [
+        0.2705988585948944,
+        0.21413731575012207,
+        0.22043994069099426,
+        1.0
+      ],
+      "rna": [
+        "rna_type",
+        "name",
+        "value",
+        "type",
+        "attribute_name"
+      ]
+    },
+    {
+      "name": "DisableRoofExrudeBack",
+      "identifier": "Socket_10",
+      "type": "NodeSocketBool",
+      "value": false,
+      "rna": [
+        "rna_type",
+        "name",
+        "value",
+        "type",
+        "attribute_name",
+        "layer_name"
+      ]
+    },
+    {
+      "name": "DisableRoofExrudeFront",
+      "identifier": "Socket_9",
+      "type": "NodeSocketBool",
+      "value": false,
+      "rna": [
+        "rna_type",
+        "name",
+        "value",
+        "type",
+        "attribute_name",
+        "layer_name"
+      ]
+    },
+    {
+      "name": "SpawnIVY",
+      "identifier": "Socket_12",
+      "type": "NodeSocketBool",
+      "value": true,
+      "rna": [
+        "rna_type",
+        "name",
+        "value",
+        "type",
+        "attribute_name",
+        "layer_name"
+      ]
+    },
+    {
+      "name": "RoofGeometryType",
+      "identifier": "Socket_13",
+      "type": "NodeSocketMenu",
+      "value": "Real Geometry ",
+      "rna": [
+        "rna_type",
+        "name",
+        "value",
+        "type"
+      ]
+    },
+    {
+      "name": "High Polz Plants",
+      "identifier": "Socket_14",
+      "type": "NodeSocketBool",
+      "value": true,
+      "rna": [
+        "rna_type",
+        "name",
+        "value",
+        "type",
+        "attribute_name",
+        "layer_name"
+      ]
+    }
+  ]
+}

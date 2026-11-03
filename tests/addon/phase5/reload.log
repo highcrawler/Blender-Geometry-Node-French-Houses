@@ -1,0 +1,6 @@
+00:00.041  translation      | WARNING Falling back to standard locale ("C")
+00:01.256  blend            | Read blend: "/home/alexander-both/Dokumente/Generation/ircss-fork/tests/addon/phase5/runtime/three_houses.blend"
+MVP_RELOAD_PASS {'result': 'PASS', 'independent_process': True, 'source_config_missing': True, 'saved_values_and_evaluation_identical': True, 'reregister_and_live_edit': True, 'source_sha256': 'f44b4be96176204ada3fd768327e2a86129f536c6412129eca0478c72b3d5ae5'}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:34:58)
+
+Blender quit

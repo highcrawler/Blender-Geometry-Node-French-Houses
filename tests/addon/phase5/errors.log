@@ -1,0 +1,12 @@
+00:00.046  translation      | WARNING Falling back to standard locale ("C")
+00:01.331  blend            | Read blend: "/home/alexander-both/Dokumente/Generation/ircss-fork/GeometryNodesFrenchHous.blend"
+Error: Bitte zuerst die IRCSS-Quelldatei in den Add-on-Einstellungen auswählen.
+Error: Bitte eine vorhandene IRCSS-Quelldatei (.blend) auswählen.
+Error: Bitte eine vorhandene IRCSS-Quelldatei (.blend) auswählen.
+Error: Quelldatei enthält die Node-Gruppe GenerateHouse nicht.
+Error: IRCSS-Assets konnten nicht geladen werden: load: /home/alexander-both/Dokumente/Generation/ircss-fork/tests/addon/phase5/runtime/corrupt.blend failed to open blend file
+Error: Bitte eine neue Szene öffnen, nicht in der IRCSS-Quelldatei arbeiten.
+MVP_ERRORS_PASS {"no_configuration": "Error: Bitte zuerst die IRCSS-Quelldatei in den Add-on-Einstellungen ausw\u00e4hlen.\n", "missing_file": "Error: Bitte eine vorhandene IRCSS-Quelldatei (.blend) ausw\u00e4hlen.\n", "wrong_type": "Error: Bitte eine vorhandene IRCSS-Quelldatei (.blend) ausw\u00e4hlen.\n", "missing_node_group": "Error: Quelldatei enth\u00e4lt die Node-Gruppe GenerateHouse nicht.\n", "corrupt_file": "Error: IRCSS-Assets konnten nicht geladen werden: load: /home/alexander-both/Dokumente/Generation/ircss-fork/tests/addon/phase5/runtime/corrupt.blend failed to open blend file\n", "source_open_as_working_scene": "Error: Bitte eine neue Szene \u00f6ffnen, nicht in der IRCSS-Quelldatei arbeiten.\n"}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:34:58)
+
+Blender quit

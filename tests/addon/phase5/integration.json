@@ -1,0 +1,686 @@
+{
+  "version": "5.2.2 LTS",
+  "tests": {
+    "empty_scene": {
+      "vertices": 31736,
+      "faces": 23061,
+      "mesh": "d6e280377ce0afffa68b82a1b6242a0aae65e94d0f05cfecdf538d43c328573b",
+      "colors": {
+        "RoofColor": "67f8b544b00df10e8d208795ac6476b15742b894d49d1854dc9e9b9114bfd422",
+        "PaintColor": "0daee038a45d30ce08ee0c1824b7394d6121b9a11959c2cc1739bd34810e2d99",
+        "BeamColor": "28c36f812fd26f944cd10a8e17755857a52bdd6406eed33c29aae64331097349"
+      },
+      "instances": 3056,
+      "instance_meshes": {
+        "Medieval House": [
+          14,
+          9,
+          "c84d355e8ed30ede8e74b4ccbcd51e9efb357e8afc83b87a7578374f4d7dc05e"
+        ]
+      },
+      "instance_hash": "dd40c3e026fbf3324bff7efe86740299b2e5a256b4e102eefce0dfb5b9fdcd95"
+    },
+    "Seed": {
+      "before": {
+        "vertices": 31736,
+        "faces": 23061,
+        "mesh": "d6e280377ce0afffa68b82a1b6242a0aae65e94d0f05cfecdf538d43c328573b",
+        "colors": {
+          "RoofColor": "67f8b544b00df10e8d208795ac6476b15742b894d49d1854dc9e9b9114bfd422",
+          "PaintColor": "0daee038a45d30ce08ee0c1824b7394d6121b9a11959c2cc1739bd34810e2d99",
+          "BeamColor": "28c36f812fd26f944cd10a8e17755857a52bdd6406eed33c29aae64331097349"
+        },
+        "instances": 3056,
+        "instance_meshes": {
+          "Medieval House": [
+            14,
+            9,
+            "c84d355e8ed30ede8e74b4ccbcd51e9efb357e8afc83b87a7578374f4d7dc05e"
+          ]
+        },
+        "instance_hash": "dd40c3e026fbf3324bff7efe86740299b2e5a256b4e102eefce0dfb5b9fdcd95"
+      },
+      "after": {
+        "vertices": 29477,
+        "faces": 21141,
+        "mesh": "37422bfb48efec88451ed1b717d49fb9a25cc5a36a48062c5dfa633a15188bae",
+        "colors": {
+          "RoofColor": "b632238a12321a6d6e17df4387ad5c1c2327c886ac5153ddd718bd19631217d7",
+          "PaintColor": "bee307bee21db1a1bb45e1eeef2b55e5694df3321719a23e30ca5a97b6afee5a",
+          "BeamColor": "8a5a4ce8c294d0ef0264ab563f2ad26d618a2f3d3694711abe0eea2a4977ec2c"
+        },
+        "instances": 1517,
+        "instance_meshes": {
+          "Medieval House": [
+            14,
+            9,
+            "c84d355e8ed30ede8e74b4ccbcd51e9efb357e8afc83b87a7578374f4d7dc05e"
+          ]
+        },
+        "instance_hash": "a5cd0340d53bd49e0320293537048839a65ee68931b613b5a337a34696564973"
+      },
+      "changed": true,
+      "context": "origin, Seed 29"
+    },
+    "NumberFloor": {
+      "before": {
+        "vertices": 31736,
+        "faces": 23061,
+        "mesh": "d6e280377ce0afffa68b82a1b6242a0aae65e94d0f05cfecdf538d43c328573b",
+        "colors": {
+          "RoofColor": "67f8b544b00df10e8d208795ac6476b15742b894d49d1854dc9e9b9114bfd422",
+          "PaintColor": "0daee038a45d30ce08ee0c1824b7394d6121b9a11959c2cc1739bd34810e2d99",
+          "BeamColor": "28c36f812fd26f944cd10a8e17755857a52bdd6406eed33c29aae64331097349"
+        },
+        "instances": 3056,
+        "instance_meshes": {
+          "Medieval House": [
+            14,
+            9,
+            "c84d355e8ed30ede8e74b4ccbcd51e9efb357e8afc83b87a7578374f4d7dc05e"
+          ]
+        },
+        "instance_hash": "dd40c3e026fbf3324bff7efe86740299b2e5a256b4e102eefce0dfb5b9fdcd95"
+      },
+      "after": {
+        "vertices": 32088,
+        "faces": 23312,
+        "mesh": "7e59a7d807295283fae49661cee783b55ce85af75bdb4ed2e0c5088855f66026",
+        "colors": {
+          "RoofColor": "fae65a9eecaceaf0c23a2a04b271a67fadf2077f4b85d59d6266f96301a25dba",
+          "PaintColor": "c8b50004cfb93e8f9f2a3dbd1246918d78c938a927d1611a80e0b13a470ba10d",
+          "BeamColor": "026513ae0f07b49a0eff637c5b1ef634882f6d0ed1a80864540a57b18836644d"
+        },
+        "instances": 3297,
+        "instance_meshes": {
+          "Medieval House": [
+            14,
+            9,
+            "c84d355e8ed30ede8e74b4ccbcd51e9efb357e8afc83b87a7578374f4d7dc05e"
+          ]
+        },
+        "instance_hash": "8ed308fe889c0af406ab322316a05176268094469d7b8d3d04d980740c129176"
+      },
+      "changed": true,
+      "context": "origin, Seed 29"
+    },
+    "RoofCurvature": {
+      "before": {
+        "vertices": 31736,
+        "faces": 23061,
+        "mesh": "d6e280377ce0afffa68b82a1b6242a0aae65e94d0f05cfecdf538d43c328573b",
+        "colors": {
+          "RoofColor": "67f8b544b00df10e8d208795ac6476b15742b894d49d1854dc9e9b9114bfd422",
+          "PaintColor": "0daee038a45d30ce08ee0c1824b7394d6121b9a11959c2cc1739bd34810e2d99",
+          "BeamColor": "28c36f812fd26f944cd10a8e17755857a52bdd6406eed33c29aae64331097349"
+        },
+        "instances": 3056,
+        "instance_meshes": {
+          "Medieval House": [
+            14,
+            9,
+            "c84d355e8ed30ede8e74b4ccbcd51e9efb357e8afc83b87a7578374f4d7dc05e"
+          ]
+        },
+        "instance_hash": "dd40c3e026fbf3324bff7efe86740299b2e5a256b4e102eefce0dfb5b9fdcd95"
+      },
+      "after": {
+        "vertices": 30872,
+        "faces": 22396,
+        "mesh": "468dca14c9aa60d8a1f2cd179d07ab018407deda6dfabb381fb6f871b5c9aaab",
+        "colors": {
+          "RoofColor": "7a8aaa20dd09ba76e5b1e03e8755f55343c9f815370d413fe37b7aa16fc44eb8",
+          "PaintColor": "ebd3ba6771374f265d326695a8caf65e5c1bbc20dd49bb054fcd5c9b7cbcc7f2",
+          "BeamColor": "92970ed3ebf60ad94d6fe50fd8f94ff182ab490c0c09ca1557ccb7701807041f"
+        },
+        "instances": 3056,
+        "instance_meshes": {
+          "Medieval House": [
+            14,
+            9,
+            "c84d355e8ed30ede8e74b4ccbcd51e9efb357e8afc83b87a7578374f4d7dc05e"
+          ]
+        },
+        "instance_hash": "5d72a999b602961d4624429a53f8aafcab16e3e473f50ba959fb48d0dc16661e"
+      },
+      "changed": true,
+      "context": "origin, Seed 29"
+    },
+    "RoofColor": {
+      "before": {
+        "vertices": 31736,
+        "faces": 23061,
+        "mesh": "d6e280377ce0afffa68b82a1b6242a0aae65e94d0f05cfecdf538d43c328573b",
+        "colors": {
+          "RoofColor": "67f8b544b00df10e8d208795ac6476b15742b894d49d1854dc9e9b9114bfd422",
+          "PaintColor": "0daee038a45d30ce08ee0c1824b7394d6121b9a11959c2cc1739bd34810e2d99",
+          "BeamColor": "28c36f812fd26f944cd10a8e17755857a52bdd6406eed33c29aae64331097349"
+        },
+        "instances": 3056,
+        "instance_meshes": {
+          "Medieval House": [
+            14,
+            9,
+            "c84d355e8ed30ede8e74b4ccbcd51e9efb357e8afc83b87a7578374f4d7dc05e"
+          ]
+        },
+        "instance_hash": "dd40c3e026fbf3324bff7efe86740299b2e5a256b4e102eefce0dfb5b9fdcd95"
+      },
+      "after": {
+        "vertices": 31736,
+        "faces": 23061,
+        "mesh": "d6e280377ce0afffa68b82a1b6242a0aae65e94d0f05cfecdf538d43c328573b",
+        "colors": {
+          "RoofColor": "4cf0525fa03fceb33eaefa451bdc8c0f60e87dac89f4e6390f482b1434ba1fd3",
+          "PaintColor": "0daee038a45d30ce08ee0c1824b7394d6121b9a11959c2cc1739bd34810e2d99",
+          "BeamColor": "28c36f812fd26f944cd10a8e17755857a52bdd6406eed33c29aae64331097349"
+        },
+        "instances": 3056,
+        "instance_meshes": {
+          "Medieval House": [
+            14,
+            9,
+            "c84d355e8ed30ede8e74b4ccbcd51e9efb357e8afc83b87a7578374f4d7dc05e"
+          ]
+        },
+        "instance_hash": "dd40c3e026fbf3324bff7efe86740299b2e5a256b4e102eefce0dfb5b9fdcd95"
+      },
+      "changed": true,
+      "context": "origin, Seed 29"
+    },
+    "PaintColor": {
+      "before": {
+        "vertices": 31736,
+        "faces": 23061,
+        "mesh": "d6e280377ce0afffa68b82a1b6242a0aae65e94d0f05cfecdf538d43c328573b",
+        "colors": {
+          "RoofColor": "67f8b544b00df10e8d208795ac6476b15742b894d49d1854dc9e9b9114bfd422",
+          "PaintColor": "0daee038a45d30ce08ee0c1824b7394d6121b9a11959c2cc1739bd34810e2d99",
+          "BeamColor": "28c36f812fd26f944cd10a8e17755857a52bdd6406eed33c29aae64331097349"
+        },
+        "instances": 3056,
+        "instance_meshes": {
+          "Medieval House": [
+            14,
+            9,
+            "c84d355e8ed30ede8e74b4ccbcd51e9efb357e8afc83b87a7578374f4d7dc05e"
+          ]
+        },
+        "instance_hash": "dd40c3e026fbf3324bff7efe86740299b2e5a256b4e102eefce0dfb5b9fdcd95"
+      },
+      "after": {
+        "vertices": 31736,
+        "faces": 23061,
+        "mesh": "d6e280377ce0afffa68b82a1b6242a0aae65e94d0f05cfecdf538d43c328573b",
+        "colors": {
+          "RoofColor": "67f8b544b00df10e8d208795ac6476b15742b894d49d1854dc9e9b9114bfd422",
+          "PaintColor": "08643937e178c68d32e801da6bec39e6f59c5769e2d0ab15479b123420e78151",
+          "BeamColor": "28c36f812fd26f944cd10a8e17755857a52bdd6406eed33c29aae64331097349"
+        },
+        "instances": 3056,
+        "instance_meshes": {
+          "Medieval House": [
+            14,
+            9,
+            "c84d355e8ed30ede8e74b4ccbcd51e9efb357e8afc83b87a7578374f4d7dc05e"
+          ]
+        },
+        "instance_hash": "dd40c3e026fbf3324bff7efe86740299b2e5a256b4e102eefce0dfb5b9fdcd95"
+      },
+      "changed": true,
+      "context": "origin, Seed 29"
+    },
+    "BeamCollor": {
+      "before": {
+        "vertices": 31736,
+        "faces": 23061,
+        "mesh": "d6e280377ce0afffa68b82a1b6242a0aae65e94d0f05cfecdf538d43c328573b",
+        "colors": {
+          "RoofColor": "67f8b544b00df10e8d208795ac6476b15742b894d49d1854dc9e9b9114bfd422",
+          "PaintColor": "0daee038a45d30ce08ee0c1824b7394d6121b9a11959c2cc1739bd34810e2d99",
+          "BeamColor": "28c36f812fd26f944cd10a8e17755857a52bdd6406eed33c29aae64331097349"
+        },
+        "instances": 3056,
+        "instance_meshes": {
+          "Medieval House": [
+            14,
+            9,
+            "c84d355e8ed30ede8e74b4ccbcd51e9efb357e8afc83b87a7578374f4d7dc05e"
+          ]
+        },
+        "instance_hash": "dd40c3e026fbf3324bff7efe86740299b2e5a256b4e102eefce0dfb5b9fdcd95"
+      },
+      "after": {
+        "vertices": 31736,
+        "faces": 23061,
+        "mesh": "d6e280377ce0afffa68b82a1b6242a0aae65e94d0f05cfecdf538d43c328573b",
+        "colors": {
+          "RoofColor": "67f8b544b00df10e8d208795ac6476b15742b894d49d1854dc9e9b9114bfd422",
+          "PaintColor": "0daee038a45d30ce08ee0c1824b7394d6121b9a11959c2cc1739bd34810e2d99",
+          "BeamColor": "fcfe3649e6256dc59b160d0145b29bb899f55213b10bf4c444e3a82b0461fdc6"
+        },
+        "instances": 3056,
+        "instance_meshes": {
+          "Medieval House": [
+            14,
+            9,
+            "c84d355e8ed30ede8e74b4ccbcd51e9efb357e8afc83b87a7578374f4d7dc05e"
+          ]
+        },
+        "instance_hash": "dd40c3e026fbf3324bff7efe86740299b2e5a256b4e102eefce0dfb5b9fdcd95"
+      },
+      "changed": true,
+      "context": "origin, Seed 29"
+    },
+    "SpawnIVY": {
+      "before": {
+        "vertices": 31736,
+        "faces": 23061,
+        "mesh": "d6e280377ce0afffa68b82a1b6242a0aae65e94d0f05cfecdf538d43c328573b",
+        "colors": {
+          "RoofColor": "67f8b544b00df10e8d208795ac6476b15742b894d49d1854dc9e9b9114bfd422",
+          "PaintColor": "0daee038a45d30ce08ee0c1824b7394d6121b9a11959c2cc1739bd34810e2d99",
+          "BeamColor": "28c36f812fd26f944cd10a8e17755857a52bdd6406eed33c29aae64331097349"
+        },
+        "instances": 3056,
+        "instance_meshes": {
+          "Medieval House": [
+            14,
+            9,
+            "c84d355e8ed30ede8e74b4ccbcd51e9efb357e8afc83b87a7578374f4d7dc05e"
+          ]
+        },
+        "instance_hash": "dd40c3e026fbf3324bff7efe86740299b2e5a256b4e102eefce0dfb5b9fdcd95"
+      },
+      "after": {
+        "vertices": 31736,
+        "faces": 23061,
+        "mesh": "d6e280377ce0afffa68b82a1b6242a0aae65e94d0f05cfecdf538d43c328573b",
+        "colors": {
+          "RoofColor": "67f8b544b00df10e8d208795ac6476b15742b894d49d1854dc9e9b9114bfd422",
+          "PaintColor": "0daee038a45d30ce08ee0c1824b7394d6121b9a11959c2cc1739bd34810e2d99",
+          "BeamColor": "28c36f812fd26f944cd10a8e17755857a52bdd6406eed33c29aae64331097349"
+        },
+        "instances": 525,
+        "instance_meshes": {
+          "Medieval House": [
+            14,
+            9,
+            "c84d355e8ed30ede8e74b4ccbcd51e9efb357e8afc83b87a7578374f4d7dc05e"
+          ]
+        },
+        "instance_hash": "118c98512d51c6567dbd45a99b5a3c1297d616bb4a579fa8ed35fb83331fbfe1"
+      },
+      "changed": true,
+      "context": "origin, Seed 29"
+    },
+    "High Polz Plants": {
+      "before": {
+        "vertices": 27919,
+        "faces": 20003,
+        "mesh": "8de1581e22dadbf57573503cc2fbef91ced9591486fce437bd101836f5a29c80",
+        "colors": {
+          "RoofColor": "4f6b69265d361d1147836eb337e98c51e869ba2f3aec917cf4b1188c6c7681e2",
+          "PaintColor": "737b979808ed40d5e0938d8607cffcf87eed66de3715cb2c7b48556d2febe4f3",
+          "BeamColor": "7748e09bc810bf9333358a7b2380e195e522e3288c2f451ef11299ea8a656889"
+        },
+        "instances": 2595,
+        "instance_meshes": {
+          "Medieval House": [
+            14,
+            9,
+            "c84d355e8ed30ede8e74b4ccbcd51e9efb357e8afc83b87a7578374f4d7dc05e"
+          ]
+        },
+        "instance_hash": "473046b3786d5c26645e100fd5e4828e9525af042a59b77cb9823c1460658f80"
+      },
+      "after": {
+        "vertices": 27827,
+        "faces": 19927,
+        "mesh": "1ee4524ea018caa0c732e4609380137b0733c1a831edc8b75ef7a0d85e956437",
+        "colors": {
+          "RoofColor": "ae46dc16f5f700f6cbdfc48188012b5adf6fa63a2dd25e75eb54c57a5e9cb568",
+          "PaintColor": "58c2fdb690e5dc4c8adc9b3133ffd33b63de74e53784e1ab11d100b200a8fb50",
+          "BeamColor": "46bcf5210fefde00149331e79387d16d886b32b62d9584e62c08a936fab794d3"
+        },
+        "instances": 2595,
+        "instance_meshes": {
+          "Medieval House": [
+            14,
+            9,
+            "c84d355e8ed30ede8e74b4ccbcd51e9efb357e8afc83b87a7578374f4d7dc05e"
+          ]
+        },
+        "instance_hash": "473046b3786d5c26645e100fd5e4828e9525af042a59b77cb9823c1460658f80"
+      },
+      "changed": true,
+      "context": "original HouseOne location, Seed 29"
+    },
+    "independence": true,
+    "template_unchanged": true,
+    "missing": "Bitte eine vorhandene IRCSS-Quelldatei (.blend) ausw\u00e4hlen.",
+    "wrong_file": "Bitte eine vorhandene IRCSS-Quelldatei (.blend) ausw\u00e4hlen.",
+    "missing_group": "Quelldatei enth\u00e4lt die Node-Gruppe GenerateHouse nicht.",
+    "corrupt_library": "IRCSS-Assets konnten nicht geladen werden: load: /home/alexander-both/Dokumente/Generation/ircss-fork/tests/addon/phase5/runtime/corrupt.blend failed to open blend file",
+    "foreign_and_no_selection": "UI guard checked; GUI draw tested separately",
+    "registration_cycle": true
+  },
+  "scene_objects_after_create": [
+    [
+      "Medieval House",
+      "MESH"
+    ]
+  ],
+  "appended_objects": [
+    "Cube",
+    "Cube.001",
+    "GreenLeaves.037",
+    "HamisheBahar.125",
+    "HouseOne",
+    "Manager",
+    "Medieval House",
+    "Plane.009",
+    "Stone.002",
+    "Stone.003",
+    "Stone.004",
+    "Stone.005",
+    "Stone.006",
+    "Stone.007",
+    "Stone.008",
+    "Stone.009",
+    "Stone.010",
+    "Stone.011",
+    "Stone.012",
+    "Stone.013",
+    "Stone.014",
+    "Stone.015",
+    "Stone.016",
+    "Stone.017",
+    "Stone.018",
+    "Stone.019",
+    "Stone.020",
+    "Stone.021",
+    "Stone.022",
+    "Stone.023",
+    "Stone.024",
+    "Stone.025",
+    "Stone.026",
+    "Stone.027",
+    "Stone.028",
+    "Stone.029",
+    "Stone.030",
+    "Stone.031",
+    "Stone.032",
+    "Stone.033",
+    "Stone.034",
+    "Stone.035",
+    "Stone.036",
+    "Stone.037",
+    "Stone.038",
+    "Stone.039",
+    "Stone.040",
+    "Stone.041",
+    "Stone.042",
+    "Stone.043",
+    "Stone.044",
+    "Stone.045",
+    "Stone.046",
+    "Stone.047",
+    "Stone.048",
+    "Stone.049",
+    "Stone.050",
+    "Stone.051",
+    "Stone.052",
+    "Stone.053",
+    "Stone.054",
+    "Stone.055",
+    "Stone.056",
+    "Stone.057",
+    "Stone.058",
+    "Stone.059",
+    "Stone.060",
+    "Stone.061",
+    "Stone.062",
+    "Stone.063",
+    "Stone.064",
+    "Stone.065",
+    "Stone.066",
+    "Stone.067",
+    "Stone.068",
+    "Stone.069",
+    "Stone.070",
+    "Stone.071",
+    "Stone.072",
+    "Stone.073",
+    "Stone.074",
+    "Stone.075",
+    "Stone.076",
+    "Stone.077",
+    "Stone.078",
+    "Stone.079",
+    "Stone.080",
+    "Stone.081",
+    "Stone.082",
+    "Stone.083",
+    "Stone.084",
+    "Stone.085",
+    "Stone.086",
+    "Stone.087",
+    "Stone.088",
+    "Stone.089",
+    "Stone.090",
+    "Stone.091",
+    "Stone.092",
+    "Stone.093",
+    "Stone.094",
+    "Stone.095",
+    "Stone.096",
+    "Stone.097",
+    "Stone.098",
+    "Stone.099",
+    "Stone.100",
+    "Stone.101"
+  ],
+  "appended_collections": [
+    "Collection",
+    "Plants",
+    "Plants Low Poly",
+    "Set"
+  ],
+  "node_groups": [
+    "BackFaceCheckerShader",
+    "BricksTriplanarBricks",
+    "CreateDiagonalBeams",
+    "Generate Windows",
+    "GenerateHouse",
+    "GetPositionBasedSeed",
+    "StonesTriplanar",
+    "Switch On Roof Type",
+    "TriplanarMap",
+    "WalltextureMonoDirection",
+    "WalltextureMonoDirection.Brick",
+    "WindowBeams",
+    "Is Edge Manifold",
+    "Curve Info",
+    "Curve Root",
+    "Curve Tip"
+  ],
+  "materials": [
+    "Beam",
+    "Dots Stroke",
+    "FakeRoof",
+    "Greenery",
+    "GreenSta.001",
+    "GroundFloorWalls",
+    "Material",
+    "Material.001",
+    "Material.002",
+    "Material.003",
+    "Material.005",
+    "Roof",
+    "Stone",
+    "UpperFloorsPaint",
+    "VertexColor",
+    "WindowGlass"
+  ],
+  "images": [
+    [
+      "plantsTextureLowRes.png",
+      "FILE",
+      true
+    ],
+    [
+      "Render Result",
+      "VIEWER",
+      false
+    ],
+    [
+      "Viewer Node",
+      "VIEWER",
+      false
+    ]
+  ],
+  "saved": {
+    "Medieval House": {
+      "signature": {
+        "vertices": 28570,
+        "faces": 20913,
+        "mesh": "24ccac5ba211675a3593231eb382ae12a1dc8d5cdc3389b1ced88889fcb16863",
+        "colors": {
+          "RoofColor": "e146d055ddb574f325819c1eab6a243d07abfaf18fa2bd346fdc56e2df07cf8f",
+          "PaintColor": "5fa081eeb972a6191e9fb104978233ee75780f4f08e3966486324bb496538863",
+          "BeamColor": "c18e8e8ae4984ef871013f2e0151b2d64c0ca9ad3dddd3dcffce96cb545e6916"
+        },
+        "instances": 2211,
+        "instance_meshes": {
+          "Medieval House": [
+            14,
+            9,
+            "c84d355e8ed30ede8e74b4ccbcd51e9efb357e8afc83b87a7578374f4d7dc05e"
+          ]
+        },
+        "instance_hash": "b7af060753053fd5317572e6447937c59bdbcbbc3438f97aaaf63fe795e8bbc5"
+      },
+      "values": {
+        "Object": "Medieval House",
+        "Seed": 10,
+        "NumberFloor": 2,
+        "RoofCurvature": 1.659999966621399,
+        "RoofColor": [
+          0.479231595993042,
+          0.05529474467039108,
+          0.11055033653974533,
+          1.0
+        ],
+        "PaintColor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "BeamCollor": [
+          0.2705988585948944,
+          0.21413731575012207,
+          0.22043994069099426,
+          1.0
+        ],
+        "SpawnIVY": true,
+        "High Polz Plants": true
+      }
+    },
+    "Medieval House.001": {
+      "signature": {
+        "vertices": 34625,
+        "faces": 24997,
+        "mesh": "9ae1f9951c7b4f204cc6bf9a4972c782286cbc02a9db9bb3754cdeb908f0108d",
+        "colors": {
+          "RoofColor": "37c0d37c700bf3d4f217811b11a65422a5edd6844ab88718bd43fd03e49b1ab4",
+          "PaintColor": "d967fd166afe66a369e05f2ba8bb9572af5ee7cf5dbccf288973d644cd5e8616",
+          "BeamColor": "bbd2b9b9b5771c40b82d99edc4ed69296e4364a32278ed4bbab9784316dd05f8"
+        },
+        "instances": 1551,
+        "instance_meshes": {
+          "Medieval House.001": [
+            14,
+            9,
+            "c84d355e8ed30ede8e74b4ccbcd51e9efb357e8afc83b87a7578374f4d7dc05e"
+          ]
+        },
+        "instance_hash": "678b8f7030d7b233319e318920852918efe16eeb83aed94519bce7c78809dae8"
+      },
+      "values": {
+        "Object": "Medieval House.001",
+        "Seed": 99,
+        "NumberFloor": 2,
+        "RoofCurvature": 1.659999966621399,
+        "RoofColor": [
+          0.10000000149011612,
+          0.6000000238418579,
+          0.20000000298023224,
+          1.0
+        ],
+        "PaintColor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "BeamCollor": [
+          0.2705988585948944,
+          0.21413731575012207,
+          0.22043994069099426,
+          1.0
+        ],
+        "SpawnIVY": true,
+        "High Polz Plants": true
+      }
+    },
+    "Medieval House.002": {
+      "signature": {
+        "vertices": 30150,
+        "faces": 21787,
+        "mesh": "ab0254c18944cf86f3dbbee0ba88481bc4188aabc7850c47f15f4033a185ee01",
+        "colors": {
+          "RoofColor": "808fe826d603a30026186b8ff6d59d16ff3b222bb2122de51131cb9078287313",
+          "PaintColor": "e7809508e123035e0d5bf13379763b487ca3a92fd429f352528b6203b087f1cf",
+          "BeamColor": "85d1feb141916c2bc6270da52bafce763c08ebd09a690f6ee0253d5877c572f5"
+        },
+        "instances": 803,
+        "instance_meshes": {
+          "Medieval House.002": [
+            14,
+            9,
+            "c84d355e8ed30ede8e74b4ccbcd51e9efb357e8afc83b87a7578374f4d7dc05e"
+          ]
+        },
+        "instance_hash": "822d7fabddf32ec4996c769e73d1998554d2b3d73c208c1d9772b7caddae64db"
+      },
+      "values": {
+        "Object": "Medieval House.002",
+        "Seed": 12,
+        "NumberFloor": 2,
+        "RoofCurvature": 1.659999966621399,
+        "RoofColor": [
+          0.479231595993042,
+          0.05529474467039108,
+          0.11055033653974533,
+          1.0
+        ],
+        "PaintColor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "BeamCollor": [
+          0.2705988585948944,
+          0.21413731575012207,
+          0.22043994069099426,
+          1.0
+        ],
+        "SpawnIVY": true,
+        "High Polz Plants": true
+      }
+    }
+  }
+}

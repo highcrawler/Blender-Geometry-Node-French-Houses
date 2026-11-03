@@ -1,0 +1,7 @@
+{
+  "result": "PASS",
+  "real_gui": true,
+  "input_method": "Window.event_simulate",
+  "screenshots": 16,
+  "all_ui_fields_and_independence_asserted": true
+}

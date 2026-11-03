@@ -1,0 +1,8 @@
+{
+  "result": "PASS",
+  "independent_process": true,
+  "source_config_missing": true,
+  "saved_values_and_evaluation_identical": true,
+  "reregister_and_live_edit": true,
+  "source_sha256": "f44b4be96176204ada3fd768327e2a86129f536c6412129eca0478c72b3d5ae5"
+}

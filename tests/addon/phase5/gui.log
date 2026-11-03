@@ -1,0 +1,27 @@
+00:01.874  blend            | Writing user preferences: "/home/alexander-both/Dokumente/Generation/ircss-fork/tests/addon/phase5/runtime/config/userpref.blend"
+Info: Preferences saved
+Traceback (most recent call last):
+  File "/home/alexander-both/Dokumente/Generation/ircss-fork/tests/addon/phase5/runtime/gui_command.py", line 8, in <lambda>
+  File "/home/alexander-both/Dokumente/Generation/ircss-fork/tests/addon/phase5/runtime/gui_command.py", line 5, in click
+TypeError: Window.event_simulate(): required parameter "value" not specified
+02:01.469  operator         | Medieval House erstellt. Einstellungen im Medieval-Buildings-Panel.
+06:46.109  operator         | Medieval House.001 erstellt. Einstellungen im Medieval-Buildings-Panel.
+06:55.109  operator         | Medieval House.002 erstellt. Einstellungen im Medieval-Buildings-Panel.
+09:41.649  blend            | Writing user preferences: "/home/alexander-both/Dokumente/Generation/ircss-fork/tests/addon/phase5/runtime/config/userpref.blend"
+10:28.866  operator         | Medieval House erstellt. Einstellungen im Medieval-Buildings-Panel.
+11:14.531  operator         | Medieval House.001 erstellt. Einstellungen im Medieval-Buildings-Panel.
+11:19.535  operator         | Medieval House.002 erstellt. Einstellungen im Medieval-Buildings-Panel.
+11:43.077  blend            | Writing user preferences: "/home/alexander-both/Dokumente/Generation/ircss-fork/tests/addon/phase5/runtime/config/userpref.blend"
+13:46.369  operator         | Medieval House erstellt. Einstellungen im Medieval-Buildings-Panel.
+14:32.108  operator         | Medieval House.001 erstellt. Einstellungen im Medieval-Buildings-Panel.
+14:37.081  operator         | Medieval House.002 erstellt. Einstellungen im Medieval-Buildings-Panel.
+15:00.624  blend            | Writing user preferences: "/home/alexander-both/Dokumente/Generation/ircss-fork/tests/addon/phase5/runtime/config/userpref.blend"
+17:04.175  blend            | Saved session recovery to "/tmp/quit.blend"
+Info: Saved as "gui_three_houses.blend"
+Info: Preferences saved
+Info: Saved as "gui_three_houses.blend"
+Info: Preferences saved
+Info: Saved as "gui_three_houses.blend"
+Info: Preferences saved
+
+Blender quit

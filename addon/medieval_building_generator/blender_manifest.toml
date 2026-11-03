@@ -1,0 +1,17 @@
+schema_version = "1.0.0"
+id = "medieval_building_generator"
+version = "0.1.0"
+name = "Medieval Building Generator"
+tagline = "Create medieval houses with IRCSS GenerateHouse"
+maintainer = "highcrawler"
+type = "add-on"
+website = "https://github.com/highcrawler/Blender-Geometry-Node-French-Houses"
+tags = ["Add Mesh", "Object"]
+blender_version_min = "5.2.0"
+license = ["SPDX:MIT"]
+
+[permissions]
+files = "Read the selected IRCSS blend library and its dependencies"
+
+[build]
+paths_exclude_pattern = ["__pycache__/", "*.pyc"]
