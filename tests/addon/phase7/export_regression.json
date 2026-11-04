@@ -1,0 +1,53 @@
+{
+  "result": "PASS",
+  "cases": {
+    "house3": {
+      "triangles": 106735,
+      "polygon_bijection": {
+        "polygons": 61309,
+        "unmatched": 0,
+        "max_corner_error": 3.962700400017419e-06,
+        "tolerance": 0.0002
+      },
+      "sha256": "feaf8aca23d638cccbb5d807b7431521d1fcdc177cb9079aea1eb2637d996e08",
+      "reference_sha256": "feaf8aca23d638cccbb5d807b7431521d1fcdc177cb9079aea1eb2637d996e08",
+      "source_scene_unchanged": true
+    },
+    "house1": {
+      "triangles": 187021,
+      "polygon_bijection": {
+        "polygons": 121459,
+        "unmatched": 0,
+        "max_corner_error": 5.331201499700045e-07,
+        "tolerance": 0.0002
+      },
+      "sha256": "ba4b7328758bb913dd2228e2179daa1329878975b03b021dd955be739539a282",
+      "reference_sha256": "ba4b7328758bb913dd2228e2179daa1329878975b03b021dd955be739539a282",
+      "source_scene_unchanged": true
+    },
+    "house5": {
+      "triangles": 378786,
+      "polygon_bijection": {
+        "polygons": 305660,
+        "unmatched": 0,
+        "max_corner_error": 2.6144638299299847e-06,
+        "tolerance": 0.0002
+      },
+      "sha256": "f854965cb404d799011baae5c213110fb551ab0c2fdd7ffffd31658fb3c4edc1",
+      "reference_sha256": "f854965cb404d799011baae5c213110fb551ab0c2fdd7ffffd31658fb3c4edc1",
+      "source_scene_unchanged": true
+    },
+    "transformed_house2": {
+      "triangles": 338825,
+      "polygon_bijection": {
+        "polygons": 266507,
+        "unmatched": 0,
+        "max_corner_error": 2.2013408318304285e-06,
+        "tolerance": 0.0002
+      },
+      "sha256": "0c852a1484300286f0a47ff99bd467089069adc1dd686b1f1a76cf2fc2e789a8",
+      "reference_sha256": "0c852a1484300286f0a47ff99bd467089069adc1dd686b1f1a76cf2fc2e789a8",
+      "source_scene_unchanged": true
+    }
+  }
+}

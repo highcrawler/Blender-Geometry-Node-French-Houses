@@ -1,6 +1,7 @@
 import bpy
-from bpy.props import StringProperty, IntProperty, FloatProperty, FloatVectorProperty, BoolProperty
+from bpy.props import StringProperty, IntProperty, FloatProperty, FloatVectorProperty, BoolProperty, EnumProperty
 from .assets import generator_modifier, socket
+from . import footprints
 
 
 def binding(name, default):
@@ -19,6 +20,19 @@ def binding(name, default):
 
 
 class MBGHouseSettings(bpy.types.PropertyGroup):
+    shape: EnumProperty(name='Preset', items=footprints.ITEMS,
+        get=lambda self: footprints.shape_index(self.id_data),
+        set=lambda self, value: footprints.set_shape(self.id_data, value))
+    width: FloatProperty(name='Hausbreite (m)', unit='LENGTH', precision=2,
+        description='Lokaler Grundriss entlang Y, Front in +X; keine Objektskalierung',
+        min=footprints.WIDTH_MIN, max=footprints.WIDTH_MAX,
+        get=lambda self: footprints.dimensions(self.id_data)[0],
+        set=lambda self, value: footprints.set_dimension(self.id_data, 'width', value))
+    depth: FloatProperty(name='Haustiefe (m)', unit='LENGTH', precision=2,
+        description='Lokaler Grundriss entlang X, 1 Blender Unit = 1 Meter bei Objektskalierung 1',
+        min=footprints.DEPTH_MIN, max=footprints.DEPTH_MAX,
+        get=lambda self: footprints.dimensions(self.id_data)[1],
+        set=lambda self, value: footprints.set_dimension(self.id_data, 'depth', value))
     seed: IntProperty(name='Seed', min=0, max=1000000, **binding('Seed', 29))
     floors: IntProperty(name='Stockwerke', min=1, max=8, **binding('NumberFloor', 2))
     curvature: FloatProperty(name='Dachkrümmung', min=0, max=3, **binding('RoofCurvature', 1.66))

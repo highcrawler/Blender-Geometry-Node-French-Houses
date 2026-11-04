@@ -1,6 +1,6 @@
 schema_version = "1.0.0"
 id = "medieval_building_generator"
-version = "0.2.0"
+version = "0.3.0"
 name = "Medieval Building Generator"
 tagline = "Create medieval houses with IRCSS GenerateHouse"
 maintainer = "highcrawler"

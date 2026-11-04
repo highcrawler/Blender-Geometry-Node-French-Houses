@@ -102,7 +102,7 @@ def load_template(source):
 def create_house(context, source):
     template = load_template(source)
     obj = template.copy()
-    obj.data = template.data.copy()
+    obj.data = bpy.data.meshes.new('Medieval Rectangle Footprint')
     obj.use_fake_user = False
     if TEMPLATE_TAG in obj:
         del obj[TEMPLATE_TAG]
@@ -113,6 +113,8 @@ def create_house(context, source):
     obj.location = context.scene.cursor.location
     # The original Object input points to HouseOne: essential for position seeds.
     socket(validate(obj), 'Object').value = obj
+    from .footprints import initialize
+    initialize(obj)
     for selected in context.selected_objects:
         selected.select_set(False)
     obj.hide_set(False)

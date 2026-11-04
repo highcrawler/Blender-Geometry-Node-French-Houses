@@ -1,0 +1,96 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/MBG_Phase7_Compact.glb" id="1"]
+[ext_resource type="PackedScene" path="res://assets/MBG_Phase7_Narrow.glb" id="2"]
+[ext_resource type="PackedScene" path="res://assets/MBG_Phase7_Wide.glb" id="3"]
+
+[sub_resource type="Environment" id="Environment"]
+background_mode = 1
+background_color = Color(0.12, 0.16, 0.21, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.78, 0.85, 1, 1)
+ambient_light_energy = 0.35
+
+[sub_resource type="StandardMaterial3D" id="FloorMaterial"]
+albedo_color = Color(0.24, 0.28, 0.23, 1)
+roughness = 1.0
+
+[sub_resource type="BoxMesh" id="Floor"]
+material = SubResource("FloorMaterial")
+size = Vector3(28, 0.1, 43)
+
+[sub_resource type="StandardMaterial3D" id="PivotMaterial"]
+albedo_color = Color(0.95, 0.5, 0.06, 1)
+shading_mode = 0
+
+[sub_resource type="BoxMesh" id="PivotBar"]
+material = SubResource("PivotMaterial")
+size = Vector3(9, 0.025, 0.035)
+
+[node name="VarietyValidation" type="Node3D"]
+
+[node name="Compact" parent="." instance=ExtResource("1")]
+
+[node name="Narrow" parent="." instance=ExtResource("2")]
+position = Vector3(0, 0, 11)
+
+[node name="Wide" parent="." instance=ExtResource("3")]
+position = Vector3(0, 0, 24)
+
+[node name="Ground" type="MeshInstance3D" parent="."]
+position = Vector3(0, -0.05, 12)
+mesh = SubResource("Floor")
+
+[node name="CompactX" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.02, 0)
+mesh = SubResource("PivotBar")
+[node name="CompactZ" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.02, 0)
+rotation = Vector3(0, 1.5707963, 0)
+mesh = SubResource("PivotBar")
+[node name="NarrowX" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.02, 11)
+mesh = SubResource("PivotBar")
+[node name="NarrowZ" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.02, 11)
+rotation = Vector3(0, 1.5707963, 0)
+mesh = SubResource("PivotBar")
+[node name="WideX" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.02, 24)
+mesh = SubResource("PivotBar")
+[node name="WideZ" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.02, 24)
+rotation = Vector3(0, 1.5707963, 0)
+mesh = SubResource("PivotBar")
+
+[node name="CompactLabel" type="Label3D" parent="."]
+position = Vector3(4.7, 0.35, 0)
+text = "Compact | 4.0 x 3.2 m"
+font_size = 48
+pixel_size = 0.008
+billboard = 1
+[node name="NarrowLabel" type="Label3D" parent="."]
+position = Vector3(4.7, 0.35, 11)
+text = "Narrow | 3.2 x 5.0 m"
+font_size = 48
+pixel_size = 0.008
+billboard = 1
+[node name="WideLabel" type="Label3D" parent="."]
+position = Vector3(4.7, 0.35, 24)
+text = "Wide | 7.0 x 4.0 m"
+font_size = 48
+pixel_size = 0.008
+billboard = 1
+
+[node name="Sun" type="DirectionalLight3D" parent="."]
+rotation_degrees = Vector3(-40, -35, 0)
+light_energy = 0.65
+shadow_enabled = true
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment")
+[node name="Camera3D" type="Camera3D" parent="."]
+position = Vector3(27, 20, 35)
+rotation = Vector3(-0.424, 0.8652, 0)
+projection = 1
+size = 34.0
+current = true

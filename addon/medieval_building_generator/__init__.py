@@ -3,7 +3,8 @@ import bpy
 from . import properties, operators, ui
 
 CLASSES = (properties.MBGPreferences, properties.MBGHouseSettings,
-           operators.MBG_OT_create_house, operators.MBG_OT_export_house, ui.MBG_PT_buildings)
+           operators.MBG_OT_create_house, operators.MBG_OT_activate_rectangle,
+           operators.MBG_OT_export_house, ui.MBG_PT_buildings)
 
 
 def register():

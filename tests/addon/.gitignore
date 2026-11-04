@@ -1,6 +1,12 @@
 phase5/runtime/
 phase6/runtime/
+phase7/runtime/
 # Reproducible duplicate/control GLBs; keep the two Godot reference variants.
 phase6/*.glb
 !phase6/house3.glb
 !phase6/house5.glb
+# Keep only the three Phase-7 reference exports, not repeated control copies.
+phase7/*.glb
+!phase7/compact.glb
+!phase7/narrow.glb
+!phase7/wide.glb

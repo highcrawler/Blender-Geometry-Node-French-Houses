@@ -227,7 +227,11 @@ def export_house(context, obj, filepath, *, overwrite=False):
         clone.animation_data_clear()
         clone.parent = None
         clone.constraints.clear()
-        clone.matrix_world = matrix
+        if obj.parent or obj.constraints or obj.animation_data:
+            clone.matrix_world = matrix
+        # For static, unparented houses Object.copy() already retains the exact
+        # transform channels. Reassigning matrix_world would decompose/recompose
+        # mirrored scales and perturb axis-sensitive GN comparisons near zero.
         source_scene.collection.objects.link(clone)
         group = realize_group()
         wrapper = clone.modifiers.new('MBG_TEMP_Realize', 'NODES')

@@ -1,0 +1,28 @@
+00:00.043  translation      | WARNING Falling back to standard locale ("C")
+00:01.267  blend            | Read blend: "/home/alexander-both/Dokumente/Generation/ircss-fork/tests/consolidation/runtime/sandbox/tests/addon/phase6/runtime/library.blend"
+INFO Draco is available, use library at /snap/blender/7803/lib/libbf_intern_draco_bridge.so
+INFO MeshOptimizer is available, use library at /snap/blender/7803/lib/libbf_intern_meshopt_bridge.so
+17:02:27 | INFO: Starting glTF 2.0 export
+17:02:27 | INFO: Extracting primitive: Mesh
+17:02:27 | INFO: Primitives created: 12
+17:02:27 | INFO: Finished glTF 2.0 export in 0.13607072830200195 s
+
+17:02:30 | INFO: Starting glTF 2.0 export
+17:02:30 | INFO: Extracting primitive: Mesh
+17:02:30 | INFO: Primitives created: 12
+17:02:30 | INFO: Finished glTF 2.0 export in 0.19483208656311035 s
+
+17:02:37 | INFO: Starting glTF 2.0 export
+17:02:37 | INFO: Extracting primitive: Mesh
+17:02:38 | INFO: Primitives created: 12
+17:02:38 | INFO: Finished glTF 2.0 export in 0.4312152862548828 s
+
+17:02:45 | INFO: Starting glTF 2.0 export
+17:02:45 | INFO: Extracting primitive: Mesh
+17:02:45 | INFO: Primitives created: 12
+17:02:45 | INFO: Finished glTF 2.0 export in 0.3658275604248047 s
+
+PHASE7_PHASE6_EXPORT_REGRESSION_PASS {"house3": 106735, "house1": 187021, "house5": 378786, "transformed_house2": 338825}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:34:58)
+
+Blender quit

@@ -1,0 +1,396 @@
+{
+  "result": "PASS",
+  "loaded_without_geometry_changes": true,
+  "no_schema_inserted_on_load": true,
+  "readonly_legacy_dimensions": true,
+  "old_scene_file_unchanged": true,
+  "legacy_export_sha256": "baa8d93c1aa8120c783d6fd0cb4dbc4cb3c875d207ffbf5beb0076d470125c3b",
+  "old_version_export_sha256": "baa8d93c1aa8120c783d6fd0cb4dbc4cb3c875d207ffbf5beb0076d470125c3b",
+  "explicit_conversion_only": true,
+  "old_mesh_preserved": true,
+  "other_legacy_house_unchanged": true,
+  "converted_export": {
+    "path": "/home/alexander-both/Dokumente/Generation/ircss-fork/tests/addon/phase7/legacy_explicit_rectangle.glb",
+    "bytes": 4006280,
+    "triangles": 81681,
+    "direct_triangles": 43960,
+    "owned_instances": 1357,
+    "material_triangles": {
+      "Roof": 5560,
+      "UpperFloorsPaint": 1162,
+      "GroundFloorWalls": 152,
+      "Beam": 7562,
+      "Stone": 32468,
+      "WindowGlass": 34,
+      "GreenSta.001": 1376,
+      "Material.005": 3096,
+      "Material.001": 1248,
+      "Material.003": 11167,
+      "Greenery": 15600,
+      "Material.002": 2256
+    },
+    "pivot_local": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "pivot_method": "input_footprint",
+    "pivot_world": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "material_policy": {
+      "<none>": {
+        "color": [
+          0.32,
+          0.2,
+          0.12,
+          1
+        ],
+        "role": "<none>",
+        "used": false,
+        "policy": "brown fallback"
+      },
+      "Roof": {
+        "color": [
+          0.11999999731779099,
+          0.25,
+          0.4000000059604645,
+          1.0
+        ],
+        "role": "Roof",
+        "used": true,
+        "policy": "house input"
+      },
+      "GroundFloorWalls": {
+        "color": [
+          0.40355,
+          0.30638,
+          0.21388,
+          1
+        ],
+        "role": "GroundFloorWalls",
+        "used": true,
+        "policy": "explicit approximation"
+      },
+      "UpperFloorsPaint": {
+        "color": [
+          0.6000000238418579,
+          0.4000000059604645,
+          0.20000000298023224,
+          1.0
+        ],
+        "role": "UpperFloorsPaint",
+        "used": true,
+        "policy": "house input"
+      },
+      "Beam": {
+        "color": [
+          0.2705988585948944,
+          0.21413731575012207,
+          0.22043994069099426,
+          1.0
+        ],
+        "role": "Beam",
+        "used": true,
+        "policy": "house input"
+      },
+      "Stone": {
+        "color": [
+          0.50878,
+          0.45853,
+          0.37517,
+          1
+        ],
+        "role": "Stone",
+        "used": true,
+        "policy": "explicit approximation"
+      },
+      "WindowGlass": {
+        "color": [
+          0.12,
+          0.23,
+          0.3,
+          1
+        ],
+        "role": "WindowGlass",
+        "used": true,
+        "policy": "explicit approximation"
+      },
+      "GreenSta.001": {
+        "color": [
+          0.1,
+          0.3,
+          0.055,
+          1
+        ],
+        "role": "GreenSta",
+        "used": true,
+        "policy": "explicit approximation"
+      },
+      "Material.005": {
+        "color": [
+          0.68,
+          0.09,
+          0.12,
+          1
+        ],
+        "role": "Material.005",
+        "used": true,
+        "policy": "explicit approximation"
+      },
+      "Material.001": {
+        "color": [
+          0.85,
+          0.14,
+          0.045,
+          1
+        ],
+        "role": "Material.001",
+        "used": true,
+        "policy": "explicit approximation"
+      },
+      "Material.003": {
+        "color": [
+          0.36,
+          0.065,
+          0.3,
+          1
+        ],
+        "role": "Material.003",
+        "used": true,
+        "policy": "explicit approximation"
+      },
+      "Greenery": {
+        "color": [
+          0.075,
+          0.24,
+          0.035,
+          1
+        ],
+        "role": "Greenery",
+        "used": true,
+        "policy": "explicit approximation"
+      },
+      "Material.002": {
+        "color": [
+          0.95,
+          0.48,
+          0.035,
+          1
+        ],
+        "role": "Material.002",
+        "used": true,
+        "policy": "explicit approximation"
+      }
+    },
+    "fallback_materials": [],
+    "polygon_bijection": {
+      "polygons": 41731,
+      "unmatched": 0,
+      "max_corner_error": 4.924151790695877e-07,
+      "tolerance": 0.0002
+    },
+    "glb_position_errors": {
+      "Roof": 0.0,
+      "GroundFloorWalls": 0.0,
+      "UpperFloorsPaint": 0.0,
+      "Beam": 4.76837158203125e-07,
+      "Stone": 0.0,
+      "WindowGlass": 4.777675712830387e-07,
+      "GreenSta.001": 4.7706993200336e-07,
+      "Material.005": 4.805480102731963e-07,
+      "Material.001": 4.917383193969727e-07,
+      "Material.003": 4.924151539853483e-07,
+      "Greenery": 2.6656007889869215e-07,
+      "Material.002": 4.768517101183534e-07
+    },
+    "glb_sha256": "d5058d97c87ed6d707d48cf9c9d1d1491d9717bbd25b8ca11fa84ccf281ebf49",
+    "glb_materials": [
+      {
+        "doubleSided": true,
+        "name": "MBG_PBR_Roof",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.11999999731779099,
+            0.25,
+            0.4000000059604645,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.8799999952316284
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "MBG_PBR_GroundFloorWalls",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.40354999899864197,
+            0.3063800036907196,
+            0.2138800024986267,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.949999988079071
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "MBG_PBR_UpperFloorsPaint",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.6000000238418579,
+            0.4000000059604645,
+            0.20000000298023224,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.949999988079071
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "MBG_PBR_Beam",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.2705988585948944,
+            0.21413731575012207,
+            0.22043994069099426,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.949999988079071
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "MBG_PBR_Stone",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.5087800025939941,
+            0.4585300087928772,
+            0.3751699924468994,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.949999988079071
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "MBG_PBR_WindowGlass",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.11999999731779099,
+            0.23000000417232513,
+            0.30000001192092896,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.25
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "MBG_PBR_GreenSta.001",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.10000000149011612,
+            0.30000001192092896,
+            0.054999999701976776,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.949999988079071
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "MBG_PBR_Material.005",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.6800000071525574,
+            0.09000000357627869,
+            0.11999999731779099,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.949999988079071
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "MBG_PBR_Material.001",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.8500000238418579,
+            0.14000000059604645,
+            0.04500000178813934,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.949999988079071
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "MBG_PBR_Material.003",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.36000001430511475,
+            0.06499999761581421,
+            0.30000001192092896,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.949999988079071
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "MBG_PBR_Greenery",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.07500000298023224,
+            0.23999999463558197,
+            0.03500000014901161,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.949999988079071
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "MBG_PBR_Material.002",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.949999988079071,
+            0.47999998927116394,
+            0.03500000014901161,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.949999988079071
+        }
+      }
+    ],
+    "original_unchanged": true,
+    "identity_mesh_node": true,
+    "supporting_body_bounds_gltf": {
+      "min": [
+        -2.6443376541137695,
+        0,
+        -1.744337558746338
+      ],
+      "max": [
+        2.6443376541137695,
+        7.555453777313232,
+        1.744337558746338
+      ]
+    },
+    "unit_finite_normals": 109512
+  }
+}

@@ -1,0 +1,7178 @@
+{
+  "version": "5.2.2 LTS",
+  "source_sha256": "f44b4be96176204ada3fd768327e2a86129f536c6412129eca0478c72b3d5ae5",
+  "input_vertices": [
+    [
+      -0.8794164061546326,
+      -2.9732375144958496,
+      -0.030876457691192627
+    ],
+    [
+      1.8036816120147705,
+      -2.9732375144958496,
+      -0.030876457691192627
+    ],
+    [
+      -1.2831672430038452,
+      2.882575035095215,
+      0.0
+    ],
+    [
+      1.5735543966293335,
+      2.882575035095215,
+      0.0
+    ]
+  ],
+  "input_attributes": [
+    [
+      "position",
+      "FLOAT_VECTOR",
+      "POINT"
+    ],
+    [
+      ".select_vert",
+      "BOOLEAN",
+      "POINT"
+    ],
+    [
+      ".edge_verts",
+      "INT32_2D",
+      "EDGE"
+    ],
+    [
+      ".select_edge",
+      "BOOLEAN",
+      "EDGE"
+    ],
+    [
+      "sharp_face",
+      "BOOLEAN",
+      "FACE"
+    ],
+    [
+      ".uv_select_face",
+      "BOOLEAN",
+      "FACE"
+    ],
+    [
+      ".corner_vert",
+      "INT",
+      "CORNER"
+    ],
+    [
+      ".corner_edge",
+      "INT",
+      "CORNER"
+    ],
+    [
+      "UVMap",
+      "FLOAT2",
+      "CORNER"
+    ],
+    [
+      ".uv_select_vert",
+      "BOOLEAN",
+      "CORNER"
+    ],
+    [
+      ".uv_select_edge",
+      "BOOLEAN",
+      "CORNER"
+    ]
+  ],
+  "matrix": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "graph": [
+    {
+      "name": "Extrude Mesh",
+      "label": "",
+      "type": "GeometryNodeExtrudeMesh",
+      "parent": "extrude out first floor",
+      "operation": null,
+      "inputs": [
+        [
+          "Selection",
+          "True"
+        ],
+        [
+          "Offset",
+          "<Vector (0.0000, 0.0000, 0.0000)>"
+        ],
+        [
+          "Offset Scale",
+          "1.0"
+        ],
+        [
+          "Individual",
+          "False"
+        ]
+      ],
+      "incoming": [
+        [
+          "Store Named Attribute.001",
+          "Geometry",
+          "Mesh"
+        ],
+        [
+          "Combine XYZ.003",
+          "Vector",
+          "Offset"
+        ],
+        [
+          "Math.068",
+          "Value",
+          "Offset Scale"
+        ]
+      ]
+    },
+    {
+      "name": "Extrude Mesh.001",
+      "label": "",
+      "type": "GeometryNodeExtrudeMesh",
+      "parent": "Extude the base out wards so that we can pull up second floor",
+      "operation": null,
+      "inputs": [
+        [
+          "Selection",
+          "True"
+        ],
+        [
+          "Offset",
+          "<Vector (0.0000, 0.0000, 0.0000)>"
+        ],
+        [
+          "Offset Scale",
+          "0.20000000298023224"
+        ],
+        [
+          "Individual",
+          "False"
+        ]
+      ],
+      "incoming": [
+        [
+          "Extrude Mesh",
+          "Mesh",
+          "Mesh"
+        ],
+        [
+          "Extrude Mesh",
+          "Top",
+          "Selection"
+        ],
+        [
+          "Value",
+          "Value",
+          "Offset Scale"
+        ]
+      ]
+    },
+    {
+      "name": "Extrude Mesh.002",
+      "label": "",
+      "type": "GeometryNodeExtrudeMesh",
+      "parent": "Extude out inbetween floors",
+      "operation": null,
+      "inputs": [
+        [
+          "Selection",
+          "True"
+        ],
+        [
+          "Offset",
+          "<Vector (0.0000, 0.0000, 0.0000)>"
+        ],
+        [
+          "Offset Scale",
+          "1.0"
+        ],
+        [
+          "Individual",
+          "False"
+        ]
+      ],
+      "incoming": [
+        [
+          "Repeat Input",
+          "Geometry",
+          "Mesh"
+        ],
+        [
+          "Repeat Input",
+          "Top",
+          "Selection"
+        ],
+        [
+          "Combine XYZ.004",
+          "Vector",
+          "Offset"
+        ],
+        [
+          "Random Value.004",
+          "Value",
+          "Offset Scale"
+        ]
+      ]
+    },
+    {
+      "name": "Position",
+      "label": "",
+      "type": "GeometryNodeInputPosition",
+      "parent": "This is like inserting edge loop. through duplication",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Separate XYZ",
+      "label": "",
+      "type": "ShaderNodeSeparateXYZ",
+      "parent": "This is like inserting edge loop. through duplication",
+      "operation": null,
+      "inputs": [
+        [
+          "Vector",
+          "<bpy_float[3], NodeSocketVector.default_value>"
+        ]
+      ],
+      "incoming": [
+        [
+          "Position",
+          "Position",
+          "Vector"
+        ]
+      ]
+    },
+    {
+      "name": "Math",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "This is like inserting edge loop. through duplication",
+      "operation": "MAXIMUM",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.0"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Separate XYZ",
+          "X",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Position.001",
+      "label": "",
+      "type": "GeometryNodeInputPosition",
+      "parent": "This is like inserting edge loop. through duplication",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Separate XYZ.001",
+      "label": "",
+      "type": "ShaderNodeSeparateXYZ",
+      "parent": "This is like inserting edge loop. through duplication",
+      "operation": null,
+      "inputs": [
+        [
+          "Vector",
+          "<bpy_float[3], NodeSocketVector.default_value>"
+        ]
+      ],
+      "incoming": [
+        [
+          "Position.001",
+          "Position",
+          "Vector"
+        ]
+      ]
+    },
+    {
+      "name": "Math.001",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "This is like inserting edge loop. through duplication",
+      "operation": "MINIMUM",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.0"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Separate XYZ.001",
+          "X",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Extrude Mesh.003",
+      "label": "",
+      "type": "GeometryNodeExtrudeMesh",
+      "parent": "create a little padding so a face is pulled up",
+      "operation": null,
+      "inputs": [
+        [
+          "Selection",
+          "True"
+        ],
+        [
+          "Offset",
+          "<Vector (0.0000, 0.0000, 0.0000)>"
+        ],
+        [
+          "Offset Scale",
+          "0.10000000149011612"
+        ],
+        [
+          "Individual",
+          "False"
+        ]
+      ],
+      "incoming": [
+        [
+          "Named Attribute.004",
+          "Attribute",
+          "Offset"
+        ],
+        [
+          "Subdivide Mesh",
+          "Mesh",
+          "Mesh"
+        ]
+      ]
+    },
+    {
+      "name": "Position.002",
+      "label": "",
+      "type": "GeometryNodeInputPosition",
+      "parent": "select the center cut to pull up",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Separate XYZ.002",
+      "label": "",
+      "type": "ShaderNodeSeparateXYZ",
+      "parent": "select the center cut to pull up",
+      "operation": null,
+      "inputs": [
+        [
+          "Vector",
+          "<bpy_float[3], NodeSocketVector.default_value>"
+        ]
+      ],
+      "incoming": [
+        [
+          "Position.002",
+          "Position",
+          "Vector"
+        ]
+      ]
+    },
+    {
+      "name": "Math.002",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "select the center cut to pull up",
+      "operation": "ABSOLUTE",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Separate XYZ.002",
+          "X",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Extrude Mesh.004",
+      "label": "",
+      "type": "GeometryNodeExtrudeMesh",
+      "parent": "Pull out the side of the roof to overhang",
+      "operation": null,
+      "inputs": [
+        [
+          "Selection",
+          "True"
+        ],
+        [
+          "Offset",
+          "<Vector (0.0000, 0.0000, 0.0000)>"
+        ],
+        [
+          "Offset Scale",
+          "0.19999992847442627"
+        ],
+        [
+          "Individual",
+          "False"
+        ]
+      ],
+      "incoming": [
+        [
+          "Capture Attribute.001",
+          "Geometry",
+          "Mesh"
+        ],
+        [
+          "Reroute.015",
+          "Output",
+          "Offset Scale"
+        ],
+        [
+          "Normal.003",
+          "Normal",
+          "Offset"
+        ],
+        [
+          "Boolean Math.002",
+          "Boolean",
+          "Selection"
+        ]
+      ]
+    },
+    {
+      "name": "Extrude Mesh.005",
+      "label": "",
+      "type": "GeometryNodeExtrudeMesh",
+      "parent": "create volume for the roof",
+      "operation": null,
+      "inputs": [
+        [
+          "Selection",
+          "True"
+        ],
+        [
+          "Offset",
+          "<Vector (0.0000, 0.0000, 0.0000)>"
+        ],
+        [
+          "Offset Scale",
+          "0.07999999821186066"
+        ],
+        [
+          "Individual",
+          "False"
+        ]
+      ],
+      "incoming": [
+        [
+          "Set Position.003",
+          "Geometry",
+          "Mesh"
+        ],
+        [
+          "Reroute.007",
+          "Output",
+          "Selection"
+        ],
+        [
+          "Normal.005",
+          "Normal",
+          "Offset"
+        ]
+      ]
+    },
+    {
+      "name": "Extrude Mesh.007",
+      "label": "",
+      "type": "GeometryNodeExtrudeMesh",
+      "parent": "Pull out the roof over hang in Y - forward axis",
+      "operation": null,
+      "inputs": [
+        [
+          "Selection",
+          "True"
+        ],
+        [
+          "Offset",
+          "<Vector (0.0000, 0.0000, 0.0000)>"
+        ],
+        [
+          "Offset Scale",
+          "0.20000000298023224"
+        ],
+        [
+          "Individual",
+          "False"
+        ]
+      ],
+      "incoming": [
+        [
+          "Capture Attribute",
+          "Geometry",
+          "Mesh"
+        ],
+        [
+          "Reroute.016",
+          "Output",
+          "Offset Scale"
+        ],
+        [
+          "Boolean Math.025",
+          "Boolean",
+          "Selection"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.001",
+      "label": "extrude out first floor",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.002",
+      "label": "Extude the base out wards so that we can pull up second floor",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Math.007",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Deterime how much the first floor is extuded out",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Reroute.003",
+          "Output",
+          "Value"
+        ],
+        [
+          "Math.009",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.003",
+      "label": "Deterime how much the first floor is extuded out",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Math.008",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Deterime how much the first floor is extuded out",
+      "operation": "MULTIPLY",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "16.999998092651367"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Vector Math.004",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.009",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Deterime how much the first floor is extuded out",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "13.09999942779541"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Math.008",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.004",
+      "label": "Extude out inbetween floors",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.005",
+      "label": "Get just the base of the roof",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.006",
+      "label": "This is like inserting edge loop. through duplication",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.007",
+      "label": "create a little padding so a face is pulled up",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Math.010",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Calculate roof height",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Reroute.004",
+          "Output",
+          "Value"
+        ],
+        [
+          "Math.012",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.008",
+      "label": "Calculate roof height",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Math.011",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Calculate roof height",
+      "operation": "MULTIPLY",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "16.999998092651367"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Vector Math.005",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.012",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Calculate roof height",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "13.09999942779541"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Math.011",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.009",
+      "label": "select the center cut to pull up",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.010",
+      "label": "To know the orientation of the base house later",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.011",
+      "label": "Pull up the center of the roof",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.012",
+      "label": "create volume for the roof",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Math.013",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Get faces pointing to left and right",
+      "operation": "ABSOLUTE",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Vector Math.008",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.013",
+      "label": "Get faces pointing to left and right",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.014",
+      "label": "evaluate per face not vertex",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.015",
+      "label": "Pull out the side of the roof to overhang",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.016",
+      "label": "filter out the piece pointing left right htat is not padded roo",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Math.014",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Calculate how much the roof is padded out",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Reroute.013",
+          "Output",
+          "Value"
+        ],
+        [
+          "Math.016",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.017",
+      "label": "Calculate how much the roof is padded out",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Math.015",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Calculate how much the roof is padded out",
+      "operation": "MULTIPLY",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "16.999998092651367"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Vector Math.012",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.016",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Calculate how much the roof is padded out",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "13.09999942779541"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Math.015",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.003",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Mask only forward and backward facing faces",
+      "operation": "ABSOLUTE",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Vector Math.003",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.017",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Deterime how much the first floor is extuded out",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Reroute.014",
+          "Output",
+          "Value"
+        ],
+        [
+          "Math.019",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.018",
+      "label": "Deterime how much the first floor is extuded out",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Math.018",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Deterime how much the first floor is extuded out",
+      "operation": "MULTIPLY",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "16.999998092651367"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Vector Math.013",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.019",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Deterime how much the first floor is extuded out",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "13.09999942779541"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Math.018",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.019",
+      "label": "Pull out the roof over hang in Y - forward axis",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.020",
+      "label": "Mask only forward and backward facing faces",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.021",
+      "label": "Only the roof",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Mesh to Curve",
+      "label": "",
+      "type": "GeometryNodeMeshToCurve",
+      "parent": "Make middle floors skeletal beams",
+      "operation": null,
+      "inputs": [
+        [
+          "Selection",
+          "True"
+        ]
+      ],
+      "incoming": [
+        [
+          "Delete Geometry.001",
+          "Geometry",
+          "Mesh"
+        ]
+      ]
+    },
+    {
+      "name": "Math.020",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Deterimne The height of each floor",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Reroute.018",
+          "Output",
+          "Value"
+        ],
+        [
+          "Math.022",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.022",
+      "label": "Deterimne The height of each floor",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Math.021",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Deterimne The height of each floor",
+      "operation": "MULTIPLY",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "16.999998092651367"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Vector Math.014",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.022",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Deterimne The height of each floor",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "13.09999942779541"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Math.021",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.004",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Deterimne The height of each floor",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Repeat Input",
+          "Iteration",
+          "Value"
+        ],
+        [
+          "Group Input.006",
+          "Seed",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.023",
+      "label": "Delete everything thtat is not frame of middle floors",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.024",
+      "label": "Make middle floors skeletal beams",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Mesh to Curve.001",
+      "label": "",
+      "type": "GeometryNodeMeshToCurve",
+      "parent": "Spawn the bases of the support beams",
+      "operation": null,
+      "inputs": [
+        [
+          "Selection",
+          "True"
+        ]
+      ],
+      "incoming": [
+        [
+          "Set Position.004",
+          "Geometry",
+          "Mesh"
+        ]
+      ]
+    },
+    {
+      "name": "Resample Curve",
+      "label": "",
+      "type": "GeometryNodeResampleCurve",
+      "parent": "Spawn the bases of the support beams",
+      "operation": null,
+      "inputs": [
+        [
+          "Selection",
+          "True"
+        ],
+        [
+          "Mode",
+          "Length"
+        ],
+        [
+          "Count",
+          "10"
+        ],
+        [
+          "Length",
+          "0.7099999189376831"
+        ]
+      ],
+      "incoming": [
+        [
+          "Mesh to Curve.001",
+          "Curve",
+          "Curve"
+        ]
+      ]
+    },
+    {
+      "name": "Separate XYZ.003",
+      "label": "",
+      "type": "ShaderNodeSeparateXYZ",
+      "parent": "Get frame direciton",
+      "operation": null,
+      "inputs": [
+        [
+          "Vector",
+          "<bpy_float[3], NodeSocketVector.default_value>"
+        ]
+      ],
+      "incoming": [
+        [
+          "Vector Math.016",
+          "Vector",
+          "Vector"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.025",
+      "label": "Get the base of the upper floors",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.026",
+      "label": "Spawn the bases of the support beams",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Math.023",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Deterime how much the first floor is extuded out",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Reroute.025",
+          "Output",
+          "Value"
+        ],
+        [
+          "Math.025",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.027",
+      "label": "Deterime how much the first floor is extuded out",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Math.024",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Deterime how much the first floor is extuded out",
+      "operation": "MULTIPLY",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "16.999998092651367"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Vector Math.019",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.025",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Deterime how much the first floor is extuded out",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "13.09999942779541"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Math.024",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.005",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Deterime how much the first floor is extuded out",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Index",
+          "Index",
+          "Value"
+        ],
+        [
+          "Math.023",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.028",
+      "label": "Get frame direciton",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.029",
+      "label": "Create first floor support beams",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Bounding Box",
+      "label": "",
+      "type": "GeometryNodeBoundBox",
+      "parent": "select the center cut to pull up",
+      "operation": null,
+      "inputs": [
+        [
+          "Use Radius",
+          "False"
+        ]
+      ],
+      "incoming": [
+        [
+          "Merge by Distance",
+          "Geometry",
+          "Geometry"
+        ]
+      ]
+    },
+    {
+      "name": "Separate XYZ.004",
+      "label": "",
+      "type": "ShaderNodeSeparateXYZ",
+      "parent": "select the center cut to pull up",
+      "operation": null,
+      "inputs": [
+        [
+          "Vector",
+          "<bpy_float[3], NodeSocketVector.default_value>"
+        ]
+      ],
+      "incoming": [
+        [
+          "Bounding Box",
+          "Min",
+          "Vector"
+        ]
+      ]
+    },
+    {
+      "name": "Separate XYZ.005",
+      "label": "",
+      "type": "ShaderNodeSeparateXYZ",
+      "parent": "select the center cut to pull up",
+      "operation": null,
+      "inputs": [
+        [
+          "Vector",
+          "<bpy_float[3], NodeSocketVector.default_value>"
+        ]
+      ],
+      "incoming": [
+        [
+          "Bounding Box",
+          "Max",
+          "Vector"
+        ]
+      ]
+    },
+    {
+      "name": "Math.006",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "",
+      "operation": "DIVIDE",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Math.002",
+          "Value",
+          "Value"
+        ],
+        [
+          "Math.026",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.026",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "select the center cut to pull up",
+      "operation": "ABSOLUTE",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Switch",
+          "Output",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.027",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "",
+      "operation": "SUBTRACT",
+      "inputs": [
+        [
+          "Value",
+          "1.0"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Math.006",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.028",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "",
+      "operation": "POWER",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "1.2999999523162842"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Math.027",
+          "Value",
+          "Value"
+        ],
+        [
+          "Group Input.009",
+          "RoofCurvature",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.030",
+      "label": "Add divisions so that we can add curvature to roof",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Separate XYZ.006",
+      "label": "",
+      "type": "ShaderNodeSeparateXYZ",
+      "parent": "Get all the faces pointing down",
+      "operation": null,
+      "inputs": [
+        [
+          "Vector",
+          "<bpy_float[3], NodeSocketVector.default_value>"
+        ]
+      ],
+      "incoming": [
+        [
+          "Normal.006",
+          "Normal",
+          "Vector"
+        ]
+      ]
+    },
+    {
+      "name": "Distribute Points on Faces",
+      "label": "",
+      "type": "GeometryNodeDistributePointsOnFaces",
+      "parent": "",
+      "operation": null,
+      "inputs": [
+        [
+          "Selection",
+          "True"
+        ],
+        [
+          "Distance Min",
+          "0.19999998807907104"
+        ],
+        [
+          "Density Max",
+          "74.40000915527344"
+        ],
+        [
+          "Density",
+          "10.0"
+        ],
+        [
+          "Density Factor",
+          "1.0"
+        ],
+        [
+          "Seed",
+          "0"
+        ]
+      ],
+      "incoming": [
+        [
+          "Delete Geometry.003",
+          "Geometry",
+          "Mesh"
+        ]
+      ]
+    },
+    {
+      "name": "Position.003",
+      "label": "",
+      "type": "GeometryNodeInputPosition",
+      "parent": "Delete the points that are too close to the center of the roof",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Separate XYZ.007",
+      "label": "",
+      "type": "ShaderNodeSeparateXYZ",
+      "parent": "Delete the points that are too close to the center of the roof",
+      "operation": null,
+      "inputs": [
+        [
+          "Vector",
+          "<bpy_float[3], NodeSocketVector.default_value>"
+        ]
+      ],
+      "incoming": [
+        [
+          "Position.003",
+          "Position",
+          "Vector"
+        ]
+      ]
+    },
+    {
+      "name": "Math.029",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Delete the points that are too close to the center of the roof",
+      "operation": "ABSOLUTE",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Separate XYZ.007",
+          "X",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.031",
+      "label": "Get all the faces pointing down",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.032",
+      "label": "Get the non roof areas",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.033",
+      "label": "Keep only the roof",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.034",
+      "label": "Delete the points that are too close to the center of the roof",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.035",
+      "label": "Offset abit along normal to create iregularities",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.036",
+      "label": "Save some per tile randomness for shading",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Math.030",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Deterime how much the first floor is extuded out",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Reroute.029",
+          "Output",
+          "Value"
+        ],
+        [
+          "Math.032",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.037",
+      "label": "Deterime how much the first floor is extuded out",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Math.031",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Deterime how much the first floor is extuded out",
+      "operation": "MULTIPLY",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "16.999998092651367"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Vector Math.022",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.032",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Deterime how much the first floor is extuded out",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "13.09999942779541"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Math.031",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.033",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Deterime how much the first floor is extuded out",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Math.030",
+          "Value",
+          "Value"
+        ],
+        [
+          "Curve Info",
+          "Curve Index",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Position.004",
+      "label": "",
+      "type": "GeometryNodeInputPosition",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Math.034",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Deterimne The height of each floor",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Reroute.030",
+          "Output",
+          "Value"
+        ],
+        [
+          "Math.036",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.038",
+      "label": "Deterimne The height of each floor",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Math.035",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Deterimne The height of each floor",
+      "operation": "MULTIPLY",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "16.999998092651367"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Vector Math.025",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.036",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Deterimne The height of each floor",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "13.09999942779541"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Math.035",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.037",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Deterimne The height of each floor",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "14.59999942779541"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Group Input.011",
+          "Seed",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.038",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Deterimne The height of each floor",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Random Value.009",
+          "Value",
+          "Value"
+        ],
+        [
+          "Random Value.010",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Mesh to Curve.002",
+      "label": "",
+      "type": "GeometryNodeMeshToCurve",
+      "parent": "Making windows in the middle floors",
+      "operation": null,
+      "inputs": [
+        [
+          "Selection",
+          "True"
+        ]
+      ],
+      "incoming": [
+        [
+          "Delete Geometry.005",
+          "Geometry",
+          "Mesh"
+        ]
+      ]
+    },
+    {
+      "name": "Math.039",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Delete the corners of the wall",
+      "operation": "MULTIPLY",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Value.003",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.039",
+      "label": "Ground floor selection",
+      "type": "NodeFrame",
+      "parent": "Making windows in the middle floors",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.040",
+      "label": "Only walls of that floor",
+      "type": "NodeFrame",
+      "parent": "Making windows in the middle floors",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.041",
+      "label": "Position windows in half way point on the floor",
+      "type": "NodeFrame",
+      "parent": "Making windows in the middle floors",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.042",
+      "label": "Sample normal of the point where the window is",
+      "type": "NodeFrame",
+      "parent": "Making windows in the middle floors",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.043",
+      "label": "Delete the corners of the wall",
+      "type": "NodeFrame",
+      "parent": "Making windows in the middle floors",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.044",
+      "label": "Generate possible window spots",
+      "type": "NodeFrame",
+      "parent": "Making windows in the middle floors",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.045",
+      "label": "Making windows in the middle floors",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Math.040",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Generate unique seed per floor",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Reroute.046",
+          "Output",
+          "Value"
+        ],
+        [
+          "Math.042",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.041",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Generate unique seed per floor",
+      "operation": "MULTIPLY",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "16.999998092651367"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Vector Math.028",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.042",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Generate unique seed per floor",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "13.09999942779541"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Math.041",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.043",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Generate unique seed per floor",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "28.19999885559082"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Group Input.013",
+          "Seed",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.044",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Reroute.048",
+          "Output",
+          "Value"
+        ],
+        [
+          "Math.040",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.046",
+      "label": "Generate unique seed per floor",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.047",
+      "label": "Construct right up coordinate system per windopw",
+      "type": "NodeFrame",
+      "parent": "Making windows in the middle floors",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.048",
+      "label": "Get the bases of the support beams",
+      "type": "NodeFrame",
+      "parent": "Spawn the middle support beams",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.050",
+      "label": "Spawn vertical support beams where there are no windows",
+      "type": "NodeFrame",
+      "parent": "Spawn the middle support beams",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Math.045",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Spawn diagonal beams twice",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "20.799999237060547"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Reroute.063",
+          "Output",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.049",
+      "label": "Spawn diagonal beams twice",
+      "type": "NodeFrame",
+      "parent": "Spawn the middle support beams",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.051",
+      "label": "Delete beams overlapping with the window",
+      "type": "NodeFrame",
+      "parent": "Spawn the middle support beams",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.052",
+      "label": "Spawn the middle support beams",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.053",
+      "label": "Curve to points doesnt garantee the corners being in",
+      "type": "NodeFrame",
+      "parent": "Making windows in the middle floors",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.054",
+      "label": "Beams",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Math.046",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Delete every thing that is not front or back facing",
+      "operation": "ABSOLUTE",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Vector Math.033",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Position.005",
+      "label": "",
+      "type": "GeometryNodeInputPosition",
+      "parent": "delete everything that is not the base",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Separate XYZ.008",
+      "label": "",
+      "type": "ShaderNodeSeparateXYZ",
+      "parent": "",
+      "operation": null,
+      "inputs": [
+        [
+          "Vector",
+          "<bpy_float[3], NodeSocketVector.default_value>"
+        ]
+      ],
+      "incoming": [
+        [
+          "Geometry Proximity.001",
+          "Position",
+          "Vector"
+        ]
+      ]
+    },
+    {
+      "name": "Math.047",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "delete everything that is not the base",
+      "operation": "SUBTRACT",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "-0.0020000000949949026"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Separate XYZ.008",
+          "Z",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Position.006",
+      "label": "",
+      "type": "GeometryNodeInputPosition",
+      "parent": "filter the vertices that are not dead in the center of the face",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Separate XYZ.009",
+      "label": "",
+      "type": "ShaderNodeSeparateXYZ",
+      "parent": "filter the vertices that are not dead in the center of the face",
+      "operation": null,
+      "inputs": [
+        [
+          "Vector",
+          "<bpy_float[3], NodeSocketVector.default_value>"
+        ]
+      ],
+      "incoming": [
+        [
+          "Position.006",
+          "Position",
+          "Vector"
+        ]
+      ]
+    },
+    {
+      "name": "Math.048",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "filter the vertices that are not dead in the center of the face",
+      "operation": "ABSOLUTE",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Separate XYZ.009",
+          "X",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.050",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "figure out the height of the roof",
+      "operation": "MULTIPLY",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.3199999928474426"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Capture Attribute.005",
+          "RoofHegiht",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.055",
+      "label": "Delete every thing that is not front or back facing",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.056",
+      "label": "delete everything that is not the base",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.057",
+      "label": "filter the vertices that are not dead in the center of the face",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.058",
+      "label": "figure out the height of the roof",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.059",
+      "label": "Position window in halfway point",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Math.051",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Unique seed for windows side",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Reroute.086",
+          "Output",
+          "Value"
+        ],
+        [
+          "Math.053",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.052",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Unique seed for windows side",
+      "operation": "MULTIPLY",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "16.999998092651367"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Vector Math.035",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.053",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Unique seed for windows side",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "13.09999942779541"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Math.052",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.060",
+      "label": "Unique seed for windows side",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Math.054",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Unique seed for windows side",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "17.599998474121094"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Math.051",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Separate XYZ.010",
+      "label": "",
+      "type": "ShaderNodeSeparateXYZ",
+      "parent": "delete everything that is not the base",
+      "operation": null,
+      "inputs": [
+        [
+          "Vector",
+          "<bpy_float[3], NodeSocketVector.default_value>"
+        ]
+      ],
+      "incoming": [
+        [
+          "Position.005",
+          "Position",
+          "Vector"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.061",
+      "label": "Spawn Upper windows",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Mesh to Curve.003",
+      "label": "",
+      "type": "GeometryNodeMeshToCurve",
+      "parent": "Attic Beams",
+      "operation": null,
+      "inputs": [
+        [
+          "Selection",
+          "True"
+        ]
+      ],
+      "incoming": [
+        [
+          "Delete Geometry.015",
+          "Geometry",
+          "Mesh"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.062",
+      "label": "Attic Beams",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Position.007",
+      "label": "",
+      "type": "GeometryNodeInputPosition",
+      "parent": "Delete edges that are too close to the center",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Separate XYZ.011",
+      "label": "",
+      "type": "ShaderNodeSeparateXYZ",
+      "parent": "Delete edges that are too close to the center",
+      "operation": null,
+      "inputs": [
+        [
+          "Vector",
+          "<bpy_float[3], NodeSocketVector.default_value>"
+        ]
+      ],
+      "incoming": [
+        [
+          "Position.007",
+          "Position",
+          "Vector"
+        ]
+      ]
+    },
+    {
+      "name": "Math.049",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Delete edges that are too close to the center",
+      "operation": "ABSOLUTE",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Separate XYZ.011",
+          "X",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Mesh to Curve.004",
+      "label": "",
+      "type": "GeometryNodeMeshToCurve",
+      "parent": "",
+      "operation": null,
+      "inputs": [
+        [
+          "Selection",
+          "True"
+        ]
+      ],
+      "incoming": [
+        [
+          "Delete Geometry.016",
+          "Geometry",
+          "Mesh"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.063",
+      "label": "Slide the potential window Mid point",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.064",
+      "label": "Delete edges that are too close to the center",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.065",
+      "label": "Delete windows too close to the corner",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.066",
+      "label": "Bring to the height of the Roof",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Position.008",
+      "label": "",
+      "type": "GeometryNodeInputPosition",
+      "parent": "We are assuming windows only point left or right on the roof",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Separate XYZ.012",
+      "label": "",
+      "type": "ShaderNodeSeparateXYZ",
+      "parent": "We are assuming windows only point left or right on the roof",
+      "operation": null,
+      "inputs": [
+        [
+          "Vector",
+          "<bpy_float[3], NodeSocketVector.default_value>"
+        ]
+      ],
+      "incoming": [
+        [
+          "Position.008",
+          "Position",
+          "Vector"
+        ]
+      ]
+    },
+    {
+      "name": "Extrude Mesh.006",
+      "label": "",
+      "type": "GeometryNodeExtrudeMesh",
+      "parent": "",
+      "operation": null,
+      "inputs": [
+        [
+          "Selection",
+          "True"
+        ],
+        [
+          "Offset",
+          "<Vector (0.0000, 0.0000, 0.0000)>"
+        ],
+        [
+          "Offset Scale",
+          "0.10000002384185791"
+        ],
+        [
+          "Individual",
+          "False"
+        ]
+      ],
+      "incoming": [
+        [
+          "Compare.013",
+          "Result",
+          "Selection"
+        ],
+        [
+          "Reroute.097",
+          "Output",
+          "Mesh"
+        ]
+      ]
+    },
+    {
+      "name": "Position.009",
+      "label": "",
+      "type": "GeometryNodeInputPosition",
+      "parent": "select the center cut to pull up",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Separate XYZ.013",
+      "label": "",
+      "type": "ShaderNodeSeparateXYZ",
+      "parent": "select the center cut to pull up",
+      "operation": null,
+      "inputs": [
+        [
+          "Vector",
+          "<bpy_float[3], NodeSocketVector.default_value>"
+        ]
+      ],
+      "incoming": [
+        [
+          "Position.009",
+          "Position",
+          "Vector"
+        ]
+      ]
+    },
+    {
+      "name": "Math.055",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "select the center cut to pull up",
+      "operation": "ABSOLUTE",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Separate XYZ.013",
+          "Y",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.056",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Calculate roof height",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Reroute.095",
+          "Output",
+          "Value"
+        ],
+        [
+          "Math.058",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.067",
+      "label": "Calculate roof height",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Math.057",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Calculate roof height",
+      "operation": "MULTIPLY",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "16.999998092651367"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Vector Math.038",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.058",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Calculate roof height",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "13.09999942779541"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Math.057",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.068",
+      "label": "select the center cut to pull up",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Bounding Box.001",
+      "label": "",
+      "type": "GeometryNodeBoundBox",
+      "parent": "select the center cut to pull up",
+      "operation": null,
+      "inputs": [
+        [
+          "Use Radius",
+          "False"
+        ]
+      ],
+      "incoming": [
+        [
+          "Reroute.097",
+          "Output",
+          "Geometry"
+        ]
+      ]
+    },
+    {
+      "name": "Separate XYZ.014",
+      "label": "",
+      "type": "ShaderNodeSeparateXYZ",
+      "parent": "select the center cut to pull up",
+      "operation": null,
+      "inputs": [
+        [
+          "Vector",
+          "<bpy_float[3], NodeSocketVector.default_value>"
+        ]
+      ],
+      "incoming": [
+        [
+          "Bounding Box.001",
+          "Min",
+          "Vector"
+        ]
+      ]
+    },
+    {
+      "name": "Separate XYZ.015",
+      "label": "",
+      "type": "ShaderNodeSeparateXYZ",
+      "parent": "select the center cut to pull up",
+      "operation": null,
+      "inputs": [
+        [
+          "Vector",
+          "<bpy_float[3], NodeSocketVector.default_value>"
+        ]
+      ],
+      "incoming": [
+        [
+          "Bounding Box.001",
+          "Max",
+          "Vector"
+        ]
+      ]
+    },
+    {
+      "name": "Math.059",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "",
+      "operation": "DIVIDE",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Math.055",
+          "Value",
+          "Value"
+        ],
+        [
+          "Math.060",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.060",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "select the center cut to pull up",
+      "operation": "ABSOLUTE",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Switch.002",
+          "Output",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.061",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "",
+      "operation": "SUBTRACT",
+      "inputs": [
+        [
+          "Value",
+          "1.0"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Math.059",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.062",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "",
+      "operation": "POWER",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Math.061",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.063",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.0"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Reroute.096",
+          "Output",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.064",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Get UniqueSeed",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Reroute.098",
+          "Output",
+          "Value"
+        ],
+        [
+          "Math.066",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.065",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Get UniqueSeed",
+      "operation": "MULTIPLY",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "16.999998092651367"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Vector Math.041",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.066",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Get UniqueSeed",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "15.799999237060547"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Math.065",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.069",
+      "label": "Get UniqueSeed",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Math.067",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Get UniqueSeed",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Math.064",
+          "Value",
+          "Value"
+        ],
+        [
+          "ID",
+          "ID",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.068",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Deterime how much the first floor is extuded out",
+      "operation": "MULTIPLY",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "1.399999976158142"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Random Value.003",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Distribute Points on Faces.001",
+      "label": "",
+      "type": "GeometryNodeDistributePointsOnFaces",
+      "parent": "",
+      "operation": null,
+      "inputs": [
+        [
+          "Selection",
+          "True"
+        ],
+        [
+          "Distance Min",
+          "0.17000000178813934"
+        ],
+        [
+          "Density Max",
+          "310.5"
+        ],
+        [
+          "Density",
+          "10.0"
+        ],
+        [
+          "Density Factor",
+          "1.0"
+        ],
+        [
+          "Seed",
+          "0"
+        ]
+      ],
+      "incoming": [
+        [
+          "Index Switch.002",
+          "Output",
+          "Mesh"
+        ]
+      ]
+    },
+    {
+      "name": "Math.069",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Delete the points that are too close to the center of the roof",
+      "operation": "ABSOLUTE",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Capture Attribute.007",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.070",
+      "label": "Delete the points that are too close to the center of the roof",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.071",
+      "label": "Offset abit along normal to create iregularities",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.072",
+      "label": "Save some per tile randomness for shading",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.073",
+      "label": "Make the base of the window on the roofing",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.074",
+      "label": "Extrude the tile part out like the normal roof",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.075",
+      "label": "We are assuming windows only point left or right on the roof",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.076",
+      "label": "mask only the top part of the roof",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Distribute Points on Faces.002",
+      "label": "",
+      "type": "GeometryNodeDistributePointsOnFaces",
+      "parent": "",
+      "operation": null,
+      "inputs": [
+        [
+          "Selection",
+          "True"
+        ],
+        [
+          "Distance Min",
+          "0.8999999761581421"
+        ],
+        [
+          "Density Max",
+          "1.3000001907348633"
+        ],
+        [
+          "Density",
+          "1.0000005960464478"
+        ],
+        [
+          "Density Factor",
+          "1.0"
+        ],
+        [
+          "Seed",
+          "92"
+        ]
+      ],
+      "incoming": [
+        [
+          "Reroute.101",
+          "Output",
+          "Mesh"
+        ]
+      ]
+    },
+    {
+      "name": "Position.010",
+      "label": "",
+      "type": "GeometryNodeInputPosition",
+      "parent": "not too close to the center",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Separate XYZ.016",
+      "label": "",
+      "type": "ShaderNodeSeparateXYZ",
+      "parent": "not too close to the center",
+      "operation": null,
+      "inputs": [
+        [
+          "Vector",
+          "<bpy_float[3], NodeSocketVector.default_value>"
+        ]
+      ],
+      "incoming": [
+        [
+          "Position.010",
+          "Position",
+          "Vector"
+        ]
+      ]
+    },
+    {
+      "name": "Math.070",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "not too close to the center",
+      "operation": "ABSOLUTE",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Separate XYZ.016",
+          "X",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Extrude Mesh.008",
+      "label": "",
+      "type": "GeometryNodeExtrudeMesh",
+      "parent": "",
+      "operation": null,
+      "inputs": [
+        [
+          "Selection",
+          "True"
+        ],
+        [
+          "Offset",
+          "<Vector (0.0000, 0.0000, 0.0000)>"
+        ],
+        [
+          "Offset Scale",
+          "1.0"
+        ],
+        [
+          "Individual",
+          "False"
+        ]
+      ],
+      "incoming": [
+        [
+          "Set Position.016",
+          "Geometry",
+          "Mesh"
+        ],
+        [
+          "Random Value.019",
+          "Value",
+          "Offset Scale"
+        ]
+      ]
+    },
+    {
+      "name": "Position.011",
+      "label": "",
+      "type": "GeometryNodeInputPosition",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Position.012",
+      "label": "",
+      "type": "GeometryNodeInputPosition",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Extrude Mesh.009",
+      "label": "",
+      "type": "GeometryNodeExtrudeMesh",
+      "parent": "Extrude out the shape of the chimmeny",
+      "operation": null,
+      "inputs": [
+        [
+          "Selection",
+          "True"
+        ],
+        [
+          "Offset",
+          "<Vector (0.0000, 0.0000, 0.0000)>"
+        ],
+        [
+          "Offset Scale",
+          "0.05000000074505806"
+        ],
+        [
+          "Individual",
+          "False"
+        ]
+      ],
+      "incoming": [
+        [
+          "Extrude Mesh.008",
+          "Top",
+          "Selection"
+        ],
+        [
+          "Capture Attribute.009",
+          "Geometry",
+          "Mesh"
+        ]
+      ]
+    },
+    {
+      "name": "Extrude Mesh.010",
+      "label": "",
+      "type": "GeometryNodeExtrudeMesh",
+      "parent": "Extrude out the shape of the chimmeny",
+      "operation": null,
+      "inputs": [
+        [
+          "Selection",
+          "True"
+        ],
+        [
+          "Offset",
+          "<Vector (0.0000, 0.0000, 0.0000)>"
+        ],
+        [
+          "Offset Scale",
+          "0.10000000149011612"
+        ],
+        [
+          "Individual",
+          "False"
+        ]
+      ],
+      "incoming": [
+        [
+          "Extrude Mesh.009",
+          "Mesh",
+          "Mesh"
+        ],
+        [
+          "Extrude Mesh.009",
+          "Side",
+          "Selection"
+        ]
+      ]
+    },
+    {
+      "name": "Extrude Mesh.011",
+      "label": "",
+      "type": "GeometryNodeExtrudeMesh",
+      "parent": "Extrude out the shape of the chimmeny",
+      "operation": null,
+      "inputs": [
+        [
+          "Selection",
+          "True"
+        ],
+        [
+          "Offset",
+          "<Vector (0.0000, 0.0000, 0.0000)>"
+        ],
+        [
+          "Offset Scale",
+          "0.10000000149011612"
+        ],
+        [
+          "Individual",
+          "False"
+        ]
+      ],
+      "incoming": [
+        [
+          "Extrude Mesh.010",
+          "Mesh",
+          "Mesh"
+        ],
+        [
+          "Extrude Mesh.010",
+          "Side",
+          "Selection"
+        ]
+      ]
+    },
+    {
+      "name": "Distribute Points on Faces.003",
+      "label": "",
+      "type": "GeometryNodeDistributePointsOnFaces",
+      "parent": "",
+      "operation": null,
+      "inputs": [
+        [
+          "Selection",
+          "True"
+        ],
+        [
+          "Distance Min",
+          "0.0"
+        ],
+        [
+          "Density Max",
+          "34.099998474121094"
+        ],
+        [
+          "Density",
+          "10.0"
+        ],
+        [
+          "Density Factor",
+          "1.0"
+        ],
+        [
+          "Seed",
+          "19"
+        ]
+      ],
+      "incoming": [
+        [
+          "Set Position.019",
+          "Geometry",
+          "Mesh"
+        ]
+      ]
+    },
+    {
+      "name": "Position.013",
+      "label": "",
+      "type": "GeometryNodeInputPosition",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.077",
+      "label": "Delete the ground floor. We will join this per hand ",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Mesh to Curve.005",
+      "label": "",
+      "type": "GeometryNodeMeshToCurve",
+      "parent": "",
+      "operation": null,
+      "inputs": [
+        [
+          "Selection",
+          "True"
+        ]
+      ],
+      "incoming": [
+        [
+          "Delete Geometry.028",
+          "Geometry",
+          "Mesh"
+        ]
+      ]
+    },
+    {
+      "name": "Resample Curve.001",
+      "label": "",
+      "type": "GeometryNodeResampleCurve",
+      "parent": "",
+      "operation": null,
+      "inputs": [
+        [
+          "Selection",
+          "True"
+        ],
+        [
+          "Mode",
+          "Evaluated"
+        ],
+        [
+          "Count",
+          "100"
+        ],
+        [
+          "Length",
+          "0.009999999776482582"
+        ]
+      ],
+      "incoming": [
+        [
+          "Mesh to Curve.005",
+          "Curve",
+          "Curve"
+        ]
+      ]
+    },
+    {
+      "name": "Math.071",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Choose one of the points for the door",
+      "operation": "SUBTRACT",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "1.0"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Domain Size",
+          "Point Count",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.072",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Get random ",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Reroute.115",
+          "Output",
+          "Value"
+        ],
+        [
+          "Math.074",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.073",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Get random ",
+      "operation": "MULTIPLY",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "16.999998092651367"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Vector Math.048",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.074",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Get random ",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "16.19999885559082"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Math.073",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.075",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Get random ",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "14.59999942779541"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Group Input.016",
+          "Seed",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.078",
+      "label": "Get random ",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.079",
+      "label": "Choose one of the points for the door",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.080",
+      "label": "Filter out just the base",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.081",
+      "label": "Delete whatever is too close to border",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.082",
+      "label": "Get only front facing points",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.083",
+      "label": "Construct door shape to boolean",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.084",
+      "label": "Get the wooden part of the door",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.085",
+      "label": "isolate the base of the door",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Mesh to Curve.006",
+      "label": "",
+      "type": "GeometryNodeMeshToCurve",
+      "parent": "",
+      "operation": null,
+      "inputs": [
+        [
+          "Selection",
+          "True"
+        ]
+      ],
+      "incoming": [
+        [
+          "Delete Geometry.034",
+          "Geometry",
+          "Mesh"
+        ]
+      ]
+    },
+    {
+      "name": "Math.076",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "",
+      "operation": "MULTIPLY",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Value.007",
+          "Value",
+          "Value"
+        ],
+        [
+          "Random Value.022",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.077",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Create beams on the door",
+      "operation": "MULTIPLY",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.6000000238418579"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Reroute.124",
+          "Output",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.078",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Create beams on the door",
+      "operation": "MULTIPLY",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.25"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Reroute.124",
+          "Output",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.079",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Create beams on the door",
+      "operation": "MULTIPLY",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "1.0"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Reroute.124",
+          "Output",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.086",
+      "label": "Create beams on the door",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Math.080",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Get only the walled area",
+      "operation": "ABSOLUTE",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Vector Math.050",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.087",
+      "label": "Get only the walled area",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Distribute Points on Faces.004",
+      "label": "",
+      "type": "GeometryNodeDistributePointsOnFaces",
+      "parent": "",
+      "operation": null,
+      "inputs": [
+        [
+          "Selection",
+          "True"
+        ],
+        [
+          "Distance Min",
+          "0.0"
+        ],
+        [
+          "Density Max",
+          "10.0"
+        ],
+        [
+          "Density",
+          "21.700000762939453"
+        ],
+        [
+          "Density Factor",
+          "1.0"
+        ],
+        [
+          "Seed",
+          "0"
+        ]
+      ],
+      "incoming": [
+        [
+          "Reroute.128",
+          "Output",
+          "Mesh"
+        ]
+      ]
+    },
+    {
+      "name": "Math.081",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Randomize size in 3 categories",
+      "operation": "MULTIPLY",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Random Value.026",
+          "Value",
+          "Value"
+        ],
+        [
+          "Index Switch",
+          "Output",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.088",
+      "label": "Randomize size in 3 categories",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.089",
+      "label": "Add variation in how much the stone comes out",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.090",
+      "label": "Delete anything that overlaps with the windows",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.091",
+      "label": "Get only edges that have high curveture",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.092",
+      "label": "Delete whatever is on the shilloute of the mesh",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.093",
+      "label": "Get only top of the chimmeny",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.094",
+      "label": "Get the corners of the roof",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.095",
+      "label": "not too close to the center",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.096",
+      "label": "Not too close to the windows",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.097",
+      "label": "Delete close to window or roof edge or center",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.098",
+      "label": "The baisic shape of the chimmeny",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.099",
+      "label": "We want to work in the local space so realize and zero the obje",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.100",
+      "label": "Gotta bring it back to world space",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.101",
+      "label": "Extrude out the shape of the chimmeny",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.102",
+      "label": "",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.103",
+      "label": "double aply the calculations we did below. Needs to SYNC!",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.104",
+      "label": "Make the chimmeny tubes themselves",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame",
+      "label": "So that all the work we do is in local space",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.105",
+      "label": "Save Info for Later",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.106",
+      "label": "Make ground floor",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.107",
+      "label": "create XY foundation for second floor",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.108",
+      "label": "Make base shape for floor N",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.109",
+      "label": "Windows for Middle floor",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.110",
+      "label": "Beams around window",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.111",
+      "label": "Support beams where there are no windows",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.112",
+      "label": "Get points on the foundation for door and windows",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.113",
+      "label": "Boolean in the door",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.114",
+      "label": "Add ground floor windows",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.115",
+      "label": "Create Door beams geometry",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.116",
+      "label": "Ground to first floor support beams",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.117",
+      "label": "General building skeletal beams",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.118",
+      "label": "Create base shape for the roof",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.119",
+      "label": "Extrude and displace roof shape",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.120",
+      "label": "Spawn Tiles on the roof",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.121",
+      "label": "Create Attic Window",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.122",
+      "label": "Create Attic Beams",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.123",
+      "label": "Make Chimney",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.124",
+      "label": "Make Roof Windows",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.125",
+      "label": "Roof Window Tiles",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Math.082",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "",
+      "operation": "SUBTRACT",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "1.0"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Domain Size.001",
+          "Point Count",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.083",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Get random ",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Reroute.137",
+          "Output",
+          "Value"
+        ],
+        [
+          "Math.085",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.084",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Get random ",
+      "operation": "MULTIPLY",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "16.999998092651367"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Vector Math.052",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.085",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Get random ",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "14.0"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Math.084",
+          "Value",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Math.086",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Get random ",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "3.0"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Group Input.026",
+          "Seed",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.126",
+      "label": "Get random ",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.127",
+      "label": "Get Starting point for Ivy",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Distribute Points on Faces.005",
+      "label": "",
+      "type": "GeometryNodeDistributePointsOnFaces",
+      "parent": "",
+      "operation": null,
+      "inputs": [
+        [
+          "Selection",
+          "True"
+        ],
+        [
+          "Distance Min",
+          "0.0"
+        ],
+        [
+          "Density Max",
+          "10.0"
+        ],
+        [
+          "Density",
+          "125.99999237060547"
+        ],
+        [
+          "Density Factor",
+          "1.0"
+        ],
+        [
+          "Seed",
+          "35"
+        ]
+      ],
+      "incoming": [
+        [
+          "Delete Geometry.050",
+          "Geometry",
+          "Mesh"
+        ],
+        [
+          "Boolean Math.029",
+          "Boolean",
+          "Selection"
+        ]
+      ]
+    },
+    {
+      "name": "Math.087",
+      "label": "",
+      "type": "ShaderNodeMath",
+      "parent": "Add a bit of noise to sell that ivy growth",
+      "operation": "ADD",
+      "inputs": [
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ],
+        [
+          "Value",
+          "0.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Value.008",
+          "Value",
+          "Value"
+        ],
+        [
+          "Map Range.001",
+          "Result",
+          "Value"
+        ]
+      ]
+    },
+    {
+      "name": "Frame.128",
+      "label": "Spawn IVY",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.129",
+      "label": "Add a bit of noise to sell that ivy growth",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Frame.130",
+      "label": "Spawn stone on the wall",
+      "type": "NodeFrame",
+      "parent": "",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    }
+  ],
+  "samples": [
+    {
+      "name": "COMPACT",
+      "width": 4,
+      "depth": 3.2,
+      "triangles": 86975,
+      "direct": 41270,
+      "instances": 1800,
+      "direct_bounds": [
+        [
+          -2.4251997470855713,
+          -2.6859867572784424,
+          -0.21340550482273102
+        ],
+        [
+          2.4227476119995117,
+          2.680546522140503,
+          8.054139137268066
+        ]
+      ],
+      "height": 8.267544642090797,
+      "seconds": 0.13443424299998696,
+      "finite": true,
+      "direct_polygons": 16676,
+      "direct_zero_area_polygons": 2379
+    },
+    {
+      "name": "NARROW",
+      "width": 3.2,
+      "depth": 5,
+      "triangles": 136462,
+      "direct": 51424,
+      "instances": 2950,
+      "direct_bounds": [
+        [
+          -3.326421022415161,
+          -2.2859866619110107,
+          -0.21340550482273102
+        ],
+        [
+          3.3183748722076416,
+          2.2805466651916504,
+          8.07232666015625
+        ]
+      ],
+      "height": 8.285732164978981,
+      "seconds": 0.1615552570000034,
+      "finite": true,
+      "direct_polygons": 20188,
+      "direct_zero_area_polygons": 3232
+    },
+    {
+      "name": "WIDE",
+      "width": 7,
+      "depth": 4,
+      "triangles": 221619,
+      "direct": 74550,
+      "instances": 4043,
+      "direct_bounds": [
+        [
+          -2.8277688026428223,
+          -4.185986518859863,
+          -0.22737804055213928
+        ],
+        [
+          2.8268051147460938,
+          4.180546760559082,
+          8.059280395507812
+        ]
+      ],
+      "height": 8.286658436059952,
+      "seconds": 0.21271898099999476,
+      "finite": true,
+      "direct_polygons": 29535,
+      "direct_zero_area_polygons": 5035
+    },
+    {
+      "name": "MIN",
+      "width": 3.2,
+      "depth": 3,
+      "triangles": 84831,
+      "direct": 38832,
+      "instances": 1720,
+      "direct_bounds": [
+        [
+          -2.325090169906616,
+          -2.2844433784484863,
+          -0.21340550482273102
+        ],
+        [
+          2.316420078277588,
+          2.2805466651916504,
+          8.029358863830566
+        ]
+      ],
+      "height": 8.242764368653297,
+      "seconds": 0.1221548119999909,
+      "finite": true,
+      "direct_polygons": 15668,
+      "direct_zero_area_polygons": 1971
+    },
+    {
+      "name": "MAX",
+      "width": 7,
+      "depth": 5,
+      "triangles": 249297,
+      "direct": 80474,
+      "instances": 4286,
+      "direct_bounds": [
+        [
+          -3.326421022415161,
+          -4.185986518859863,
+          -0.22737804055213928
+        ],
+        [
+          3.3255715370178223,
+          4.180546760559082,
+          8.0846529006958
+        ]
+      ],
+      "height": 8.31203094124794,
+      "seconds": 0.22817867000000547,
+      "finite": true,
+      "direct_polygons": 31809,
+      "direct_zero_area_polygons": 5373
+    },
+    {
+      "name": "THIN",
+      "width": 2,
+      "depth": 3,
+      "triangles": 68981,
+      "direct": 30388,
+      "instances": 1318,
+      "direct_bounds": [
+        [
+          -2.325089931488037,
+          -1.6844432353973389,
+          -0.21340550482273102
+        ],
+        [
+          2.3151438236236572,
+          1.680546522140503,
+          8.029358863830566
+        ]
+      ],
+      "height": 8.242764368653297,
+      "seconds": 0.09810976599999321,
+      "finite": true,
+      "direct_polygons": 12196,
+      "direct_zero_area_polygons": 1385
+    },
+    {
+      "name": "SHALLOW",
+      "width": 4,
+      "depth": 2,
+      "triangles": 82515,
+      "direct": 38826,
+      "instances": 1618,
+      "direct_bounds": [
+        [
+          -1.82437264919281,
+          -2.684443235397339,
+          -0.21340550482273102
+        ],
+        [
+          1.81479012966156,
+          2.680546283721924,
+          8.028081893920898
+        ]
+      ],
+      "height": 8.24148739874363,
+      "seconds": 0.1201351939999995,
+      "finite": true,
+      "direct_polygons": 15704,
+      "direct_zero_area_polygons": 2107
+    },
+    {
+      "name": "HUGE",
+      "width": 9,
+      "depth": 6,
+      "triangles": 292483,
+      "direct": 99226,
+      "instances": 4876,
+      "direct_bounds": [
+        [
+          -3.8224194049835205,
+          -5.18598747253418,
+          -0.22737804055213928
+        ],
+        [
+          3.816174268722534,
+          5.18054723739624,
+          8.198185920715332
+        ]
+      ],
+      "height": 8.425563961267471,
+      "seconds": 0.2802363590000141,
+      "finite": true,
+      "direct_polygons": 39201,
+      "direct_zero_area_polygons": 6787
+    }
+  ],
+  "addon_version": "0.2.0",
+  "original_direct_zero_area_polygons": 3582,
+  "original_direct_polygons": 23061,
+  "space_and_spacing_nodes": [
+    {
+      "name": "Object Info.002",
+      "type": "GeometryNodeObjectInfo",
+      "parent": "Deterime how much the first floor is extuded out",
+      "inputs": [
+        [
+          "Object",
+          "None"
+        ],
+        [
+          "As Instance",
+          "False"
+        ]
+      ],
+      "incoming": [
+        [
+          "Self Object.003",
+          "Self Object",
+          "Object"
+        ]
+      ]
+    },
+    {
+      "name": "Object Info.003",
+      "type": "GeometryNodeObjectInfo",
+      "parent": "Calculate roof height",
+      "inputs": [
+        [
+          "Object",
+          "None"
+        ],
+        [
+          "As Instance",
+          "False"
+        ]
+      ],
+      "incoming": [
+        [
+          "Self Object.013",
+          "Self Object",
+          "Object"
+        ]
+      ]
+    },
+    {
+      "name": "Object Info.004",
+      "type": "GeometryNodeObjectInfo",
+      "parent": "Calculate how much the roof is padded out",
+      "inputs": [
+        [
+          "Object",
+          "None"
+        ],
+        [
+          "As Instance",
+          "False"
+        ]
+      ],
+      "incoming": [
+        [
+          "Self Object.018",
+          "Self Object",
+          "Object"
+        ]
+      ]
+    },
+    {
+      "name": "Object Info.005",
+      "type": "GeometryNodeObjectInfo",
+      "parent": "Deterime how much the first floor is extuded out",
+      "inputs": [
+        [
+          "Object",
+          "None"
+        ],
+        [
+          "As Instance",
+          "False"
+        ]
+      ],
+      "incoming": [
+        [
+          "Self Object.002",
+          "Self Object",
+          "Object"
+        ]
+      ]
+    },
+    {
+      "name": "Object Info.006",
+      "type": "GeometryNodeObjectInfo",
+      "parent": "Deterimne The height of each floor",
+      "inputs": [
+        [
+          "Object",
+          "None"
+        ],
+        [
+          "As Instance",
+          "False"
+        ]
+      ],
+      "incoming": [
+        [
+          "Self Object.004",
+          "Self Object",
+          "Object"
+        ]
+      ]
+    },
+    {
+      "name": "Resample Curve",
+      "type": "GeometryNodeResampleCurve",
+      "parent": "Spawn the bases of the support beams",
+      "inputs": [
+        [
+          "Selection",
+          "True"
+        ],
+        [
+          "Mode",
+          "Length"
+        ],
+        [
+          "Count",
+          "10"
+        ],
+        [
+          "Length",
+          "0.7099999189376831"
+        ]
+      ],
+      "incoming": [
+        [
+          "Mesh to Curve.001",
+          "Curve",
+          "Curve"
+        ]
+      ]
+    },
+    {
+      "name": "Object Info.007",
+      "type": "GeometryNodeObjectInfo",
+      "parent": "Deterime how much the first floor is extuded out",
+      "inputs": [
+        [
+          "Object",
+          "None"
+        ],
+        [
+          "As Instance",
+          "False"
+        ]
+      ],
+      "incoming": [
+        [
+          "Self Object.011",
+          "Self Object",
+          "Object"
+        ]
+      ]
+    },
+    {
+      "name": "Object Info.008",
+      "type": "GeometryNodeObjectInfo",
+      "parent": "Deterime how much the first floor is extuded out",
+      "inputs": [
+        [
+          "Object",
+          "None"
+        ],
+        [
+          "As Instance",
+          "False"
+        ]
+      ],
+      "incoming": [
+        [
+          "Self Object.012",
+          "Self Object",
+          "Object"
+        ]
+      ]
+    },
+    {
+      "name": "Object Info.009",
+      "type": "GeometryNodeObjectInfo",
+      "parent": "Deterimne The height of each floor",
+      "inputs": [
+        [
+          "Object",
+          "None"
+        ],
+        [
+          "As Instance",
+          "False"
+        ]
+      ],
+      "incoming": [
+        [
+          "Self Object.005",
+          "Self Object",
+          "Object"
+        ]
+      ]
+    },
+    {
+      "name": "Curve to Points",
+      "type": "GeometryNodeCurveToPoints",
+      "parent": "Generate possible window spots",
+      "inputs": [
+        [
+          "Count",
+          "7"
+        ],
+        [
+          "Length",
+          "1.5"
+        ]
+      ],
+      "incoming": [
+        [
+          "Value.003",
+          "Value",
+          "Length"
+        ],
+        [
+          "Mesh to Curve.002",
+          "Curve",
+          "Curve"
+        ]
+      ]
+    },
+    {
+      "name": "Object Info.010",
+      "type": "GeometryNodeObjectInfo",
+      "parent": "Generate unique seed per floor",
+      "inputs": [
+        [
+          "Object",
+          "None"
+        ],
+        [
+          "As Instance",
+          "False"
+        ]
+      ],
+      "incoming": [
+        [
+          "Self Object.010",
+          "Self Object",
+          "Object"
+        ]
+      ]
+    },
+    {
+      "name": "Curve to Points.001",
+      "type": "GeometryNodeCurveToPoints",
+      "parent": "Curve to points doesnt garantee the corners being in",
+      "inputs": [
+        [
+          "Count",
+          "10"
+        ],
+        [
+          "Length",
+          "0.10000000149011612"
+        ]
+      ],
+      "incoming": [
+        [
+          "Mesh to Curve.002",
+          "Curve",
+          "Curve"
+        ]
+      ]
+    },
+    {
+      "name": "Object Info.011",
+      "type": "GeometryNodeObjectInfo",
+      "parent": "Unique seed for windows side",
+      "inputs": [
+        [
+          "Object",
+          "None"
+        ],
+        [
+          "As Instance",
+          "False"
+        ]
+      ],
+      "incoming": [
+        [
+          "Self Object.014",
+          "Self Object",
+          "Object"
+        ]
+      ]
+    },
+    {
+      "name": "Transform Geometry.001",
+      "type": "GeometryNodeTransform",
+      "parent": "Slide the potential window Mid point",
+      "inputs": [
+        [
+          "Mode",
+          "Components"
+        ],
+        [
+          "Translation",
+          "<Vector (0.0000, 0.0000, 0.0000)>"
+        ],
+        [
+          "Rotation",
+          "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+        ],
+        [
+          "Scale",
+          "<Vector (0.9000, 1.0000, 1.0000)>"
+        ]
+      ],
+      "incoming": [
+        [
+          "Reroute.085",
+          "Output",
+          "Geometry"
+        ]
+      ]
+    },
+    {
+      "name": "Curve to Points.002",
+      "type": "GeometryNodeCurveToPoints",
+      "parent": "",
+      "inputs": [
+        [
+          "Count",
+          "10"
+        ],
+        [
+          "Length",
+          "1.1999999284744263"
+        ]
+      ],
+      "incoming": [
+        [
+          "Mesh to Curve.004",
+          "Curve",
+          "Curve"
+        ]
+      ]
+    },
+    {
+      "name": "Transform Geometry.003",
+      "type": "GeometryNodeTransform",
+      "parent": "Make the base of the window on the roofing",
+      "inputs": [
+        [
+          "Mode",
+          "Components"
+        ],
+        [
+          "Translation",
+          "<Vector (-0.5000, 0.0000, 0.4000)>"
+        ],
+        [
+          "Rotation",
+          "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+        ],
+        [
+          "Scale",
+          "<Vector (1.0000, 1.0000, 1.0000)>"
+        ]
+      ],
+      "incoming": [
+        [
+          "Cube.001",
+          "Mesh",
+          "Geometry"
+        ]
+      ]
+    },
+    {
+      "name": "Object Info.013",
+      "type": "GeometryNodeObjectInfo",
+      "parent": "Calculate roof height",
+      "inputs": [
+        [
+          "Object",
+          "None"
+        ],
+        [
+          "As Instance",
+          "False"
+        ]
+      ],
+      "incoming": [
+        [
+          "Self Object.015",
+          "Self Object",
+          "Object"
+        ]
+      ]
+    },
+    {
+      "name": "Object Info.014",
+      "type": "GeometryNodeObjectInfo",
+      "parent": "Get UniqueSeed",
+      "inputs": [
+        [
+          "Object",
+          "None"
+        ],
+        [
+          "As Instance",
+          "False"
+        ]
+      ],
+      "incoming": [
+        [
+          "Self Object.016",
+          "Self Object",
+          "Object"
+        ]
+      ]
+    },
+    {
+      "name": "Transform Geometry.004",
+      "type": "GeometryNodeTransform",
+      "parent": "Make the base of the window on the roofing",
+      "inputs": [
+        [
+          "Mode",
+          "Components"
+        ],
+        [
+          "Translation",
+          "<Vector (0.0000, 0.0000, 0.0000)>"
+        ],
+        [
+          "Rotation",
+          "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+        ],
+        [
+          "Scale",
+          "<Vector (1.0000, 1.0000, 1.0000)>"
+        ]
+      ],
+      "incoming": [
+        [
+          "Transform Geometry.003",
+          "Geometry",
+          "Geometry"
+        ],
+        [
+          "Value.002",
+          "Value",
+          "Scale"
+        ]
+      ]
+    },
+    {
+      "name": "Transform Geometry.002",
+      "type": "GeometryNodeTransform",
+      "parent": "The baisic shape of the chimmeny",
+      "inputs": [
+        [
+          "Mode",
+          "Components"
+        ],
+        [
+          "Translation",
+          "<Vector (0.0000, 0.0000, 0.0000)>"
+        ],
+        [
+          "Rotation",
+          "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+        ],
+        [
+          "Scale",
+          "<Vector (1.0000, 1.0000, 1.0000)>"
+        ]
+      ],
+      "incoming": [
+        [
+          "Grid",
+          "Mesh",
+          "Geometry"
+        ],
+        [
+          "Value.005",
+          "Value",
+          "Scale"
+        ]
+      ]
+    },
+    {
+      "name": "Resample Curve.001",
+      "type": "GeometryNodeResampleCurve",
+      "parent": "",
+      "inputs": [
+        [
+          "Selection",
+          "True"
+        ],
+        [
+          "Mode",
+          "Evaluated"
+        ],
+        [
+          "Count",
+          "100"
+        ],
+        [
+          "Length",
+          "0.009999999776482582"
+        ]
+      ],
+      "incoming": [
+        [
+          "Mesh to Curve.005",
+          "Curve",
+          "Curve"
+        ]
+      ]
+    },
+    {
+      "name": "Curve to Points.003",
+      "type": "GeometryNodeCurveToPoints",
+      "parent": "",
+      "inputs": [
+        [
+          "Count",
+          "23"
+        ],
+        [
+          "Length",
+          "1.100000023841858"
+        ]
+      ],
+      "incoming": [
+        [
+          "Resample Curve.001",
+          "Curve",
+          "Curve"
+        ]
+      ]
+    },
+    {
+      "name": "Object Info.015",
+      "type": "GeometryNodeObjectInfo",
+      "parent": "Get random ",
+      "inputs": [
+        [
+          "Object",
+          "None"
+        ],
+        [
+          "As Instance",
+          "False"
+        ]
+      ],
+      "incoming": [
+        [
+          "Self Object.007",
+          "Self Object",
+          "Object"
+        ]
+      ]
+    },
+    {
+      "name": "Transform Geometry.005",
+      "type": "GeometryNodeTransform",
+      "parent": "Construct door shape to boolean",
+      "inputs": [
+        [
+          "Mode",
+          "Components"
+        ],
+        [
+          "Translation",
+          "<Vector (0.0000, 0.0000, 0.4000)>"
+        ],
+        [
+          "Rotation",
+          "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+        ],
+        [
+          "Scale",
+          "<Vector (1.0000, 1.0000, 1.0000)>"
+        ]
+      ],
+      "incoming": [
+        [
+          "Cube.003",
+          "Mesh",
+          "Geometry"
+        ]
+      ]
+    },
+    {
+      "name": "Transform Geometry.006",
+      "type": "GeometryNodeTransform",
+      "parent": "Construct door shape to boolean",
+      "inputs": [
+        [
+          "Mode",
+          "Components"
+        ],
+        [
+          "Translation",
+          "<Vector (0.0000, 0.0000, 0.0000)>"
+        ],
+        [
+          "Rotation",
+          "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+        ],
+        [
+          "Scale",
+          "<Vector (0.5000, 1.1000, 2.1000)>"
+        ]
+      ],
+      "incoming": [
+        [
+          "Transform Geometry.005",
+          "Geometry",
+          "Geometry"
+        ],
+        [
+          "Combine XYZ.011",
+          "Vector",
+          "Scale"
+        ]
+      ]
+    },
+    {
+      "name": "Curve to Points.004",
+      "type": "GeometryNodeCurveToPoints",
+      "parent": "",
+      "inputs": [
+        [
+          "Count",
+          "8"
+        ],
+        [
+          "Length",
+          "0.10000000149011612"
+        ]
+      ],
+      "incoming": [
+        [
+          "Mesh to Curve.006",
+          "Curve",
+          "Curve"
+        ]
+      ]
+    },
+    {
+      "name": "Transform Geometry.007",
+      "type": "GeometryNodeTransform",
+      "parent": "",
+      "inputs": [
+        [
+          "Mode",
+          "Components"
+        ],
+        [
+          "Translation",
+          "<Vector (0.0000, 0.0000, 0.5000)>"
+        ],
+        [
+          "Rotation",
+          "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+        ],
+        [
+          "Scale",
+          "<Vector (1.0000, 1.0000, 1.0000)>"
+        ]
+      ],
+      "incoming": [
+        [
+          "Cube.004",
+          "Mesh",
+          "Geometry"
+        ]
+      ]
+    },
+    {
+      "name": "Transform Geometry.008",
+      "type": "GeometryNodeTransform",
+      "parent": "Create beams on the door",
+      "inputs": [
+        [
+          "Mode",
+          "Components"
+        ],
+        [
+          "Translation",
+          "<Vector (0.0000, 0.0000, 0.0000)>"
+        ],
+        [
+          "Rotation",
+          "<Euler (x=-0.0017, y=0.0000, z=0.0000), order='XYZ'>"
+        ],
+        [
+          "Scale",
+          "<Vector (1.0000, 1.0000, 2.3000)>"
+        ]
+      ],
+      "incoming": [
+        [
+          "Curve to Mesh.005",
+          "Mesh",
+          "Geometry"
+        ]
+      ]
+    },
+    {
+      "name": "Object Info.016",
+      "type": "GeometryNodeObjectInfo",
+      "parent": "So that all the work we do is in local space",
+      "inputs": [
+        [
+          "Object",
+          "None"
+        ],
+        [
+          "As Instance",
+          "False"
+        ]
+      ],
+      "incoming": [
+        [
+          "Self Object",
+          "Self Object",
+          "Object"
+        ]
+      ]
+    },
+    {
+      "name": "Transform Geometry.009",
+      "type": "GeometryNodeTransform",
+      "parent": "So that all the work we do is in local space",
+      "inputs": [
+        [
+          "Mode",
+          "Matrix"
+        ],
+        [
+          "Translation",
+          "<Vector (0.0000, 0.0000, 0.0000)>"
+        ],
+        [
+          "Rotation",
+          "<Euler (x=0.0000, y=0.0000, z=0.0000), order='XYZ'>"
+        ],
+        [
+          "Scale",
+          "<Vector (1.0000, 1.0000, 1.0000)>"
+        ]
+      ],
+      "incoming": [
+        [
+          "Invert Matrix",
+          "Matrix",
+          "Transform"
+        ],
+        [
+          "Group Input.025",
+          "Input",
+          "Geometry"
+        ]
+      ]
+    },
+    {
+      "name": "Object Info.017",
+      "type": "GeometryNodeObjectInfo",
+      "parent": "Get random ",
+      "inputs": [
+        [
+          "Object",
+          "None"
+        ],
+        [
+          "As Instance",
+          "False"
+        ]
+      ],
+      "incoming": [
+        [
+          "Self Object.020",
+          "Self Object",
+          "Object"
+        ]
+      ]
+    },
+    {
+      "name": "Transform Geometry",
+      "type": "GeometryNodeTransform",
+      "parent": "",
+      "inputs": [
+        [
+          "Mode",
+          "Components"
+        ],
+        [
+          "Translation",
+          "<Vector (0.0000, 0.0000, 0.0000)>"
+        ],
+        [
+          "Rotation",
+          "<Euler (x=-0.4381, y=0.0000, z=0.0000), order='XYZ'>"
+        ],
+        [
+          "Scale",
+          "<Vector (1.0000, 1.0000, 1.0000)>"
+        ]
+      ],
+      "incoming": [
+        [
+          "Cylinder",
+          "Mesh",
+          "Geometry"
+        ],
+        [
+          "Value.009",
+          "Value",
+          "Scale"
+        ]
+      ]
+    }
+  ],
+  "axis_nodes": [
+    {
+      "name": "Position.002",
+      "type": "GeometryNodeInputPosition",
+      "parent": "select the center cut to pull up",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Separate XYZ.002",
+      "type": "ShaderNodeSeparateXYZ",
+      "parent": "select the center cut to pull up",
+      "operation": null,
+      "inputs": [
+        [
+          0,
+          "Vector",
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      ],
+      "incoming": [
+        [
+          "Position.002",
+          "Position",
+          0
+        ]
+      ]
+    },
+    {
+      "name": "Math.002",
+      "type": "ShaderNodeMath",
+      "parent": "select the center cut to pull up",
+      "operation": "ABSOLUTE",
+      "inputs": [
+        [
+          0,
+          "Value",
+          0.5
+        ],
+        [
+          1,
+          "Value",
+          0.5
+        ],
+        [
+          2,
+          "Value",
+          0.5
+        ]
+      ],
+      "incoming": [
+        [
+          "Separate XYZ.002",
+          "X",
+          0
+        ]
+      ]
+    },
+    {
+      "name": "Extrude Mesh.007",
+      "type": "GeometryNodeExtrudeMesh",
+      "parent": "Pull out the roof over hang in Y - forward axis",
+      "operation": null,
+      "inputs": [
+        [
+          1,
+          "Selection",
+          true
+        ],
+        [
+          2,
+          "Offset",
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          3,
+          "Offset Scale",
+          0.20000000298023224
+        ],
+        [
+          4,
+          "Individual",
+          false
+        ]
+      ],
+      "incoming": [
+        [
+          "Capture Attribute",
+          "Geometry",
+          0
+        ],
+        [
+          "Reroute.016",
+          "Output",
+          3
+        ],
+        [
+          "Boolean Math.025",
+          "Boolean",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "Random Value.001",
+      "type": "FunctionNodeRandomValue",
+      "parent": "Calculate roof height",
+      "operation": null,
+      "inputs": [
+        [
+          0,
+          "Min",
+          1.6000001430511475
+        ],
+        [
+          1,
+          "Max",
+          2.3999998569488525
+        ],
+        [
+          2,
+          "ID",
+          0
+        ],
+        [
+          3,
+          "Seed",
+          0
+        ]
+      ],
+      "incoming": [
+        [
+          "Math.010",
+          "Value",
+          2
+        ]
+      ]
+    },
+    {
+      "name": "Group Input.003",
+      "type": "NodeGroupInput",
+      "parent": "Calculate roof height",
+      "operation": null,
+      "inputs": [],
+      "incoming": []
+    },
+    {
+      "name": "Math.010",
+      "type": "ShaderNodeMath",
+      "parent": "Calculate roof height",
+      "operation": "ADD",
+      "inputs": [
+        [
+          0,
+          "Value",
+          0.5
+        ],
+        [
+          1,
+          "Value",
+          0.5
+        ],
+        [
+          2,
+          "Value",
+          0.5
+        ]
+      ],
+      "incoming": [
+        [
+          "Reroute.004",
+          "Output",
+          0
+        ],
+        [
+          "Math.012",
+          "Value",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "Object Info.003",
+      "type": "GeometryNodeObjectInfo",
+      "parent": "Calculate roof height",
+      "operation": null,
+      "inputs": [
+        [
+          0,
+          "Object",
+          null
+        ],
+        [
+          1,
+          "As Instance",
+          false
+        ]
+      ],
+      "incoming": [
+        [
+          "Self Object.013",
+          "Self Object",
+          0
+        ]
+      ]
+    },
+    {
+      "name": "Reroute.004",
+      "type": "NodeReroute",
+      "parent": "Calculate roof height",
+      "operation": null,
+      "inputs": [
+        [
+          0,
+          "Input",
+          0
+        ]
+      ],
+      "incoming": [
+        [
+          "Group Input.003",
+          "Seed",
+          0
+        ]
+      ]
+    },
+    {
+      "name": "Vector Math.005",
+      "type": "ShaderNodeVectorMath",
+      "parent": "Calculate roof height",
+      "operation": "DOT_PRODUCT",
+      "inputs": [
+        [
+          0,
+          "Vector",
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          1,
+          "Vector",
+          [
+            7.299999237060547,
+            10.69999885559082,
+            8.59999942779541
+          ]
+        ],
+        [
+          2,
+          "Vector",
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          3,
+          "Scale",
+          1.0
+        ]
+      ],
+      "incoming": [
+        [
+          "Object Info.003",
+          "Location",
+          0
+        ]
+      ]
+    },
+    {
+      "name": "Math.011",
+      "type": "ShaderNodeMath",
+      "parent": "Calculate roof height",
+      "operation": "MULTIPLY",
+      "inputs": [
+        [
+          0,
+          "Value",
+          0.5
+        ],
+        [
+          1,
+          "Value",
+          16.999998092651367
+        ],
+        [
+          2,
+          "Value",
+          0.5
+        ]
+      ],
+      "incoming": [
+        [
+          "Vector Math.005",
+          "Value",
+          0
+        ]
+      ]
+    },
+    {
+      "name": "Math.012",
+      "type": "ShaderNodeMath",
+      "parent": "Calculate roof height",
+      "operation": "ADD",
+      "inputs": [
+        [
+          0,
+          "Value",
+          0.5
+        ],
+        [
+          1,
+          "Value",
+          13.09999942779541
+        ],
+        [
+          2,
+          "Value",
+          0.5
+        ]
+      ],
+      "incoming": [
+        [
+          "Math.011",
+          "Value",
+          0
+        ]
+      ]
+    },
+    {
+      "name": "Bounding Box",
+      "type": "GeometryNodeBoundBox",
+      "parent": "select the center cut to pull up",
+      "operation": null,
+      "inputs": [
+        [
+          1,
+          "Use Radius",
+          false
+        ]
+      ],
+      "incoming": [
+        [
+          "Merge by Distance",
+          "Geometry",
+          0
+        ]
+      ]
+    },
+    {
+      "name": "Compare.002",
+      "type": "FunctionNodeCompare",
+      "parent": "select the center cut to pull up",
+      "operation": "LESS_THAN",
+      "inputs": [
+        [
+          0,
+          "A",
+          0.0
+        ],
+        [
+          1,
+          "B",
+          0.0
+        ]
+      ],
+      "incoming": [
+        [
+          "Separate XYZ.002",
+          "X",
+          0
+        ]
+      ]
+    },
+    {
+      "name": "Switch",
+      "type": "GeometryNodeSwitch",
+      "parent": "select the center cut to pull up",
+      "operation": null,
+      "inputs": [
+        [
+          0,
+          "Switch",
+          false
+        ],
+        [
+          1,
+          "False",
+          0.0
+        ],
+        [
+          2,
+          "True",
+          0.0
+        ]
+      ],
+      "incoming": [
+        [
+          "Compare.002",
+          "Result",
+          0
+        ],
+        [
+          "Separate XYZ.005",
+          "X",
+          1
+        ],
+        [
+          "Separate XYZ.004",
+          "X",
+          2
+        ]
+      ]
+    },
+    {
+      "name": "Separate XYZ.004",
+      "type": "ShaderNodeSeparateXYZ",
+      "parent": "select the center cut to pull up",
+      "operation": null,
+      "inputs": [
+        [
+          0,
+          "Vector",
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      ],
+      "incoming": [
+        [
+          "Bounding Box",
+          "Min",
+          0
+        ]
+      ]
+    },
+    {
+      "name": "Separate XYZ.005",
+      "type": "ShaderNodeSeparateXYZ",
+      "parent": "select the center cut to pull up",
+      "operation": null,
+      "inputs": [
+        [
+          0,
+          "Vector",
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      ],
+      "incoming": [
+        [
+          "Bounding Box",
+          "Max",
+          0
+        ]
+      ]
+    },
+    {
+      "name": "Math.026",
+      "type": "ShaderNodeMath",
+      "parent": "select the center cut to pull up",
+      "operation": "ABSOLUTE",
+      "inputs": [
+        [
+          0,
+          "Value",
+          0.5
+        ],
+        [
+          1,
+          "Value",
+          0.5
+        ],
+        [
+          2,
+          "Value",
+          0.5
+        ]
+      ],
+      "incoming": [
+        [
+          "Switch",
+          "Output",
+          0
+        ]
+      ]
+    },
+    {
+      "name": "Curve to Points",
+      "type": "GeometryNodeCurveToPoints",
+      "parent": "Generate possible window spots",
+      "operation": null,
+      "inputs": [
+        [
+          1,
+          "Count",
+          7
+        ],
+        [
+          2,
+          "Length",
+          1.5
+        ]
+      ],
+      "incoming": [
+        [
+          "Value.003",
+          "Value",
+          2
+        ],
+        [
+          "Mesh to Curve.002",
+          "Curve",
+          0
+        ]
+      ]
+    },
+    {
+      "name": "Vector Math.047",
+      "type": "ShaderNodeVectorMath",
+      "parent": "Get only front facing points",
+      "operation": "DOT_PRODUCT",
+      "inputs": [
+        [
+          0,
+          "Vector",
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          1,
+          "Vector",
+          [
+            1.0,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          2,
+          "Vector",
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        [
+          3,
+          "Scale",
+          1.0
+        ]
+      ],
+      "incoming": [
+        [
+          "Reroute.112",
+          "Output",
+          0
+        ]
+      ]
+    },
+    {
+      "name": "Compare.020",
+      "type": "FunctionNodeCompare",
+      "parent": "Get only front facing points",
+      "operation": "LESS_THAN",
+      "inputs": [
+        [
+          0,
+          "A",
+          0.0
+        ],
+        [
+          1,
+          "B",
+          0.30000001192092896
+        ]
+      ],
+      "incoming": [
+        [
+          "Vector Math.047",
+          "Value",
+          0
+        ]
+      ]
+    }
+  ],
+  "input_links": [
+    [
+      "Seed",
+      "Reroute.003",
+      "Input"
+    ],
+    [
+      "Seed",
+      "Reroute.004",
+      "Input"
+    ],
+    [
+      "Seed",
+      "Reroute.013",
+      "Input"
+    ],
+    [
+      "Seed",
+      "Reroute.014",
+      "Input"
+    ],
+    [
+      "Seed",
+      "Math.004",
+      "Value"
+    ],
+    [
+      "NumberFloor",
+      "Repeat Input",
+      "Iterations"
+    ],
+    [
+      "Seed",
+      "Reroute.025",
+      "Input"
+    ],
+    [
+      "RoofCurvature",
+      "Math.028",
+      "Value"
+    ],
+    [
+      "Seed",
+      "Reroute.029",
+      "Input"
+    ],
+    [
+      "Seed",
+      "Math.037",
+      "Value"
+    ],
+    [
+      "Seed",
+      "Math.043",
+      "Value"
+    ],
+    [
+      "Seed",
+      "Reroute.086",
+      "Input"
+    ],
+    [
+      "Seed",
+      "Reroute.095",
+      "Input"
+    ],
+    [
+      "Seed",
+      "Reroute.098",
+      "Input"
+    ],
+    [
+      "Seed",
+      "Group.003",
+      "Seed"
+    ],
+    [
+      "Seed",
+      "Group.004",
+      "Seed"
+    ],
+    [
+      "Seed",
+      "Group.005",
+      "Seed"
+    ],
+    [
+      "Seed",
+      "Math.075",
+      "Value"
+    ],
+    [
+      "Seed",
+      "GetPositionBasedSeed",
+      "Seed"
+    ],
+    [
+      "Seed",
+      "GetPositionBasedSeed.001",
+      "Seed"
+    ],
+    [
+      "Seed",
+      "GetPositionBasedSeed.002",
+      "Seed"
+    ],
+    [
+      "RoofColor",
+      "Store Named Attribute.009",
+      "Value"
+    ],
+    [
+      "PaintColor",
+      "Store Named Attribute.010",
+      "Value"
+    ],
+    [
+      "BeamCollor",
+      "Store Named Attribute.011",
+      "Value"
+    ],
+    [
+      "DisableRoofExrudeFront",
+      "Switch.003",
+      "False"
+    ],
+    [
+      "DisableRoofExrudeBack",
+      "Switch.003",
+      "True"
+    ],
+    [
+      "Input",
+      "Transform Geometry.009",
+      "Geometry"
+    ],
+    [
+      "Input",
+      "Geometry Proximity.006",
+      "Geometry"
+    ],
+    [
+      "Seed",
+      "Math.086",
+      "Value"
+    ],
+    [
+      "Seed",
+      "GetPositionBasedSeed.003",
+      "Seed"
+    ],
+    [
+      "SpawnIVY",
+      "Boolean Math.029",
+      "Boolean"
+    ],
+    [
+      "RoofGeometryType",
+      "Menu Switch",
+      "Menu"
+    ],
+    [
+      "RoofGeometryType",
+      "Menu Switch.001",
+      "Menu"
+    ],
+    [
+      "RoofGeometryType",
+      "Menu Switch.002",
+      "Menu"
+    ],
+    [
+      "RoofGeometryType",
+      "Menu Switch.003",
+      "Menu"
+    ],
+    [
+      "RoofGeometryType",
+      "Menu Switch.004",
+      "Menu"
+    ],
+    [
+      "High Polz Plants",
+      "Generate Windows",
+      "High Polz Plants"
+    ],
+    [
+      "High Polz Plants",
+      "Generate Windows.003",
+      "High Polz Plants"
+    ],
+    [
+      "High Polz Plants",
+      "Generate Windows.001",
+      "High Polz Plants"
+    ],
+    [
+      "High Polz Plants",
+      "Generate Windows.002",
+      "High Polz Plants"
+    ]
+  ],
+  "duplicate_normal": {
+    "self_reference": true,
+    "shared_mesh": false
+  },
+  "duplicate_linked": {
+    "self_reference": true,
+    "shared_mesh": true
+  }
+}

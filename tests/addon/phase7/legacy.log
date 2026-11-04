@@ -1,0 +1,19 @@
+00:00.041  translation      | WARNING Falling back to standard locale ("C")
+00:01.275  blend            | Read blend: "/home/alexander-both/Dokumente/Generation/ircss-fork/tests/addon/phase7/runtime/legacy02.blend"
+INFO Draco is available, use library at /snap/blender/7803/lib/libbf_intern_draco_bridge.so
+INFO MeshOptimizer is available, use library at /snap/blender/7803/lib/libbf_intern_meshopt_bridge.so
+17:02:59 | INFO: Starting glTF 2.0 export
+17:02:59 | INFO: Extracting primitive: Mesh
+17:02:59 | INFO: Primitives created: 12
+17:02:59 | INFO: Finished glTF 2.0 export in 0.14919734001159668 s
+
+Info: Eigenständiger Rechteck-Grundriss aktiviert (Custom).
+17:03:01 | INFO: Starting glTF 2.0 export
+17:03:01 | INFO: Extracting primitive: Mesh
+17:03:01 | INFO: Primitives created: 12
+17:03:01 | INFO: Finished glTF 2.0 export in 0.08423972129821777 s
+
+PHASE7_LEGACY_PASS baa8d93c1aa8120c783d6fd0cb4dbc4cb3c875d207ffbf5beb0076d470125c3b
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:34:58)
+
+Blender quit

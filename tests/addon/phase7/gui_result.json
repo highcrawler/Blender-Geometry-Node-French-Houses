@@ -1,0 +1,21 @@
+{
+  "result": "PASS",
+  "real_gui": true,
+  "input_method": "Window.event_simulate",
+  "new_house_button": true,
+  "preset_dropdown": true,
+  "preset_keeps_generator_values": true,
+  "width_field_live": true,
+  "depth_field_live": true,
+  "custom_state_visible": true,
+  "seed_field": true,
+  "floors_field": true,
+  "other_two_houses_identical": true,
+  "no_object_scaling": true,
+  "original_blend_file_unchanged": true,
+  "export_button_and_file_dialog": true,
+  "gui_export_triangles": 204897,
+  "custom_width": 4.400000095367432,
+  "custom_depth": 4.5,
+  "saved_file_sha256": "60cfc5352d4e62f6f245631431537af6b8ad215da4e6911b853db9b3f56696ea"
+}

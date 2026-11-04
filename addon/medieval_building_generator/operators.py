@@ -5,6 +5,7 @@ from bpy_extras.io_utils import ExportHelper
 from .exporter import ExportError, export_house, filename_for, valid_house
 from .assets import AssetError, create_house
 from .properties import preferences
+from . import footprints
 
 
 class MBG_OT_create_house(bpy.types.Operator):
@@ -28,6 +29,31 @@ class MBG_OT_create_house(bpy.types.Operator):
             self.report({'ERROR'}, str(exc))
             return {'CANCELLED'}
         self.report({'INFO'}, f'{obj.name} erstellt. Einstellungen im Medieval-Buildings-Panel.')
+        return {'FINISHED'}
+
+
+class MBG_OT_activate_rectangle(bpy.types.Operator):
+    bl_idname = 'mbg.activate_rectangle'
+    bl_label = 'Rechteck-Grundriss aktivieren'
+    bl_description = 'Bestehenden Grundriss nach Bestätigung bewusst durch ein zentriertes Rechteck ersetzen'
+    bl_options = {'REGISTER', 'UNDO'}
+
+    @classmethod
+    def poll(cls, context):
+        return valid_house(context, context.active_object) and not context.active_object.library
+
+    def invoke(self, context, event):
+        return context.window_manager.invoke_props_dialog(
+            self, width=440, title='Grundriss bewusst ersetzen?', confirm_text='Grundriss umstellen')
+
+    def draw(self, context):
+        self.layout.label(text='Der bisherige Grundriss wird durch ein Rechteck ersetzt.', icon='ERROR')
+        self.layout.label(text='Zentriert auf X/Y, Boden Z=0; Maße werden begrenzt.')
+        self.layout.label(text='Position, Rotation, Skalierung und Generatorwerte bleiben.')
+
+    def execute(self, context):
+        footprints.activate_rectangle(context.active_object)
+        self.report({'INFO'}, 'Eigenständiger Rechteck-Grundriss aktiviert (Custom).')
         return {'FINISHED'}
 
 

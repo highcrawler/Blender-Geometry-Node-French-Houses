@@ -2,6 +2,7 @@ import bpy
 from .assets import HOUSE_TAG, AssetError, generator_modifier, socket
 from .properties import preferences
 from .exporter import valid_house
+from . import footprints
 
 
 class MBG_PT_buildings(bpy.types.Panel):
@@ -29,10 +30,23 @@ class MBG_PT_buildings(bpy.types.Panel):
             return
         layout.use_property_split = True
         layout.use_property_decorate = False
+        shape = layout.box()
+        shape.label(text='Building Shape')
+        controls = shape.column()
+        controls.enabled = valid_house(context, obj) and footprints.controlled(obj)
+        controls.prop(obj.mbg_settings, 'shape')
+        controls.label(text='Building Dimensions')
+        controls.prop(obj.mbg_settings, 'width')
+        controls.prop(obj.mbg_settings, 'depth')
+        if not footprints.controlled(obj):
+            shape.label(text='Bestehender Grundriss bleibt unverändert.', icon='INFO')
+            shape.operator('mbg.activate_rectangle')
+        if any(abs(v-1) > 1e-5 for v in obj.scale):
+            shape.label(text='Lokale Maße; Objektskalierung wirkt zusätzlich.', icon='INFO')
         sections = (
-            ('Grundparameter', (('Seed', 'seed'), ('NumberFloor', 'floors'),
+            ('Building Settings', (('Seed', 'seed'), ('NumberFloor', 'floors'),
                                 ('RoofCurvature', 'curvature'))),
-            ('Materialfarben', (('RoofColor', 'roof_color'), ('PaintColor', 'paint_color'),
+            ('Appearance', (('RoofColor', 'roof_color'), ('PaintColor', 'paint_color'),
                                 ('BeamCollor', 'beam_color'))),
             ('Details', (('SpawnIVY', 'ivy'), ('High Polz Plants', 'high_poly'))),
         )
