@@ -1,0 +1,78 @@
+{
+  "blender": "5.2.2 LTS",
+  "source_commit": "e6ec104",
+  "configuration": {
+    "width": 5.1,
+    "depth": 7.3,
+    "wall_height": 2.3,
+    "roof_pitch": 40,
+    "seed": 23
+  },
+  "images": {
+    "diff": {
+      "filename": "thatch_roof_angled_diff_2k.jpg",
+      "colorspace": "sRGB",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "bytes": 3225496,
+      "sha256": "dd544436986e9be6ae80996fbd132c67b38c81e8ed1b7c4384a961efe87460b7"
+    },
+    "rough": {
+      "filename": "thatch_roof_angled_rough_2k.png",
+      "colorspace": "Non-Color",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "bytes": 6847778,
+      "sha256": "81c9ace60bdeaeb88c1edd08823831958c035763f3ce46eda6b71dc6c8383e65"
+    },
+    "nor_gl": {
+      "filename": "thatch_roof_angled_nor_gl_2k.png",
+      "colorspace": "Non-Color",
+      "dimensions": [
+        2048,
+        2048
+      ],
+      "bytes": 23572093,
+      "sha256": "62128242ad200e3aa5aa30d1249d107bee3548e028bee037718dc0aa2e949cc7"
+    }
+  },
+  "uv": {
+    "uv_map": "08F_RoofSlope",
+    "tile_m": 0.9,
+    "collapsed_uv_faces": 0,
+    "u_range": [
+      -4.3443,
+      4.933
+    ],
+    "v_range": [
+      0.0,
+      5.0774
+    ],
+    "objects_with_uv": 5,
+    "loops_mapped": 11728
+  },
+  "variants": {
+    "BASELINE": {
+      "roof_triangles": 5872,
+      "total_triangles": 6234,
+      "roof_meshes": 5,
+      "materials": 5,
+      "creation_ms_single_run": 28.97,
+      "matches_archived_08d_mesh": true
+    },
+    "CC0": {
+      "roof_triangles": 5872,
+      "total_triangles": 6234,
+      "roof_meshes": 5,
+      "materials": 5,
+      "creation_ms_single_run": 31.05,
+      "matches_archived_08d_mesh": null
+    }
+  },
+  "geometry_unchanged": true,
+  "texture_disk_bytes": 33645367
+}
