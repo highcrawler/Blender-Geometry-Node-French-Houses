@@ -1,0 +1,5 @@
+{
+  "small": {"width": 4.2, "depth": 3.4, "wall_height": 2.2, "roof_pitch": 46, "seed": 11},
+  "long": {"width": 5.1, "depth": 7.3, "wall_height": 2.3, "roof_pitch": 40, "seed": 23},
+  "steep_roof": {"width": 4.6, "depth": 3.7, "wall_height": 2.35, "roof_pitch": 58, "seed": 37}
+}
