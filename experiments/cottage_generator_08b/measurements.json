@@ -1,0 +1,103 @@
+{
+  "blender": "5.2.2 LTS",
+  "version": "08b.1",
+  "baseline": "666a567",
+  "variants": {
+    "small": {
+      "parameters": {
+        "width": 4.2,
+        "depth": 3.4,
+        "wall_height": 2.2,
+        "roof_pitch": 46,
+        "seed": 11
+      },
+      "before_total": 1934,
+      "after_total": 2166,
+      "added_triangles": 232,
+      "before_roof": 1572,
+      "after_roof": 1804,
+      "shells": [
+        {
+          "boundary_edges": 0,
+          "duplicate_faces": 0,
+          "signed_volume": 2.1896,
+          "inverted_faces": 0
+        },
+        {
+          "boundary_edges": 0,
+          "duplicate_faces": 0,
+          "signed_volume": 2.1967,
+          "inverted_faces": 0
+        }
+      ],
+      "unchanged_non_roof": true,
+      "unchanged_existing_roof_parts": true,
+      "unchanged_material_colors": true,
+      "seed_replay": true
+    },
+    "long": {
+      "parameters": {
+        "width": 5.1,
+        "depth": 7.3,
+        "wall_height": 2.3,
+        "roof_pitch": 40,
+        "seed": 23
+      },
+      "before_total": 3494,
+      "after_total": 3966,
+      "added_triangles": 472,
+      "before_roof": 3132,
+      "after_roof": 3604,
+      "shells": [
+        {
+          "boundary_edges": 0,
+          "duplicate_faces": 0,
+          "signed_volume": 5.1659,
+          "inverted_faces": 0
+        },
+        {
+          "boundary_edges": 0,
+          "duplicate_faces": 0,
+          "signed_volume": 5.1741,
+          "inverted_faces": 0
+        }
+      ],
+      "unchanged_non_roof": true,
+      "unchanged_existing_roof_parts": true,
+      "unchanged_material_colors": true,
+      "seed_replay": true
+    },
+    "steep_roof": {
+      "parameters": {
+        "width": 4.6,
+        "depth": 3.7,
+        "wall_height": 2.35,
+        "roof_pitch": 58,
+        "seed": 37
+      },
+      "before_total": 2038,
+      "after_total": 2286,
+      "added_triangles": 248,
+      "before_roof": 1676,
+      "after_roof": 1924,
+      "shells": [
+        {
+          "boundary_edges": 0,
+          "duplicate_faces": 0,
+          "signed_volume": 2.5502,
+          "inverted_faces": 0
+        },
+        {
+          "boundary_edges": 0,
+          "duplicate_faces": 0,
+          "signed_volume": 2.5483,
+          "inverted_faces": 0
+        }
+      ],
+      "unchanged_non_roof": true,
+      "unchanged_existing_roof_parts": true,
+      "unchanged_material_colors": true,
+      "seed_replay": true
+    }
+  }
+}

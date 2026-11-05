@@ -42,13 +42,13 @@ def stats(p,coll,mats):
 variants=[]
 for name,values in configs.items():
     p=Cottage(**values)
-    coll,mats=generate(p,name)
+    coll,mats=generate(p,name,refine_eave=False)  # Preserve the 8A baseline in the 8B branch.
     variants.append((name,p,coll,mats))
 bpy.context.view_layer.update()
 metrics={name:stats(p,coll,mats) for name,p,coll,mats in variants}
 # Generate a second copy in the same scene to prove identical object meshes, not just seeded colors.
 name,p,coll,mats=variants[0]
-clone,_=generate(p,name+'_replay')
+clone,_=generate(p,name+'_replay',refine_eave=False)
 bpy.context.view_layer.update()
 # Names/materials differ; compare the actual world-space geometry in collection order.
 def geometry_signature(c):
@@ -61,7 +61,7 @@ assert metrics['replay_geometry_equal']
 for ob in list(clone.objects): bpy.data.objects.remove(ob,do_unlink=True)
 bpy.data.collections.remove(clone)
 assert all(all(s['boundary_edges']==0 for s in m['roof_shells']) for m in metrics.values() if isinstance(m,dict))
-(ROOT/'measurements.json').write_text(json.dumps({'version':VERSION,'blender':bpy.app.version_string,'variants':metrics},indent=2)+'\n')
+(ROOT/'measurements.json').write_text(json.dumps({'version':'08a.1','blender':bpy.app.version_string,'variants':metrics},indent=2)+'\n')
 
 scene=bpy.context.scene
 scene.render.engine='BLENDER_WORKBENCH'

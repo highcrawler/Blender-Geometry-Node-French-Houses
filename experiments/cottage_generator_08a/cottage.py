@@ -7,7 +7,7 @@ import random
 import bpy
 from mathutils import Vector
 
-VERSION = '08a.1'
+VERSION = '08b.1'  # refine_eave=False preserves the Phase 8A geometry for comparisons.
 
 @dataclass(frozen=True)
 class Cottage:
@@ -83,7 +83,7 @@ def beam(collection, name, a, b, thickness, mat):
     return ob
 
 
-def generate(p, name, offset=(0,0,0)):
+def generate(p, name, offset=(0,0,0), *, refine_eave=True):
     p.validate()
     rng = random.Random(p.seed)
     coll = bpy.data.collections.new('08A_'+name)
@@ -137,34 +137,70 @@ def generate(p, name, offset=(0,0,0)):
     eave_x=half_w+.34
     y_end=half_d+.25
     for side in (-1,1):
+        # Independent eave RNG: original material, roof and bundle streams remain intact.
+        eave_rng=random.Random((p.seed << 2) ^ (0x8B51 if side < 0 else 0x8B52))
+        anchors=[eave_rng.uniform(-.038,.006) for _ in range(ny+1)]
+        mids=[(anchors[j]+anchors[j+1])*.5+eave_rng.uniform(-.085,.008)
+              for j in range(ny)]
+        outreach=[eave_rng.uniform(.09,.15) for _ in range(ny)]
         vertices=[]
+        rows=[]
         for layer in (0,1):
+            layer_rows=[]
+            if refine_eave:
+                # A short connected apron outside the original roof edge. It
+                # keeps the old roof untouched and avoids long triangular spikes.
+                row=[]
+                for j in range(ny+1):
+                    y=-y_end+2*y_end*j/ny
+                    row.append(len(vertices))
+                    vertices.append((side*(eave_x+.085),y,h-.10+anchors[j]-(.27 if layer else 0)))
+                    if j<ny:
+                        row.append(len(vertices))
+                        vertices.append((side*(eave_x+outreach[j]),y+y_end/ny,
+                                         h-.10+mids[j]-(.205 if layer else 0)))
+                layer_rows.append(row)
             for i in range(nx+1):
                 t=i/nx
                 x=side*(eave_x*(1-t))
-                # Roof rises from slightly below wall plate to ridge.
                 base=h-.10+(ridge-h+.10)*t
+                row=[]
                 for j in range(ny+1):
                     y=-y_end + 2*y_end*j/ny
                     fringe=(1-t)**5
                     edge_var=fringe*(.052*math.sin(j*1.71+p.seed*.43+side)+rng.uniform(-.016,.016))
                     ripple=.017*math.sin(i*1.8+j*.69+p.seed*.35)*math.sin(math.pi*t)
-                    # 0.23 m deep thatch, fuller at the drip edge.
-                    thickness=(.21+.06*fringe)
+                    thickness=.21+.06*fringe
+                    row.append(len(vertices))
                     vertices.append((x+side*edge_var,y,base+ripple-(thickness if layer else 0)))
-        n=(nx+1)*(ny+1)
+                layer_rows.append(row)
+            rows.append(layer_rows)
         faces=[]
         for layer in (0,1):
-            for i in range(nx):
+            for i in range(len(rows[layer])-1):
+                outer=rows[layer][i]; inner=rows[layer][i+1]
                 for j in range(ny):
-                    a=layer*n+i*(ny+1)+j
-                    faces.append((a,a+ny+1,a+ny+2,a+1) if not layer else (a,a+1,a+ny+2,a+ny+1))
-        edge=[]
-        for i in range(nx): edge.append((i*(ny+1),(i+1)*(ny+1)))
-        for j in range(ny): edge.append((nx*(ny+1)+j,nx*(ny+1)+j+1))
-        for i in range(nx,0,-1): edge.append((i*(ny+1)+ny,(i-1)*(ny+1)+ny))
-        for j in range(ny,0,-1): edge.append((j,j-1))
-        faces.extend((a,b,b+n,a+n) for a,b in edge)
+                    if refine_eave and i==0:
+                        a,m,b=outer[2*j:2*j+3]
+                        c,d2=inner[j:j+2]
+                        patches=[(a,c,d2),(a,d2,m),(m,d2,b)]
+                        faces.extend(tuple(reversed(face)) if layer else face for face in patches)
+                    else:
+                        a,b=outer[j:j+2]; c,d2=inner[j:j+2]
+                        face=(a,c,d2,b)
+                        faces.append(tuple(reversed(face)) if layer else face)
+        # Sew the roof perimeter in index order. Every top/bottom boundary edge
+        # has exactly one side wall; no floating overlays or open mesh seams.
+        boundary=[]
+        for i in range(len(rows[0])-1): boundary.append((rows[0][i][0],rows[0][i+1][0]))
+        last=rows[0][-1]
+        for j in range(ny): boundary.append((last[j],last[j+1]))
+        for i in range(len(rows[0])-1,0,-1): boundary.append((rows[0][i][-1],rows[0][i-1][-1]))
+        first=rows[0][0]
+        for j in range(len(first)-1,0,-1): boundary.append((first[j],first[j-1]))
+        # The two layers have identical indexing even at the refined lip.
+        layer_size=len(vertices)//2
+        faces.extend((a,b,b+layer_size,a+layer_size) for a,b in boundary)
         roof=mesh(coll,'08A_ThickThatch',vertices,faces,straw)
         roof['role']='roof'
         # Limited bundles projecting down from the eaves; stable size regardless of roof pitch.
