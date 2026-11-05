@@ -1,0 +1,99 @@
+{
+  "blender": "5.2.2 LTS",
+  "source_commit": "f268615",
+  "configuration": {
+    "width": 5.1,
+    "depth": 7.3,
+    "wall_height": 2.3,
+    "roof_pitch": 40,
+    "seed": 23
+  },
+  "variants": {
+    "BASELINE": {
+      "total_triangles": 3966,
+      "roof_triangles": 3604,
+      "materials": 5,
+      "creation_ms": 20.88,
+      "mesh_raw_payload_bytes": 73632,
+      "roof_raw_payload_bytes": 66336,
+      "support_shells": [
+        {
+          "nonmanifold_edges": 0,
+          "duplicate_faces": 0,
+          "signed_volume_m3": 5.1659,
+          "invalid_normals": 0
+        },
+        {
+          "nonmanifold_edges": 0,
+          "duplicate_faces": 0,
+          "signed_volume_m3": 5.17409,
+          "invalid_normals": 0
+        }
+      ],
+      "all_mesh_materials_assigned": true,
+      "roof_meshes": 61,
+      "closed_detail_meshes": 0,
+      "intentionally_open_detail_meshes": 0,
+      "deterministic_mesh": true,
+      "reference_geometry_sha256": "8b78a9b3680fcb1121eedfb259a68fa7a9a032d43dad8ae506069601f348c3c0",
+      "matches_archived_08b_blend": true,
+      "saved_collection_bytes": 928805
+    },
+    "VARIANT_A": {
+      "total_triangles": 7598,
+      "roof_triangles": 7236,
+      "materials": 5,
+      "creation_ms": 35.84,
+      "mesh_raw_payload_bytes": 138048,
+      "roof_raw_payload_bytes": 130752,
+      "support_shells": [
+        {
+          "nonmanifold_edges": 0,
+          "duplicate_faces": 0,
+          "signed_volume_m3": 5.15037,
+          "invalid_normals": 0
+        },
+        {
+          "nonmanifold_edges": 0,
+          "duplicate_faces": 0,
+          "signed_volume_m3": 5.15241,
+          "invalid_normals": 0
+        }
+      ],
+      "all_mesh_materials_assigned": true,
+      "roof_meshes": 21,
+      "closed_detail_meshes": 19,
+      "intentionally_open_detail_meshes": 0,
+      "deterministic_mesh": true,
+      "saved_collection_bytes": 853421
+    },
+    "VARIANT_B": {
+      "total_triangles": 1934,
+      "roof_triangles": 1572,
+      "materials": 5,
+      "creation_ms": 36.04,
+      "mesh_raw_payload_bytes": 37104,
+      "roof_raw_payload_bytes": 29808,
+      "support_shells": [
+        {
+          "nonmanifold_edges": 0,
+          "duplicate_faces": 0,
+          "signed_volume_m3": 5.1521,
+          "invalid_normals": 0
+        },
+        {
+          "nonmanifold_edges": 0,
+          "duplicate_faces": 0,
+          "signed_volume_m3": 5.15084,
+          "invalid_normals": 0
+        }
+      ],
+      "all_mesh_materials_assigned": true,
+      "roof_meshes": 27,
+      "closed_detail_meshes": 1,
+      "intentionally_open_detail_meshes": 24,
+      "deterministic_mesh": true,
+      "saved_collection_bytes": 705191
+    }
+  }
+}
