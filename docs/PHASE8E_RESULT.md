@@ -1,0 +1,21 @@
+# Phase 8E – Resultat der externen Strohdachprüfung
+
+**TECHNICAL RESULT: BLOCKED** (nicht FAIL: keine gültige externe Testdatei verfügbar).  
+**VISUAL RESULT: NOT TESTABLE.**
+
+Abzweig `experiment/external-thatch-evaluation-08e` direkt von Phase 8D `e6ec104`, eigenes Worktree; Blender installiert: **5.2.2 LTS**. Untersucht: [3D Tudor „Blender 4 Hay Roof Geometry Node“](https://superhivemarket.com/products/blender-4-hay-roof-geometry-node), [Asset-/Lizenzaudit](PHASE8E_EXTERNAL_ASSET_AUDIT.md), [Kompatibilitätsprotokoll](PHASE8E_BLENDER_COMPATIBILITY.md) und [Vergleichsstatus](PHASE8E_VISUAL_COMPARISON.md).
+
+Das offizielle Angebot nennt **$0 für „Example Showcase“**, liefert auf der öffentlich lesbaren Produktseite aber nur ein „Add to cart“-Formular und **keinen anonymen direkten Dateilink**. Kein Konto, Warenkorb oder Checkout wurde benutzt; keine zuordenbare rechtmäßig vorhandene lokale Datei gefunden. Darum sind Inhalt des kostenlosen Pakets (insbesondere `.blend`, funktionierende Node-Gruppe, Materialien und Lizenzumfang) **unbekannt**. Produktseite listet Blender **4.0, 3.6, 3.5**, nicht 5.2.2; eine konkrete Showcase-Dateiversion ist nicht bekannt. Es gab **keinen Blender-Kompatibilitätstest des externen Produkts**, keine externe Integration, keine After-Renderings und **keinen legitimen Zahlenwert** für externe Triangle-Zahl, Instanzzahl, Materialzahl, Speicher, Evaluationsdauer oder Dichteabstufung. Bestehende H-Baseline: **5.872 Dach-Dreiecke** / **6.234 gesamt** (Phase 8D), aber daraus lässt sich kein Vergleichswert für den externen Generator ableiten.
+
+**Lizenz:** Die [Royalty-Free-Lizenz](https://superhivemarket.com/page/royalty-free-license) gestattet Berechtigten Nutzung unter Bedingungen, verbietet aber Weiterverkauf/-verteilung/-verpackung des Produkts ohne Erlaubnis des Urhebers. Die Produktseite beschränkt den Standardtarif auf ein kommerzielles Projekt innerhalb genannter Reichweitengrenzen; Extended hat weitere Nutzungsrechte. **Kommerzielle Verwendung eines erzeugten Gebäudes ist weder eine Open-Source-Lizenz für Node-Gruppen noch eine pauschale Erlaubnis, die Quelldatei im GitHub-Fork mitzuveröffentlichen.** Konkrete Rechte an der kostenlosen Variante sind ohne das tatsächlich ausgelieferte Lizenzpaket ungeklärt. Ein rein lokales, getrennt installiertes Asset mit einem selbst geschriebenen Adapter ist nur ein später prüfbares Konzept. Keine fremden `.blend`-Dateien oder Texturen eingecheckt.
+
+**Spätere Godot-/GLB-Perspektive, keine Messung:** GeoNodes-Ausgabe und Instanzen müssten für eine Mesh-GLB-Ausgabe gegebenenfalls realisiert/konvertiert und UV-/Materialpfade geprüft werden. Externe Bildtexturen und prozedurale Shader sind nicht inventarisiert; Baking könnte nötig sein. Alpha-Cards könnten Halme potenziell vereinfachen, würden aber eine neue, gesondert zu validierende Darstellung mit Transparenz-/Overdraw-Kosten bedeuten. Keine Exportpipeline implementiert und keine FPS-Behauptung.
+
+## Vier Antworten
+
+1. **Sichtbar besser als 8D?** **Nicht testbar**: keine EXTERNAL-Renderings, keine gemeinsame ~300-px-Ansicht. [Eigene H-Referenz](../experiments/cottage_generator_08d/screenshots/variant_h_iso_300.png) allein beweist das nicht.
+2. **Geometriekosten grundsätzlich vertretbar?** **Unbekannt**: keine ausgewertete externe Geometry-Node-Geometrie, auch keine reduzierte Dichte messbar.
+3. **Rechtmäßige/wartbare Verwendung im Open-Source-Generator?** **Nicht als gebündeltes Quell-Asset unter den sichtbaren Bedingungen**; individuelle, lizenzierte lokale Nutzung mit separat installiertem Paket erst nach Recht-/Schnittstellenklärung denkbar.
+4. **Kauf der Vollversion technisch begründet?** **Bislang nicht gerechtfertigt**: weder Funktionsumfang des $0-Pakets noch 5.2.2-Kompatibilität oder Fernwirkung nachgewiesen. Das ist keine Aussage über die Qualität der Bezahlversion.
+
+**Genau ein nächster Schritt:** Der Benutzer stellt auf dem **offiziellen Produktweg** die rechtmäßig bezogene kostenlose „Example Showcase“-Datei **mitsamt den konkret ausgelieferten Lizenzinformationen** außerhalb des öffentlichen Git-Worktrees für einen isolierten lokalen Test bereit. Bis dahin weder kaufen noch neuen Strohgenerator entwickeln. Kein Merge nach `main`.
