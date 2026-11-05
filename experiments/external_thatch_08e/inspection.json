@@ -1,0 +1,97 @@
+{
+  "product": "3D Tudor - Blender 4 Hay Roof Geometry Node - Example Showcase",
+  "blender": "5.2.2 LTS",
+  "file_blender_version": [
+    4,
+    1,
+    24
+  ],
+  "file_size_bytes": 59190752,
+  "file_sha256": "1c96cd1701148c08ae5c4b3f5e7b4190e8230b34a870e94b5476eb867f135399",
+  "geometry_node_groups": 0,
+  "node_group_names": [],
+  "geometry_nodes_modifiers": 0,
+  "meshes": [
+    {
+      "name": "HayRoof",
+      "vertices": 270000,
+      "polygons": 235000,
+      "static_triangles": 460000,
+      "modifiers": [],
+      "materials": [
+        "Hay.001"
+      ]
+    },
+    {
+      "name": "TestRoof",
+      "vertices": 6,
+      "polygons": 2,
+      "static_triangles": 4,
+      "modifiers": [],
+      "materials": [
+        "Wood"
+      ]
+    }
+  ],
+  "material_names": [
+    "Dots Stroke",
+    "Hay.001",
+    "Material",
+    "Material.001",
+    "Wood"
+  ],
+  "images": [
+    {
+      "name": "hay.mp4",
+      "source": "MOVIE",
+      "resolution": [
+        0,
+        0
+      ],
+      "packed": false,
+      "external_path_exists": false
+    },
+    {
+      "name": "hay.mp4.001",
+      "source": "MOVIE",
+      "resolution": [
+        0,
+        0
+      ],
+      "packed": false,
+      "external_path_exists": false
+    },
+    {
+      "name": "WoodCoarse5_Base Color.png.001",
+      "source": "FILE",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "external_path_exists": false
+    },
+    {
+      "name": "WoodCoarse5_Normal.png.001",
+      "source": "FILE",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "external_path_exists": false
+    },
+    {
+      "name": "WoodCoarse5_Roughness.png",
+      "source": "FILE",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "packed": true,
+      "external_path_exists": false
+    }
+  ],
+  "linked_libraries": [],
+  "text_block_names": []
+}
