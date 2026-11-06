@@ -1,0 +1,8 @@
+{
+  "T01_narrow": {"width": 3.0, "depth": 4.3, "wall_height": 2.0, "roof_pitch": 42, "seed": 31},
+  "T02_wide": {"width": 8.0, "depth": 5.2, "wall_height": 3.0, "roof_pitch": 42, "seed": 37},
+  "T03_short": {"width": 5.2, "depth": 2.8, "wall_height": 2.4, "roof_pitch": 44, "seed": 41},
+  "T04_long": {"width": 5.0, "depth": 9.0, "wall_height": 2.5, "roof_pitch": 44, "seed": 43},
+  "T05_shallow": {"width": 5.0, "depth": 5.0, "wall_height": 2.2, "roof_pitch": 35, "seed": 47},
+  "T06_steep": {"width": 5.0, "depth": 5.0, "wall_height": 2.8, "roof_pitch": 60, "seed": 53}
+}
