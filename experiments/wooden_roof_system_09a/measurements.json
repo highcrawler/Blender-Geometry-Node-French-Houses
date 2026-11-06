@@ -1,0 +1,42 @@
+{
+  "blender": "5.2.2 LTS",
+  "source_commit": "f4f3651",
+  "configuration": {
+    "width": 5.1,
+    "depth": 7.3,
+    "wall_height": 2.3,
+    "roof_pitch": 40,
+    "seed": 23
+  },
+  "same_roof_geometry": true,
+  "same_nonroof_geometry": true,
+  "render_samples": 12,
+  "states": {
+    "CLEAN": {
+      "roof_triangles": 13692,
+      "total_triangles": 14054,
+      "materials": 8,
+      "generation_ms_single_run": 51.89,
+      "roof_objects": 5,
+      "shingles": 1137,
+      "courses": 20,
+      "moss_tinted_shingles": 0,
+      "exposure_m": 0.185,
+      "length_m": 0.315,
+      "roof_materials": 4
+    },
+    "AGED": {
+      "roof_triangles": 13692,
+      "total_triangles": 14054,
+      "materials": 8,
+      "generation_ms_single_run": 52.48,
+      "roof_objects": 5,
+      "shingles": 1137,
+      "courses": 20,
+      "moss_tinted_shingles": 36,
+      "exposure_m": 0.185,
+      "length_m": 0.315,
+      "roof_materials": 4
+    }
+  }
+}
