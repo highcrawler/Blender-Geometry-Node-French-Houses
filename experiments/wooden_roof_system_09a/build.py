@@ -71,10 +71,13 @@ def roof_geometry(coll, aged):
     course_step=.185
     shingle_length=.315
     n_courses=math.ceil(slope_length/course_step)
+    courses_by_side=[]
     for side in (-1,1):
+        side_courses=0
         for row in range(n_courses):
             start=row*course_step
             if start > slope_length-.06: continue
+            before_row=shingles
             offset= (-.135 if row%2 else 0) + rng.uniform(-.018,.018)
             cursor=-y_end+offset
             while cursor < y_end:
@@ -108,6 +111,9 @@ def roof_geometry(coll, aged):
                 indices.extend([tone]*6)
                 moss+=int(use_moss)
                 shingles+=1
+            if shingles>before_row:side_courses+=1
+        courses_by_side.append(side_courses)
+    assert courses_by_side[0]==courses_by_side[1], courses_by_side
     cover=mesh(coll,'09A_ShingleField',vertices,faces,mats[0]);cover['role']='roof'
     for mat in mats[1:]:cover.data.materials.append(mat)
     for face,idx in zip(cover.data.polygons,indices):face.material_index=idx
@@ -118,7 +124,7 @@ def roof_geometry(coll, aged):
             for y in (-y_end-.035,y_end+.035):
                 for under in (0,.035):verts.append((side*x,y,z-under))
         ob=mesh(coll,'09A_RidgeCap',verts,[(0,2,3,1),(4,5,7,6),(0,1,5,4),(2,6,7,3),(0,4,6,2),(1,3,7,5)],mats[1]);ob['role']='roof'
-    return dict(shingles=shingles, courses=n_courses, moss_tinted_shingles=moss,
+    return dict(shingles=shingles, courses=courses_by_side[0], moss_tinted_shingles=moss,
                 exposure_m=course_step, length_m=shingle_length,
                 roof_materials=len(mats))
 

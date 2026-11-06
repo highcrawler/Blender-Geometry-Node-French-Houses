@@ -1,0 +1,1134 @@
+{
+  "blender": "5.2.2 LTS",
+  "base_commit": "de11f7e",
+  "old_source_sha256": "de8602532dc17867070381d6a8c5c34e2618eb345f5321825a1647147dcb7f31",
+  "corrected_source_sha256": "204f9db8e47efcf44e70beef5dc0a31449f8cbaf6ece655c4f50a46179a94b2a",
+  "thresholds_m": {
+    "gable": 0.09,
+    "internal": 0.04,
+    "min_shingle": 0.1
+  },
+  "matrix": {
+    "long_CLEAN": {
+      "config": {
+        "width": 5.1,
+        "depth": 7.3,
+        "wall_height": 2.3,
+        "roof_pitch": 40,
+        "seed": 23
+      },
+      "before_courses": 20,
+      "after_courses": 20,
+      "observed_courses": 20,
+      "shingles": 1137,
+      "moss_tinted_shingles": 0,
+      "roof_triangles": 13692,
+      "total_triangles": 14054,
+      "materials": 8,
+      "generation_ms_single_run": 46.68,
+      "previous_ms_single_run": 47.36,
+      "old_roof_hash": "d9808450846c8d9476e09c21c0192475e36b58e18a7ef568423747484fadf1c3",
+      "new_roof_hash": "d9808450846c8d9476e09c21c0192475e36b58e18a7ef568423747484fadf1c3",
+      "old_nonroof_hash": "0000359066faa8ad131f7de176d7b36010e590ad3bbc64c20d4c7b274551f7a2",
+      "new_nonroof_hash": "0000359066faa8ad131f7de176d7b36010e590ad3bbc64c20d4c7b274551f7a2",
+      "roof_dimensions_and_integrity": {
+        "deck_eave_halfwidth_m": 2.89,
+        "deck_halfdepth_m": 3.9,
+        "ridge_height_m": 4.4397,
+        "slope_length_m": 3.65628,
+        "roof_x_extent_m": 5.78,
+        "deck_y_extent_m": 7.8,
+        "courses_per_slope": 20,
+        "shingles_per_course_min": 27,
+        "shingles_per_course_max": 30,
+        "max_gable_edge_gap_m": 0.0668,
+        "max_between_shingles_gap_m": 0.02361,
+        "shortest_shingle_slope_m": 0.16628,
+        "longest_shingle_slope_m": 0.33099,
+        "last_course_ends_past_ridge_m": 0.025,
+        "min_face_triangle_area_m2": 0.000784263,
+        "nonmanifold_shingle_edges": 0,
+        "nonpositive_shingle_volumes": 0,
+        "zero_shingle_faces": 0,
+        "duplicate_shingles": 0,
+        "deck_and_ridge": [
+          {
+            "name": "09A_Deck",
+            "manifold": true,
+            "signed_volume_m3": 3.200964
+          },
+          {
+            "name": "09A_Deck",
+            "manifold": true,
+            "signed_volume_m3": 3.200964
+          },
+          {
+            "name": "09A_RidgeCap",
+            "manifold": true,
+            "signed_volume_m3": 0.0647307
+          },
+          {
+            "name": "09A_RidgeCap",
+            "manifold": true,
+            "signed_volume_m3": 0.0647307
+          }
+        ]
+      },
+      "object_and_material_inventory_equal": true,
+      "archived_9c_object_and_material_inventory_equal": true,
+      "status": "PASS",
+      "issues": []
+    },
+    "long_AGED": {
+      "config": {
+        "width": 5.1,
+        "depth": 7.3,
+        "wall_height": 2.3,
+        "roof_pitch": 40,
+        "seed": 23
+      },
+      "before_courses": 20,
+      "after_courses": 20,
+      "observed_courses": 20,
+      "shingles": 1137,
+      "moss_tinted_shingles": 36,
+      "roof_triangles": 13692,
+      "total_triangles": 14054,
+      "materials": 8,
+      "generation_ms_single_run": 51.64,
+      "previous_ms_single_run": 49.11,
+      "old_roof_hash": "d9808450846c8d9476e09c21c0192475e36b58e18a7ef568423747484fadf1c3",
+      "new_roof_hash": "d9808450846c8d9476e09c21c0192475e36b58e18a7ef568423747484fadf1c3",
+      "old_nonroof_hash": "0000359066faa8ad131f7de176d7b36010e590ad3bbc64c20d4c7b274551f7a2",
+      "new_nonroof_hash": "0000359066faa8ad131f7de176d7b36010e590ad3bbc64c20d4c7b274551f7a2",
+      "roof_dimensions_and_integrity": {
+        "deck_eave_halfwidth_m": 2.89,
+        "deck_halfdepth_m": 3.9,
+        "ridge_height_m": 4.4397,
+        "slope_length_m": 3.65628,
+        "roof_x_extent_m": 5.78,
+        "deck_y_extent_m": 7.8,
+        "courses_per_slope": 20,
+        "shingles_per_course_min": 27,
+        "shingles_per_course_max": 30,
+        "max_gable_edge_gap_m": 0.0668,
+        "max_between_shingles_gap_m": 0.02361,
+        "shortest_shingle_slope_m": 0.16628,
+        "longest_shingle_slope_m": 0.33099,
+        "last_course_ends_past_ridge_m": 0.025,
+        "min_face_triangle_area_m2": 0.000784263,
+        "nonmanifold_shingle_edges": 0,
+        "nonpositive_shingle_volumes": 0,
+        "zero_shingle_faces": 0,
+        "duplicate_shingles": 0,
+        "deck_and_ridge": [
+          {
+            "name": "09A_Deck",
+            "manifold": true,
+            "signed_volume_m3": 3.200964
+          },
+          {
+            "name": "09A_Deck",
+            "manifold": true,
+            "signed_volume_m3": 3.200964
+          },
+          {
+            "name": "09A_RidgeCap",
+            "manifold": true,
+            "signed_volume_m3": 0.0647307
+          },
+          {
+            "name": "09A_RidgeCap",
+            "manifold": true,
+            "signed_volume_m3": 0.0647307
+          }
+        ]
+      },
+      "object_and_material_inventory_equal": true,
+      "archived_9c_object_and_material_inventory_equal": true,
+      "status": "PASS",
+      "issues": []
+    },
+    "compact_CLEAN": {
+      "config": {
+        "width": 4.0,
+        "depth": 3.5,
+        "wall_height": 2.3,
+        "roof_pitch": 48,
+        "seed": 11
+      },
+      "before_courses": 18,
+      "after_courses": 18,
+      "observed_courses": 18,
+      "shingles": 534,
+      "moss_tinted_shingles": 0,
+      "roof_triangles": 6456,
+      "total_triangles": 6818,
+      "materials": 8,
+      "generation_ms_single_run": 31.64,
+      "previous_ms_single_run": 32.14,
+      "old_roof_hash": "c45e8a6a73ff66e977fb2ec1bb69c8f7a6cabc89e68d41149c5130173bd65c5f",
+      "new_roof_hash": "c45e8a6a73ff66e977fb2ec1bb69c8f7a6cabc89e68d41149c5130173bd65c5f",
+      "old_nonroof_hash": "81c3c3fca92756fc6099a470307e021afea2cf822ce7534ca3f35d9d4a671227",
+      "new_nonroof_hash": "81c3c3fca92756fc6099a470307e021afea2cf822ce7534ca3f35d9d4a671227",
+      "roof_dimensions_and_integrity": {
+        "deck_eave_halfwidth_m": 2.34,
+        "deck_halfdepth_m": 2.0,
+        "ridge_height_m": 4.52123,
+        "slope_length_m": 3.29601,
+        "roof_x_extent_m": 4.68,
+        "deck_y_extent_m": 4.0,
+        "courses_per_slope": 18,
+        "shingles_per_course_min": 14,
+        "shingles_per_course_max": 16,
+        "max_gable_edge_gap_m": 0.07511,
+        "max_between_shingles_gap_m": 0.02216,
+        "shortest_shingle_slope_m": 0.17601,
+        "longest_shingle_slope_m": 0.33099,
+        "last_course_ends_past_ridge_m": 0.025,
+        "min_face_triangle_area_m2": 0.000873621,
+        "nonmanifold_shingle_edges": 0,
+        "nonpositive_shingle_volumes": 0,
+        "zero_shingle_faces": 0,
+        "duplicate_shingles": 0,
+        "deck_and_ridge": [
+          {
+            "name": "09A_Deck",
+            "manifold": true,
+            "signed_volume_m3": 1.3291207
+          },
+          {
+            "name": "09A_Deck",
+            "manifold": true,
+            "signed_volume_m3": 1.3291207
+          },
+          {
+            "name": "09A_RidgeCap",
+            "manifold": true,
+            "signed_volume_m3": 0.0334757
+          },
+          {
+            "name": "09A_RidgeCap",
+            "manifold": true,
+            "signed_volume_m3": 0.0334757
+          }
+        ]
+      },
+      "object_and_material_inventory_equal": true,
+      "archived_9c_object_and_material_inventory_equal": true,
+      "status": "PASS",
+      "issues": []
+    },
+    "compact_AGED": {
+      "config": {
+        "width": 4.0,
+        "depth": 3.5,
+        "wall_height": 2.3,
+        "roof_pitch": 48,
+        "seed": 11
+      },
+      "before_courses": 18,
+      "after_courses": 18,
+      "observed_courses": 18,
+      "shingles": 534,
+      "moss_tinted_shingles": 21,
+      "roof_triangles": 6456,
+      "total_triangles": 6818,
+      "materials": 8,
+      "generation_ms_single_run": 35.43,
+      "previous_ms_single_run": 34.05,
+      "old_roof_hash": "c45e8a6a73ff66e977fb2ec1bb69c8f7a6cabc89e68d41149c5130173bd65c5f",
+      "new_roof_hash": "c45e8a6a73ff66e977fb2ec1bb69c8f7a6cabc89e68d41149c5130173bd65c5f",
+      "old_nonroof_hash": "81c3c3fca92756fc6099a470307e021afea2cf822ce7534ca3f35d9d4a671227",
+      "new_nonroof_hash": "81c3c3fca92756fc6099a470307e021afea2cf822ce7534ca3f35d9d4a671227",
+      "roof_dimensions_and_integrity": {
+        "deck_eave_halfwidth_m": 2.34,
+        "deck_halfdepth_m": 2.0,
+        "ridge_height_m": 4.52123,
+        "slope_length_m": 3.29601,
+        "roof_x_extent_m": 4.68,
+        "deck_y_extent_m": 4.0,
+        "courses_per_slope": 18,
+        "shingles_per_course_min": 14,
+        "shingles_per_course_max": 16,
+        "max_gable_edge_gap_m": 0.07511,
+        "max_between_shingles_gap_m": 0.02216,
+        "shortest_shingle_slope_m": 0.17601,
+        "longest_shingle_slope_m": 0.33099,
+        "last_course_ends_past_ridge_m": 0.025,
+        "min_face_triangle_area_m2": 0.000873621,
+        "nonmanifold_shingle_edges": 0,
+        "nonpositive_shingle_volumes": 0,
+        "zero_shingle_faces": 0,
+        "duplicate_shingles": 0,
+        "deck_and_ridge": [
+          {
+            "name": "09A_Deck",
+            "manifold": true,
+            "signed_volume_m3": 1.3291207
+          },
+          {
+            "name": "09A_Deck",
+            "manifold": true,
+            "signed_volume_m3": 1.3291207
+          },
+          {
+            "name": "09A_RidgeCap",
+            "manifold": true,
+            "signed_volume_m3": 0.0334757
+          },
+          {
+            "name": "09A_RidgeCap",
+            "manifold": true,
+            "signed_volume_m3": 0.0334757
+          }
+        ]
+      },
+      "object_and_material_inventory_equal": true,
+      "archived_9c_object_and_material_inventory_equal": true,
+      "status": "PASS",
+      "issues": []
+    },
+    "T01_narrow_CLEAN": {
+      "config": {
+        "width": 3.0,
+        "depth": 4.3,
+        "wall_height": 2.0,
+        "roof_pitch": 42,
+        "seed": 31
+      },
+      "before_courses": 13,
+      "after_courses": 13,
+      "observed_courses": 13,
+      "shingles": 464,
+      "moss_tinted_shingles": 0,
+      "roof_triangles": 5616,
+      "total_triangles": 5978,
+      "materials": 8,
+      "generation_ms_single_run": 40.34,
+      "previous_ms_single_run": 36.83,
+      "old_roof_hash": "70bb98906f359ecdd2cc891441d0f5eda0681b29a9db50173b29ef9de082a9e1",
+      "new_roof_hash": "70bb98906f359ecdd2cc891441d0f5eda0681b29a9db50173b29ef9de082a9e1",
+      "old_nonroof_hash": "a579f4fcc0682c335ca1fa950be54274167de74edf76158d2c467ea85827d332",
+      "new_nonroof_hash": "a579f4fcc0682c335ca1fa950be54274167de74edf76158d2c467ea85827d332",
+      "roof_dimensions_and_integrity": {
+        "deck_eave_halfwidth_m": 1.84,
+        "deck_halfdepth_m": 2.4,
+        "ridge_height_m": 3.35061,
+        "slope_length_m": 2.34304,
+        "roof_x_extent_m": 3.68,
+        "deck_y_extent_m": 4.8,
+        "courses_per_slope": 13,
+        "shingles_per_course_min": 17,
+        "shingles_per_course_max": 19,
+        "max_gable_edge_gap_m": 0.05519,
+        "max_between_shingles_gap_m": 0.0231,
+        "shortest_shingle_slope_m": 0.14804,
+        "longest_shingle_slope_m": 0.33094,
+        "last_course_ends_past_ridge_m": 0.025,
+        "min_face_triangle_area_m2": 0.000775235,
+        "nonmanifold_shingle_edges": 0,
+        "nonpositive_shingle_volumes": 0,
+        "zero_shingle_faces": 0,
+        "duplicate_shingles": 0,
+        "deck_and_ridge": [
+          {
+            "name": "09A_Deck",
+            "manifold": true,
+            "signed_volume_m3": 1.2541436
+          },
+          {
+            "name": "09A_Deck",
+            "manifold": true,
+            "signed_volume_m3": 1.2541436
+          },
+          {
+            "name": "09A_RidgeCap",
+            "manifold": true,
+            "signed_volume_m3": 0.0400558
+          },
+          {
+            "name": "09A_RidgeCap",
+            "manifold": true,
+            "signed_volume_m3": 0.0400558
+          }
+        ]
+      },
+      "object_and_material_inventory_equal": true,
+      "archived_9c_object_and_material_inventory_equal": true,
+      "status": "PASS",
+      "issues": []
+    },
+    "T01_narrow_AGED": {
+      "config": {
+        "width": 3.0,
+        "depth": 4.3,
+        "wall_height": 2.0,
+        "roof_pitch": 42,
+        "seed": 31
+      },
+      "before_courses": 13,
+      "after_courses": 13,
+      "observed_courses": 13,
+      "shingles": 464,
+      "moss_tinted_shingles": 30,
+      "roof_triangles": 5616,
+      "total_triangles": 5978,
+      "materials": 8,
+      "generation_ms_single_run": 46.01,
+      "previous_ms_single_run": 43.32,
+      "old_roof_hash": "70bb98906f359ecdd2cc891441d0f5eda0681b29a9db50173b29ef9de082a9e1",
+      "new_roof_hash": "70bb98906f359ecdd2cc891441d0f5eda0681b29a9db50173b29ef9de082a9e1",
+      "old_nonroof_hash": "a579f4fcc0682c335ca1fa950be54274167de74edf76158d2c467ea85827d332",
+      "new_nonroof_hash": "a579f4fcc0682c335ca1fa950be54274167de74edf76158d2c467ea85827d332",
+      "roof_dimensions_and_integrity": {
+        "deck_eave_halfwidth_m": 1.84,
+        "deck_halfdepth_m": 2.4,
+        "ridge_height_m": 3.35061,
+        "slope_length_m": 2.34304,
+        "roof_x_extent_m": 3.68,
+        "deck_y_extent_m": 4.8,
+        "courses_per_slope": 13,
+        "shingles_per_course_min": 17,
+        "shingles_per_course_max": 19,
+        "max_gable_edge_gap_m": 0.05519,
+        "max_between_shingles_gap_m": 0.0231,
+        "shortest_shingle_slope_m": 0.14804,
+        "longest_shingle_slope_m": 0.33094,
+        "last_course_ends_past_ridge_m": 0.025,
+        "min_face_triangle_area_m2": 0.000775235,
+        "nonmanifold_shingle_edges": 0,
+        "nonpositive_shingle_volumes": 0,
+        "zero_shingle_faces": 0,
+        "duplicate_shingles": 0,
+        "deck_and_ridge": [
+          {
+            "name": "09A_Deck",
+            "manifold": true,
+            "signed_volume_m3": 1.2541436
+          },
+          {
+            "name": "09A_Deck",
+            "manifold": true,
+            "signed_volume_m3": 1.2541436
+          },
+          {
+            "name": "09A_RidgeCap",
+            "manifold": true,
+            "signed_volume_m3": 0.0400558
+          },
+          {
+            "name": "09A_RidgeCap",
+            "manifold": true,
+            "signed_volume_m3": 0.0400558
+          }
+        ]
+      },
+      "object_and_material_inventory_equal": true,
+      "archived_9c_object_and_material_inventory_equal": true,
+      "status": "PASS",
+      "issues": []
+    },
+    "T02_wide_CLEAN": {
+      "config": {
+        "width": 8.0,
+        "depth": 5.2,
+        "wall_height": 3.0,
+        "roof_pitch": 42,
+        "seed": 37
+      },
+      "before_courses": 31,
+      "after_courses": 31,
+      "observed_courses": 31,
+      "shingles": 1302,
+      "moss_tinted_shingles": 0,
+      "roof_triangles": 15672,
+      "total_triangles": 16034,
+      "materials": 8,
+      "generation_ms_single_run": 72.15,
+      "previous_ms_single_run": 67.85,
+      "old_roof_hash": "edb9b970610d4b509adbfaafc42a8689c13a6cdeca5bcc8dc3a5278c7ff0f2d7",
+      "new_roof_hash": "edb9b970610d4b509adbfaafc42a8689c13a6cdeca5bcc8dc3a5278c7ff0f2d7",
+      "old_nonroof_hash": "27e9d83e57b1f722694b1ad9ef33774e6bc72dec7d958d9ad983c8badfc1ac70",
+      "new_nonroof_hash": "27e9d83e57b1f722694b1ad9ef33774e6bc72dec7d958d9ad983c8badfc1ac70",
+      "roof_dimensions_and_integrity": {
+        "deck_eave_halfwidth_m": 4.34,
+        "deck_halfdepth_m": 2.85,
+        "ridge_height_m": 6.60162,
+        "slope_length_m": 5.70417,
+        "roof_x_extent_m": 8.68,
+        "deck_y_extent_m": 5.7,
+        "courses_per_slope": 31,
+        "shingles_per_course_min": 20,
+        "shingles_per_course_max": 22,
+        "max_gable_edge_gap_m": 0.06812,
+        "max_between_shingles_gap_m": 0.02366,
+        "shortest_shingle_slope_m": 0.17917,
+        "longest_shingle_slope_m": 0.331,
+        "last_course_ends_past_ridge_m": 0.025,
+        "min_face_triangle_area_m2": 0.000746151,
+        "nonmanifold_shingle_edges": 0,
+        "nonpositive_shingle_volumes": 0,
+        "zero_shingle_faces": 0,
+        "duplicate_shingles": 0,
+        "deck_and_ridge": [
+          {
+            "name": "09A_Deck",
+            "manifold": true,
+            "signed_volume_m3": 3.5127944
+          },
+          {
+            "name": "09A_Deck",
+            "manifold": true,
+            "signed_volume_m3": 3.5127944
+          },
+          {
+            "name": "09A_RidgeCap",
+            "manifold": true,
+            "signed_volume_m3": 0.0474585
+          },
+          {
+            "name": "09A_RidgeCap",
+            "manifold": true,
+            "signed_volume_m3": 0.0474585
+          }
+        ]
+      },
+      "object_and_material_inventory_equal": true,
+      "archived_9c_object_and_material_inventory_equal": true,
+      "status": "PASS",
+      "issues": []
+    },
+    "T02_wide_AGED": {
+      "config": {
+        "width": 8.0,
+        "depth": 5.2,
+        "wall_height": 3.0,
+        "roof_pitch": 42,
+        "seed": 37
+      },
+      "before_courses": 31,
+      "after_courses": 31,
+      "observed_courses": 31,
+      "shingles": 1302,
+      "moss_tinted_shingles": 25,
+      "roof_triangles": 15672,
+      "total_triangles": 16034,
+      "materials": 8,
+      "generation_ms_single_run": 78.2,
+      "previous_ms_single_run": 71.62,
+      "old_roof_hash": "edb9b970610d4b509adbfaafc42a8689c13a6cdeca5bcc8dc3a5278c7ff0f2d7",
+      "new_roof_hash": "edb9b970610d4b509adbfaafc42a8689c13a6cdeca5bcc8dc3a5278c7ff0f2d7",
+      "old_nonroof_hash": "27e9d83e57b1f722694b1ad9ef33774e6bc72dec7d958d9ad983c8badfc1ac70",
+      "new_nonroof_hash": "27e9d83e57b1f722694b1ad9ef33774e6bc72dec7d958d9ad983c8badfc1ac70",
+      "roof_dimensions_and_integrity": {
+        "deck_eave_halfwidth_m": 4.34,
+        "deck_halfdepth_m": 2.85,
+        "ridge_height_m": 6.60162,
+        "slope_length_m": 5.70417,
+        "roof_x_extent_m": 8.68,
+        "deck_y_extent_m": 5.7,
+        "courses_per_slope": 31,
+        "shingles_per_course_min": 20,
+        "shingles_per_course_max": 22,
+        "max_gable_edge_gap_m": 0.06812,
+        "max_between_shingles_gap_m": 0.02366,
+        "shortest_shingle_slope_m": 0.17917,
+        "longest_shingle_slope_m": 0.331,
+        "last_course_ends_past_ridge_m": 0.025,
+        "min_face_triangle_area_m2": 0.000746151,
+        "nonmanifold_shingle_edges": 0,
+        "nonpositive_shingle_volumes": 0,
+        "zero_shingle_faces": 0,
+        "duplicate_shingles": 0,
+        "deck_and_ridge": [
+          {
+            "name": "09A_Deck",
+            "manifold": true,
+            "signed_volume_m3": 3.5127944
+          },
+          {
+            "name": "09A_Deck",
+            "manifold": true,
+            "signed_volume_m3": 3.5127944
+          },
+          {
+            "name": "09A_RidgeCap",
+            "manifold": true,
+            "signed_volume_m3": 0.0474585
+          },
+          {
+            "name": "09A_RidgeCap",
+            "manifold": true,
+            "signed_volume_m3": 0.0474585
+          }
+        ]
+      },
+      "object_and_material_inventory_equal": true,
+      "archived_9c_object_and_material_inventory_equal": true,
+      "status": "PASS",
+      "issues": []
+    },
+    "T03_short_CLEAN": {
+      "config": {
+        "width": 5.2,
+        "depth": 2.8,
+        "wall_height": 2.4,
+        "roof_pitch": 44,
+        "seed": 41
+      },
+      "before_courses": 22,
+      "after_courses": 21,
+      "observed_courses": 21,
+      "shingles": 524,
+      "moss_tinted_shingles": 0,
+      "roof_triangles": 6336,
+      "total_triangles": 6698,
+      "materials": 8,
+      "generation_ms_single_run": 47.78,
+      "previous_ms_single_run": 44.15,
+      "old_roof_hash": "fbc620c23515b0c19c0a588279c503cfe8f7e7177791610d09d4f681f1af8b35",
+      "new_roof_hash": "fbc620c23515b0c19c0a588279c503cfe8f7e7177791610d09d4f681f1af8b35",
+      "old_nonroof_hash": "b5ae396b9c5ad5ce640a666d58659523cf536a71666d69190728205fca3a90b7",
+      "new_nonroof_hash": "b5ae396b9c5ad5ce640a666d58659523cf536a71666d69190728205fca3a90b7",
+      "roof_dimensions_and_integrity": {
+        "deck_eave_halfwidth_m": 2.94,
+        "deck_halfdepth_m": 1.65,
+        "ridge_height_m": 4.91079,
+        "slope_length_m": 3.9319,
+        "roof_x_extent_m": 5.88,
+        "deck_y_extent_m": 3.3,
+        "courses_per_slope": 21,
+        "shingles_per_course_min": 11,
+        "shingles_per_course_max": 13,
+        "max_gable_edge_gap_m": 0.08093,
+        "max_between_shingles_gap_m": 0.02285,
+        "shortest_shingle_slope_m": 0.2569,
+        "longest_shingle_slope_m": 0.33098,
+        "last_course_ends_past_ridge_m": 0.025,
+        "min_face_triangle_area_m2": 0.000803406,
+        "nonmanifold_shingle_edges": 0,
+        "nonpositive_shingle_volumes": 0,
+        "zero_shingle_faces": 0,
+        "duplicate_shingles": 0,
+        "deck_and_ridge": [
+          {
+            "name": "09A_Deck",
+            "manifold": true,
+            "signed_volume_m3": 1.3776862
+          },
+          {
+            "name": "09A_Deck",
+            "manifold": true,
+            "signed_volume_m3": 1.3776862
+          },
+          {
+            "name": "09A_RidgeCap",
+            "manifold": true,
+            "signed_volume_m3": 0.0277184
+          },
+          {
+            "name": "09A_RidgeCap",
+            "manifold": true,
+            "signed_volume_m3": 0.0277184
+          }
+        ]
+      },
+      "object_and_material_inventory_equal": true,
+      "archived_9c_object_and_material_inventory_equal": true,
+      "status": "PASS",
+      "issues": []
+    },
+    "T03_short_AGED": {
+      "config": {
+        "width": 5.2,
+        "depth": 2.8,
+        "wall_height": 2.4,
+        "roof_pitch": 44,
+        "seed": 41
+      },
+      "before_courses": 22,
+      "after_courses": 21,
+      "observed_courses": 21,
+      "shingles": 524,
+      "moss_tinted_shingles": 15,
+      "roof_triangles": 6336,
+      "total_triangles": 6698,
+      "materials": 8,
+      "generation_ms_single_run": 50.52,
+      "previous_ms_single_run": 49.16,
+      "old_roof_hash": "fbc620c23515b0c19c0a588279c503cfe8f7e7177791610d09d4f681f1af8b35",
+      "new_roof_hash": "fbc620c23515b0c19c0a588279c503cfe8f7e7177791610d09d4f681f1af8b35",
+      "old_nonroof_hash": "b5ae396b9c5ad5ce640a666d58659523cf536a71666d69190728205fca3a90b7",
+      "new_nonroof_hash": "b5ae396b9c5ad5ce640a666d58659523cf536a71666d69190728205fca3a90b7",
+      "roof_dimensions_and_integrity": {
+        "deck_eave_halfwidth_m": 2.94,
+        "deck_halfdepth_m": 1.65,
+        "ridge_height_m": 4.91079,
+        "slope_length_m": 3.9319,
+        "roof_x_extent_m": 5.88,
+        "deck_y_extent_m": 3.3,
+        "courses_per_slope": 21,
+        "shingles_per_course_min": 11,
+        "shingles_per_course_max": 13,
+        "max_gable_edge_gap_m": 0.08093,
+        "max_between_shingles_gap_m": 0.02285,
+        "shortest_shingle_slope_m": 0.2569,
+        "longest_shingle_slope_m": 0.33098,
+        "last_course_ends_past_ridge_m": 0.025,
+        "min_face_triangle_area_m2": 0.000803406,
+        "nonmanifold_shingle_edges": 0,
+        "nonpositive_shingle_volumes": 0,
+        "zero_shingle_faces": 0,
+        "duplicate_shingles": 0,
+        "deck_and_ridge": [
+          {
+            "name": "09A_Deck",
+            "manifold": true,
+            "signed_volume_m3": 1.3776862
+          },
+          {
+            "name": "09A_Deck",
+            "manifold": true,
+            "signed_volume_m3": 1.3776862
+          },
+          {
+            "name": "09A_RidgeCap",
+            "manifold": true,
+            "signed_volume_m3": 0.0277184
+          },
+          {
+            "name": "09A_RidgeCap",
+            "manifold": true,
+            "signed_volume_m3": 0.0277184
+          }
+        ]
+      },
+      "object_and_material_inventory_equal": true,
+      "archived_9c_object_and_material_inventory_equal": true,
+      "status": "PASS",
+      "issues": []
+    },
+    "T04_long_CLEAN": {
+      "config": {
+        "width": 5.0,
+        "depth": 9.0,
+        "wall_height": 2.5,
+        "roof_pitch": 44,
+        "seed": 43
+      },
+      "before_courses": 21,
+      "after_courses": 21,
+      "observed_courses": 21,
+      "shingles": 1446,
+      "moss_tinted_shingles": 0,
+      "roof_triangles": 17400,
+      "total_triangles": 17762,
+      "materials": 8,
+      "generation_ms_single_run": 119.02,
+      "previous_ms_single_run": 100.42,
+      "old_roof_hash": "f2f625151f014b82ce06701518274c86b75e691b41d0f2fcf5c6aea095b73c2f",
+      "new_roof_hash": "f2f625151f014b82ce06701518274c86b75e691b41d0f2fcf5c6aea095b73c2f",
+      "old_nonroof_hash": "bc6f9c7d090fba6a7c135d7e5b8fef129c98574d29abc9db087421fb8aaffa59",
+      "new_nonroof_hash": "bc6f9c7d090fba6a7c135d7e5b8fef129c98574d29abc9db087421fb8aaffa59",
+      "roof_dimensions_and_integrity": {
+        "deck_eave_halfwidth_m": 2.84,
+        "deck_halfdepth_m": 4.75,
+        "ridge_height_m": 4.91422,
+        "slope_length_m": 3.79301,
+        "roof_x_extent_m": 5.68,
+        "deck_y_extent_m": 9.5,
+        "courses_per_slope": 21,
+        "shingles_per_course_min": 33,
+        "shingles_per_course_max": 36,
+        "max_gable_edge_gap_m": 0.06727,
+        "max_between_shingles_gap_m": 0.02334,
+        "shortest_shingle_slope_m": 0.11801,
+        "longest_shingle_slope_m": 0.331,
+        "last_course_ends_past_ridge_m": 0.025,
+        "min_face_triangle_area_m2": 0.000798925,
+        "nonmanifold_shingle_edges": 0,
+        "nonpositive_shingle_volumes": 0,
+        "zero_shingle_faces": 0,
+        "duplicate_shingles": 0,
+        "deck_and_ridge": [
+          {
+            "name": "09A_Deck",
+            "manifold": true,
+            "signed_volume_m3": 3.8311564
+          },
+          {
+            "name": "09A_Deck",
+            "manifold": true,
+            "signed_volume_m3": 3.8311564
+          },
+          {
+            "name": "09A_RidgeCap",
+            "manifold": true,
+            "signed_volume_m3": 0.0787129
+          },
+          {
+            "name": "09A_RidgeCap",
+            "manifold": true,
+            "signed_volume_m3": 0.0787129
+          }
+        ]
+      },
+      "object_and_material_inventory_equal": true,
+      "archived_9c_object_and_material_inventory_equal": true,
+      "status": "PASS",
+      "issues": []
+    },
+    "T04_long_AGED": {
+      "config": {
+        "width": 5.0,
+        "depth": 9.0,
+        "wall_height": 2.5,
+        "roof_pitch": 44,
+        "seed": 43
+      },
+      "before_courses": 21,
+      "after_courses": 21,
+      "observed_courses": 21,
+      "shingles": 1446,
+      "moss_tinted_shingles": 49,
+      "roof_triangles": 17400,
+      "total_triangles": 17762,
+      "materials": 8,
+      "generation_ms_single_run": 125.51,
+      "previous_ms_single_run": 110.66,
+      "old_roof_hash": "f2f625151f014b82ce06701518274c86b75e691b41d0f2fcf5c6aea095b73c2f",
+      "new_roof_hash": "f2f625151f014b82ce06701518274c86b75e691b41d0f2fcf5c6aea095b73c2f",
+      "old_nonroof_hash": "bc6f9c7d090fba6a7c135d7e5b8fef129c98574d29abc9db087421fb8aaffa59",
+      "new_nonroof_hash": "bc6f9c7d090fba6a7c135d7e5b8fef129c98574d29abc9db087421fb8aaffa59",
+      "roof_dimensions_and_integrity": {
+        "deck_eave_halfwidth_m": 2.84,
+        "deck_halfdepth_m": 4.75,
+        "ridge_height_m": 4.91422,
+        "slope_length_m": 3.79301,
+        "roof_x_extent_m": 5.68,
+        "deck_y_extent_m": 9.5,
+        "courses_per_slope": 21,
+        "shingles_per_course_min": 33,
+        "shingles_per_course_max": 36,
+        "max_gable_edge_gap_m": 0.06727,
+        "max_between_shingles_gap_m": 0.02334,
+        "shortest_shingle_slope_m": 0.11801,
+        "longest_shingle_slope_m": 0.331,
+        "last_course_ends_past_ridge_m": 0.025,
+        "min_face_triangle_area_m2": 0.000798925,
+        "nonmanifold_shingle_edges": 0,
+        "nonpositive_shingle_volumes": 0,
+        "zero_shingle_faces": 0,
+        "duplicate_shingles": 0,
+        "deck_and_ridge": [
+          {
+            "name": "09A_Deck",
+            "manifold": true,
+            "signed_volume_m3": 3.8311564
+          },
+          {
+            "name": "09A_Deck",
+            "manifold": true,
+            "signed_volume_m3": 3.8311564
+          },
+          {
+            "name": "09A_RidgeCap",
+            "manifold": true,
+            "signed_volume_m3": 0.0787129
+          },
+          {
+            "name": "09A_RidgeCap",
+            "manifold": true,
+            "signed_volume_m3": 0.0787129
+          }
+        ]
+      },
+      "object_and_material_inventory_equal": true,
+      "archived_9c_object_and_material_inventory_equal": true,
+      "status": "PASS",
+      "issues": []
+    },
+    "T05_shallow_CLEAN": {
+      "config": {
+        "width": 5.0,
+        "depth": 5.0,
+        "wall_height": 2.2,
+        "roof_pitch": 35,
+        "seed": 47
+      },
+      "before_courses": 19,
+      "after_courses": 18,
+      "observed_courses": 18,
+      "shingles": 737,
+      "moss_tinted_shingles": 0,
+      "roof_triangles": 8892,
+      "total_triangles": 9254,
+      "materials": 8,
+      "generation_ms_single_run": 87.23,
+      "previous_ms_single_run": 77.21,
+      "old_roof_hash": "46a49d27cd1901c00def1099b70fb67e355200a072ae209b02f2af7889650b13",
+      "new_roof_hash": "46a49d27cd1901c00def1099b70fb67e355200a072ae209b02f2af7889650b13",
+      "old_nonroof_hash": "bdb809a5911295b5c324ecc0c27db98382c762b1b4cf6e77739fe82ce9c21a1f",
+      "new_nonroof_hash": "bdb809a5911295b5c324ecc0c27db98382c762b1b4cf6e77739fe82ce9c21a1f",
+      "roof_dimensions_and_integrity": {
+        "deck_eave_halfwidth_m": 2.84,
+        "deck_halfdepth_m": 2.75,
+        "ridge_height_m": 3.95052,
+        "slope_length_m": 3.38969,
+        "roof_x_extent_m": 5.68,
+        "deck_y_extent_m": 5.5,
+        "courses_per_slope": 18,
+        "shingles_per_course_min": 20,
+        "shingles_per_course_max": 22,
+        "max_gable_edge_gap_m": 0.08324,
+        "max_between_shingles_gap_m": 0.02318,
+        "shortest_shingle_slope_m": 0.26969,
+        "longest_shingle_slope_m": 0.33099,
+        "last_course_ends_past_ridge_m": 0.025,
+        "min_face_triangle_area_m2": 0.00075558,
+        "nonmanifold_shingle_edges": 0,
+        "nonpositive_shingle_volumes": 0,
+        "zero_shingle_faces": 0,
+        "duplicate_shingles": 0,
+        "deck_and_ridge": [
+          {
+            "name": "09A_Deck",
+            "manifold": true,
+            "signed_volume_m3": 2.2180399
+          },
+          {
+            "name": "09A_Deck",
+            "manifold": true,
+            "signed_volume_m3": 2.2180399
+          },
+          {
+            "name": "09A_RidgeCap",
+            "manifold": true,
+            "signed_volume_m3": 0.0458132
+          },
+          {
+            "name": "09A_RidgeCap",
+            "manifold": true,
+            "signed_volume_m3": 0.0458132
+          }
+        ]
+      },
+      "object_and_material_inventory_equal": true,
+      "archived_9c_object_and_material_inventory_equal": true,
+      "status": "PASS",
+      "issues": []
+    },
+    "T05_shallow_AGED": {
+      "config": {
+        "width": 5.0,
+        "depth": 5.0,
+        "wall_height": 2.2,
+        "roof_pitch": 35,
+        "seed": 47
+      },
+      "before_courses": 19,
+      "after_courses": 18,
+      "observed_courses": 18,
+      "shingles": 737,
+      "moss_tinted_shingles": 31,
+      "roof_triangles": 8892,
+      "total_triangles": 9254,
+      "materials": 8,
+      "generation_ms_single_run": 95.58,
+      "previous_ms_single_run": 79.44,
+      "old_roof_hash": "46a49d27cd1901c00def1099b70fb67e355200a072ae209b02f2af7889650b13",
+      "new_roof_hash": "46a49d27cd1901c00def1099b70fb67e355200a072ae209b02f2af7889650b13",
+      "old_nonroof_hash": "bdb809a5911295b5c324ecc0c27db98382c762b1b4cf6e77739fe82ce9c21a1f",
+      "new_nonroof_hash": "bdb809a5911295b5c324ecc0c27db98382c762b1b4cf6e77739fe82ce9c21a1f",
+      "roof_dimensions_and_integrity": {
+        "deck_eave_halfwidth_m": 2.84,
+        "deck_halfdepth_m": 2.75,
+        "ridge_height_m": 3.95052,
+        "slope_length_m": 3.38969,
+        "roof_x_extent_m": 5.68,
+        "deck_y_extent_m": 5.5,
+        "courses_per_slope": 18,
+        "shingles_per_course_min": 20,
+        "shingles_per_course_max": 22,
+        "max_gable_edge_gap_m": 0.08324,
+        "max_between_shingles_gap_m": 0.02318,
+        "shortest_shingle_slope_m": 0.26969,
+        "longest_shingle_slope_m": 0.33099,
+        "last_course_ends_past_ridge_m": 0.025,
+        "min_face_triangle_area_m2": 0.00075558,
+        "nonmanifold_shingle_edges": 0,
+        "nonpositive_shingle_volumes": 0,
+        "zero_shingle_faces": 0,
+        "duplicate_shingles": 0,
+        "deck_and_ridge": [
+          {
+            "name": "09A_Deck",
+            "manifold": true,
+            "signed_volume_m3": 2.2180399
+          },
+          {
+            "name": "09A_Deck",
+            "manifold": true,
+            "signed_volume_m3": 2.2180399
+          },
+          {
+            "name": "09A_RidgeCap",
+            "manifold": true,
+            "signed_volume_m3": 0.0458132
+          },
+          {
+            "name": "09A_RidgeCap",
+            "manifold": true,
+            "signed_volume_m3": 0.0458132
+          }
+        ]
+      },
+      "object_and_material_inventory_equal": true,
+      "archived_9c_object_and_material_inventory_equal": true,
+      "status": "PASS",
+      "issues": []
+    },
+    "T06_steep_CLEAN": {
+      "config": {
+        "width": 5.0,
+        "depth": 5.0,
+        "wall_height": 2.8,
+        "roof_pitch": 60,
+        "seed": 53
+      },
+      "before_courses": 29,
+      "after_courses": 29,
+      "observed_courses": 29,
+      "shingles": 1179,
+      "moss_tinted_shingles": 0,
+      "roof_triangles": 14196,
+      "total_triangles": 14558,
+      "materials": 8,
+      "generation_ms_single_run": 110.37,
+      "previous_ms_single_run": 90.81,
+      "old_roof_hash": "78a0b6d0771cb35a9b148c5d92742af217aefad3623d1522d65c1538a703d0ff",
+      "new_roof_hash": "78a0b6d0771cb35a9b148c5d92742af217aefad3623d1522d65c1538a703d0ff",
+      "old_nonroof_hash": "b6af10d7ce20c14190f1020af2ecd354f7d86c8aab0618f3222f6c2a9354d497",
+      "new_nonroof_hash": "b6af10d7ce20c14190f1020af2ecd354f7d86c8aab0618f3222f6c2a9354d497",
+      "roof_dimensions_and_integrity": {
+        "deck_eave_halfwidth_m": 2.84,
+        "deck_halfdepth_m": 2.75,
+        "ridge_height_m": 7.13013,
+        "slope_length_m": 5.26228,
+        "roof_x_extent_m": 5.68,
+        "deck_y_extent_m": 5.5,
+        "courses_per_slope": 29,
+        "shingles_per_course_min": 19,
+        "shingles_per_course_max": 21,
+        "max_gable_edge_gap_m": 0.07205,
+        "max_between_shingles_gap_m": 0.02318,
+        "shortest_shingle_slope_m": 0.10728,
+        "longest_shingle_slope_m": 0.331,
+        "last_course_ends_past_ridge_m": 0.025,
+        "min_face_triangle_area_m2": 0.000694787,
+        "nonmanifold_shingle_edges": 0,
+        "nonpositive_shingle_volumes": 0,
+        "zero_shingle_faces": 0,
+        "duplicate_shingles": 0,
+        "deck_and_ridge": [
+          {
+            "name": "09A_Deck",
+            "manifold": true,
+            "signed_volume_m3": 2.2180418
+          },
+          {
+            "name": "09A_Deck",
+            "manifold": true,
+            "signed_volume_m3": 2.2180418
+          },
+          {
+            "name": "09A_RidgeCap",
+            "manifold": true,
+            "signed_volume_m3": 0.0458138
+          },
+          {
+            "name": "09A_RidgeCap",
+            "manifold": true,
+            "signed_volume_m3": 0.0458138
+          }
+        ]
+      },
+      "object_and_material_inventory_equal": true,
+      "archived_9c_object_and_material_inventory_equal": true,
+      "status": "PASS",
+      "issues": []
+    },
+    "T06_steep_AGED": {
+      "config": {
+        "width": 5.0,
+        "depth": 5.0,
+        "wall_height": 2.8,
+        "roof_pitch": 60,
+        "seed": 53
+      },
+      "before_courses": 29,
+      "after_courses": 29,
+      "observed_courses": 29,
+      "shingles": 1179,
+      "moss_tinted_shingles": 26,
+      "roof_triangles": 14196,
+      "total_triangles": 14558,
+      "materials": 8,
+      "generation_ms_single_run": 111.84,
+      "previous_ms_single_run": 94.01,
+      "old_roof_hash": "78a0b6d0771cb35a9b148c5d92742af217aefad3623d1522d65c1538a703d0ff",
+      "new_roof_hash": "78a0b6d0771cb35a9b148c5d92742af217aefad3623d1522d65c1538a703d0ff",
+      "old_nonroof_hash": "b6af10d7ce20c14190f1020af2ecd354f7d86c8aab0618f3222f6c2a9354d497",
+      "new_nonroof_hash": "b6af10d7ce20c14190f1020af2ecd354f7d86c8aab0618f3222f6c2a9354d497",
+      "roof_dimensions_and_integrity": {
+        "deck_eave_halfwidth_m": 2.84,
+        "deck_halfdepth_m": 2.75,
+        "ridge_height_m": 7.13013,
+        "slope_length_m": 5.26228,
+        "roof_x_extent_m": 5.68,
+        "deck_y_extent_m": 5.5,
+        "courses_per_slope": 29,
+        "shingles_per_course_min": 19,
+        "shingles_per_course_max": 21,
+        "max_gable_edge_gap_m": 0.07205,
+        "max_between_shingles_gap_m": 0.02318,
+        "shortest_shingle_slope_m": 0.10728,
+        "longest_shingle_slope_m": 0.331,
+        "last_course_ends_past_ridge_m": 0.025,
+        "min_face_triangle_area_m2": 0.000694787,
+        "nonmanifold_shingle_edges": 0,
+        "nonpositive_shingle_volumes": 0,
+        "zero_shingle_faces": 0,
+        "duplicate_shingles": 0,
+        "deck_and_ridge": [
+          {
+            "name": "09A_Deck",
+            "manifold": true,
+            "signed_volume_m3": 2.2180418
+          },
+          {
+            "name": "09A_Deck",
+            "manifold": true,
+            "signed_volume_m3": 2.2180418
+          },
+          {
+            "name": "09A_RidgeCap",
+            "manifold": true,
+            "signed_volume_m3": 0.0458138
+          },
+          {
+            "name": "09A_RidgeCap",
+            "manifold": true,
+            "signed_volume_m3": 0.0458138
+          }
+        ]
+      },
+      "object_and_material_inventory_equal": true,
+      "archived_9c_object_and_material_inventory_equal": true,
+      "status": "PASS",
+      "issues": []
+    }
+  },
+  "errors": []
+}
