@@ -1,0 +1,22 @@
+# Phase 9F – 16-state regression against 9D/9E
+
+Run [Blender verification](../experiments/wooden_roof_system_09f/verify.py), [image comparison](../experiments/wooden_roof_system_09f/compare_images.py) and [saved-scene reload](../experiments/wooden_roof_system_09f/reopen.py) as specified in the [reproduction guide](../experiments/wooden_roof_system_09f/README.md). Blender 5.2.2 LTS. Results: [full per-state 64-character SHA-256, audit geometry and counts](../experiments/wooden_roof_system_09f/measurements.json) and [binding historical 9E hashes](PHASE9E_REGRESSION_CONTRACT.md). **All eight configurations × CLEAN and AGED: PASS.** No archived measurements or images were overwritten.
+
+| Case | Courses/side | Shingles | Roof / total triangles | Roof SHA-256 prefix (CLEAN=AGED) | State result |
+|---|---:|---:|---:|---|---|
+| Long | 20 | 1,137 | 13,692 / 14,054 | `d9808450846c` | BOTH PASS |
+| Compact | 18 | 534 | 6,456 / 6,818 | `c45e8a6a73ff` | BOTH PASS |
+| T01 | 13 | 464 | 5,616 / 5,978 | `70bb98906f35` | BOTH PASS |
+| T02 | 31 | 1,302 | 15,672 / 16,034 | `edb9b970610d` | BOTH PASS |
+| T03 | **21** | 524 | 6,336 / 6,698 | `fbc620c23515` | BOTH PASS |
+| T04 | 21 | 1,446 | 17,400 / 17,762 | `f2f625151f01` | BOTH PASS |
+| T05 | **18** | 737 | 8,892 / 9,254 | `46a49d27cd19` | BOTH PASS |
+| T06 | 29 | 1,179 | 14,196 / 14,558 | `78a0b6d0771c` | BOTH PASS |
+
+The test uses the unchanged Phase-9B `hash_objects` algorithm on the root-local `matrix_basis @ vertex` coordinates before placement, so new parent/collection organization cannot conceal a mesh change. All sixteen **full** roof and nonroof hashes match 9D's 64-hex references. Against every stored Phase-9C Blender collection, the independent Phase-9D inventory method compares exact mesh-local float32 vertex data, polygon indices/winding, face-material indices and shader values; only the *intentional* parent relationship is normalized. Same-seed repeat after other buildings and reverse Compact-before-Long order produce identical hashes. CLEAN/AGED share roof and body geometry while each AGED moss count matches 9D (Long 36, Compact 21, T01 30, T02 25, T03 15, T04 49, T05 31, T06 26); CLEAN has zero. Four roof material slots, eight mesh-referenced materials per Cottage; the unused fourth CLEAN roof slot is intentionally preserved.
+
+The existing Phase-9B geometry audit is reused with **only** the Phase-9D test-side actual-row interpretation (necessary for T03/T05), not relaxed thresholds: every closed shingle/deck/ridge has valid topology, normals/positive volume, nonzero face area, no duplicate shingle, sufficient coverage and final ridge reach. Gable gap `<0.09 m`, internal gap `<0.04 m`, shortest shingle `>0.10 m` hold for all sixteen. T06 remains **0.10728 m**, unchanged. An injected failure after creation of the first deck and a separate failing Cottage-adapter construction both leave no leaked roof object/mesh/material/collection and do not change other owners; invalid dimensions, pitch, seed, appearance, missing/wrong root and bad root transforms are rejected. The nine 9F PNGs are real Blender Cycles renders, not composites.
+
+**Visual comparison:** Long, Compact, T03 and T05 in CLEAN/AGED use the same Phase-9D isometric camera, lighting, resolution, 12 Cycles samples and denoising. All **eight** RGB renders are pixel-identical to the archived 9D originals in this environment (0 mean/max channel difference), [per-image evidence](../experiments/wooden_roof_system_09f/image_comparison.json), [CLEAN board](../experiments/wooden_roof_system_09f/comparison_clean.jpg), [AGED board](../experiments/wooden_roof_system_09f/comparison_aged.jpg). Pixel identity is supplemental, not a replacement for mesh/material tests. The three-building [preview](../experiments/wooden_roof_system_09f/screenshots/three_owned_cottages.png) is a separate ownership/transform view, not a newly styled variant.
+
+[Saved-and-reloaded `.blend` evidence](../experiments/wooden_roof_system_09f/reopen_result.json): three independently parented roots/roof collections, 111 unique mesh data blocks, 12 distinct roof material data blocks, correct world positions/yaw and persisted local hashes/face slots. The archival 9A Long build also ran in an external temporary directory and produced the original 20 courses, 1,137 shingles, 13,692 roof triangles and 12 renders; the historical experiment tree stayed unchanged. No claim about all possible valid parameter combinations or exporter compatibility is made.

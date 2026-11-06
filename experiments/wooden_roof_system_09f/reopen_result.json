@@ -1,0 +1,13 @@
+{
+  "blender": "5.2.2 LTS",
+  "saved_scene_reloaded": true,
+  "houses": [
+    "A",
+    "B",
+    "C"
+  ],
+  "roof_meshes": 15,
+  "unique_mesh_ids": 111,
+  "unique_roof_material_ids": 12,
+  "local_hashes_and_material_slots_identical": true
+}

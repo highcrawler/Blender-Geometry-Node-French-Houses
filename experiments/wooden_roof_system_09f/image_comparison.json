@@ -1,0 +1,50 @@
+{
+  "long_clean": {
+    "rgb_pixels_equal": true,
+    "mean_absolute_rgb_error": 0.0,
+    "max_channel_difference": 0,
+    "pixels": 480000
+  },
+  "compact_clean": {
+    "rgb_pixels_equal": true,
+    "mean_absolute_rgb_error": 0.0,
+    "max_channel_difference": 0,
+    "pixels": 480000
+  },
+  "T03_short_clean": {
+    "rgb_pixels_equal": true,
+    "mean_absolute_rgb_error": 0.0,
+    "max_channel_difference": 0,
+    "pixels": 480000
+  },
+  "T05_shallow_clean": {
+    "rgb_pixels_equal": true,
+    "mean_absolute_rgb_error": 0.0,
+    "max_channel_difference": 0,
+    "pixels": 480000
+  },
+  "long_aged": {
+    "rgb_pixels_equal": true,
+    "mean_absolute_rgb_error": 0.0,
+    "max_channel_difference": 0,
+    "pixels": 480000
+  },
+  "compact_aged": {
+    "rgb_pixels_equal": true,
+    "mean_absolute_rgb_error": 0.0,
+    "max_channel_difference": 0,
+    "pixels": 480000
+  },
+  "T03_short_aged": {
+    "rgb_pixels_equal": true,
+    "mean_absolute_rgb_error": 0.0,
+    "max_channel_difference": 0,
+    "pixels": 480000
+  },
+  "T05_shallow_aged": {
+    "rgb_pixels_equal": true,
+    "mean_absolute_rgb_error": 0.0,
+    "max_channel_difference": 0,
+    "pixels": 480000
+  }
+}
