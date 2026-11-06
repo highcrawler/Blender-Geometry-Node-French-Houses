@@ -1,0 +1,204 @@
+{
+  "source": "Phase 9G reference triangle totals; Godot values counted from imported surface index arrays",
+  "variants": {
+    "A_glb": {
+      "mesh_nodes": 37,
+      "triangles": 14054,
+      "surfaces": 39,
+      "used_materials": 7,
+      "per_object_triangle_multiset_matches_9g": true,
+      "per_used_material_triangles_match_9g": true,
+      "null_material_surfaces": 0,
+      "min_y": 0.0,
+      "max_y": 4.5280179977417,
+      "asset_bytes": 782836,
+      "used_material_triangles": {
+        "08A_09F_A_clay": 74,
+        "08A_09F_A_door": 12,
+        "08A_09F_A_stone": 12,
+        "08A_09F_A_weathered_oak": 264,
+        "09A_CLEAN_0": 4404,
+        "09A_CLEAN_1": 4704,
+        "09A_CLEAN_2": 4584
+      },
+      "body_materials_white": true,
+      "godot_data_equal_to_blend": true
+    },
+    "A_blend": {
+      "mesh_nodes": 37,
+      "triangles": 14054,
+      "surfaces": 39,
+      "used_materials": 7,
+      "per_object_triangle_multiset_matches_9g": true,
+      "per_used_material_triangles_match_9g": true,
+      "null_material_surfaces": 0,
+      "min_y": 0.0,
+      "max_y": 4.5280179977417,
+      "asset_bytes": 304537,
+      "used_material_triangles": {
+        "08A_09F_A_clay": 74,
+        "08A_09F_A_door": 12,
+        "08A_09F_A_stone": 12,
+        "08A_09F_A_weathered_oak": 264,
+        "09A_CLEAN_0": 4404,
+        "09A_CLEAN_1": 4704,
+        "09A_CLEAN_2": 4584
+      },
+      "body_materials_white": true
+    },
+    "B_glb": {
+      "mesh_nodes": 37,
+      "triangles": 6818,
+      "surfaces": 40,
+      "used_materials": 8,
+      "per_object_triangle_multiset_matches_9g": true,
+      "per_used_material_triangles_match_9g": true,
+      "null_material_surfaces": 0,
+      "min_y": 0.0,
+      "max_y": 4.6118311882019,
+      "asset_bytes": 392264,
+      "used_material_triangles": {
+        "08A_09F_B_clay": 74,
+        "08A_09F_B_door": 12,
+        "08A_09F_B_stone": 12,
+        "08A_09F_B_weathered_oak": 264,
+        "09A_AGED_0": 2028,
+        "09A_AGED_1": 2172,
+        "09A_AGED_2": 2004,
+        "09A_AGED_3": 252
+      },
+      "body_materials_white": true,
+      "godot_data_equal_to_blend": true
+    },
+    "B_blend": {
+      "mesh_nodes": 37,
+      "triangles": 6818,
+      "surfaces": 40,
+      "used_materials": 8,
+      "per_object_triangle_multiset_matches_9g": true,
+      "per_used_material_triangles_match_9g": true,
+      "null_material_surfaces": 0,
+      "min_y": 0.0,
+      "max_y": 4.6118311882019,
+      "asset_bytes": 231676,
+      "used_material_triangles": {
+        "08A_09F_B_clay": 74,
+        "08A_09F_B_door": 12,
+        "08A_09F_B_stone": 12,
+        "08A_09F_B_weathered_oak": 264,
+        "09A_AGED_0": 2028,
+        "09A_AGED_1": 2172,
+        "09A_AGED_2": 2004,
+        "09A_AGED_3": 252
+      },
+      "body_materials_white": true
+    },
+    "C_glb": {
+      "mesh_nodes": 37,
+      "triangles": 14066,
+      "surfaces": 40,
+      "used_materials": 8,
+      "per_object_triangle_multiset_matches_9g": true,
+      "per_used_material_triangles_match_9g": true,
+      "null_material_surfaces": 0,
+      "min_y": 0.0,
+      "max_y": 4.5280179977417,
+      "asset_bytes": 784448,
+      "used_material_triangles": {
+        "08A_09F_C_clay": 74,
+        "08A_09F_C_door": 12,
+        "08A_09F_C_stone": 12,
+        "08A_09F_C_weathered_oak": 264,
+        "09A_AGED_0.002": 4068,
+        "09A_AGED_1.002": 4572,
+        "09A_AGED_2.002": 4668,
+        "09A_AGED_3.002": 396
+      },
+      "body_materials_white": true,
+      "godot_data_equal_to_blend": true
+    },
+    "C_blend": {
+      "mesh_nodes": 37,
+      "triangles": 14066,
+      "surfaces": 40,
+      "used_materials": 8,
+      "per_object_triangle_multiset_matches_9g": true,
+      "per_used_material_triangles_match_9g": true,
+      "null_material_surfaces": 0,
+      "min_y": 0.0,
+      "max_y": 4.5280179977417,
+      "asset_bytes": 330539,
+      "used_material_triangles": {
+        "08A_09F_C_clay": 74,
+        "08A_09F_C_door": 12,
+        "08A_09F_C_stone": 12,
+        "08A_09F_C_weathered_oak": 264,
+        "09A_AGED_0.002": 4068,
+        "09A_AGED_1.002": 4572,
+        "09A_AGED_2.002": 4668,
+        "09A_AGED_3.002": 396
+      },
+      "body_materials_white": true
+    }
+  },
+  "visual": {
+    "long_clean": {
+      "godot_screenshots_byte_identical": true,
+      "sha256": "4160732cd94f9e755e9569eb1e6463e21d416a7f49288131df65453e365aeaf2"
+    },
+    "compact_aged": {
+      "godot_screenshots_byte_identical": true,
+      "sha256": "5b62f2ca10f43573c942793c2fee25ca3d44634b016eb7c0acd65175fa485989"
+    }
+  },
+  "active_collection": {
+    "A": {
+      "mesh_nodes": 37,
+      "triangles": 14054,
+      "world_root_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_root_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "file_bytes": 515335
+    },
+    "B": {
+      "mesh_nodes": 37,
+      "triangles": 6818,
+      "world_root_position": [
+        35.0,
+        0.0,
+        -12.0
+      ],
+      "world_root_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "file_bytes": 515357
+    },
+    "C": {
+      "mesh_nodes": 37,
+      "triangles": 14066,
+      "world_root_position": [
+        -15.0,
+        0.0,
+        -8.0
+      ],
+      "world_root_rotation": [
+        0.0,
+        0.449999988079071,
+        0.0
+      ],
+      "file_bytes": 515260
+    }
+  },
+  "known_material_loss": "Four procedural Noise→ColorRamp Cottage body shaders import white on both routes; roof Principled constants survive. CLEAN unused fourth roof slot is omitted (no polygons lost).",
+  "reimport_single_A_full_audit_unchanged": true,
+  "reimport_glb_A_full_audit_unchanged": true
+}

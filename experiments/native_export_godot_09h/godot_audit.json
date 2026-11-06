@@ -1,0 +1,4589 @@
+{
+  "active_A_three_houses.blend": {
+    "bounds_max": [
+      2.89000010490417,
+      4.5280179977417,
+      3.93499994277954
+    ],
+    "bounds_min": [
+      -2.89000010490417,
+      0.0,
+      -3.93499994277954
+    ],
+    "materials": {
+      "08A_09F_A_clay": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 8,
+        "triangles": 74
+      },
+      "08A_09F_A_door": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 1,
+        "triangles": 12
+      },
+      "08A_09F_A_stone": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 1,
+        "triangles": 12
+      },
+      "08A_09F_A_weathered_oak": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 22,
+        "triangles": 264
+      },
+      "09A_CLEAN_0": {
+        "albedo": [
+          0.574871063232422,
+          0.467284768819809,
+          0.357491195201874,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 0.920000016689301,
+        "surfaces": 3,
+        "triangles": 4404
+      },
+      "09A_CLEAN_1": {
+        "albedo": [
+          0.626209676265717,
+          0.522028684616089,
+          0.411402016878128,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 0.920000016689301,
+        "surfaces": 3,
+        "triangles": 4704
+      },
+      "09A_CLEAN_2": {
+        "albedo": [
+          0.532135486602783,
+          0.442971080541611,
+          0.357491195201874,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 0.920000016689301,
+        "surfaces": 1,
+        "triangles": 4584
+      }
+    },
+    "mesh_details": [
+      {
+        "name": "08A_CornerPost",
+        "position": [
+          -2.54999995231628,
+          1.31000006198883,
+          3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_CornerPost_001",
+        "position": [
+          -2.54999995231628,
+          1.31000006198883,
+          -3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_CornerPost_002",
+        "position": [
+          2.54999995231628,
+          1.31000006198883,
+          3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_CornerPost_003",
+        "position": [
+          2.54999995231628,
+          1.31000006198883,
+          -3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_Door",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorBoard",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorBoard_001",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorBoard_002",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorJamb",
+        "position": [
+          -0.509999990463257,
+          1.17999994754791,
+          3.76999998092651
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorJamb_001",
+        "position": [
+          0.509999990463257,
+          1.17999994754791,
+          3.76999998092651
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorLintel",
+        "position": [
+          0.0,
+          2.08999991416931,
+          3.76999998092651
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_EndWallPlate",
+        "position": [
+          0.0,
+          2.29999995231628,
+          3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_EndWallPlate_001",
+        "position": [
+          0.0,
+          2.29999995231628,
+          -3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_FrontClay",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_FrontClay_001",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_FrontLintelClay",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableClay",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 1
+      },
+      {
+        "name": "08A_GableClay_001",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 1
+      },
+      {
+        "name": "08A_GableRafterL",
+        "position": [
+          -1.27499997615814,
+          3.36985206604004,
+          3.75
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableRafterL_001",
+        "position": [
+          -1.27499997615814,
+          3.36985206604004,
+          -3.54999995231628
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableRafterR",
+        "position": [
+          1.27499997615814,
+          3.36985206604004,
+          3.75
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableRafterR_001",
+        "position": [
+          1.27499997615814,
+          3.36985206604004,
+          -3.54999995231628
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_RearClay",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace",
+        "position": [
+          -2.64000010490417,
+          1.5,
+          3.15499997138977
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace_001",
+        "position": [
+          -2.64000010490417,
+          1.5,
+          -3.15499997138977
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace_002",
+        "position": [
+          2.64000010490417,
+          1.5,
+          3.15499997138977
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace_003",
+        "position": [
+          2.64000010490417,
+          1.5,
+          -3.15499997138977
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideClay",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideClay_001",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideWallPlate",
+        "position": [
+          -2.54999995231628,
+          2.29999995231628,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideWallPlate_001",
+        "position": [
+          2.54999995231628,
+          2.29999995231628,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_Sill",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_Deck",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_Deck_001",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_RidgeCap",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_RidgeCap_001",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_ShingleField",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 3,
+        "triangles": 13644
+      }
+    ],
+    "mesh_nodes": 37,
+    "null_material_surfaces": 0,
+    "root_children": [
+      {
+        "name": "Building_Root",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "surfaces": 39,
+    "triangles": 14054
+  },
+  "active_B_three_houses.blend": {
+    "bounds_max": [
+      37.3400001525879,
+      4.6118311882019,
+      -9.96500015258789
+    ],
+    "bounds_min": [
+      32.6599998474121,
+      0.0,
+      -14.0349998474121
+    ],
+    "materials": {
+      "08A_09F_B_clay": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 8,
+        "triangles": 74
+      },
+      "08A_09F_B_door": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 1,
+        "triangles": 12
+      },
+      "08A_09F_B_stone": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 1,
+        "triangles": 12
+      },
+      "08A_09F_B_weathered_oak": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 22,
+        "triangles": 264
+      },
+      "09A_AGED_0": {
+        "albedo": [
+          0.449203908443451,
+          0.430166363716125,
+          0.400187849998474,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 0.920000016689301,
+        "surfaces": 3,
+        "triangles": 2028
+      },
+      "09A_AGED_1": {
+        "albedo": [
+          0.522028684616089,
+          0.495609641075134,
+          0.451667040586472,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 0.920000016689301,
+        "surfaces": 3,
+        "triangles": 2172
+      },
+      "09A_AGED_2": {
+        "albedo": [
+          0.565728425979614,
+          0.532135486602783,
+          0.476579219102859,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 0.920000016689301,
+        "surfaces": 1,
+        "triangles": 2004
+      },
+      "09A_AGED_3": {
+        "albedo": [
+          0.506386458873749,
+          0.551650106906891,
+          0.408634006977081,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 0.920000016689301,
+        "surfaces": 1,
+        "triangles": 252
+      }
+    },
+    "mesh_details": [
+      {
+        "name": "08A_CornerPost_004",
+        "position": [
+          33.0,
+          1.31000006198883,
+          -10.25
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_CornerPost_005",
+        "position": [
+          33.0,
+          1.31000006198883,
+          -13.75
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_CornerPost_006",
+        "position": [
+          37.0,
+          1.31000006198883,
+          -10.25
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_CornerPost_007",
+        "position": [
+          37.0,
+          1.31000006198883,
+          -13.75
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_Door_001",
+        "position": [
+          35.0,
+          0.0,
+          -12.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorBoard_003",
+        "position": [
+          35.0,
+          0.0,
+          -12.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorBoard_004",
+        "position": [
+          35.0,
+          0.0,
+          -12.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorBoard_005",
+        "position": [
+          35.0,
+          0.0,
+          -12.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorJamb_002",
+        "position": [
+          34.4900016784668,
+          1.17999994754791,
+          -10.1300001144409
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorJamb_003",
+        "position": [
+          35.5099983215332,
+          1.17999994754791,
+          -10.1300001144409
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorLintel_001",
+        "position": [
+          35.0,
+          2.08999991416931,
+          -10.1300001144409
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_EndWallPlate_002",
+        "position": [
+          35.0,
+          2.29999995231628,
+          -10.25
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_EndWallPlate_003",
+        "position": [
+          35.0,
+          2.29999995231628,
+          -13.75
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_FrontClay_002",
+        "position": [
+          35.0,
+          0.0,
+          -12.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_FrontClay_003",
+        "position": [
+          35.0,
+          0.0,
+          -12.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_FrontLintelClay_001",
+        "position": [
+          35.0,
+          0.0,
+          -12.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableClay_002",
+        "position": [
+          35.0,
+          0.0,
+          -12.0
+        ],
+        "surfaces": 1,
+        "triangles": 1
+      },
+      {
+        "name": "08A_GableClay_003",
+        "position": [
+          35.0,
+          0.0,
+          -12.0
+        ],
+        "surfaces": 1,
+        "triangles": 1
+      },
+      {
+        "name": "08A_GableRafterL_002",
+        "position": [
+          34.0,
+          3.4106125831604,
+          -10.1499996185303
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableRafterL_003",
+        "position": [
+          34.0,
+          3.4106125831604,
+          -13.6499996185303
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableRafterR_002",
+        "position": [
+          36.0,
+          3.4106125831604,
+          -10.1499996185303
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableRafterR_003",
+        "position": [
+          36.0,
+          3.4106125831604,
+          -13.6499996185303
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_RearClay_001",
+        "position": [
+          35.0,
+          0.0,
+          -12.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace_004",
+        "position": [
+          32.9099998474121,
+          1.5,
+          -10.7449998855591
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace_005",
+        "position": [
+          32.9099998474121,
+          1.5,
+          -13.2550001144409
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace_006",
+        "position": [
+          37.0900001525879,
+          1.5,
+          -10.7449998855591
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace_007",
+        "position": [
+          37.0900001525879,
+          1.5,
+          -13.2550001144409
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideClay_002",
+        "position": [
+          35.0,
+          0.0,
+          -12.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideClay_003",
+        "position": [
+          35.0,
+          0.0,
+          -12.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideWallPlate_002",
+        "position": [
+          33.0,
+          2.29999995231628,
+          -12.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideWallPlate_003",
+        "position": [
+          37.0,
+          2.29999995231628,
+          -12.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_Sill_001",
+        "position": [
+          35.0,
+          0.0,
+          -12.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_Deck_002",
+        "position": [
+          35.0,
+          0.0,
+          -12.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_Deck_003",
+        "position": [
+          35.0,
+          0.0,
+          -12.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_RidgeCap_002",
+        "position": [
+          35.0,
+          0.0,
+          -12.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_RidgeCap_003",
+        "position": [
+          35.0,
+          0.0,
+          -12.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_ShingleField_001",
+        "position": [
+          35.0,
+          0.0,
+          -12.0
+        ],
+        "surfaces": 4,
+        "triangles": 6408
+      }
+    ],
+    "mesh_nodes": 37,
+    "null_material_surfaces": 0,
+    "root_children": [
+      {
+        "name": "Building_Root_001",
+        "position": [
+          35.0,
+          0.0,
+          -12.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "surfaces": 40,
+    "triangles": 6818
+  },
+  "active_C_three_houses.blend": {
+    "bounds_max": [
+      -10.7010831832886,
+      4.5280179977417,
+      -3.23120594024658
+    ],
+    "bounds_min": [
+      -19.2986583709717,
+      0.0,
+      -12.7687940597534
+    ],
+    "materials": {
+      "08A_09F_C_clay": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 8,
+        "triangles": 74
+      },
+      "08A_09F_C_door": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 1,
+        "triangles": 12
+      },
+      "08A_09F_C_stone": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 1,
+        "triangles": 12
+      },
+      "08A_09F_C_weathered_oak": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 22,
+        "triangles": 264
+      },
+      "09A_AGED_0.002": {
+        "albedo": [
+          0.449203908443451,
+          0.430166363716125,
+          0.400187849998474,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 0.920000016689301,
+        "surfaces": 3,
+        "triangles": 4068
+      },
+      "09A_AGED_1.002": {
+        "albedo": [
+          0.522028684616089,
+          0.495609641075134,
+          0.451667040586472,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 0.920000016689301,
+        "surfaces": 3,
+        "triangles": 4572
+      },
+      "09A_AGED_2.002": {
+        "albedo": [
+          0.565728425979614,
+          0.532135486602783,
+          0.476579219102859,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 0.920000016689301,
+        "surfaces": 1,
+        "triangles": 4668
+      },
+      "09A_AGED_3.002": {
+        "albedo": [
+          0.506386458873749,
+          0.551650106906891,
+          0.408634006977081,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 0.920000016689301,
+        "surfaces": 1,
+        "triangles": 396
+      }
+    },
+    "mesh_details": [
+      {
+        "name": "08A_CornerPost_008",
+        "position": [
+          -15.7085161209106,
+          1.31000006198883,
+          -3.60420608520508
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_CornerPost_009",
+        "position": [
+          -18.8837642669678,
+          1.31000006198883,
+          -10.1774702072144
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_CornerPost_010",
+        "position": [
+          -11.1162357330322,
+          1.31000006198883,
+          -5.8225302696228
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_CornerPost_011",
+        "position": [
+          -14.2914838790894,
+          1.31000006198883,
+          -12.3957948684692
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_Door_002",
+        "position": [
+          -15.0,
+          0.0,
+          -8.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorBoard_006",
+        "position": [
+          -15.0,
+          0.0,
+          -8.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorBoard_007",
+        "position": [
+          -15.0,
+          0.0,
+          -8.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorBoard_008",
+        "position": [
+          -15.0,
+          0.0,
+          -8.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorJamb_004",
+        "position": [
+          -13.8194074630737,
+          1.17999994754791,
+          -4.38348197937012
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorJamb_005",
+        "position": [
+          -12.900951385498,
+          1.17999994754791,
+          -4.82714653015137
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorLintel_002",
+        "position": [
+          -13.360179901123,
+          2.08999991416931,
+          -4.60531425476074
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_EndWallPlate_004",
+        "position": [
+          -13.4123754501343,
+          2.29999995231628,
+          -4.71336793899536
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_EndWallPlate_005",
+        "position": [
+          -16.5876235961914,
+          2.29999995231628,
+          -11.2866325378418
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_FrontClay_004",
+        "position": [
+          -15.0,
+          0.0,
+          -8.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_FrontClay_005",
+        "position": [
+          -15.0,
+          0.0,
+          -8.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_FrontLintelClay_002",
+        "position": [
+          -15.0,
+          0.0,
+          -8.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableClay_004",
+        "position": [
+          -15.0,
+          0.0,
+          -8.0
+        ],
+        "surfaces": 1,
+        "triangles": 1
+      },
+      {
+        "name": "08A_GableClay_005",
+        "position": [
+          -15.0,
+          0.0,
+          -8.0
+        ],
+        "surfaces": 1,
+        "triangles": 1
+      },
+      {
+        "name": "08A_GableRafterL_004",
+        "position": [
+          -14.5169496536255,
+          3.36985206604004,
+          -4.06874227523804
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableRafterL_005",
+        "position": [
+          -17.6921977996826,
+          3.36985206604004,
+          -10.6420059204102
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableRafterR_004",
+        "position": [
+          -12.2208080291748,
+          3.36985206604004,
+          -5.17790412902832
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableRafterR_005",
+        "position": [
+          -15.3960571289062,
+          3.36985206604004,
+          -11.7511682510376
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_RearClay_002",
+        "position": [
+          -15.0,
+          0.0,
+          -8.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace_008",
+        "position": [
+          -16.0048637390137,
+          1.5,
+          -4.01078081130981
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace_009",
+        "position": [
+          -18.7494964599609,
+          1.5,
+          -9.69260120391846
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace_010",
+        "position": [
+          -11.2505025863647,
+          1.5,
+          -6.30739831924438
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace_011",
+        "position": [
+          -13.9951343536377,
+          1.5,
+          -11.9892196655273
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideClay_004",
+        "position": [
+          -15.0,
+          0.0,
+          -8.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideClay_005",
+        "position": [
+          -15.0,
+          0.0,
+          -8.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideWallPlate_004",
+        "position": [
+          -17.2961406707764,
+          2.29999995231628,
+          -6.89083814620972
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideWallPlate_005",
+        "position": [
+          -12.7038593292236,
+          2.29999995231628,
+          -9.10916233062744
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_Sill_002",
+        "position": [
+          -15.0,
+          0.0,
+          -8.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_Deck_004",
+        "position": [
+          -15.0,
+          0.0,
+          -8.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_Deck_005",
+        "position": [
+          -15.0,
+          0.0,
+          -8.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_RidgeCap_004",
+        "position": [
+          -15.0,
+          0.0,
+          -8.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_RidgeCap_005",
+        "position": [
+          -15.0,
+          0.0,
+          -8.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_ShingleField_002",
+        "position": [
+          -15.0,
+          0.0,
+          -8.0
+        ],
+        "surfaces": 4,
+        "triangles": 13656
+      }
+    ],
+    "mesh_nodes": 37,
+    "null_material_surfaces": 0,
+    "root_children": [
+      {
+        "name": "Building_Root_002",
+        "position": [
+          -15.0,
+          0.0,
+          -8.0
+        ],
+        "rotation": [
+          0.0,
+          0.449999988079071,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "surfaces": 40,
+    "triangles": 14066
+  },
+  "cottage_A.glb": {
+    "bounds_max": [
+      2.89000010490417,
+      4.5280179977417,
+      3.93499994277954
+    ],
+    "bounds_min": [
+      -2.89000010490417,
+      0.0,
+      -3.93499994277954
+    ],
+    "materials": {
+      "08A_09F_A_clay": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 8,
+        "triangles": 74
+      },
+      "08A_09F_A_door": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 1,
+        "triangles": 12
+      },
+      "08A_09F_A_stone": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 1,
+        "triangles": 12
+      },
+      "08A_09F_A_weathered_oak": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 22,
+        "triangles": 264
+      },
+      "09A_CLEAN_0": {
+        "albedo": [
+          0.574871063232422,
+          0.467284768819809,
+          0.357491195201874,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 0.920000016689301,
+        "surfaces": 3,
+        "triangles": 4404
+      },
+      "09A_CLEAN_1": {
+        "albedo": [
+          0.626209676265717,
+          0.522028684616089,
+          0.411402016878128,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 0.920000016689301,
+        "surfaces": 3,
+        "triangles": 4704
+      },
+      "09A_CLEAN_2": {
+        "albedo": [
+          0.532135486602783,
+          0.442971080541611,
+          0.357491195201874,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 0.920000016689301,
+        "surfaces": 1,
+        "triangles": 4584
+      }
+    },
+    "mesh_details": [
+      {
+        "name": "08A_CornerPost",
+        "position": [
+          -2.54999995231628,
+          1.31000006198883,
+          3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_CornerPost_001",
+        "position": [
+          -2.54999995231628,
+          1.31000006198883,
+          -3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_CornerPost_002",
+        "position": [
+          2.54999995231628,
+          1.31000006198883,
+          3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_CornerPost_003",
+        "position": [
+          2.54999995231628,
+          1.31000006198883,
+          -3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_Door",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorBoard",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorBoard_001",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorBoard_002",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorJamb",
+        "position": [
+          -0.509999990463257,
+          1.17999994754791,
+          3.76999998092651
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorJamb_001",
+        "position": [
+          0.509999990463257,
+          1.17999994754791,
+          3.76999998092651
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorLintel",
+        "position": [
+          0.0,
+          2.08999991416931,
+          3.76999998092651
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_EndWallPlate",
+        "position": [
+          0.0,
+          2.29999995231628,
+          3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_EndWallPlate_001",
+        "position": [
+          0.0,
+          2.29999995231628,
+          -3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_FrontClay",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_FrontClay_001",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_FrontLintelClay",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableClay",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 1
+      },
+      {
+        "name": "08A_GableClay_001",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 1
+      },
+      {
+        "name": "08A_GableRafterL",
+        "position": [
+          -1.27499997615814,
+          3.36985206604004,
+          3.75
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableRafterL_001",
+        "position": [
+          -1.27499997615814,
+          3.36985206604004,
+          -3.54999995231628
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableRafterR",
+        "position": [
+          1.27499997615814,
+          3.36985206604004,
+          3.75
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableRafterR_001",
+        "position": [
+          1.27499997615814,
+          3.36985206604004,
+          -3.54999995231628
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_RearClay",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace",
+        "position": [
+          -2.64000010490417,
+          1.5,
+          3.15499997138977
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace_001",
+        "position": [
+          -2.64000010490417,
+          1.5,
+          -3.15499997138977
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace_002",
+        "position": [
+          2.64000010490417,
+          1.5,
+          3.15499997138977
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace_003",
+        "position": [
+          2.64000010490417,
+          1.5,
+          -3.15499997138977
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideClay",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideClay_001",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideWallPlate",
+        "position": [
+          -2.54999995231628,
+          2.29999995231628,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideWallPlate_001",
+        "position": [
+          2.54999995231628,
+          2.29999995231628,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_Sill",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_Deck",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_Deck_001",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_RidgeCap",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_RidgeCap_001",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_ShingleField",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 3,
+        "triangles": 13644
+      }
+    ],
+    "mesh_nodes": 37,
+    "null_material_surfaces": 0,
+    "root_children": [
+      {
+        "name": "Building_Root",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "surfaces": 39,
+    "triangles": 14054
+  },
+  "cottage_B.glb": {
+    "bounds_max": [
+      2.33999991416931,
+      4.6118311882019,
+      2.03500008583069
+    ],
+    "bounds_min": [
+      -2.33999991416931,
+      0.0,
+      -2.03500008583069
+    ],
+    "materials": {
+      "08A_09F_B_clay": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 8,
+        "triangles": 74
+      },
+      "08A_09F_B_door": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 1,
+        "triangles": 12
+      },
+      "08A_09F_B_stone": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 1,
+        "triangles": 12
+      },
+      "08A_09F_B_weathered_oak": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 22,
+        "triangles": 264
+      },
+      "09A_AGED_0": {
+        "albedo": [
+          0.449203908443451,
+          0.430166363716125,
+          0.400187849998474,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 0.920000016689301,
+        "surfaces": 3,
+        "triangles": 2028
+      },
+      "09A_AGED_1": {
+        "albedo": [
+          0.522028684616089,
+          0.495609641075134,
+          0.451667040586472,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 0.920000016689301,
+        "surfaces": 3,
+        "triangles": 2172
+      },
+      "09A_AGED_2": {
+        "albedo": [
+          0.565728425979614,
+          0.532135486602783,
+          0.476579219102859,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 0.920000016689301,
+        "surfaces": 1,
+        "triangles": 2004
+      },
+      "09A_AGED_3": {
+        "albedo": [
+          0.506386458873749,
+          0.551650106906891,
+          0.408634006977081,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 0.920000016689301,
+        "surfaces": 1,
+        "triangles": 252
+      }
+    },
+    "mesh_details": [
+      {
+        "name": "08A_CornerPost_004",
+        "position": [
+          -2.0,
+          1.31000006198883,
+          1.75
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_CornerPost_005",
+        "position": [
+          -2.0,
+          1.31000006198883,
+          -1.75
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_CornerPost_006",
+        "position": [
+          2.0,
+          1.31000006198883,
+          1.75
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_CornerPost_007",
+        "position": [
+          2.0,
+          1.31000006198883,
+          -1.75
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_Door_001",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorBoard_003",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorBoard_004",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorBoard_005",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorJamb_002",
+        "position": [
+          -0.509999990463257,
+          1.17999994754791,
+          1.87000000476837
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorJamb_003",
+        "position": [
+          0.509999990463257,
+          1.17999994754791,
+          1.87000000476837
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorLintel_001",
+        "position": [
+          0.0,
+          2.08999991416931,
+          1.87000000476837
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_EndWallPlate_002",
+        "position": [
+          0.0,
+          2.29999995231628,
+          1.75
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_EndWallPlate_003",
+        "position": [
+          0.0,
+          2.29999995231628,
+          -1.75
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_FrontClay_002",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_FrontClay_003",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_FrontLintelClay_001",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableClay_002",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 1
+      },
+      {
+        "name": "08A_GableClay_003",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 1
+      },
+      {
+        "name": "08A_GableRafterL_002",
+        "position": [
+          -1.0,
+          3.4106125831604,
+          1.85000002384186
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableRafterL_003",
+        "position": [
+          -1.0,
+          3.4106125831604,
+          -1.64999997615814
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableRafterR_002",
+        "position": [
+          1.0,
+          3.4106125831604,
+          1.85000002384186
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableRafterR_003",
+        "position": [
+          1.0,
+          3.4106125831604,
+          -1.64999997615814
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_RearClay_001",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace_004",
+        "position": [
+          -2.08999991416931,
+          1.5,
+          1.25499999523163
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace_005",
+        "position": [
+          -2.08999991416931,
+          1.5,
+          -1.25499999523163
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace_006",
+        "position": [
+          2.08999991416931,
+          1.5,
+          1.25499999523163
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace_007",
+        "position": [
+          2.08999991416931,
+          1.5,
+          -1.25499999523163
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideClay_002",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideClay_003",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideWallPlate_002",
+        "position": [
+          -2.0,
+          2.29999995231628,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideWallPlate_003",
+        "position": [
+          2.0,
+          2.29999995231628,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_Sill_001",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_Deck_002",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_Deck_003",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_RidgeCap_002",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_RidgeCap_003",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_ShingleField_001",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 4,
+        "triangles": 6408
+      }
+    ],
+    "mesh_nodes": 37,
+    "null_material_surfaces": 0,
+    "root_children": [
+      {
+        "name": "Building_Root_001",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "surfaces": 40,
+    "triangles": 6818
+  },
+  "cottage_C.glb": {
+    "bounds_max": [
+      2.89000010490417,
+      4.5280179977417,
+      3.93499994277954
+    ],
+    "bounds_min": [
+      -2.89000010490417,
+      0.0,
+      -3.93499994277954
+    ],
+    "materials": {
+      "08A_09F_C_clay": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 8,
+        "triangles": 74
+      },
+      "08A_09F_C_door": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 1,
+        "triangles": 12
+      },
+      "08A_09F_C_stone": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 1,
+        "triangles": 12
+      },
+      "08A_09F_C_weathered_oak": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 22,
+        "triangles": 264
+      },
+      "09A_AGED_0.002": {
+        "albedo": [
+          0.449203908443451,
+          0.430166363716125,
+          0.400187849998474,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 0.920000016689301,
+        "surfaces": 3,
+        "triangles": 4068
+      },
+      "09A_AGED_1.002": {
+        "albedo": [
+          0.522028684616089,
+          0.495609641075134,
+          0.451667040586472,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 0.920000016689301,
+        "surfaces": 3,
+        "triangles": 4572
+      },
+      "09A_AGED_2.002": {
+        "albedo": [
+          0.565728425979614,
+          0.532135486602783,
+          0.476579219102859,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 0.920000016689301,
+        "surfaces": 1,
+        "triangles": 4668
+      },
+      "09A_AGED_3.002": {
+        "albedo": [
+          0.506386458873749,
+          0.551650106906891,
+          0.408634006977081,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 0.920000016689301,
+        "surfaces": 1,
+        "triangles": 396
+      }
+    },
+    "mesh_details": [
+      {
+        "name": "08A_CornerPost_008",
+        "position": [
+          -2.54999995231628,
+          1.31000006198883,
+          3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_CornerPost_009",
+        "position": [
+          -2.54999995231628,
+          1.31000006198883,
+          -3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_CornerPost_010",
+        "position": [
+          2.54999995231628,
+          1.31000006198883,
+          3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_CornerPost_011",
+        "position": [
+          2.54999995231628,
+          1.31000006198883,
+          -3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_Door_002",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorBoard_006",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorBoard_007",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorBoard_008",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorJamb_004",
+        "position": [
+          -0.509999990463257,
+          1.17999994754791,
+          3.76999998092651
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorJamb_005",
+        "position": [
+          0.509999990463257,
+          1.17999994754791,
+          3.76999998092651
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorLintel_002",
+        "position": [
+          0.0,
+          2.08999991416931,
+          3.76999998092651
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_EndWallPlate_004",
+        "position": [
+          0.0,
+          2.29999995231628,
+          3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_EndWallPlate_005",
+        "position": [
+          0.0,
+          2.29999995231628,
+          -3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_FrontClay_004",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_FrontClay_005",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_FrontLintelClay_002",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableClay_004",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 1
+      },
+      {
+        "name": "08A_GableClay_005",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 1
+      },
+      {
+        "name": "08A_GableRafterL_004",
+        "position": [
+          -1.27499997615814,
+          3.36985206604004,
+          3.75
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableRafterL_005",
+        "position": [
+          -1.27499997615814,
+          3.36985206604004,
+          -3.54999995231628
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableRafterR_004",
+        "position": [
+          1.27499997615814,
+          3.36985206604004,
+          3.75
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableRafterR_005",
+        "position": [
+          1.27499997615814,
+          3.36985206604004,
+          -3.54999995231628
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_RearClay_002",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace_008",
+        "position": [
+          -2.64000010490417,
+          1.5,
+          3.15499997138977
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace_009",
+        "position": [
+          -2.64000010490417,
+          1.5,
+          -3.15499997138977
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace_010",
+        "position": [
+          2.64000010490417,
+          1.5,
+          3.15499997138977
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace_011",
+        "position": [
+          2.64000010490417,
+          1.5,
+          -3.15499997138977
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideClay_004",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideClay_005",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideWallPlate_004",
+        "position": [
+          -2.54999995231628,
+          2.29999995231628,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideWallPlate_005",
+        "position": [
+          2.54999995231628,
+          2.29999995231628,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_Sill_002",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_Deck_004",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_Deck_005",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_RidgeCap_004",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_RidgeCap_005",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_ShingleField_002",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 4,
+        "triangles": 13656
+      }
+    ],
+    "mesh_nodes": 37,
+    "null_material_surfaces": 0,
+    "root_children": [
+      {
+        "name": "Building_Root_002",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "surfaces": 40,
+    "triangles": 14066
+  },
+  "single_A.blend": {
+    "bounds_max": [
+      2.89000010490417,
+      4.5280179977417,
+      3.93499994277954
+    ],
+    "bounds_min": [
+      -2.89000010490417,
+      0.0,
+      -3.93499994277954
+    ],
+    "materials": {
+      "08A_09F_A_clay": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 8,
+        "triangles": 74
+      },
+      "08A_09F_A_door": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 1,
+        "triangles": 12
+      },
+      "08A_09F_A_stone": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 1,
+        "triangles": 12
+      },
+      "08A_09F_A_weathered_oak": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 22,
+        "triangles": 264
+      },
+      "09A_CLEAN_0": {
+        "albedo": [
+          0.574871063232422,
+          0.467284768819809,
+          0.357491195201874,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 0.920000016689301,
+        "surfaces": 3,
+        "triangles": 4404
+      },
+      "09A_CLEAN_1": {
+        "albedo": [
+          0.626209676265717,
+          0.522028684616089,
+          0.411402016878128,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 0.920000016689301,
+        "surfaces": 3,
+        "triangles": 4704
+      },
+      "09A_CLEAN_2": {
+        "albedo": [
+          0.532135486602783,
+          0.442971080541611,
+          0.357491195201874,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 0.920000016689301,
+        "surfaces": 1,
+        "triangles": 4584
+      }
+    },
+    "mesh_details": [
+      {
+        "name": "08A_CornerPost",
+        "position": [
+          -2.54999995231628,
+          1.31000006198883,
+          3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_CornerPost_001",
+        "position": [
+          -2.54999995231628,
+          1.31000006198883,
+          -3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_CornerPost_002",
+        "position": [
+          2.54999995231628,
+          1.31000006198883,
+          3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_CornerPost_003",
+        "position": [
+          2.54999995231628,
+          1.31000006198883,
+          -3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_Door",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorBoard",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorBoard_001",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorBoard_002",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorJamb",
+        "position": [
+          -0.509999990463257,
+          1.17999994754791,
+          3.76999998092651
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorJamb_001",
+        "position": [
+          0.509999990463257,
+          1.17999994754791,
+          3.76999998092651
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorLintel",
+        "position": [
+          0.0,
+          2.08999991416931,
+          3.76999998092651
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_EndWallPlate",
+        "position": [
+          0.0,
+          2.29999995231628,
+          3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_EndWallPlate_001",
+        "position": [
+          0.0,
+          2.29999995231628,
+          -3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_FrontClay",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_FrontClay_001",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_FrontLintelClay",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableClay",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 1
+      },
+      {
+        "name": "08A_GableClay_001",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 1
+      },
+      {
+        "name": "08A_GableRafterL",
+        "position": [
+          -1.27499997615814,
+          3.36985206604004,
+          3.75
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableRafterL_001",
+        "position": [
+          -1.27499997615814,
+          3.36985206604004,
+          -3.54999995231628
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableRafterR",
+        "position": [
+          1.27499997615814,
+          3.36985206604004,
+          3.75
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableRafterR_001",
+        "position": [
+          1.27499997615814,
+          3.36985206604004,
+          -3.54999995231628
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_RearClay",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace",
+        "position": [
+          -2.64000010490417,
+          1.5,
+          3.15499997138977
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace_001",
+        "position": [
+          -2.64000010490417,
+          1.5,
+          -3.15499997138977
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace_002",
+        "position": [
+          2.64000010490417,
+          1.5,
+          3.15499997138977
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace_003",
+        "position": [
+          2.64000010490417,
+          1.5,
+          -3.15499997138977
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideClay",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideClay_001",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideWallPlate",
+        "position": [
+          -2.54999995231628,
+          2.29999995231628,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideWallPlate_001",
+        "position": [
+          2.54999995231628,
+          2.29999995231628,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_Sill",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_Deck",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_Deck_001",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_RidgeCap",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_RidgeCap_001",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_ShingleField",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 3,
+        "triangles": 13644
+      }
+    ],
+    "mesh_nodes": 37,
+    "null_material_surfaces": 0,
+    "root_children": [
+      {
+        "name": "Building_Root",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "surfaces": 39,
+    "triangles": 14054
+  },
+  "single_B.blend": {
+    "bounds_max": [
+      2.33999991416931,
+      4.6118311882019,
+      2.03500008583069
+    ],
+    "bounds_min": [
+      -2.33999991416931,
+      0.0,
+      -2.03500008583069
+    ],
+    "materials": {
+      "08A_09F_B_clay": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 8,
+        "triangles": 74
+      },
+      "08A_09F_B_door": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 1,
+        "triangles": 12
+      },
+      "08A_09F_B_stone": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 1,
+        "triangles": 12
+      },
+      "08A_09F_B_weathered_oak": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 22,
+        "triangles": 264
+      },
+      "09A_AGED_0": {
+        "albedo": [
+          0.449203908443451,
+          0.430166363716125,
+          0.400187849998474,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 0.920000016689301,
+        "surfaces": 3,
+        "triangles": 2028
+      },
+      "09A_AGED_1": {
+        "albedo": [
+          0.522028684616089,
+          0.495609641075134,
+          0.451667040586472,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 0.920000016689301,
+        "surfaces": 3,
+        "triangles": 2172
+      },
+      "09A_AGED_2": {
+        "albedo": [
+          0.565728425979614,
+          0.532135486602783,
+          0.476579219102859,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 0.920000016689301,
+        "surfaces": 1,
+        "triangles": 2004
+      },
+      "09A_AGED_3": {
+        "albedo": [
+          0.506386458873749,
+          0.551650106906891,
+          0.408634006977081,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 0.920000016689301,
+        "surfaces": 1,
+        "triangles": 252
+      }
+    },
+    "mesh_details": [
+      {
+        "name": "08A_CornerPost_004",
+        "position": [
+          -2.0,
+          1.31000006198883,
+          1.75
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_CornerPost_005",
+        "position": [
+          -2.0,
+          1.31000006198883,
+          -1.75
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_CornerPost_006",
+        "position": [
+          2.0,
+          1.31000006198883,
+          1.75
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_CornerPost_007",
+        "position": [
+          2.0,
+          1.31000006198883,
+          -1.75
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_Door_001",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorBoard_003",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorBoard_004",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorBoard_005",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorJamb_002",
+        "position": [
+          -0.509999990463257,
+          1.17999994754791,
+          1.87000000476837
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorJamb_003",
+        "position": [
+          0.509999990463257,
+          1.17999994754791,
+          1.87000000476837
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorLintel_001",
+        "position": [
+          0.0,
+          2.08999991416931,
+          1.87000000476837
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_EndWallPlate_002",
+        "position": [
+          0.0,
+          2.29999995231628,
+          1.75
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_EndWallPlate_003",
+        "position": [
+          0.0,
+          2.29999995231628,
+          -1.75
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_FrontClay_002",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_FrontClay_003",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_FrontLintelClay_001",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableClay_002",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 1
+      },
+      {
+        "name": "08A_GableClay_003",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 1
+      },
+      {
+        "name": "08A_GableRafterL_002",
+        "position": [
+          -1.0,
+          3.4106125831604,
+          1.85000002384186
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableRafterL_003",
+        "position": [
+          -1.0,
+          3.4106125831604,
+          -1.64999997615814
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableRafterR_002",
+        "position": [
+          1.0,
+          3.4106125831604,
+          1.85000002384186
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableRafterR_003",
+        "position": [
+          1.0,
+          3.4106125831604,
+          -1.64999997615814
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_RearClay_001",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace_004",
+        "position": [
+          -2.08999991416931,
+          1.5,
+          1.25499999523163
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace_005",
+        "position": [
+          -2.08999991416931,
+          1.5,
+          -1.25499999523163
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace_006",
+        "position": [
+          2.08999991416931,
+          1.5,
+          1.25499999523163
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace_007",
+        "position": [
+          2.08999991416931,
+          1.5,
+          -1.25499999523163
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideClay_002",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideClay_003",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideWallPlate_002",
+        "position": [
+          -2.0,
+          2.29999995231628,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideWallPlate_003",
+        "position": [
+          2.0,
+          2.29999995231628,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_Sill_001",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_Deck_002",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_Deck_003",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_RidgeCap_002",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_RidgeCap_003",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_ShingleField_001",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 4,
+        "triangles": 6408
+      }
+    ],
+    "mesh_nodes": 37,
+    "null_material_surfaces": 0,
+    "root_children": [
+      {
+        "name": "Building_Root_001",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "surfaces": 40,
+    "triangles": 6818
+  },
+  "single_C.blend": {
+    "bounds_max": [
+      2.89000010490417,
+      4.5280179977417,
+      3.93499994277954
+    ],
+    "bounds_min": [
+      -2.89000010490417,
+      0.0,
+      -3.93499994277954
+    ],
+    "materials": {
+      "08A_09F_C_clay": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 8,
+        "triangles": 74
+      },
+      "08A_09F_C_door": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 1,
+        "triangles": 12
+      },
+      "08A_09F_C_stone": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 1,
+        "triangles": 12
+      },
+      "08A_09F_C_weathered_oak": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "surfaces": 22,
+        "triangles": 264
+      },
+      "09A_AGED_0.002": {
+        "albedo": [
+          0.449203908443451,
+          0.430166363716125,
+          0.400187849998474,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 0.920000016689301,
+        "surfaces": 3,
+        "triangles": 4068
+      },
+      "09A_AGED_1.002": {
+        "albedo": [
+          0.522028684616089,
+          0.495609641075134,
+          0.451667040586472,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 0.920000016689301,
+        "surfaces": 3,
+        "triangles": 4572
+      },
+      "09A_AGED_2.002": {
+        "albedo": [
+          0.565728425979614,
+          0.532135486602783,
+          0.476579219102859,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 0.920000016689301,
+        "surfaces": 1,
+        "triangles": 4668
+      },
+      "09A_AGED_3.002": {
+        "albedo": [
+          0.506386458873749,
+          0.551650106906891,
+          0.408634006977081,
+          1.0
+        ],
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "roughness": 0.920000016689301,
+        "surfaces": 1,
+        "triangles": 396
+      }
+    },
+    "mesh_details": [
+      {
+        "name": "08A_CornerPost_008",
+        "position": [
+          -2.54999995231628,
+          1.31000006198883,
+          3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_CornerPost_009",
+        "position": [
+          -2.54999995231628,
+          1.31000006198883,
+          -3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_CornerPost_010",
+        "position": [
+          2.54999995231628,
+          1.31000006198883,
+          3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_CornerPost_011",
+        "position": [
+          2.54999995231628,
+          1.31000006198883,
+          -3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_Door_002",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorBoard_006",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorBoard_007",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorBoard_008",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorJamb_004",
+        "position": [
+          -0.509999990463257,
+          1.17999994754791,
+          3.76999998092651
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorJamb_005",
+        "position": [
+          0.509999990463257,
+          1.17999994754791,
+          3.76999998092651
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_DoorLintel_002",
+        "position": [
+          0.0,
+          2.08999991416931,
+          3.76999998092651
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_EndWallPlate_004",
+        "position": [
+          0.0,
+          2.29999995231628,
+          3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_EndWallPlate_005",
+        "position": [
+          0.0,
+          2.29999995231628,
+          -3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_FrontClay_004",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_FrontClay_005",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_FrontLintelClay_002",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableClay_004",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 1
+      },
+      {
+        "name": "08A_GableClay_005",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 1
+      },
+      {
+        "name": "08A_GableRafterL_004",
+        "position": [
+          -1.27499997615814,
+          3.36985206604004,
+          3.75
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableRafterL_005",
+        "position": [
+          -1.27499997615814,
+          3.36985206604004,
+          -3.54999995231628
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableRafterR_004",
+        "position": [
+          1.27499997615814,
+          3.36985206604004,
+          3.75
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_GableRafterR_005",
+        "position": [
+          1.27499997615814,
+          3.36985206604004,
+          -3.54999995231628
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_RearClay_002",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace_008",
+        "position": [
+          -2.64000010490417,
+          1.5,
+          3.15499997138977
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace_009",
+        "position": [
+          -2.64000010490417,
+          1.5,
+          -3.15499997138977
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace_010",
+        "position": [
+          2.64000010490417,
+          1.5,
+          3.15499997138977
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideBrace_011",
+        "position": [
+          2.64000010490417,
+          1.5,
+          -3.15499997138977
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideClay_004",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideClay_005",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideWallPlate_004",
+        "position": [
+          -2.54999995231628,
+          2.29999995231628,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_SideWallPlate_005",
+        "position": [
+          2.54999995231628,
+          2.29999995231628,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "08A_Sill_002",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_Deck_004",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_Deck_005",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_RidgeCap_004",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_RidgeCap_005",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12
+      },
+      {
+        "name": "09A_ShingleField_002",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 4,
+        "triangles": 13656
+      }
+    ],
+    "mesh_nodes": 37,
+    "null_material_surfaces": 0,
+    "root_children": [
+      {
+        "name": "Building_Root_002",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "surfaces": 40,
+    "triangles": 14066
+  }
+}

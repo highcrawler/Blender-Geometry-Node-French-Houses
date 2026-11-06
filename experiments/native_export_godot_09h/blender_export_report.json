@@ -1,0 +1,50 @@
+{
+  "A": {
+    "glb_bytes": 782836,
+    "source_triangles": 14054,
+    "source_meshes": 37,
+    "root_original_location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "root_original_yaw": 0.0,
+    "root_export_location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "B": {
+    "glb_bytes": 392264,
+    "source_triangles": 6818,
+    "source_meshes": 37,
+    "root_original_location": [
+      35.0,
+      12.0,
+      0.0
+    ],
+    "root_original_yaw": 0.0,
+    "root_export_location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "C": {
+    "glb_bytes": 784448,
+    "source_triangles": 14066,
+    "source_meshes": 37,
+    "root_original_location": [
+      -15.0,
+      8.0,
+      0.0
+    ],
+    "root_original_yaw": 0.44999998807907104,
+    "root_export_location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+}
