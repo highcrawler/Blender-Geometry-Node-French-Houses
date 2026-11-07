@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/clay_constant_A.glb" id="1_clay"]
+
+[sub_resource type="Environment" id="Environment_1"]
+background_mode = 1
+background_color = Color(0.47, 0.58, 0.68, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.9, 0.9, 0.9, 1)
+ambient_light_energy = 0.75
+
+[sub_resource type="StandardMaterial3D" id="Ground_1"]
+albedo_color = Color(0.38, 0.43, 0.39, 1)
+
+[sub_resource type="PlaneMesh" id="Plane_1"]
+size = Vector2(40, 40)
+
+[node name="ClayMaterialTest" type="Node3D"]
+
+[node name="World" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_1")
+
+[node name="Ground" type="MeshInstance3D" parent="."]
+position = Vector3(0, -0.015, 0)
+mesh = SubResource("Plane_1")
+surface_material_override/0 = SubResource("Ground_1")
+
+[node name="Sun" type="DirectionalLight3D" parent="."]
+rotation_degrees = Vector3(-48, -32, -12)
+light_energy = 1.2
+
+[node name="Camera" type="Camera3D" parent="."]
+position = Vector3(9, 7.5, 10)
+rotation_degrees = Vector3(-24.5, 42, 0)
+projection = 1
+size = 13.5
+current = true
+
+[node name="CottageA" parent="." instance=ExtResource("1_clay")]

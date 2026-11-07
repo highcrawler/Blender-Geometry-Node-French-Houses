@@ -1,0 +1,111 @@
+00:01.880  blend            | Read blend: "/home/alexander-both/Dokumente/Generation/ircss-clay-09i/experiments/wooden_roof_system_09f/three_owned_cottages.blend"
+/home/alexander-both/Dokumente/Generation/ircss-clay-09i/experiments/clay_material_export_09i/spike.py:43: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  original_materials=tuple((m.name,m.as_pointer(),tuple((n.name,n.type) for n in m.node_tree.nodes) if m.use_nodes else ()) for m in bpy.data.materials)
+00:07.282  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-clay-09i/experiments/clay_material_export_09i/screenshots/blender_original.png'
+00:15.995  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-clay-09i/experiments/clay_material_export_09i/screenshots/blender_clay_detail.png'
+/home/alexander-both/Dokumente/Generation/ircss-clay-09i/experiments/clay_material_export_09i/spike.py:86: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  export_clay=bpy.data.materials.new('09I_A_clay_constant');export_clay.use_nodes=True
+Reloading external rigs...
+Reloading external metarigs...
+BlenderMCP: cannot start server in background mode (blender -b) - commands would never execute
+BlenderMCP: run Blender with a GUI, or use a virtual display: xvfb-run -a blender
+BlenderMCP addon registered
+ ╔═╡ RetopoFlow ╞══════════════════════╗ 
+ ║                                     ║ 
+ ║ Blender is running in background    ║ 
+ ║ Skipping any further initialization ║ 
+ ║                                     ║ 
+ ╚═════════════════════════════════════╝ 
+register_class(...):
+Warning: 'Remi_PT_MainPanel' does not have upper case alphanumeric prefix
+register_class(...):
+Warning: 'Remi_PT_EditToolsPanel' does not have upper case alphanumeric prefix
+Remi: Registered
+INFO Draco is available, use library at /snap/blender/7803/lib/libbf_intern_draco_bridge.so
+INFO MeshOptimizer is available, use library at /snap/blender/7803/lib/libbf_intern_meshopt_bridge.so
+11:18:44 | INFO: Starting glTF 2.0 export
+11:18:44 | INFO: Extracting primitive: 08A_08A_CornerPost.004
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_08A_CornerPost.005
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_08A_CornerPost.006
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_08A_CornerPost.007
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_08A_Door.001
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_08A_DoorBoard.003
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_08A_DoorBoard.004
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_08A_DoorBoard.005
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_08A_DoorJamb.002
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_08A_DoorJamb.003
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_08A_DoorLintel.001
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_08A_EndWallPlate.002
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_08A_EndWallPlate.003
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_08A_FrontClay.002
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_08A_FrontClay.003
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_08A_FrontLintelClay.001
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_08A_GableClay.002
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_08A_GableClay.003
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_08A_GableRafterL.002
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_08A_GableRafterL.003
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_08A_GableRafterR.002
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_08A_GableRafterR.003
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_08A_RearClay.001
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_08A_SideBrace.004
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_08A_SideBrace.005
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_08A_SideBrace.006
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_08A_SideBrace.007
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_08A_SideClay.002
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_08A_SideClay.003
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_08A_SideWallPlate.002
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_08A_SideWallPlate.003
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_08A_Sill.001
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_09A_Deck.002
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_09A_Deck.003
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_09A_RidgeCap.002
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_09A_RidgeCap.003
+11:18:44 | INFO: Primitives created: 1
+11:18:44 | INFO: Extracting primitive: 08A_09A_ShingleField.001
+11:18:44 | INFO: Primitives created: 3
+11:18:44 | INFO: Finished glTF 2.0 export in 0.07576823234558105 s
+/home/alexander-both/Dokumente/Generation/ircss-clay-09i/experiments/clay_material_export_09i/spike.py:135: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  assert original_materials==tuple((m.name,m.as_pointer(),tuple((n.name,n.type) for n in m.node_tree.nodes) if m.use_nodes else ()) for m in bpy.data.materials)
+
+09I_SUCCESS /home/alexander-both/Dokumente/Generation/ircss-clay-09i/experiments/clay_material_export_09i/godot_test/assets/clay_constant_A.glb [{'name': '08A_FrontClay', 'slots': [0], 'polygons': 6, 'triangles': 12}, {'name': '08A_FrontClay.001', 'slots': [0], 'polygons': 6, 'triangles': 12}, {'name': '08A_FrontLintelClay', 'slots': [0], 'polygons': 6, 'triangles': 12}, {'name': '08A_GableClay', 'slots': [0], 'polygons': 1, 'triangles': 1}, {'name': '08A_GableClay.001', 'slots': [0], 'polygons': 1, 'triangles': 1}, {'name': '08A_RearClay', 'slots': [0], 'polygons': 6, 'triangles': 12}, {'name': '08A_SideClay', 'slots': [0], 'polygons': 6, 'triangles': 12}, {'name': '08A_SideClay.001', 'slots': [0], 'polygons': 6, 'triangles': 12}]
+BlenderMCP server stopped
+BlenderMCP addon unregistered
+Remi: Unregistered
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:34:58)
+
+Blender quit

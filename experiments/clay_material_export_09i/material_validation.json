@@ -1,0 +1,30 @@
+{
+  "technical_assertions": "PASS",
+  "linear_input": [
+    0.47,
+    0.38,
+    0.28
+  ],
+  "expected_srgb": [
+    0.7152408841330303,
+    0.649956455014496,
+    0.5657284334090101
+  ],
+  "godot_albedo": [
+    0.715240895748138,
+    0.649956464767456,
+    0.565728425979614,
+    1.0
+  ],
+  "clay_surfaces": 8,
+  "clay_triangles": 74,
+  "total_triangles": 14054,
+  "roof_triangles": 13692,
+  "body_triangles": 362,
+  "bounds_y": [
+    0.0,
+    4.5280179977417
+  ],
+  "roof_and_other_materials_unchanged": true,
+  "source_sha256": "38acea0fac6720a7b853a2242a59fc3bdc34e0cb552b9f9774bd22e31e6effae"
+}

@@ -1,0 +1,189 @@
+{
+  "source_sha256_before": "38acea0fac6720a7b853a2242a59fc3bdc34e0cb552b9f9774bd22e31e6effae",
+  "clay_name_diagnostic": "08A_09F_A_clay",
+  "clay_node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL",
+    "TEX_COORD",
+    "TEX_NOISE",
+    "VALTORGB"
+  ],
+  "links": [
+    {
+      "from": "Color Ramp.Color",
+      "to": "Principled BSDF.Base Color"
+    },
+    {
+      "from": "Noise Texture.Factor",
+      "to": "Color Ramp.Factor"
+    },
+    {
+      "from": "Principled BSDF.BSDF",
+      "to": "Material Output.Surface"
+    },
+    {
+      "from": "Texture Coordinate.Generated",
+      "to": "Noise Texture.Vector"
+    }
+  ],
+  "ramp": [
+    {
+      "position": 0.23999999463558197,
+      "linear_rgba": [
+        0.4323999881744385,
+        0.3495999872684479,
+        0.25760000944137573,
+        1.0
+      ]
+    },
+    {
+      "position": 0.7799999713897705,
+      "linear_rgba": [
+        0.5076000094413757,
+        0.41040000319480896,
+        0.30239999294281006,
+        1.0
+      ]
+    }
+  ],
+  "noise_scale": 5.0,
+  "noise_detail": 2.0,
+  "noise_vector_input": [
+    "Texture Coordinate.Generated"
+  ],
+  "roughness": 1.0,
+  "metallic": 0.0,
+  "clay_meshes": [
+    {
+      "name": "08A_FrontClay",
+      "slots": [
+        0
+      ],
+      "polygons": 6,
+      "triangles": 12
+    },
+    {
+      "name": "08A_FrontClay.001",
+      "slots": [
+        0
+      ],
+      "polygons": 6,
+      "triangles": 12
+    },
+    {
+      "name": "08A_FrontLintelClay",
+      "slots": [
+        0
+      ],
+      "polygons": 6,
+      "triangles": 12
+    },
+    {
+      "name": "08A_GableClay",
+      "slots": [
+        0
+      ],
+      "polygons": 1,
+      "triangles": 1
+    },
+    {
+      "name": "08A_GableClay.001",
+      "slots": [
+        0
+      ],
+      "polygons": 1,
+      "triangles": 1
+    },
+    {
+      "name": "08A_RearClay",
+      "slots": [
+        0
+      ],
+      "polygons": 6,
+      "triangles": 12
+    },
+    {
+      "name": "08A_SideClay",
+      "slots": [
+        0
+      ],
+      "polygons": 6,
+      "triangles": 12
+    },
+    {
+      "name": "08A_SideClay.001",
+      "slots": [
+        0
+      ],
+      "polygons": 6,
+      "triangles": 12
+    }
+  ],
+  "export": {
+    "export_format": "GLB",
+    "use_selection": true,
+    "export_yup": true,
+    "export_apply": false,
+    "export_materials": "EXPORT",
+    "export_cameras": false,
+    "export_lights": false,
+    "export_extras": true
+  },
+  "changed_slots": [
+    [
+      "08A_FrontClay",
+      0,
+      "08A_09F_A_clay",
+      "09I_A_clay_constant"
+    ],
+    [
+      "08A_FrontClay.001",
+      0,
+      "08A_09F_A_clay",
+      "09I_A_clay_constant"
+    ],
+    [
+      "08A_FrontLintelClay",
+      0,
+      "08A_09F_A_clay",
+      "09I_A_clay_constant"
+    ],
+    [
+      "08A_GableClay",
+      0,
+      "08A_09F_A_clay",
+      "09I_A_clay_constant"
+    ],
+    [
+      "08A_GableClay.001",
+      0,
+      "08A_09F_A_clay",
+      "09I_A_clay_constant"
+    ],
+    [
+      "08A_RearClay",
+      0,
+      "08A_09F_A_clay",
+      "09I_A_clay_constant"
+    ],
+    [
+      "08A_SideClay",
+      0,
+      "08A_09F_A_clay",
+      "09I_A_clay_constant"
+    ],
+    [
+      "08A_SideClay.001",
+      0,
+      "08A_09F_A_clay",
+      "09I_A_clay_constant"
+    ]
+  ],
+  "geometry_same": true,
+  "source_in_memory_same": true,
+  "selection_and_collections_restored": true,
+  "source_sha256_after": "38acea0fac6720a7b853a2242a59fc3bdc34e0cb552b9f9774bd22e31e6effae",
+  "mesh_count": 37,
+  "triangles": 14054,
+  "export_bytes": 783072
+}
