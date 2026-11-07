@@ -1,0 +1,126 @@
+{
+  "reference": {
+    "mesh_count": 37,
+    "triangles": 14054,
+    "shape_and_transform_hash": "7df3a0243a1a4e17337ca79dc7c2d1a784d5395570a5ad0ec37c2229d5fc71ac",
+    "materials": {
+      "08A_09F_A_door": 12,
+      "09I_A_clay_constant": 74,
+      "08A_09F_A_stone": 12,
+      "09A_CLEAN_0": 4404,
+      "09A_CLEAN_1": 4704,
+      "09A_CLEAN_2": 4584
+    },
+    "root_nodes": [
+      {
+        "children": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36
+        ],
+        "name": "Building_Root.003"
+      }
+    ]
+  },
+  "candidate": {
+    "mesh_count": 37,
+    "triangles": 14054,
+    "shape_and_transform_hash": "7df3a0243a1a4e17337ca79dc7c2d1a784d5395570a5ad0ec37c2229d5fc71ac",
+    "materials": {
+      "08A_09F_A_door": 12,
+      "09I_A_clay_constant": 74,
+      "08A_09F_A_stone": 12,
+      "09A_CLEAN_0": 4404,
+      "09A_CLEAN_1": 4704,
+      "09A_CLEAN_2": 4584
+    },
+    "root_nodes": [
+      {
+        "children": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36
+        ],
+        "name": "Building_Root.003"
+      }
+    ]
+  },
+  "identical_geometry_transforms_and_surface_assignment": true,
+  "unchanged_glb_materials": [
+    "08A_09F_A_door",
+    "08A_09F_A_stone",
+    "09A_CLEAN_0",
+    "09A_CLEAN_1",
+    "09A_CLEAN_2",
+    "09I_A_clay_constant"
+  ],
+  "oak_triangles": 264
+}

@@ -1,0 +1,15 @@
+# Phase 9J – Weathered Oak Material Export
+
+**TECHNICAL RESULT: PASS. VISUAL RESULT: CONSTANT ACCEPTABLE (vorläufig; Projektleiter entscheidet endgültig).** Basis Phase 9I `266a85b`, Branch `experiment/weathered-oak-export-09j`; Änderungen ausschließlich neue Dateien unter `experiments/weathered_oak_export_09j/` und vier `docs/PHASE9J_*.md`. Kein Merge. Blender **5.2.2 LTS** und Godot **4.7 stable** ausgeführt. [Shader-Audit](PHASE9J_OAK_SHADER_AUDIT.md) · [Import/Regression](PHASE9J_GODOT_MATERIAL_TEST.md) · [A/B-Bilder](PHASE9J_VISUAL_COMPARISON.md) · [Reproduktion](../experiments/weathered_oak_export_09j/README.md).
+
+1. **Warum wurde Oak in 9H weiß?** Gespeichertes `Generated → Noise (Scale 5, Detail 2) → ColorRamp (linear 0,1672/0,1100/0,06776 bis 0,2128/0,1400/0,08624; Positionen 0,24/0,78) → Principled Base Color`, mit 12-%-Variation der Ramp-Endpunkte. Der glTF-Exporter transportiert diesen prozeduralen Farbgraphen nicht als Base Color; Godot-Referenz 9I misst weiterhin Weiß.
+2. **Wird konstante Farbe korrekt übertragen?** Ja. Principled linear `(0,19;0,125;0,077)`, Roughness 1, Metallic 0 auf separater Exportkopie → Godot sRGB `(0,473120660;0,388572872;0,307485223;1)`, entsprechend der erwarteten sRGB-Umrechnung. **22 Surfaces/264 Dreiecke**.
+3. **Kontrast Clay/Fachwerk überzeugend?** In den kontrollierten Godot-A/B-Bildern deutlich besser als weißes 9I-Holz: Verstrebungen und Türrahmen sind lesbar; die weiterhin weißen Stone/Door-Flächen verhindern die Beurteilung des fertigen Gesamtlooks.
+4. **Sind 12 % Variationsverlust bei ~300 Pixeln relevant?** Auf schmalen Balken kaum erkennbar; in Blender-Detailaufnahme leicht sichtbar, Godot-Detail homogener. Bei etwa 280–300 Pixeln Cottage-Höhe ist kein wesentlicher Stilbruch nachweisbar.
+5. **Baking nötig?** Für **dieses** Oak und diese Ansichten nein; eine konstante PBR-Grundfarbe reicht vorläufig. Kein genereller Freibrief für andere Materialien oder Beleuchtung.
+
+**Geometrie/Pivot:** 37 Meshes, 14.054 Dreiecke (13.692 Dach, 362 Körper), 39 importierte Surfaces, identische Positions-/Indexdaten und Materialzuordnung pro Surface, Bounds gleich, Root `(0,0,0)` und Boden `Y=0`. Clay mit 8 Surfaces/74 Dreiecken und Godot-Albedo aus 9I **exakt unverändert**; drei CLEAN-Dachfarben sowie Stone/Door und alle anderen Materialparameter unverändert. Quell-`.blend` SHA-256 vor/nach `38acea0fac6720a7b853a2242a59fc3bdc34e0cb552b9f9774bd22e31e6effae`, 9I-GLB byteidentische Referenz. Kopien aus unabhängigen Mesh-IDs wurden entsorgt, ohne Quelldaten zu speichern.
+
+**Genau ein nächster kleiner Schritt:** eine **gemeinsame, isolierte Prüfung der beiden verbliebenen Körpermaterialien Stone und Door** als eigene Phase beauftragen; hier weder umsetzen noch eine allgemeine Materialpipeline beginnen.
+
+Grenzen: nur Long CLEAN A, ein Original-Cycles-Lichtsetup und drei Ansichten desselben Godot-GL-Compatibility-Lichtsetups; noch keine künstlerische Freigabe. Stone/Door bleiben weiß, Cycles und Godot unterscheiden sich bei Licht/Color Management. Weder Add-on, Cottage-/Dachgenerator, Collector, historische Referenzen noch Pilgrimm bearbeitet.

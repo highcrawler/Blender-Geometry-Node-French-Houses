@@ -1,0 +1,111 @@
+00:01.886  blend            | Read blend: "/home/alexander-both/Dokumente/Generation/ircss-oak-09j/experiments/wooden_roof_system_09f/three_owned_cottages.blend"
+/home/alexander-both/Dokumente/Generation/ircss-oak-09j/experiments/weathered_oak_export_09j/spike.py:61: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if not m.use_nodes:result.append((m.name,m.as_pointer(),tuple(m.diffuse_color),None));continue
+00:07.369  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-oak-09j/experiments/weathered_oak_export_09j/screenshots/blender_original.png'
+00:16.107  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-oak-09j/experiments/weathered_oak_export_09j/screenshots/blender_oak_detail.png'
+/home/alexander-both/Dokumente/Generation/ircss-oak-09j/experiments/weathered_oak_export_09j/spike.py:109: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  export_clay=bpy.data.materials.new('09I_A_clay_constant');export_clay.use_nodes=True
+/home/alexander-both/Dokumente/Generation/ircss-oak-09j/experiments/weathered_oak_export_09j/spike.py:115: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  export_oak=bpy.data.materials.new('09J_A_weathered_oak_constant');export_oak.use_nodes=True
+Reloading external rigs...
+Reloading external metarigs...
+BlenderMCP: cannot start server in background mode (blender -b) - commands would never execute
+BlenderMCP: run Blender with a GUI, or use a virtual display: xvfb-run -a blender
+BlenderMCP addon registered
+ ╔═╡ RetopoFlow ╞══════════════════════╗
+ ║                                     ║
+ ║ Blender is running in background    ║
+ ║ Skipping any further initialization ║
+ ║                                     ║
+ ╚═════════════════════════════════════╝
+register_class(...):
+Warning: 'Remi_PT_MainPanel' does not have upper case alphanumeric prefix
+register_class(...):
+Warning: 'Remi_PT_EditToolsPanel' does not have upper case alphanumeric prefix
+Remi: Registered
+INFO Draco is available, use library at /snap/blender/7803/lib/libbf_intern_draco_bridge.so
+INFO MeshOptimizer is available, use library at /snap/blender/7803/lib/libbf_intern_meshopt_bridge.so
+12:37:31 | INFO: Starting glTF 2.0 export
+12:37:31 | INFO: Extracting primitive: 08A_08A_CornerPost.004
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_08A_CornerPost.005
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_08A_CornerPost.006
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_08A_CornerPost.007
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_08A_Door.001
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_08A_DoorBoard.003
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_08A_DoorBoard.004
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_08A_DoorBoard.005
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_08A_DoorJamb.002
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_08A_DoorJamb.003
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_08A_DoorLintel.001
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_08A_EndWallPlate.002
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_08A_EndWallPlate.003
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_08A_FrontClay.002
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_08A_FrontClay.003
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_08A_FrontLintelClay.001
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_08A_GableClay.002
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_08A_GableClay.003
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_08A_GableRafterL.002
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_08A_GableRafterL.003
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_08A_GableRafterR.002
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_08A_GableRafterR.003
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_08A_RearClay.001
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_08A_SideBrace.004
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_08A_SideBrace.005
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_08A_SideBrace.006
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_08A_SideBrace.007
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_08A_SideClay.002
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_08A_SideClay.003
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_08A_SideWallPlate.002
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_08A_SideWallPlate.003
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_08A_Sill.001
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_09A_Deck.002
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_09A_Deck.003
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_09A_RidgeCap.002
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_09A_RidgeCap.003
+12:37:31 | INFO: Primitives created: 1
+12:37:31 | INFO: Extracting primitive: 08A_09A_ShingleField.001
+12:37:31 | INFO: Primitives created: 3
+12:37:31 | INFO: Finished glTF 2.0 export in 0.07977890968322754 s
+
+09J_SUCCESS /home/alexander-both/Dokumente/Generation/ircss-oak-09j/experiments/weathered_oak_export_09j/godot_test/assets/oak_constant_A.glb [{'name': '08A_CornerPost', 'slots': [0], 'polygons': 6, 'triangles': 12}, {'name': '08A_CornerPost.001', 'slots': [0], 'polygons': 6, 'triangles': 12}, {'name': '08A_CornerPost.002', 'slots': [0], 'polygons': 6, 'triangles': 12}, {'name': '08A_CornerPost.003', 'slots': [0], 'polygons': 6, 'triangles': 12}, {'name': '08A_DoorBoard', 'slots': [0], 'polygons': 6, 'triangles': 12}, {'name': '08A_DoorBoard.001', 'slots': [0], 'polygons': 6, 'triangles': 12}, {'name': '08A_DoorBoard.002', 'slots': [0], 'polygons': 6, 'triangles': 12}, {'name': '08A_DoorJamb', 'slots': [0], 'polygons': 6, 'triangles': 12}, {'name': '08A_DoorJamb.001', 'slots': [0], 'polygons': 6, 'triangles': 12}, {'name': '08A_DoorLintel', 'slots': [0], 'polygons': 6, 'triangles': 12}, {'name': '08A_EndWallPlate', 'slots': [0], 'polygons': 6, 'triangles': 12}, {'name': '08A_EndWallPlate.001', 'slots': [0], 'polygons': 6, 'triangles': 12}, {'name': '08A_GableRafterL', 'slots': [0], 'polygons': 6, 'triangles': 12}, {'name': '08A_GableRafterL.001', 'slots': [0], 'polygons': 6, 'triangles': 12}, {'name': '08A_GableRafterR', 'slots': [0], 'polygons': 6, 'triangles': 12}, {'name': '08A_GableRafterR.001', 'slots': [0], 'polygons': 6, 'triangles': 12}, {'name': '08A_SideBrace', 'slots': [0], 'polygons': 6, 'triangles': 12}, {'name': '08A_SideBrace.001', 'slots': [0], 'polygons': 6, 'triangles': 12}, {'name': '08A_SideBrace.002', 'slots': [0], 'polygons': 6, 'triangles': 12}, {'name': '08A_SideBrace.003', 'slots': [0], 'polygons': 6, 'triangles': 12}, {'name': '08A_SideWallPlate', 'slots': [0], 'polygons': 6, 'triangles': 12}, {'name': '08A_SideWallPlate.001', 'slots': [0], 'polygons': 6, 'triangles': 12}]
+BlenderMCP server stopped
+BlenderMCP addon unregistered
+Remi: Unregistered
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:34:58)
+
+Blender quit

@@ -1,0 +1,442 @@
+{
+  "collector_reference": {
+    "meshes": 37,
+    "body": 32,
+    "roof": 5,
+    "triangles": 14054,
+    "matched_09g": true
+  },
+  "source_sha256_before": "38acea0fac6720a7b853a2242a59fc3bdc34e0cb552b9f9774bd22e31e6effae",
+  "oak_name_diagnostic": "08A_09F_A_weathered_oak",
+  "oak_node_types": [
+    "BSDF_PRINCIPLED",
+    "OUTPUT_MATERIAL",
+    "TEX_COORD",
+    "TEX_NOISE",
+    "VALTORGB"
+  ],
+  "links": [
+    {
+      "from": "Color Ramp.Color",
+      "to": "Principled BSDF.Base Color"
+    },
+    {
+      "from": "Noise Texture.Factor",
+      "to": "Color Ramp.Factor"
+    },
+    {
+      "from": "Principled BSDF.BSDF",
+      "to": "Material Output.Surface"
+    },
+    {
+      "from": "Texture Coordinate.Generated",
+      "to": "Noise Texture.Vector"
+    }
+  ],
+  "ramp": [
+    {
+      "position": 0.23999999463558197,
+      "linear_rgba": [
+        0.1671999990940094,
+        0.10999999940395355,
+        0.06775999814271927,
+        1.0
+      ]
+    },
+    {
+      "position": 0.7799999713897705,
+      "linear_rgba": [
+        0.21279999613761902,
+        0.14000000059604645,
+        0.0862400010228157,
+        1.0
+      ]
+    }
+  ],
+  "noise_scale": 5.0,
+  "noise_detail": 2.0,
+  "noise_vector_input": [
+    "Texture Coordinate.Generated"
+  ],
+  "roughness": 1.0,
+  "metallic": 0.0,
+  "oak_meshes": [
+    {
+      "name": "08A_CornerPost",
+      "slots": [
+        0
+      ],
+      "polygons": 6,
+      "triangles": 12
+    },
+    {
+      "name": "08A_CornerPost.001",
+      "slots": [
+        0
+      ],
+      "polygons": 6,
+      "triangles": 12
+    },
+    {
+      "name": "08A_CornerPost.002",
+      "slots": [
+        0
+      ],
+      "polygons": 6,
+      "triangles": 12
+    },
+    {
+      "name": "08A_CornerPost.003",
+      "slots": [
+        0
+      ],
+      "polygons": 6,
+      "triangles": 12
+    },
+    {
+      "name": "08A_DoorBoard",
+      "slots": [
+        0
+      ],
+      "polygons": 6,
+      "triangles": 12
+    },
+    {
+      "name": "08A_DoorBoard.001",
+      "slots": [
+        0
+      ],
+      "polygons": 6,
+      "triangles": 12
+    },
+    {
+      "name": "08A_DoorBoard.002",
+      "slots": [
+        0
+      ],
+      "polygons": 6,
+      "triangles": 12
+    },
+    {
+      "name": "08A_DoorJamb",
+      "slots": [
+        0
+      ],
+      "polygons": 6,
+      "triangles": 12
+    },
+    {
+      "name": "08A_DoorJamb.001",
+      "slots": [
+        0
+      ],
+      "polygons": 6,
+      "triangles": 12
+    },
+    {
+      "name": "08A_DoorLintel",
+      "slots": [
+        0
+      ],
+      "polygons": 6,
+      "triangles": 12
+    },
+    {
+      "name": "08A_EndWallPlate",
+      "slots": [
+        0
+      ],
+      "polygons": 6,
+      "triangles": 12
+    },
+    {
+      "name": "08A_EndWallPlate.001",
+      "slots": [
+        0
+      ],
+      "polygons": 6,
+      "triangles": 12
+    },
+    {
+      "name": "08A_GableRafterL",
+      "slots": [
+        0
+      ],
+      "polygons": 6,
+      "triangles": 12
+    },
+    {
+      "name": "08A_GableRafterL.001",
+      "slots": [
+        0
+      ],
+      "polygons": 6,
+      "triangles": 12
+    },
+    {
+      "name": "08A_GableRafterR",
+      "slots": [
+        0
+      ],
+      "polygons": 6,
+      "triangles": 12
+    },
+    {
+      "name": "08A_GableRafterR.001",
+      "slots": [
+        0
+      ],
+      "polygons": 6,
+      "triangles": 12
+    },
+    {
+      "name": "08A_SideBrace",
+      "slots": [
+        0
+      ],
+      "polygons": 6,
+      "triangles": 12
+    },
+    {
+      "name": "08A_SideBrace.001",
+      "slots": [
+        0
+      ],
+      "polygons": 6,
+      "triangles": 12
+    },
+    {
+      "name": "08A_SideBrace.002",
+      "slots": [
+        0
+      ],
+      "polygons": 6,
+      "triangles": 12
+    },
+    {
+      "name": "08A_SideBrace.003",
+      "slots": [
+        0
+      ],
+      "polygons": 6,
+      "triangles": 12
+    },
+    {
+      "name": "08A_SideWallPlate",
+      "slots": [
+        0
+      ],
+      "polygons": 6,
+      "triangles": 12
+    },
+    {
+      "name": "08A_SideWallPlate.001",
+      "slots": [
+        0
+      ],
+      "polygons": 6,
+      "triangles": 12
+    }
+  ],
+  "export": {
+    "export_format": "GLB",
+    "use_selection": true,
+    "export_yup": true,
+    "export_apply": false,
+    "export_materials": "EXPORT",
+    "export_cameras": false,
+    "export_lights": false,
+    "export_extras": true
+  },
+  "changed_slots": [
+    [
+      "08A_CornerPost",
+      0,
+      "08A_09F_A_weathered_oak",
+      "09J_A_weathered_oak_constant"
+    ],
+    [
+      "08A_CornerPost.001",
+      0,
+      "08A_09F_A_weathered_oak",
+      "09J_A_weathered_oak_constant"
+    ],
+    [
+      "08A_CornerPost.002",
+      0,
+      "08A_09F_A_weathered_oak",
+      "09J_A_weathered_oak_constant"
+    ],
+    [
+      "08A_CornerPost.003",
+      0,
+      "08A_09F_A_weathered_oak",
+      "09J_A_weathered_oak_constant"
+    ],
+    [
+      "08A_DoorBoard",
+      0,
+      "08A_09F_A_weathered_oak",
+      "09J_A_weathered_oak_constant"
+    ],
+    [
+      "08A_DoorBoard.001",
+      0,
+      "08A_09F_A_weathered_oak",
+      "09J_A_weathered_oak_constant"
+    ],
+    [
+      "08A_DoorBoard.002",
+      0,
+      "08A_09F_A_weathered_oak",
+      "09J_A_weathered_oak_constant"
+    ],
+    [
+      "08A_DoorJamb",
+      0,
+      "08A_09F_A_weathered_oak",
+      "09J_A_weathered_oak_constant"
+    ],
+    [
+      "08A_DoorJamb.001",
+      0,
+      "08A_09F_A_weathered_oak",
+      "09J_A_weathered_oak_constant"
+    ],
+    [
+      "08A_DoorLintel",
+      0,
+      "08A_09F_A_weathered_oak",
+      "09J_A_weathered_oak_constant"
+    ],
+    [
+      "08A_EndWallPlate",
+      0,
+      "08A_09F_A_weathered_oak",
+      "09J_A_weathered_oak_constant"
+    ],
+    [
+      "08A_EndWallPlate.001",
+      0,
+      "08A_09F_A_weathered_oak",
+      "09J_A_weathered_oak_constant"
+    ],
+    [
+      "08A_FrontClay",
+      0,
+      "08A_09F_A_clay",
+      "09I_A_clay_constant"
+    ],
+    [
+      "08A_FrontClay.001",
+      0,
+      "08A_09F_A_clay",
+      "09I_A_clay_constant"
+    ],
+    [
+      "08A_FrontLintelClay",
+      0,
+      "08A_09F_A_clay",
+      "09I_A_clay_constant"
+    ],
+    [
+      "08A_GableClay",
+      0,
+      "08A_09F_A_clay",
+      "09I_A_clay_constant"
+    ],
+    [
+      "08A_GableClay.001",
+      0,
+      "08A_09F_A_clay",
+      "09I_A_clay_constant"
+    ],
+    [
+      "08A_GableRafterL",
+      0,
+      "08A_09F_A_weathered_oak",
+      "09J_A_weathered_oak_constant"
+    ],
+    [
+      "08A_GableRafterL.001",
+      0,
+      "08A_09F_A_weathered_oak",
+      "09J_A_weathered_oak_constant"
+    ],
+    [
+      "08A_GableRafterR",
+      0,
+      "08A_09F_A_weathered_oak",
+      "09J_A_weathered_oak_constant"
+    ],
+    [
+      "08A_GableRafterR.001",
+      0,
+      "08A_09F_A_weathered_oak",
+      "09J_A_weathered_oak_constant"
+    ],
+    [
+      "08A_RearClay",
+      0,
+      "08A_09F_A_clay",
+      "09I_A_clay_constant"
+    ],
+    [
+      "08A_SideBrace",
+      0,
+      "08A_09F_A_weathered_oak",
+      "09J_A_weathered_oak_constant"
+    ],
+    [
+      "08A_SideBrace.001",
+      0,
+      "08A_09F_A_weathered_oak",
+      "09J_A_weathered_oak_constant"
+    ],
+    [
+      "08A_SideBrace.002",
+      0,
+      "08A_09F_A_weathered_oak",
+      "09J_A_weathered_oak_constant"
+    ],
+    [
+      "08A_SideBrace.003",
+      0,
+      "08A_09F_A_weathered_oak",
+      "09J_A_weathered_oak_constant"
+    ],
+    [
+      "08A_SideClay",
+      0,
+      "08A_09F_A_clay",
+      "09I_A_clay_constant"
+    ],
+    [
+      "08A_SideClay.001",
+      0,
+      "08A_09F_A_clay",
+      "09I_A_clay_constant"
+    ],
+    [
+      "08A_SideWallPlate",
+      0,
+      "08A_09F_A_weathered_oak",
+      "09J_A_weathered_oak_constant"
+    ],
+    [
+      "08A_SideWallPlate.001",
+      0,
+      "08A_09F_A_weathered_oak",
+      "09J_A_weathered_oak_constant"
+    ]
+  ],
+  "geometry_same": true,
+  "foreign_buildings_meshes_unchanged": 75,
+  "source_material_nodes_values_links_unchanged": true,
+  "source_in_memory_same": true,
+  "selection_and_collections_restored": true,
+  "source_sha256_after": "38acea0fac6720a7b853a2242a59fc3bdc34e0cb552b9f9774bd22e31e6effae",
+  "mesh_count": 37,
+  "triangles": 14054,
+  "export_bytes": 783144
+}

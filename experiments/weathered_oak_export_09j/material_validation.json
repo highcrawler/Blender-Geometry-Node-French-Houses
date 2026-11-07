@@ -1,0 +1,117 @@
+{
+  "result": "PASS",
+  "linear_oak": [
+    0.19,
+    0.125,
+    0.077
+  ],
+  "expected_srgb_oak": [
+    0.4731206227190587,
+    0.3885728590463344,
+    0.30748518534288366
+  ],
+  "godot_oak_albedo": [
+    0.473120659589767,
+    0.388572871685028,
+    0.307485222816467,
+    1.0
+  ],
+  "oak_surfaces": 22,
+  "oak_triangles": 264,
+  "clay_triangles": 74,
+  "total_triangles": 14054,
+  "roof_triangles": 13692,
+  "body_triangles": 362,
+  "bounds_min": [
+    -2.89000010490417,
+    0.0,
+    -3.93499994277954
+  ],
+  "bounds_max": [
+    2.89000010490417,
+    4.5280179977417,
+    3.93499994277954
+  ],
+  "source_sha256": "38acea0fac6720a7b853a2242a59fc3bdc34e0cb552b9f9774bd22e31e6effae",
+  "unchanged_godot_materials": {
+    "08A_09F_A_door": {
+      "albedo": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "class": "StandardMaterial3D",
+      "metallic": 0.0,
+      "roughness": 1.0,
+      "surfaces": 1,
+      "triangles": 12
+    },
+    "08A_09F_A_stone": {
+      "albedo": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "class": "StandardMaterial3D",
+      "metallic": 0.0,
+      "roughness": 1.0,
+      "surfaces": 1,
+      "triangles": 12
+    },
+    "09A_CLEAN_0": {
+      "albedo": [
+        0.574871063232422,
+        0.467284768819809,
+        0.357491195201874,
+        1.0
+      ],
+      "class": "StandardMaterial3D",
+      "metallic": 0.0,
+      "roughness": 0.920000016689301,
+      "surfaces": 3,
+      "triangles": 4404
+    },
+    "09A_CLEAN_1": {
+      "albedo": [
+        0.626209676265717,
+        0.522028684616089,
+        0.411402016878128,
+        1.0
+      ],
+      "class": "StandardMaterial3D",
+      "metallic": 0.0,
+      "roughness": 0.920000016689301,
+      "surfaces": 3,
+      "triangles": 4704
+    },
+    "09A_CLEAN_2": {
+      "albedo": [
+        0.532135486602783,
+        0.442971080541611,
+        0.357491195201874,
+        1.0
+      ],
+      "class": "StandardMaterial3D",
+      "metallic": 0.0,
+      "roughness": 0.920000016689301,
+      "surfaces": 1,
+      "triangles": 4584
+    },
+    "09I_A_clay_constant": {
+      "albedo": [
+        0.715240895748138,
+        0.649956464767456,
+        0.565728425979614,
+        1.0
+      ],
+      "class": "StandardMaterial3D",
+      "metallic": 0.0,
+      "roughness": 1.0,
+      "surfaces": 8,
+      "triangles": 74
+    }
+  },
+  "reference_9i_glb_sha256": "bec98bcb935eda5ff720061679326d5678eb291c802fbae08b46c44dfabba622"
+}
