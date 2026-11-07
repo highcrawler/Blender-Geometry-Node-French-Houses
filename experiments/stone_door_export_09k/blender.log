@@ -1,0 +1,98 @@
+00:01.305  blend            | Read blend: "/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/wooden_roof_system_09f/three_owned_cottages.blend"
+/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/stone_door_export_09k/spike.py:67: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if not m.use_nodes:result.append((m.name,m.as_pointer(),tuple(m.diffuse_color),None));continue
+00:06.931  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/stone_door_export_09k/screenshots/blender_original.png'
+00:15.910  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/stone_door_export_09k/screenshots/blender_stone_door_detail.png'
+/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/stone_door_export_09k/spike.py:116: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  export_clay=bpy.data.materials.new('09I_A_clay_constant');export_clay.use_nodes=True
+/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/stone_door_export_09k/spike.py:122: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  export_oak=bpy.data.materials.new('09J_A_weathered_oak_constant');export_oak.use_nodes=True
+/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/stone_door_export_09k/spike.py:128: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  export_stone=bpy.data.materials.new('09K_A_stone_constant');export_stone.use_nodes=True
+/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/stone_door_export_09k/spike.py:134: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  export_door=bpy.data.materials.new('09K_A_door_constant');export_door.use_nodes=True
+INFO Draco is available, use library at /snap/blender/7803/lib/libbf_intern_draco_bridge.so
+INFO MeshOptimizer is available, use library at /snap/blender/7803/lib/libbf_intern_meshopt_bridge.so
+17:07:46 | INFO: Starting glTF 2.0 export
+17:07:46 | INFO: Extracting primitive: 08A_08A_CornerPost.004
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_08A_CornerPost.005
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_08A_CornerPost.006
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_08A_CornerPost.007
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_08A_Door.001
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_08A_DoorBoard.003
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_08A_DoorBoard.004
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_08A_DoorBoard.005
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_08A_DoorJamb.002
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_08A_DoorJamb.003
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_08A_DoorLintel.001
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_08A_EndWallPlate.002
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_08A_EndWallPlate.003
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_08A_FrontClay.002
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_08A_FrontClay.003
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_08A_FrontLintelClay.001
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_08A_GableClay.002
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_08A_GableClay.003
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_08A_GableRafterL.002
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_08A_GableRafterL.003
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_08A_GableRafterR.002
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_08A_GableRafterR.003
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_08A_RearClay.001
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_08A_SideBrace.004
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_08A_SideBrace.005
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_08A_SideBrace.006
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_08A_SideBrace.007
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_08A_SideClay.002
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_08A_SideClay.003
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_08A_SideWallPlate.002
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_08A_SideWallPlate.003
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_08A_Sill.001
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_09A_Deck.002
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_09A_Deck.003
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_09A_RidgeCap.002
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_09A_RidgeCap.003
+17:07:46 | INFO: Primitives created: 1
+17:07:46 | INFO: Extracting primitive: 08A_09A_ShingleField.001
+17:07:46 | INFO: Primitives created: 3
+17:07:46 | INFO: Finished glTF 2.0 export in 0.07563209533691406 s
+/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/stone_door_export_09k/spike.py:67: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if not m.use_nodes:result.append((m.name,m.as_pointer(),tuple(m.diffuse_color),None));continue
+
+09K_SUCCESS /home/alexander-both/Dokumente/Generation/ircss-fork/experiments/stone_door_export_09k/godot_test/assets/stone_door_constant_A.glb {'clay_reference': 74, 'oak_reference': 264, 'stone': 12, 'door': 12}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:34:58)
+
+Blender quit

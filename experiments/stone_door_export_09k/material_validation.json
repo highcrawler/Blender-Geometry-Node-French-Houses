@@ -1,0 +1,151 @@
+{
+  "result": "PASS",
+  "stone_and_door": {
+    "stone": {
+      "linear_rgb": [
+        0.31,
+        0.29,
+        0.25
+      ],
+      "expected_srgb": [
+        0.5926193733390556,
+        0.5748710174654353,
+        0.5370987304831942
+      ],
+      "godot_albedo": [
+        0.592619359493256,
+        0.574871063232422,
+        0.537098705768585,
+        1.0
+      ],
+      "roughness": 1,
+      "metallic": 0,
+      "surfaces": 1,
+      "triangles": 12
+    },
+    "door": {
+      "linear_rgb": [
+        0.25,
+        0.15,
+        0.085
+      ],
+      "expected_srgb": [
+        0.5370987304831942,
+        0.42358287124447963,
+        0.32272611513876776
+      ],
+      "godot_albedo": [
+        0.537098705768585,
+        0.423582881689072,
+        0.322726130485535,
+        1.0
+      ],
+      "roughness": 1,
+      "metallic": 0,
+      "surfaces": 1,
+      "triangles": 12
+    }
+  },
+  "reference_glb_sha256": "9817bc00e95113cc2dc59d9e3fc85f3a9a37c76cb0b2b9ecc7a8c0dc53076252",
+  "source_sha256": "38acea0fac6720a7b853a2242a59fc3bdc34e0cb552b9f9774bd22e31e6effae",
+  "meshes": 37,
+  "surfaces": 39,
+  "triangles": 14054,
+  "roof_triangles": 13692,
+  "body_triangles": 362,
+  "clay_reference_identical": {
+    "albedo": [
+      0.715240895748138,
+      0.649956464767456,
+      0.565728425979614,
+      1.0
+    ],
+    "class": "StandardMaterial3D",
+    "metallic": 0.0,
+    "roughness": 1.0,
+    "surfaces": 8,
+    "triangles": 74
+  },
+  "oak_reference_identical": {
+    "albedo": [
+      0.473120659589767,
+      0.388572871685028,
+      0.307485222816467,
+      1.0
+    ],
+    "class": "StandardMaterial3D",
+    "metallic": 0.0,
+    "roughness": 1.0,
+    "surfaces": 22,
+    "triangles": 264
+  },
+  "unchanged_roof_materials": {
+    "09A_CLEAN_0": {
+      "albedo": [
+        0.574871063232422,
+        0.467284768819809,
+        0.357491195201874,
+        1.0
+      ],
+      "class": "StandardMaterial3D",
+      "metallic": 0.0,
+      "roughness": 0.920000016689301,
+      "surfaces": 3,
+      "triangles": 4404
+    },
+    "09A_CLEAN_1": {
+      "albedo": [
+        0.626209676265717,
+        0.522028684616089,
+        0.411402016878128,
+        1.0
+      ],
+      "class": "StandardMaterial3D",
+      "metallic": 0.0,
+      "roughness": 0.920000016689301,
+      "surfaces": 3,
+      "triangles": 4704
+    },
+    "09A_CLEAN_2": {
+      "albedo": [
+        0.532135486602783,
+        0.442971080541611,
+        0.357491195201874,
+        1.0
+      ],
+      "class": "StandardMaterial3D",
+      "metallic": 0.0,
+      "roughness": 0.920000016689301,
+      "surfaces": 1,
+      "triangles": 4584
+    }
+  },
+  "bounds_min": [
+    -2.89000010490417,
+    0.0,
+    -3.93499994277954
+  ],
+  "bounds_max": [
+    2.89000010490417,
+    4.5280179977417,
+    3.93499994277954
+  ],
+  "root": {
+    "name": "Building_Root_003",
+    "position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "rotation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  }
+}
