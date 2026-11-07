@@ -1,0 +1,52 @@
+{
+  "result": "PASS",
+  "baseline_glb_byteidentical_9k": true,
+  "source_sha256": "38acea0fac6720a7b853a2242a59fc3bdc34e0cb552b9f9774bd22e31e6effae",
+  "mesh_counts": [
+    37,
+    41
+  ],
+  "triangle_counts": [
+    14054,
+    14102
+  ],
+  "roof_triangles_unchanged": 13692,
+  "body_triangles": [
+    362,
+    410
+  ],
+  "surface_counts": [
+    39,
+    43
+  ],
+  "materials": 7,
+  "removed_brace_meshes": [
+    "08A_SideBrace.014",
+    "08A_SideBrace.015"
+  ],
+  "repositioned_wall_plate": "08A_SideWallPlate.007",
+  "added_meshes": [
+    "ART01_IntermediatePost_1",
+    "ART01_IntermediatePost_2",
+    "ART01_KneeBrace_1",
+    "ART01_KneeBrace_2",
+    "ART01_MidRail",
+    "ART01_SideSill"
+  ],
+  "net_additional_meshes": 4,
+  "net_additional_triangles": 48,
+  "unchanged_glb_meshes_position_indices_material_assignment": 34,
+  "joint_intersection_checks": "new posts overlap sill, recessed rail and top plate; braces overlap posts and top plate, do not cross rail",
+  "side_positive_x": true,
+  "ground_pivot": [
+    0,
+    0,
+    0
+  ],
+  "identical_global_bounds": true,
+  "screenshot_count": 16,
+  "glb_bytes": {
+    "A": 783288,
+    "B": 788320
+  }
+}

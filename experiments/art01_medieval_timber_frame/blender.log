@@ -1,0 +1,185 @@
+00:01.263  blend            | Read blend: "/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/wooden_roof_system_09f/three_owned_cottages.blend"
+/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/art01_medieval_timber_frame/spike.py:40: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if not m.use_nodes:result.append((m.name,tuple(m.diffuse_color),None));continue
+/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/art01_medieval_timber_frame/spike.py:50: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.use_nodes=True;m.diffuse_color=(*rgb,1)
+00:07.174  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/art01_medieval_timber_frame/screenshots/blender_A_side.png'
+00:12.442  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/art01_medieval_timber_frame/screenshots/blender_A_iso.png'
+00:18.282  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/art01_medieval_timber_frame/screenshots/blender_A_detail.png'
+00:23.137  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/art01_medieval_timber_frame/screenshots/blender_A_distance300.png'
+INFO Draco is available, use library at /snap/blender/7803/lib/libbf_intern_draco_bridge.so
+INFO MeshOptimizer is available, use library at /snap/blender/7803/lib/libbf_intern_meshopt_bridge.so
+18:01:09 | INFO: Starting glTF 2.0 export
+18:01:09 | INFO: Extracting primitive: 08A_08A_CornerPost.004
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_08A_CornerPost.005
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_08A_CornerPost.006
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_08A_CornerPost.007
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_08A_Door.001
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_08A_DoorBoard.003
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_08A_DoorBoard.004
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_08A_DoorBoard.005
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_08A_DoorJamb.002
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_08A_DoorJamb.003
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_08A_DoorLintel.001
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_08A_EndWallPlate.002
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_08A_EndWallPlate.003
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_08A_FrontClay.002
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_08A_FrontClay.003
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_08A_FrontLintelClay.001
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_08A_GableClay.002
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_08A_GableClay.003
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_08A_GableRafterL.002
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_08A_GableRafterL.003
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_08A_GableRafterR.002
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_08A_GableRafterR.003
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_08A_RearClay.001
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_08A_SideBrace.004
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_08A_SideBrace.005
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_08A_SideBrace.006
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_08A_SideBrace.007
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_08A_SideClay.002
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_08A_SideClay.003
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_08A_SideWallPlate.002
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_08A_SideWallPlate.003
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_08A_Sill.001
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_09A_Deck.002
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_09A_Deck.003
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_09A_RidgeCap.002
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_09A_RidgeCap.003
+18:01:09 | INFO: Primitives created: 1
+18:01:09 | INFO: Extracting primitive: 08A_09A_ShingleField.001
+18:01:09 | INFO: Primitives created: 3
+18:01:09 | INFO: Finished glTF 2.0 export in 0.07785415649414062 s
+
+ART01_EXPORT A {'mesh_count': 37, 'triangles': 14054, 'glb_bytes': 783288, 'sha256': '98330454442deb60dac54e2e19b02e5571b090fb27989e12e86d882b30ce5f05'}
+00:29.229  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/art01_medieval_timber_frame/screenshots/blender_B_side.png'
+00:34.482  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/art01_medieval_timber_frame/screenshots/blender_B_iso.png'
+00:40.327  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/art01_medieval_timber_frame/screenshots/blender_B_detail.png'
+00:45.182  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/art01_medieval_timber_frame/screenshots/blender_B_distance300.png'
+18:01:31 | INFO: Starting glTF 2.0 export
+18:01:31 | INFO: Extracting primitive: 08A_08A_CornerPost.004
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_08A_CornerPost.005
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_08A_CornerPost.006
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_08A_CornerPost.007
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_08A_Door.001
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_08A_DoorBoard.003
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_08A_DoorBoard.004
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_08A_DoorBoard.005
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_08A_DoorJamb.002
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_08A_DoorJamb.003
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_08A_DoorLintel.001
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_08A_EndWallPlate.002
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_08A_EndWallPlate.003
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_08A_FrontClay.002
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_08A_FrontClay.003
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_08A_FrontLintelClay.001
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_08A_GableClay.002
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_08A_GableClay.003
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_08A_GableRafterL.002
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_08A_GableRafterL.003
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_08A_GableRafterR.002
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_08A_GableRafterR.003
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_08A_RearClay.001
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_08A_SideBrace.004
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_08A_SideBrace.005
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_08A_SideClay.002
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_08A_SideClay.003
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_08A_SideWallPlate.002
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_08A_SideWallPlate.003
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_08A_Sill.001
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_09A_Deck.002
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_09A_Deck.003
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_09A_RidgeCap.002
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_09A_RidgeCap.003
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: 08A_09A_ShingleField.001
+18:01:31 | INFO: Primitives created: 3
+18:01:31 | INFO: Extracting primitive: ART01_IntermediatePost_1
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: ART01_IntermediatePost_2
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: ART01_KneeBrace_1
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: ART01_KneeBrace_2
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: ART01_MidRail
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Extracting primitive: ART01_SideSill
+18:01:31 | INFO: Primitives created: 1
+18:01:31 | INFO: Finished glTF 2.0 export in 0.04594779014587402 s
+
+ART01_EXPORT B {'mesh_count': 41, 'triangles': 14102, 'glb_bytes': 788320, 'sha256': '2bbf4e5d20734b1d0948ea7b1c321d569611087fc059ae50531ece23100a2020'}
+/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/art01_medieval_timber_frame/spike.py:40: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if not m.use_nodes:result.append((m.name,tuple(m.diffuse_color),None));continue
+ART01_BLENDER_PASS 4 48
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:34:58)
+
+Blender quit

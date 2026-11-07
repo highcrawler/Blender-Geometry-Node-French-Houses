@@ -1,0 +1,162 @@
+{
+  "source_sha256_before": "38acea0fac6720a7b853a2242a59fc3bdc34e0cb552b9f9774bd22e31e6effae",
+  "measured_wall": {
+    "side": "positive X, visible from Godot +X",
+    "wall_name": "08A_SideClay.001",
+    "x_outer": 2.630000114440918,
+    "y_min": -3.6500000953674316,
+    "y_max": 3.6500000953674316,
+    "wall_top": 2.299999952316284,
+    "plate_top_center": 2.299999952316284,
+    "stone_sill_top": 0.23999999463558197,
+    "new_frame_x": 2.615000114440918,
+    "bay_width": 2.433333396911621
+  },
+  "baseline": {
+    "meshes": 37,
+    "triangles": 14054,
+    "roof_triangles": 13692,
+    "body_triangles": 362
+  },
+  "removed_existing_braces": [
+    "08A_SideBrace.002",
+    "08A_SideBrace.003"
+  ],
+  "moved_existing_plate": "08A_SideWallPlate.001",
+  "new_members": [
+    {
+      "name": "ART01_SideSill",
+      "endpoints_world": [
+        [
+          2.615000114440918,
+          -3.6500000953674316,
+          0.314999994635582
+        ],
+        [
+          2.615000114440918,
+          3.6500000953674316,
+          0.314999994635582
+        ]
+      ],
+      "thickness": 0.15,
+      "triangles": 12,
+      "role": "load-bearing"
+    },
+    {
+      "name": "ART01_MidRail",
+      "endpoints_world": [
+        [
+          2.607000114440918,
+          -3.6500000953674316,
+          1.1724999785423278
+        ],
+        [
+          2.607000114440918,
+          3.6500000953674316,
+          1.1724999785423278
+        ]
+      ],
+      "thickness": 0.12,
+      "triangles": 12,
+      "role": "horizontal rail"
+    },
+    {
+      "name": "ART01_IntermediatePost_1",
+      "endpoints_world": [
+        [
+          2.615000114440918,
+          -1.2166666984558105,
+          0.314999994635582
+        ],
+        [
+          2.615000114440918,
+          -1.2166666984558105,
+          2.299999952316284
+        ]
+      ],
+      "thickness": 0.12,
+      "triangles": 12,
+      "role": "load-bearing"
+    },
+    {
+      "name": "ART01_IntermediatePost_2",
+      "endpoints_world": [
+        [
+          2.615000114440918,
+          1.2166666984558105,
+          0.314999994635582
+        ],
+        [
+          2.615000114440918,
+          1.2166666984558105,
+          2.299999952316284
+        ]
+      ],
+      "thickness": 0.12,
+      "triangles": 12,
+      "role": "load-bearing"
+    },
+    {
+      "name": "ART01_KneeBrace_1",
+      "endpoints_world": [
+        [
+          2.615000114440918,
+          -1.2166666984558105,
+          1.3724999785423277
+        ],
+        [
+          2.615000114440918,
+          -2.0926667213439942,
+          2.2749999523162843
+        ]
+      ],
+      "thickness": 0.09,
+      "triangles": 12,
+      "role": "lateral bracing"
+    },
+    {
+      "name": "ART01_KneeBrace_2",
+      "endpoints_world": [
+        [
+          2.615000114440918,
+          1.2166666984558105,
+          1.3724999785423277
+        ],
+        [
+          2.615000114440918,
+          2.0926667213439942,
+          2.2749999523162843
+        ]
+      ],
+      "thickness": 0.09,
+      "triangles": 12,
+      "role": "lateral bracing"
+    }
+  ],
+  "A": {
+    "mesh_count": 37,
+    "triangles": 14054,
+    "glb_bytes": 783288,
+    "sha256": "98330454442deb60dac54e2e19b02e5571b090fb27989e12e86d882b30ce5f05"
+  },
+  "B": {
+    "mesh_count": 41,
+    "triangles": 14102,
+    "glb_bytes": 788320,
+    "sha256": "2bbf4e5d20734b1d0948ea7b1c321d569611087fc059ae50531ece23100a2020"
+  },
+  "unmodified_source_meshes_verified": 34,
+  "source_sha256_after": "38acea0fac6720a7b853a2242a59fc3bdc34e0cb552b9f9774bd22e31e6effae",
+  "net_extra_meshes": 4,
+  "net_extra_triangles": 48,
+  "export_args": {
+    "export_format": "GLB",
+    "use_selection": true,
+    "export_yup": true,
+    "export_apply": false,
+    "export_materials": "EXPORT",
+    "export_cameras": false,
+    "export_lights": false,
+    "export_extras": true
+  }
+}
