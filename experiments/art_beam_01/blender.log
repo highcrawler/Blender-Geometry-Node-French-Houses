@@ -1,0 +1,98 @@
+00:01.267  blend            | Read blend: "/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/wooden_roof_system_09f/three_owned_cottages.blend"
+/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/art_beam_01/spike.py:26: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.use_nodes=True;m.diffuse_color=(*rgb,1)
+00:05.881  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/art_beam_01/screenshots/blender_A_distance300.png'
+00:10.603  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/art_beam_01/screenshots/blender_A_side.png'
+00:16.095  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/art_beam_01/screenshots/blender_A_joint.png'
+00:20.494  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/art_beam_01/screenshots/blender_A_isolated.png'
+ART_BEAM_EXPORT A 8 12 21588
+00:24.983  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/art_beam_01/screenshots/blender_B_distance300.png'
+00:29.750  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/art_beam_01/screenshots/blender_B_side.png'
+00:35.266  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/art_beam_01/screenshots/blender_B_joint.png'
+00:39.686  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/art_beam_01/screenshots/blender_B_isolated.png'
+INFO Draco is available, use library at /snap/blender/7803/lib/libbf_intern_draco_bridge.so
+INFO MeshOptimizer is available, use library at /snap/blender/7803/lib/libbf_intern_meshopt_bridge.so
+20:38:33 | INFO: Starting glTF 2.0 export
+20:38:33 | INFO: Extracting primitive: 08A_08A_CornerPost.004
+20:38:33 | INFO: Primitives created: 1
+20:38:33 | INFO: Extracting primitive: 08A_08A_CornerPost.005
+20:38:33 | INFO: Primitives created: 1
+20:38:33 | INFO: Extracting primitive: 08A_08A_SideWallPlate.002
+20:38:33 | INFO: Primitives created: 1
+20:38:33 | INFO: Extracting primitive: ART01_IntermediatePost_1
+20:38:33 | INFO: Primitives created: 1
+20:38:33 | INFO: Extracting primitive: ART01_IntermediatePost_2
+20:38:33 | INFO: Primitives created: 1
+20:38:33 | INFO: Extracting primitive: ART01_KneeBrace_1.001
+20:38:33 | INFO: Primitives created: 1
+20:38:33 | INFO: Extracting primitive: ART01_KneeBrace_2
+20:38:33 | INFO: Primitives created: 1
+20:38:33 | INFO: Extracting primitive: ART01_MidRail
+20:38:33 | INFO: Primitives created: 1
+20:38:33 | INFO: Extracting primitive: ART01_SideSill
+20:38:33 | INFO: Primitives created: 1
+20:38:33 | INFO: Extracting primitive: MOD01_Bay_1_Infill
+20:38:33 | INFO: Primitives created: 1
+20:38:33 | INFO: Extracting primitive: MOD01_Bay_2_head
+20:38:33 | INFO: Primitives created: 1
+20:38:33 | INFO: Extracting primitive: MOD01_Bay_2_Infill
+20:38:33 | INFO: Primitives created: 1
+20:38:33 | INFO: Extracting primitive: MOD01_Bay_2_left_jamb
+20:38:33 | INFO: Primitives created: 1
+20:38:33 | INFO: Extracting primitive: MOD01_Bay_2_right_jamb
+20:38:33 | INFO: Primitives created: 1
+20:38:33 | INFO: Extracting primitive: MOD01_Bay_2_sill
+20:38:33 | INFO: Primitives created: 1
+20:38:33 | INFO: Extracting primitive: MOD01_Bay_3_Infill
+20:38:33 | INFO: Primitives created: 1
+20:38:33 | INFO: Finished glTF 2.0 export in 0.04925656318664551 s
+
+ART_BEAM_EXPORT B 216 428 49624
+/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/art_beam_01/spike.py:26: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.use_nodes=True;m.diffuse_color=(*rgb,1)
+00:46.450  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/art_beam_01/screenshots/blender_C_distance300.png'
+00:51.832  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/art_beam_01/screenshots/blender_C_side.png'
+00:58.847  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/art_beam_01/screenshots/blender_C_joint.png'
+01:03.701  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/art_beam_01/screenshots/blender_C_isolated.png'
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Baking map saved to internal image, save it externally or pack it
+20:38:57 | INFO: Starting glTF 2.0 export
+20:38:57 | INFO: Extracting primitive: 08A_08A_CornerPost.004
+20:38:57 | INFO: Primitives created: 1
+20:38:57 | INFO: Extracting primitive: 08A_08A_CornerPost.005
+20:38:57 | INFO: Primitives created: 1
+20:38:57 | INFO: Extracting primitive: 08A_08A_SideWallPlate.002
+20:38:57 | INFO: Primitives created: 1
+20:38:57 | INFO: Extracting primitive: ART01_IntermediatePost_1
+20:38:57 | INFO: Primitives created: 1
+20:38:57 | INFO: Extracting primitive: ART01_IntermediatePost_2
+20:38:57 | INFO: Primitives created: 1
+20:38:57 | INFO: Extracting primitive: ART01_KneeBrace_1.001
+20:38:57 | INFO: Primitives created: 1
+20:38:57 | INFO: Extracting primitive: ART01_KneeBrace_2
+20:38:57 | INFO: Primitives created: 1
+20:38:57 | INFO: Extracting primitive: ART01_MidRail
+20:38:57 | INFO: Primitives created: 1
+20:38:57 | INFO: Extracting primitive: ART01_SideSill
+20:38:57 | INFO: Primitives created: 1
+20:38:57 | INFO: Extracting primitive: MOD01_Bay_1_Infill
+20:38:57 | INFO: Primitives created: 1
+20:38:57 | INFO: Extracting primitive: MOD01_Bay_2_head
+20:38:57 | INFO: Primitives created: 1
+20:38:57 | INFO: Extracting primitive: MOD01_Bay_2_Infill
+20:38:57 | INFO: Primitives created: 1
+20:38:57 | INFO: Extracting primitive: MOD01_Bay_2_left_jamb
+20:38:57 | INFO: Primitives created: 1
+20:38:57 | INFO: Extracting primitive: MOD01_Bay_2_right_jamb
+20:38:57 | INFO: Primitives created: 1
+20:38:57 | INFO: Extracting primitive: MOD01_Bay_2_sill
+20:38:57 | INFO: Primitives created: 1
+20:38:57 | INFO: Extracting primitive: MOD01_Bay_3_Infill
+20:38:57 | INFO: Primitives created: 1
+20:38:57 | INFO: Finished glTF 2.0 export in 0.024404525756835938 s
+
+ART_BEAM_EXPORT C 216 428 109884
+ART_BEAM_BLENDER_PASS 38acea0fac6720a7b853a2242a59fc3bdc34e0cb552b9f9774bd22e31e6effae
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:34:58)
+
+Blender quit

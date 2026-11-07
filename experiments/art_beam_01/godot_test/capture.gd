@@ -1,0 +1,93 @@
+extends SceneTree
+
+func _initialize() -> void:
+	call_deferred("_capture")
+
+func _capture() -> void:
+	var world: Node3D = Node3D.new()
+	world.name = "CottageNativeComparison"
+	root.add_child(world)
+	var environment: WorldEnvironment = WorldEnvironment.new()
+	var env: Environment = Environment.new()
+	env.background_mode = Environment.BG_COLOR
+	env.background_color = Color(0.47, 0.58, 0.68)
+	env.ambient_light_source = Environment.AMBIENT_SOURCE_COLOR
+	env.ambient_light_color = Color(0.9,0.9,0.9)
+	env.ambient_light_energy = 0.75
+	environment.environment = env
+	world.add_child(environment)
+	environment.owner = world
+	var ground: MeshInstance3D = MeshInstance3D.new()
+	var plane: PlaneMesh = PlaneMesh.new()
+	plane.size = Vector2(40,40)
+	ground.mesh = plane
+	var ground_mat: StandardMaterial3D = StandardMaterial3D.new()
+	ground_mat.albedo_color = Color(0.38,0.43,0.39)
+	ground.material_override = ground_mat
+	ground.position.y = 0.235
+	world.add_child(ground)
+	ground.owner = world
+	var light: DirectionalLight3D = DirectionalLight3D.new()
+	light.rotation_degrees = Vector3(-48,-32,-12)
+	light.light_energy = 1.2
+	world.add_child(light)
+	light.owner = world
+	var camera: Camera3D = Camera3D.new()
+	camera.projection = Camera3D.PROJECTION_ORTHOGONAL
+	camera.size = 9.0
+	camera.position = Vector3(9,5,8)
+	world.add_child(camera)
+	camera.owner = world
+	camera.look_at(Vector3(2.55,1.3,0))
+	var view: String = OS.get_environment("J_VIEW")
+	if view == "distance300":
+		camera.position = Vector3(12,2.6,0)
+		camera.size = 18.0
+		camera.look_at(Vector3(2.55,1.3,0))
+	elif view == "side":
+		camera.position = Vector3(12,2.6,0)
+		camera.size = 9.0
+		camera.look_at(Vector3(2.55,1.3,0))
+	elif view == "detail":
+		camera.position = Vector3(5,2.8,2.3)
+		camera.size = 1.7
+		camera.look_at(Vector3(2.615,1.82375,1.65467))
+	elif view == "window_front" or view == "single_front":
+		camera.position = Vector3(10,2.8,0)
+		camera.size = 3.8
+		camera.look_at(Vector3(2.55,1.71,0))
+	elif view == "window_oblique":
+		camera.position = Vector3(7,3.1,2.7)
+		camera.size = 4.4
+		camera.look_at(Vector3(2.55,1.71,0))
+	elif view == "reveal_detail":
+		camera.position = Vector3(5,2.3,1.25)
+		camera.size = 2.2
+		camera.look_at(Vector3(2.55,1.71,0))
+	elif view == "single_oblique":
+		camera.position = Vector3(6,2.8,2.9)
+		camera.size = 4.2
+		camera.look_at(Vector3(2.55,1.71,0))
+	elif view == "single_back":
+		camera.position = Vector3(-7,2.5,0)
+		camera.size = 3.8
+		camera.look_at(Vector3(2.55,1.71,0))
+	camera.current = true
+	var asset: String = OS.get_environment("H_ASSET")
+	var file_name: String = "res://assets/" + asset
+	var packed: PackedScene = load(file_name) as PackedScene
+	if packed == null:
+		push_error("Cannot load " + file_name)
+		quit(1)
+		return
+	var instance: Node3D = packed.instantiate() as Node3D
+	world.add_child(instance)
+	instance.owner = world
+	for i: int in 4:
+		await process_frame
+	await RenderingServer.frame_post_draw
+	var out: String = OS.get_environment("H_SHOT")
+	var image: Image = root.get_texture().get_image()
+	var err: Error = image.save_png(out)
+	print("ART_BEAM_CAPTURE ", asset, " ", out, " error=", err, " size=",image.get_width(),"x",image.get_height())
+	quit(0 if err == OK else 1)

@@ -1,0 +1,218 @@
+{
+  "source_sha256_before": "38acea0fac6720a7b853a2242a59fc3bdc34e0cb552b9f9774bd22e31e6effae",
+  "MOD02_reference_sha256": "910ae4ff6904ae08839ef1dfc974e80217d310802827f589bae0cdce2f10efb9",
+  "brace": {
+    "name": "ART01_KneeBrace_1",
+    "endpoints_world": [
+      [
+        2.615000009536743,
+        -1.2166666984558105,
+        1.372499942779541
+      ],
+      [
+        2.615000009536743,
+        -2.0926666259765625,
+        2.2749998569488525
+      ]
+    ],
+    "length_m": 1.2577289055951137,
+    "thickness_m": 0.09,
+    "local_Z_world": [
+      0.0,
+      -0.6964934468269348,
+      0.7175631523132324
+    ],
+    "local_X_world": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "local_Y_world": [
+      0.0,
+      0.7175631523132324,
+      0.6964934468269348
+    ],
+    "original_vertices": 8,
+    "original_triangles": 12,
+    "material": "09J_A_weathered_oak_constant"
+  },
+  "variants": {
+    "A": {
+      "brace_vertices": 8,
+      "brace_triangles": 12,
+      "wall_triangles": 204,
+      "mesh_count": 16,
+      "material_count": 2,
+      "texture_count": 0,
+      "glb_bytes": 21588,
+      "glb_sha256": "910ae4ff6904ae08839ef1dfc974e80217d310802827f589bae0cdce2f10efb9",
+      "brace_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.615000009536743
+        ],
+        [
+          0.0,
+          0.7175631523132324,
+          -0.6964934468269348,
+          -1.6546666622161865
+        ],
+        [
+          0.0,
+          0.6964934468269348,
+          0.7175631523132324,
+          1.8237498998641968
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "endpoints_unchanged": true,
+      "untouched_digest": "db90870d8477bb37e5d335d150be25cbc837b70d2b23fca45583669cb84a6df5",
+      "end_plane_z": [
+        -0.6288644671440125,
+        0.6288644671440125
+      ]
+    },
+    "B": {
+      "brace_vertices": 216,
+      "brace_triangles": 428,
+      "wall_triangles": 620,
+      "mesh_count": 16,
+      "material_count": 2,
+      "texture_count": 0,
+      "glb_bytes": 49624,
+      "glb_sha256": "e89b92f2f61aa7c597cc28f5c4333a4410668d5f3066ba0123b53ba6ef191439",
+      "brace_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.615000009536743
+        ],
+        [
+          0.0,
+          0.7175631523132324,
+          -0.6964934468269348,
+          -1.6546666622161865
+        ],
+        [
+          0.0,
+          0.6964934468269348,
+          0.7175631523132324,
+          1.8237498998641968
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "endpoints_unchanged": true,
+      "untouched_digest": "db90870d8477bb37e5d335d150be25cbc837b70d2b23fca45583669cb84a6df5",
+      "end_plane_z": [
+        -0.6288644671440125,
+        0.6288644671440125
+      ]
+    },
+    "C": {
+      "brace_vertices": 216,
+      "brace_triangles": 428,
+      "wall_triangles": 620,
+      "mesh_count": 16,
+      "material_count": 3,
+      "texture_count": 2,
+      "glb_bytes": 109884,
+      "glb_sha256": "e8c00f1805f6de4e1ed82e151ed177b4fb7759d1a423233afd7d5473a45b1282",
+      "brace_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.615000009536743
+        ],
+        [
+          0.0,
+          0.7175631523132324,
+          -0.6964934468269348,
+          -1.6546666622161865
+        ],
+        [
+          0.0,
+          0.6964934468269348,
+          0.7175631523132324,
+          1.8237498998641968
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "endpoints_unchanged": true,
+      "untouched_digest": "db90870d8477bb37e5d335d150be25cbc837b70d2b23fca45583669cb84a6df5",
+      "end_plane_z": [
+        -0.6288644671440125,
+        0.6288644671440125
+      ]
+    }
+  },
+  "modifiers": {
+    "subdivision_cuts": 2,
+    "subdivision_grid_fill": true,
+    "displace_type": "CLOUDS",
+    "displace_strength_m": 0.0015,
+    "displace_noise_scale_m": 0.23,
+    "displace_noise_depth": 2,
+    "vertex_fade_end_length_m": 0.16,
+    "bevel_width_m": 0.004,
+    "bevel_segments": 3,
+    "bevel_angle_limit_radians": 0.5,
+    "modifier_applied_before_GLTF": true
+  },
+  "bake": {
+    "method": "Cycles DIFFUSE color-only + NORMAL tangent-space",
+    "resolution": [
+      512,
+      512
+    ],
+    "margin_px": 8,
+    "cycles_samples": 16,
+    "color_png_bytes": 50453,
+    "normal_png_bytes": 9299,
+    "glTF_node_chain": "Image Texture sRGB > Principled Base Color; Image Texture Non-Color > Normal Map > Principled Normal"
+  },
+  "shader": {
+    "voronoi_feature": "DISTANCE_TO_EDGE",
+    "coordinates": "Object local XYZ",
+    "mapping_scale": [
+      5.0,
+      5.0,
+      0.05
+    ],
+    "crack_ramp_black_at": 0.0,
+    "crack_ramp_white_at": 0.02,
+    "dark_is_recessed": true,
+    "grain_noise_mapping": [
+      11.0,
+      11.0,
+      0.4
+    ],
+    "grain_noise_scale": 3.0,
+    "noise_bump_strength": 0.05,
+    "noise_bump_distance_m": 0.001,
+    "crack_bump_strength": 0.18,
+    "crack_bump_distance_m": 0.0018,
+    "metallic": 0.0,
+    "roughness": 1.0,
+    "pointiness": false
+  },
+  "source_sha256_after": "38acea0fac6720a7b853a2242a59fc3bdc34e0cb552b9f9774bd22e31e6effae"
+}

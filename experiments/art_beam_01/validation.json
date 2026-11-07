@@ -1,0 +1,51 @@
+{
+  "result": "PASS",
+  "source_sha256": "38acea0fac6720a7b853a2242a59fc3bdc34e0cb552b9f9774bd22e31e6effae",
+  "reference_A_byteidentical_MOD02": true,
+  "only_one_brace_mesh_changes": true,
+  "same_B_C_geometry": true,
+  "Godot_color_and_tangent_normal_512_imported": true,
+  "brace_vertices": [
+    8,
+    216,
+    216
+  ],
+  "brace_triangles": [
+    12,
+    428,
+    428
+  ],
+  "wall_triangles": [
+    204,
+    620,
+    620
+  ],
+  "glb_bytes": [
+    21588,
+    49624,
+    109884
+  ],
+  "captured_image_mean_absolute_rgb_0_255": {
+    "godot_distance300_AB": 0.0,
+    "godot_distance300_BC": 0.000501,
+    "godot_distance300_AC": 0.000501,
+    "godot_side_AB": 0.00013,
+    "godot_side_BC": 0.003258,
+    "godot_side_AC": 0.003377,
+    "godot_detail_AB": 0.005163,
+    "godot_detail_BC": 0.104192,
+    "godot_detail_AC": 0.108787,
+    "blender_distance300_AB": 0.000976,
+    "blender_distance300_BC": 0.035545,
+    "blender_distance300_AC": 0.035673,
+    "blender_side_AB": 0.002737,
+    "blender_side_BC": 0.090383,
+    "blender_side_AC": 0.090915,
+    "blender_joint_AB": 0.050458,
+    "blender_joint_BC": 0.248345,
+    "blender_joint_AC": 0.267893,
+    "blender_isolated_AB": 0.074657,
+    "blender_isolated_BC": 0.21279,
+    "blender_isolated_AC": 0.25867
+  }
+}
