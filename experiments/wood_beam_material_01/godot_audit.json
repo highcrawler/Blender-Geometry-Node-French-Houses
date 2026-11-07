@@ -1,0 +1,2298 @@
+{
+  "beam_A_baseline.glb": {
+    "bounds_max": [
+      2.89000010490417,
+      4.5280179977417,
+      3.93499994277954
+    ],
+    "bounds_min": [
+      -2.89000010490417,
+      0.0,
+      -3.93499994277954
+    ],
+    "materials": {
+      "09A_CLEAN_0": {
+        "albedo": [
+          0.574871063232422,
+          0.467284768819809,
+          0.357491195201874,
+          1.0
+        ],
+        "albedo_texture": {
+          "present": false
+        },
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "normal_enabled": false,
+        "normal_texture": {
+          "present": false
+        },
+        "roughness": 0.920000016689301,
+        "roughness_texture": {
+          "present": false
+        },
+        "surfaces": 3,
+        "triangles": 4404
+      },
+      "09A_CLEAN_1": {
+        "albedo": [
+          0.626209676265717,
+          0.522028684616089,
+          0.411402016878128,
+          1.0
+        ],
+        "albedo_texture": {
+          "present": false
+        },
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "normal_enabled": false,
+        "normal_texture": {
+          "present": false
+        },
+        "roughness": 0.920000016689301,
+        "roughness_texture": {
+          "present": false
+        },
+        "surfaces": 3,
+        "triangles": 4704
+      },
+      "09A_CLEAN_2": {
+        "albedo": [
+          0.532135486602783,
+          0.442971080541611,
+          0.357491195201874,
+          1.0
+        ],
+        "albedo_texture": {
+          "present": false
+        },
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "normal_enabled": false,
+        "normal_texture": {
+          "present": false
+        },
+        "roughness": 0.920000016689301,
+        "roughness_texture": {
+          "present": false
+        },
+        "surfaces": 1,
+        "triangles": 4584
+      },
+      "09I_A_clay_constant": {
+        "albedo": [
+          0.715240895748138,
+          0.649956464767456,
+          0.565728425979614,
+          1.0
+        ],
+        "albedo_texture": {
+          "present": false
+        },
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "normal_enabled": false,
+        "normal_texture": {
+          "present": false
+        },
+        "roughness": 1.0,
+        "roughness_texture": {
+          "present": false
+        },
+        "surfaces": 8,
+        "triangles": 74
+      },
+      "09J_A_weathered_oak_constant": {
+        "albedo": [
+          0.473120659589767,
+          0.388572871685028,
+          0.307485222816467,
+          1.0
+        ],
+        "albedo_texture": {
+          "present": false
+        },
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "normal_enabled": false,
+        "normal_texture": {
+          "present": false
+        },
+        "roughness": 1.0,
+        "roughness_texture": {
+          "present": false
+        },
+        "surfaces": 22,
+        "triangles": 264
+      },
+      "09K_A_door_constant": {
+        "albedo": [
+          0.537098705768585,
+          0.423582881689072,
+          0.322726130485535,
+          1.0
+        ],
+        "albedo_texture": {
+          "present": false
+        },
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "normal_enabled": false,
+        "normal_texture": {
+          "present": false
+        },
+        "roughness": 1.0,
+        "roughness_texture": {
+          "present": false
+        },
+        "surfaces": 1,
+        "triangles": 12
+      },
+      "09K_A_stone_constant": {
+        "albedo": [
+          0.592619359493256,
+          0.574871063232422,
+          0.537098705768585,
+          1.0
+        ],
+        "albedo_texture": {
+          "present": false
+        },
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "normal_enabled": false,
+        "normal_texture": {
+          "present": false
+        },
+        "roughness": 1.0,
+        "roughness_texture": {
+          "present": false
+        },
+        "surfaces": 1,
+        "triangles": 12
+      }
+    },
+    "mesh_details": [
+      {
+        "name": "08A_CornerPost_012",
+        "position": [
+          -2.54999995231628,
+          1.31000006198883,
+          3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_CornerPost_013",
+        "position": [
+          -2.54999995231628,
+          1.31000006198883,
+          -3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_CornerPost_014",
+        "position": [
+          2.54999995231628,
+          1.31000006198883,
+          3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_CornerPost_015",
+        "position": [
+          2.54999995231628,
+          1.31000006198883,
+          -3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_Door_003",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_DoorBoard_009",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_DoorBoard_010",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_DoorBoard_011",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_DoorJamb_006",
+        "position": [
+          -0.509999990463257,
+          1.17999994754791,
+          3.76999998092651
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_DoorJamb_007",
+        "position": [
+          0.509999990463257,
+          1.17999994754791,
+          3.76999998092651
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_DoorLintel_003",
+        "position": [
+          0.0,
+          2.08999991416931,
+          3.76999998092651
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_EndWallPlate_006",
+        "position": [
+          0.0,
+          2.29999995231628,
+          3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_EndWallPlate_007",
+        "position": [
+          0.0,
+          2.29999995231628,
+          -3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_FrontClay_006",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_FrontClay_007",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_FrontLintelClay_003",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_GableClay_006",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 1,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_GableClay_007",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 1,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_GableRafterL_006",
+        "position": [
+          -1.27499997615814,
+          3.36985206604004,
+          3.75
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_GableRafterL_007",
+        "position": [
+          -1.27499997615814,
+          3.36985206604004,
+          -3.54999995231628
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_GableRafterR_006",
+        "position": [
+          1.27499997615814,
+          3.36985206604004,
+          3.75
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_GableRafterR_007",
+        "position": [
+          1.27499997615814,
+          3.36985206604004,
+          -3.54999995231628
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_RearClay_003",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_SideBrace_012",
+        "position": [
+          -2.64000010490417,
+          1.5,
+          3.15499997138977
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_SideBrace_013",
+        "position": [
+          -2.64000010490417,
+          1.5,
+          -3.15499997138977
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_SideBrace_014",
+        "position": [
+          2.64000010490417,
+          1.5,
+          3.15499997138977
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_SideBrace_015",
+        "position": [
+          2.64000010490417,
+          1.5,
+          -3.15499997138977
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_SideClay_006",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_SideClay_007",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_SideWallPlate_006",
+        "position": [
+          -2.54999995231628,
+          2.29999995231628,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_SideWallPlate_007",
+        "position": [
+          2.54999995231628,
+          2.29999995231628,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_Sill_003",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "09A_Deck_006",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "09A_Deck_007",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "09A_RidgeCap_006",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "09A_RidgeCap_007",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "09A_ShingleField_003",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 3,
+        "triangles": 13644,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      }
+    ],
+    "mesh_nodes": 37,
+    "null_material_surfaces": 0,
+    "root_children": [
+      {
+        "name": "Building_Root_003",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "surfaces": 39,
+    "triangles": 14054
+  },
+  "beam_B_roughwood.glb": {
+    "bounds_max": [
+      2.89000010490417,
+      4.5280179977417,
+      3.93499994277954
+    ],
+    "bounds_min": [
+      -2.89000010490417,
+      0.0,
+      -3.93499994277954
+    ],
+    "materials": {
+      "09A_CLEAN_0": {
+        "albedo": [
+          0.574871063232422,
+          0.467284768819809,
+          0.357491195201874,
+          1.0
+        ],
+        "albedo_texture": {
+          "present": false
+        },
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "normal_enabled": false,
+        "normal_texture": {
+          "present": false
+        },
+        "roughness": 0.920000016689301,
+        "roughness_texture": {
+          "present": false
+        },
+        "surfaces": 3,
+        "triangles": 4404
+      },
+      "09A_CLEAN_1": {
+        "albedo": [
+          0.626209676265717,
+          0.522028684616089,
+          0.411402016878128,
+          1.0
+        ],
+        "albedo_texture": {
+          "present": false
+        },
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "normal_enabled": false,
+        "normal_texture": {
+          "present": false
+        },
+        "roughness": 0.920000016689301,
+        "roughness_texture": {
+          "present": false
+        },
+        "surfaces": 3,
+        "triangles": 4704
+      },
+      "09A_CLEAN_2": {
+        "albedo": [
+          0.532135486602783,
+          0.442971080541611,
+          0.357491195201874,
+          1.0
+        ],
+        "albedo_texture": {
+          "present": false
+        },
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "normal_enabled": false,
+        "normal_texture": {
+          "present": false
+        },
+        "roughness": 0.920000016689301,
+        "roughness_texture": {
+          "present": false
+        },
+        "surfaces": 1,
+        "triangles": 4584
+      },
+      "09I_A_clay_constant": {
+        "albedo": [
+          0.715240895748138,
+          0.649956464767456,
+          0.565728425979614,
+          1.0
+        ],
+        "albedo_texture": {
+          "present": false
+        },
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "normal_enabled": false,
+        "normal_texture": {
+          "present": false
+        },
+        "roughness": 1.0,
+        "roughness_texture": {
+          "present": false
+        },
+        "surfaces": 8,
+        "triangles": 74
+      },
+      "09J_A_weathered_oak_constant": {
+        "albedo": [
+          0.473120659589767,
+          0.388572871685028,
+          0.307485222816467,
+          1.0
+        ],
+        "albedo_texture": {
+          "present": false
+        },
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "normal_enabled": false,
+        "normal_texture": {
+          "present": false
+        },
+        "roughness": 1.0,
+        "roughness_texture": {
+          "present": false
+        },
+        "surfaces": 6,
+        "triangles": 72
+      },
+      "09K_A_door_constant": {
+        "albedo": [
+          0.537098705768585,
+          0.423582881689072,
+          0.322726130485535,
+          1.0
+        ],
+        "albedo_texture": {
+          "present": false
+        },
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "normal_enabled": false,
+        "normal_texture": {
+          "present": false
+        },
+        "roughness": 1.0,
+        "roughness_texture": {
+          "present": false
+        },
+        "surfaces": 1,
+        "triangles": 12
+      },
+      "09K_A_stone_constant": {
+        "albedo": [
+          0.592619359493256,
+          0.574871063232422,
+          0.537098705768585,
+          1.0
+        ],
+        "albedo_texture": {
+          "present": false
+        },
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "normal_enabled": false,
+        "normal_texture": {
+          "present": false
+        },
+        "roughness": 1.0,
+        "roughness_texture": {
+          "present": false
+        },
+        "surfaces": 1,
+        "triangles": 12
+      },
+      "WOOD01_B_rough_wood_PBR": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "albedo_texture": {
+          "class": "CompressedTexture2D",
+          "height": 1024,
+          "present": true,
+          "width": 1024
+        },
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "normal_enabled": true,
+        "normal_texture": {
+          "class": "CompressedTexture2D",
+          "height": 1024,
+          "present": true,
+          "width": 1024
+        },
+        "roughness": 1.0,
+        "roughness_texture": {
+          "class": "CompressedTexture2D",
+          "height": 1024,
+          "present": true,
+          "width": 1024
+        },
+        "surfaces": 16,
+        "triangles": 192
+      }
+    },
+    "mesh_details": [
+      {
+        "name": "08A_CornerPost_012",
+        "position": [
+          -2.54999995231628,
+          1.31000006198883,
+          3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 24,
+        "uv_max": [
+          1.0,
+          1.0
+        ],
+        "uv_min": [
+          -0.0000152587890625,
+          -0.426688015460968
+        ]
+      },
+      {
+        "name": "08A_CornerPost_013",
+        "position": [
+          -2.54999995231628,
+          1.31000006198883,
+          -3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 24,
+        "uv_max": [
+          1.0,
+          1.0
+        ],
+        "uv_min": [
+          -0.0000152587890625,
+          -0.426688015460968
+        ]
+      },
+      {
+        "name": "08A_CornerPost_014",
+        "position": [
+          2.54999995231628,
+          1.31000006198883,
+          3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 24,
+        "uv_max": [
+          1.0,
+          1.0
+        ],
+        "uv_min": [
+          -0.0000152587890625,
+          -0.426688015460968
+        ]
+      },
+      {
+        "name": "08A_CornerPost_015",
+        "position": [
+          2.54999995231628,
+          1.31000006198883,
+          -3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 24,
+        "uv_max": [
+          1.0,
+          1.0
+        ],
+        "uv_min": [
+          -0.0000152587890625,
+          -0.426688015460968
+        ]
+      },
+      {
+        "name": "08A_Door_003",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_DoorBoard_009",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_DoorBoard_010",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_DoorBoard_011",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_DoorJamb_006",
+        "position": [
+          -0.509999990463257,
+          1.17999994754791,
+          3.76999998092651
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_DoorJamb_007",
+        "position": [
+          0.509999990463257,
+          1.17999994754791,
+          3.76999998092651
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_DoorLintel_003",
+        "position": [
+          0.0,
+          2.08999991416931,
+          3.76999998092651
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_EndWallPlate_006",
+        "position": [
+          0.0,
+          2.29999995231628,
+          3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 24,
+        "uv_max": [
+          1.0,
+          0.999954044818878
+        ],
+        "uv_min": [
+          -0.0000152587890625,
+          -2.39999985694885
+        ]
+      },
+      {
+        "name": "08A_EndWallPlate_007",
+        "position": [
+          0.0,
+          2.29999995231628,
+          -3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 24,
+        "uv_max": [
+          1.0,
+          0.999954044818878
+        ],
+        "uv_min": [
+          -0.0000152587890625,
+          -2.39999985694885
+        ]
+      },
+      {
+        "name": "08A_FrontClay_006",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_FrontClay_007",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_FrontLintelClay_003",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_GableClay_006",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 1,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_GableClay_007",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 1,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_GableRafterL_006",
+        "position": [
+          -1.27499997615814,
+          3.36985206604004,
+          3.75
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 24,
+        "uv_max": [
+          1.0,
+          0.999966502189636
+        ],
+        "uv_min": [
+          -0.0000152587890625,
+          -1.21919226646423
+        ]
+      },
+      {
+        "name": "08A_GableRafterL_007",
+        "position": [
+          -1.27499997615814,
+          3.36985206604004,
+          -3.54999995231628
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 24,
+        "uv_max": [
+          1.0,
+          0.999966502189636
+        ],
+        "uv_min": [
+          -0.0000152587890625,
+          -1.21919226646423
+        ]
+      },
+      {
+        "name": "08A_GableRafterR_006",
+        "position": [
+          1.27499997615814,
+          3.36985206604004,
+          3.75
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 24,
+        "uv_max": [
+          1.0,
+          0.999966502189636
+        ],
+        "uv_min": [
+          -0.0000152587890625,
+          -1.21919226646423
+        ]
+      },
+      {
+        "name": "08A_GableRafterR_007",
+        "position": [
+          1.27499997615814,
+          3.36985206604004,
+          -3.54999995231628
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 24,
+        "uv_max": [
+          1.0,
+          0.999966502189636
+        ],
+        "uv_min": [
+          -0.0000152587890625,
+          -1.21919226646423
+        ]
+      },
+      {
+        "name": "08A_RearClay_003",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_SideBrace_012",
+        "position": [
+          -2.64000010490417,
+          1.5,
+          3.15499997138977
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 24,
+        "uv_max": [
+          1.0,
+          1.0
+        ],
+        "uv_min": [
+          -0.0000152587890625,
+          -0.0234836339950562
+        ]
+      },
+      {
+        "name": "08A_SideBrace_013",
+        "position": [
+          -2.64000010490417,
+          1.5,
+          -3.15499997138977
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 24,
+        "uv_max": [
+          1.0,
+          1.0
+        ],
+        "uv_min": [
+          -0.0000152587890625,
+          -0.0234836339950562
+        ]
+      },
+      {
+        "name": "08A_SideBrace_014",
+        "position": [
+          2.64000010490417,
+          1.5,
+          3.15499997138977
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 24,
+        "uv_max": [
+          1.0,
+          1.0
+        ],
+        "uv_min": [
+          -0.0000152587890625,
+          -0.0234836339950562
+        ]
+      },
+      {
+        "name": "08A_SideBrace_015",
+        "position": [
+          2.64000010490417,
+          1.5,
+          -3.15499997138977
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 24,
+        "uv_max": [
+          1.0,
+          1.0
+        ],
+        "uv_min": [
+          -0.0000152587890625,
+          -0.0234836339950562
+        ]
+      },
+      {
+        "name": "08A_SideClay_006",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_SideClay_007",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_SideWallPlate_006",
+        "position": [
+          -2.54999995231628,
+          2.29999995231628,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 24,
+        "uv_max": [
+          1.0,
+          0.99989926815033
+        ],
+        "uv_min": [
+          -0.0000152587890625,
+          -3.86666679382324
+        ]
+      },
+      {
+        "name": "08A_SideWallPlate_007",
+        "position": [
+          2.54999995231628,
+          2.29999995231628,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 24,
+        "uv_max": [
+          1.0,
+          0.99989926815033
+        ],
+        "uv_min": [
+          -0.0000152587890625,
+          -3.86666679382324
+        ]
+      },
+      {
+        "name": "08A_Sill_003",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "09A_Deck_006",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "09A_Deck_007",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "09A_RidgeCap_006",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "09A_RidgeCap_007",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "09A_ShingleField_003",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 3,
+        "triangles": 13644,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      }
+    ],
+    "mesh_nodes": 37,
+    "null_material_surfaces": 0,
+    "root_children": [
+      {
+        "name": "Building_Root_003",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "surfaces": 39,
+    "triangles": 14054
+  },
+  "beam_C_procedural.glb": {
+    "bounds_max": [
+      2.89000010490417,
+      4.5280179977417,
+      3.93499994277954
+    ],
+    "bounds_min": [
+      -2.89000010490417,
+      0.0,
+      -3.93499994277954
+    ],
+    "materials": {
+      "09A_CLEAN_0": {
+        "albedo": [
+          0.574871063232422,
+          0.467284768819809,
+          0.357491195201874,
+          1.0
+        ],
+        "albedo_texture": {
+          "present": false
+        },
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "normal_enabled": false,
+        "normal_texture": {
+          "present": false
+        },
+        "roughness": 0.920000016689301,
+        "roughness_texture": {
+          "present": false
+        },
+        "surfaces": 3,
+        "triangles": 4404
+      },
+      "09A_CLEAN_1": {
+        "albedo": [
+          0.626209676265717,
+          0.522028684616089,
+          0.411402016878128,
+          1.0
+        ],
+        "albedo_texture": {
+          "present": false
+        },
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "normal_enabled": false,
+        "normal_texture": {
+          "present": false
+        },
+        "roughness": 0.920000016689301,
+        "roughness_texture": {
+          "present": false
+        },
+        "surfaces": 3,
+        "triangles": 4704
+      },
+      "09A_CLEAN_2": {
+        "albedo": [
+          0.532135486602783,
+          0.442971080541611,
+          0.357491195201874,
+          1.0
+        ],
+        "albedo_texture": {
+          "present": false
+        },
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "normal_enabled": false,
+        "normal_texture": {
+          "present": false
+        },
+        "roughness": 0.920000016689301,
+        "roughness_texture": {
+          "present": false
+        },
+        "surfaces": 1,
+        "triangles": 4584
+      },
+      "09I_A_clay_constant": {
+        "albedo": [
+          0.715240895748138,
+          0.649956464767456,
+          0.565728425979614,
+          1.0
+        ],
+        "albedo_texture": {
+          "present": false
+        },
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "normal_enabled": false,
+        "normal_texture": {
+          "present": false
+        },
+        "roughness": 1.0,
+        "roughness_texture": {
+          "present": false
+        },
+        "surfaces": 8,
+        "triangles": 74
+      },
+      "09J_A_weathered_oak_constant": {
+        "albedo": [
+          0.473120659589767,
+          0.388572871685028,
+          0.307485222816467,
+          1.0
+        ],
+        "albedo_texture": {
+          "present": false
+        },
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "normal_enabled": false,
+        "normal_texture": {
+          "present": false
+        },
+        "roughness": 1.0,
+        "roughness_texture": {
+          "present": false
+        },
+        "surfaces": 6,
+        "triangles": 72
+      },
+      "09K_A_door_constant": {
+        "albedo": [
+          0.537098705768585,
+          0.423582881689072,
+          0.322726130485535,
+          1.0
+        ],
+        "albedo_texture": {
+          "present": false
+        },
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "normal_enabled": false,
+        "normal_texture": {
+          "present": false
+        },
+        "roughness": 1.0,
+        "roughness_texture": {
+          "present": false
+        },
+        "surfaces": 1,
+        "triangles": 12
+      },
+      "09K_A_stone_constant": {
+        "albedo": [
+          0.592619359493256,
+          0.574871063232422,
+          0.537098705768585,
+          1.0
+        ],
+        "albedo_texture": {
+          "present": false
+        },
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "normal_enabled": false,
+        "normal_texture": {
+          "present": false
+        },
+        "roughness": 1.0,
+        "roughness_texture": {
+          "present": false
+        },
+        "surfaces": 1,
+        "triangles": 12
+      },
+      "WOOD01_C_wave_baked": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "albedo_texture": {
+          "class": "CompressedTexture2D",
+          "height": 512,
+          "present": true,
+          "width": 512
+        },
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "normal_enabled": false,
+        "normal_texture": {
+          "present": false
+        },
+        "roughness": 1.0,
+        "roughness_texture": {
+          "present": false
+        },
+        "surfaces": 16,
+        "triangles": 192
+      }
+    },
+    "mesh_details": [
+      {
+        "name": "08A_CornerPost_012",
+        "position": [
+          -2.54999995231628,
+          1.31000006198883,
+          3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 24,
+        "uv_max": [
+          1.0,
+          1.0
+        ],
+        "uv_min": [
+          -0.0000152587890625,
+          -0.426688015460968
+        ]
+      },
+      {
+        "name": "08A_CornerPost_013",
+        "position": [
+          -2.54999995231628,
+          1.31000006198883,
+          -3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 24,
+        "uv_max": [
+          1.0,
+          1.0
+        ],
+        "uv_min": [
+          -0.0000152587890625,
+          -0.426688015460968
+        ]
+      },
+      {
+        "name": "08A_CornerPost_014",
+        "position": [
+          2.54999995231628,
+          1.31000006198883,
+          3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 24,
+        "uv_max": [
+          1.0,
+          1.0
+        ],
+        "uv_min": [
+          -0.0000152587890625,
+          -0.426688015460968
+        ]
+      },
+      {
+        "name": "08A_CornerPost_015",
+        "position": [
+          2.54999995231628,
+          1.31000006198883,
+          -3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 24,
+        "uv_max": [
+          1.0,
+          1.0
+        ],
+        "uv_min": [
+          -0.0000152587890625,
+          -0.426688015460968
+        ]
+      },
+      {
+        "name": "08A_Door_003",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_DoorBoard_009",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_DoorBoard_010",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_DoorBoard_011",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_DoorJamb_006",
+        "position": [
+          -0.509999990463257,
+          1.17999994754791,
+          3.76999998092651
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_DoorJamb_007",
+        "position": [
+          0.509999990463257,
+          1.17999994754791,
+          3.76999998092651
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_DoorLintel_003",
+        "position": [
+          0.0,
+          2.08999991416931,
+          3.76999998092651
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_EndWallPlate_006",
+        "position": [
+          0.0,
+          2.29999995231628,
+          3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 24,
+        "uv_max": [
+          1.0,
+          0.999954044818878
+        ],
+        "uv_min": [
+          -0.0000152587890625,
+          -2.39999985694885
+        ]
+      },
+      {
+        "name": "08A_EndWallPlate_007",
+        "position": [
+          0.0,
+          2.29999995231628,
+          -3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 24,
+        "uv_max": [
+          1.0,
+          0.999954044818878
+        ],
+        "uv_min": [
+          -0.0000152587890625,
+          -2.39999985694885
+        ]
+      },
+      {
+        "name": "08A_FrontClay_006",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_FrontClay_007",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_FrontLintelClay_003",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_GableClay_006",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 1,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_GableClay_007",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 1,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_GableRafterL_006",
+        "position": [
+          -1.27499997615814,
+          3.36985206604004,
+          3.75
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 24,
+        "uv_max": [
+          1.0,
+          0.999966502189636
+        ],
+        "uv_min": [
+          -0.0000152587890625,
+          -1.21919226646423
+        ]
+      },
+      {
+        "name": "08A_GableRafterL_007",
+        "position": [
+          -1.27499997615814,
+          3.36985206604004,
+          -3.54999995231628
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 24,
+        "uv_max": [
+          1.0,
+          0.999966502189636
+        ],
+        "uv_min": [
+          -0.0000152587890625,
+          -1.21919226646423
+        ]
+      },
+      {
+        "name": "08A_GableRafterR_006",
+        "position": [
+          1.27499997615814,
+          3.36985206604004,
+          3.75
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 24,
+        "uv_max": [
+          1.0,
+          0.999966502189636
+        ],
+        "uv_min": [
+          -0.0000152587890625,
+          -1.21919226646423
+        ]
+      },
+      {
+        "name": "08A_GableRafterR_007",
+        "position": [
+          1.27499997615814,
+          3.36985206604004,
+          -3.54999995231628
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 24,
+        "uv_max": [
+          1.0,
+          0.999966502189636
+        ],
+        "uv_min": [
+          -0.0000152587890625,
+          -1.21919226646423
+        ]
+      },
+      {
+        "name": "08A_RearClay_003",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_SideBrace_012",
+        "position": [
+          -2.64000010490417,
+          1.5,
+          3.15499997138977
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 24,
+        "uv_max": [
+          1.0,
+          1.0
+        ],
+        "uv_min": [
+          -0.0000152587890625,
+          -0.0234836339950562
+        ]
+      },
+      {
+        "name": "08A_SideBrace_013",
+        "position": [
+          -2.64000010490417,
+          1.5,
+          -3.15499997138977
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 24,
+        "uv_max": [
+          1.0,
+          1.0
+        ],
+        "uv_min": [
+          -0.0000152587890625,
+          -0.0234836339950562
+        ]
+      },
+      {
+        "name": "08A_SideBrace_014",
+        "position": [
+          2.64000010490417,
+          1.5,
+          3.15499997138977
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 24,
+        "uv_max": [
+          1.0,
+          1.0
+        ],
+        "uv_min": [
+          -0.0000152587890625,
+          -0.0234836339950562
+        ]
+      },
+      {
+        "name": "08A_SideBrace_015",
+        "position": [
+          2.64000010490417,
+          1.5,
+          -3.15499997138977
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 24,
+        "uv_max": [
+          1.0,
+          1.0
+        ],
+        "uv_min": [
+          -0.0000152587890625,
+          -0.0234836339950562
+        ]
+      },
+      {
+        "name": "08A_SideClay_006",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_SideClay_007",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "08A_SideWallPlate_006",
+        "position": [
+          -2.54999995231628,
+          2.29999995231628,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 24,
+        "uv_max": [
+          1.0,
+          0.99989926815033
+        ],
+        "uv_min": [
+          -0.0000152587890625,
+          -3.86666679382324
+        ]
+      },
+      {
+        "name": "08A_SideWallPlate_007",
+        "position": [
+          2.54999995231628,
+          2.29999995231628,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 24,
+        "uv_max": [
+          1.0,
+          0.99989926815033
+        ],
+        "uv_min": [
+          -0.0000152587890625,
+          -3.86666679382324
+        ]
+      },
+      {
+        "name": "08A_Sill_003",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "09A_Deck_006",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "09A_Deck_007",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "09A_RidgeCap_006",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "09A_RidgeCap_007",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      },
+      {
+        "name": "09A_ShingleField_003",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "surfaces": 3,
+        "triangles": 13644,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": []
+      }
+    ],
+    "mesh_nodes": 37,
+    "null_material_surfaces": 0,
+    "root_children": [
+      {
+        "name": "Building_Root_003",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "surfaces": 39,
+    "triangles": 14054
+  }
+}

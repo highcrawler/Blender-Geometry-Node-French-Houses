@@ -1,0 +1,175 @@
+00:01.276  blend            | Read blend: "/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/wooden_roof_system_09f/three_owned_cottages.blend"
+/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/wood_beam_material_01/spike.py:33: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  material=bpy.data.materials.new('WOOD01_wave_bake');material.use_nodes=True
+/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/wood_beam_material_01/spike.py:55: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.use_nodes=True;m.diffuse_color=(*rgb,1)
+00:05.265  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/wood_beam_material_01/screenshots/blender_A_detail.png'
+00:08.032  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/wood_beam_material_01/screenshots/blender_A_distance300.png'
+Info: Baking map saved to internal image, save it externally or pack it
+WOOD01_RENDER_EXPORT A {'glb': 'beam_A_baseline.glb', 'bytes': 783288, 'beam_material': '09J_A_weathered_oak_constant', 'beam_mesh_count': 16, 'beam_triangles': 192}
+00:11.708  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/wood_beam_material_01/screenshots/blender_B_detail.png'
+00:14.496  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/wood_beam_material_01/screenshots/blender_B_distance300.png'
+INFO Draco is available, use library at /snap/blender/7803/lib/libbf_intern_draco_bridge.so
+INFO MeshOptimizer is available, use library at /snap/blender/7803/lib/libbf_intern_meshopt_bridge.so
+17:29:09 | INFO: Starting glTF 2.0 export
+17:29:09 | INFO: Extracting primitive: 08A_08A_CornerPost.004
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_08A_CornerPost.005
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_08A_CornerPost.006
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_08A_CornerPost.007
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_08A_Door.001
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_08A_DoorBoard.003
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_08A_DoorBoard.004
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_08A_DoorBoard.005
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_08A_DoorJamb.002
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_08A_DoorJamb.003
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_08A_DoorLintel.001
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_08A_EndWallPlate.002
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_08A_EndWallPlate.003
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_08A_FrontClay.002
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_08A_FrontClay.003
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_08A_FrontLintelClay.001
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_08A_GableClay.002
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_08A_GableClay.003
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_08A_GableRafterL.002
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_08A_GableRafterL.003
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_08A_GableRafterR.002
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_08A_GableRafterR.003
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_08A_RearClay.001
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_08A_SideBrace.004
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_08A_SideBrace.005
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_08A_SideBrace.006
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_08A_SideBrace.007
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_08A_SideClay.002
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_08A_SideClay.003
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_08A_SideWallPlate.002
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_08A_SideWallPlate.003
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_08A_Sill.001
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_09A_Deck.002
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_09A_Deck.003
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_09A_RidgeCap.002
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_09A_RidgeCap.003
+17:29:09 | INFO: Primitives created: 1
+17:29:09 | INFO: Extracting primitive: 08A_09A_ShingleField.001
+17:29:09 | INFO: Primitives created: 3
+17:29:09 | INFO: Finished glTF 2.0 export in 0.17153382301330566 s
+
+WOOD01_RENDER_EXPORT B {'glb': 'beam_B_roughwood.glb', 'bytes': 3964744, 'beam_material': 'WOOD01_B_rough_wood_PBR', 'beam_mesh_count': 16, 'beam_triangles': 192}
+00:18.602  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/wood_beam_material_01/screenshots/blender_C_detail.png'
+00:21.366  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/wood_beam_material_01/screenshots/blender_C_distance300.png'
+17:29:15 | INFO: Starting glTF 2.0 export
+17:29:15 | INFO: Extracting primitive: 08A_08A_CornerPost.004
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_08A_CornerPost.005
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_08A_CornerPost.006
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_08A_CornerPost.007
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_08A_Door.001
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_08A_DoorBoard.003
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_08A_DoorBoard.004
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_08A_DoorBoard.005
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_08A_DoorJamb.002
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_08A_DoorJamb.003
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_08A_DoorLintel.001
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_08A_EndWallPlate.002
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_08A_EndWallPlate.003
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_08A_FrontClay.002
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_08A_FrontClay.003
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_08A_FrontLintelClay.001
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_08A_GableClay.002
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_08A_GableClay.003
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_08A_GableRafterL.002
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_08A_GableRafterL.003
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_08A_GableRafterR.002
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_08A_GableRafterR.003
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_08A_RearClay.001
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_08A_SideBrace.004
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_08A_SideBrace.005
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_08A_SideBrace.006
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_08A_SideBrace.007
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_08A_SideClay.002
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_08A_SideClay.003
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_08A_SideWallPlate.002
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_08A_SideWallPlate.003
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_08A_Sill.001
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_09A_Deck.002
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_09A_Deck.003
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_09A_RidgeCap.002
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_09A_RidgeCap.003
+17:29:15 | INFO: Primitives created: 1
+17:29:15 | INFO: Extracting primitive: 08A_09A_ShingleField.001
+17:29:15 | INFO: Primitives created: 3
+17:29:15 | INFO: Finished glTF 2.0 export in 0.05408215522766113 s
+
+WOOD01_RENDER_EXPORT C {'glb': 'beam_C_procedural.glb', 'bytes': 1021584, 'beam_material': 'WOOD01_C_wave_baked', 'beam_mesh_count': 16, 'beam_triangles': 192}
+WOOD01_BLENDER_PASS {'resolution': [512, 512], 'engine': 'CYCLES', 'type': 'EMIT', 'wave_scale': 14, 'wave_distortion': 2, 'success': True, 'bytes': 232435}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:34:58)
+
+Blender quit

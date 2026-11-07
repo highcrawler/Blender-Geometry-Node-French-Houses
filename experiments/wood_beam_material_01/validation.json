@@ -1,0 +1,51 @@
+{
+  "result": "PASS",
+  "source_unchanged": true,
+  "baseline_09k_byteidentical": true,
+  "triangle_payloads_transform_and_material_assignment_identical": true,
+  "mesh_count": 37,
+  "triangles": 14054,
+  "surfaces": 39,
+  "beam_meshes": 16,
+  "beam_triangles": 192,
+  "uv_orientations": {
+    "vertical": 4,
+    "horizontal": 4,
+    "diagonal": 8
+  },
+  "pbr_textures_imported": true,
+  "procedural_bake_imported": true,
+  "costs": {
+    "source_texture_bytes": {
+      "procedural_baked_512.png": 232435,
+      "rough_wood_diffuse_1k.jpg": 567074,
+      "rough_wood_normal_gl_1k.png": 1910586,
+      "rough_wood_rough_1k.jpg": 195056
+    },
+    "glb_bytes": {
+      "A": 783288,
+      "B": 3964744,
+      "C": 1021584
+    },
+    "glb_delta_vs_A_bytes": {
+      "A": 0,
+      "B": 3181456,
+      "C": 238296
+    },
+    "godot_import_cache_bytes": 5746169
+  },
+  "hashes": {
+    "source": "38acea0fac6720a7b853a2242a59fc3bdc34e0cb552b9f9774bd22e31e6effae",
+    "A": "98330454442deb60dac54e2e19b02e5571b090fb27989e12e86d882b30ce5f05",
+    "B": "b45c1219a09fa2a604e9efa1ce2b12b33c8bb49ee3ba6f89bf817d74bf77f71a",
+    "C": "008be5b5a3d7af7ed378d5d7f086d5e72ec337f5def59e7aae27a1b5e91231ac"
+  },
+  "godot_images": {
+    "A_detail": "screenshots/godot_A_detail.png",
+    "A_distance300": "screenshots/godot_A_distance300.png",
+    "B_detail": "screenshots/godot_B_detail.png",
+    "B_distance300": "screenshots/godot_B_distance300.png",
+    "C_detail": "screenshots/godot_C_detail.png",
+    "C_distance300": "screenshots/godot_C_distance300.png"
+  }
+}

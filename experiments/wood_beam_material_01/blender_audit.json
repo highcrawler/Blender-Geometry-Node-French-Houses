@@ -1,0 +1,602 @@
+{
+  "source_sha256_before": "38acea0fac6720a7b853a2242a59fc3bdc34e0cb552b9f9774bd22e31e6effae",
+  "reference_09k_sha256": "98330454442deb60dac54e2e19b02e5571b090fb27989e12e86d882b30ce5f05",
+  "baked": {
+    "resolution": [
+      512,
+      512
+    ],
+    "engine": "CYCLES",
+    "type": "EMIT",
+    "wave_scale": 14,
+    "wave_distortion": 2,
+    "success": true,
+    "bytes": 232435
+  },
+  "beams": {
+    "B": {
+      "08A_CornerPost.012": {
+        "local_bounds_m": [
+          0.16,
+          0.16,
+          2.14
+        ],
+        "longitudinal_uv_span": 1.42667,
+        "long_axis_world": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uv_side_u_range": [
+          0.32,
+          0.48
+        ]
+      },
+      "08A_CornerPost.013": {
+        "local_bounds_m": [
+          0.16,
+          0.16,
+          2.14
+        ],
+        "longitudinal_uv_span": 1.42667,
+        "long_axis_world": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uv_side_u_range": [
+          0.32,
+          0.48
+        ]
+      },
+      "08A_CornerPost.014": {
+        "local_bounds_m": [
+          0.16,
+          0.16,
+          2.14
+        ],
+        "longitudinal_uv_span": 1.42667,
+        "long_axis_world": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uv_side_u_range": [
+          0.32,
+          0.48
+        ]
+      },
+      "08A_CornerPost.015": {
+        "local_bounds_m": [
+          0.16,
+          0.16,
+          2.14
+        ],
+        "longitudinal_uv_span": 1.42667,
+        "long_axis_world": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uv_side_u_range": [
+          0.32,
+          0.48
+        ]
+      },
+      "08A_EndWallPlate.006": {
+        "local_bounds_m": [
+          0.13,
+          0.13,
+          5.1
+        ],
+        "longitudinal_uv_span": 3.4,
+        "long_axis_world": [
+          1.0,
+          0.0,
+          -0.0
+        ],
+        "uv_side_u_range": [
+          0.32,
+          0.48
+        ]
+      },
+      "08A_EndWallPlate.007": {
+        "local_bounds_m": [
+          0.13,
+          0.13,
+          5.1
+        ],
+        "longitudinal_uv_span": 3.4,
+        "long_axis_world": [
+          1.0,
+          0.0,
+          -0.0
+        ],
+        "uv_side_u_range": [
+          0.32,
+          0.48
+        ]
+      },
+      "08A_GableRafterL.006": {
+        "local_bounds_m": [
+          0.115,
+          0.115,
+          3.32879
+        ],
+        "longitudinal_uv_span": 2.21919,
+        "long_axis_world": [
+          0.76604,
+          0.0,
+          0.64279
+        ],
+        "uv_side_u_range": [
+          0.32,
+          0.48
+        ]
+      },
+      "08A_GableRafterL.007": {
+        "local_bounds_m": [
+          0.115,
+          0.115,
+          3.32879
+        ],
+        "longitudinal_uv_span": 2.21919,
+        "long_axis_world": [
+          0.76604,
+          0.0,
+          0.64279
+        ],
+        "uv_side_u_range": [
+          0.32,
+          0.48
+        ]
+      },
+      "08A_GableRafterR.006": {
+        "local_bounds_m": [
+          0.115,
+          0.115,
+          3.32879
+        ],
+        "longitudinal_uv_span": 2.21919,
+        "long_axis_world": [
+          0.76604,
+          0.0,
+          -0.64279
+        ],
+        "uv_side_u_range": [
+          0.32,
+          0.48
+        ]
+      },
+      "08A_GableRafterR.007": {
+        "local_bounds_m": [
+          0.115,
+          0.115,
+          3.32879
+        ],
+        "longitudinal_uv_span": 2.21919,
+        "long_axis_world": [
+          0.76604,
+          0.0,
+          -0.64279
+        ],
+        "uv_side_u_range": [
+          0.32,
+          0.48
+        ]
+      },
+      "08A_SideBrace.012": {
+        "local_bounds_m": [
+          0.09,
+          0.09,
+          1.53522
+        ],
+        "longitudinal_uv_span": 1.02348,
+        "long_axis_world": [
+          0.0,
+          0.41036,
+          0.91192
+        ],
+        "uv_side_u_range": [
+          0.32,
+          0.48
+        ]
+      },
+      "08A_SideBrace.013": {
+        "local_bounds_m": [
+          0.09,
+          0.09,
+          1.53522
+        ],
+        "longitudinal_uv_span": 1.02348,
+        "long_axis_world": [
+          0.0,
+          -0.41036,
+          0.91192
+        ],
+        "uv_side_u_range": [
+          0.32,
+          0.48
+        ]
+      },
+      "08A_SideBrace.014": {
+        "local_bounds_m": [
+          0.09,
+          0.09,
+          1.53522
+        ],
+        "longitudinal_uv_span": 1.02348,
+        "long_axis_world": [
+          0.0,
+          0.41036,
+          0.91192
+        ],
+        "uv_side_u_range": [
+          0.32,
+          0.48
+        ]
+      },
+      "08A_SideBrace.015": {
+        "local_bounds_m": [
+          0.09,
+          0.09,
+          1.53522
+        ],
+        "longitudinal_uv_span": 1.02348,
+        "long_axis_world": [
+          0.0,
+          -0.41036,
+          0.91192
+        ],
+        "uv_side_u_range": [
+          0.32,
+          0.48
+        ]
+      },
+      "08A_SideWallPlate.006": {
+        "local_bounds_m": [
+          0.13,
+          0.13,
+          7.3
+        ],
+        "longitudinal_uv_span": 4.86667,
+        "long_axis_world": [
+          0.0,
+          1.0,
+          -0.0
+        ],
+        "uv_side_u_range": [
+          0.32,
+          0.48
+        ]
+      },
+      "08A_SideWallPlate.007": {
+        "local_bounds_m": [
+          0.13,
+          0.13,
+          7.3
+        ],
+        "longitudinal_uv_span": 4.86667,
+        "long_axis_world": [
+          0.0,
+          1.0,
+          -0.0
+        ],
+        "uv_side_u_range": [
+          0.32,
+          0.48
+        ]
+      }
+    },
+    "C": {
+      "08A_CornerPost.012": {
+        "local_bounds_m": [
+          0.16,
+          0.16,
+          2.14
+        ],
+        "longitudinal_uv_span": 1.42667,
+        "long_axis_world": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uv_side_u_range": [
+          0,
+          1
+        ]
+      },
+      "08A_CornerPost.013": {
+        "local_bounds_m": [
+          0.16,
+          0.16,
+          2.14
+        ],
+        "longitudinal_uv_span": 1.42667,
+        "long_axis_world": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uv_side_u_range": [
+          0,
+          1
+        ]
+      },
+      "08A_CornerPost.014": {
+        "local_bounds_m": [
+          0.16,
+          0.16,
+          2.14
+        ],
+        "longitudinal_uv_span": 1.42667,
+        "long_axis_world": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uv_side_u_range": [
+          0,
+          1
+        ]
+      },
+      "08A_CornerPost.015": {
+        "local_bounds_m": [
+          0.16,
+          0.16,
+          2.14
+        ],
+        "longitudinal_uv_span": 1.42667,
+        "long_axis_world": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "uv_side_u_range": [
+          0,
+          1
+        ]
+      },
+      "08A_EndWallPlate.006": {
+        "local_bounds_m": [
+          0.13,
+          0.13,
+          5.1
+        ],
+        "longitudinal_uv_span": 3.4,
+        "long_axis_world": [
+          1.0,
+          0.0,
+          -0.0
+        ],
+        "uv_side_u_range": [
+          0,
+          1
+        ]
+      },
+      "08A_EndWallPlate.007": {
+        "local_bounds_m": [
+          0.13,
+          0.13,
+          5.1
+        ],
+        "longitudinal_uv_span": 3.4,
+        "long_axis_world": [
+          1.0,
+          0.0,
+          -0.0
+        ],
+        "uv_side_u_range": [
+          0,
+          1
+        ]
+      },
+      "08A_GableRafterL.006": {
+        "local_bounds_m": [
+          0.115,
+          0.115,
+          3.32879
+        ],
+        "longitudinal_uv_span": 2.21919,
+        "long_axis_world": [
+          0.76604,
+          0.0,
+          0.64279
+        ],
+        "uv_side_u_range": [
+          0,
+          1
+        ]
+      },
+      "08A_GableRafterL.007": {
+        "local_bounds_m": [
+          0.115,
+          0.115,
+          3.32879
+        ],
+        "longitudinal_uv_span": 2.21919,
+        "long_axis_world": [
+          0.76604,
+          0.0,
+          0.64279
+        ],
+        "uv_side_u_range": [
+          0,
+          1
+        ]
+      },
+      "08A_GableRafterR.006": {
+        "local_bounds_m": [
+          0.115,
+          0.115,
+          3.32879
+        ],
+        "longitudinal_uv_span": 2.21919,
+        "long_axis_world": [
+          0.76604,
+          0.0,
+          -0.64279
+        ],
+        "uv_side_u_range": [
+          0,
+          1
+        ]
+      },
+      "08A_GableRafterR.007": {
+        "local_bounds_m": [
+          0.115,
+          0.115,
+          3.32879
+        ],
+        "longitudinal_uv_span": 2.21919,
+        "long_axis_world": [
+          0.76604,
+          0.0,
+          -0.64279
+        ],
+        "uv_side_u_range": [
+          0,
+          1
+        ]
+      },
+      "08A_SideBrace.012": {
+        "local_bounds_m": [
+          0.09,
+          0.09,
+          1.53522
+        ],
+        "longitudinal_uv_span": 1.02348,
+        "long_axis_world": [
+          0.0,
+          0.41036,
+          0.91192
+        ],
+        "uv_side_u_range": [
+          0,
+          1
+        ]
+      },
+      "08A_SideBrace.013": {
+        "local_bounds_m": [
+          0.09,
+          0.09,
+          1.53522
+        ],
+        "longitudinal_uv_span": 1.02348,
+        "long_axis_world": [
+          0.0,
+          -0.41036,
+          0.91192
+        ],
+        "uv_side_u_range": [
+          0,
+          1
+        ]
+      },
+      "08A_SideBrace.014": {
+        "local_bounds_m": [
+          0.09,
+          0.09,
+          1.53522
+        ],
+        "longitudinal_uv_span": 1.02348,
+        "long_axis_world": [
+          0.0,
+          0.41036,
+          0.91192
+        ],
+        "uv_side_u_range": [
+          0,
+          1
+        ]
+      },
+      "08A_SideBrace.015": {
+        "local_bounds_m": [
+          0.09,
+          0.09,
+          1.53522
+        ],
+        "longitudinal_uv_span": 1.02348,
+        "long_axis_world": [
+          0.0,
+          -0.41036,
+          0.91192
+        ],
+        "uv_side_u_range": [
+          0,
+          1
+        ]
+      },
+      "08A_SideWallPlate.006": {
+        "local_bounds_m": [
+          0.13,
+          0.13,
+          7.3
+        ],
+        "longitudinal_uv_span": 4.86667,
+        "long_axis_world": [
+          0.0,
+          1.0,
+          -0.0
+        ],
+        "uv_side_u_range": [
+          0,
+          1
+        ]
+      },
+      "08A_SideWallPlate.007": {
+        "local_bounds_m": [
+          0.13,
+          0.13,
+          7.3
+        ],
+        "longitudinal_uv_span": 4.86667,
+        "long_axis_world": [
+          0.0,
+          1.0,
+          -0.0
+        ],
+        "uv_side_u_range": [
+          0,
+          1
+        ]
+      }
+    }
+  },
+  "export_args": {
+    "export_format": "GLB",
+    "use_selection": true,
+    "export_yup": true,
+    "export_apply": false,
+    "export_materials": "EXPORT",
+    "export_cameras": false,
+    "export_lights": false,
+    "export_extras": true
+  },
+  "variants": {
+    "A": {
+      "glb": "beam_A_baseline.glb",
+      "bytes": 783288,
+      "beam_material": "09J_A_weathered_oak_constant",
+      "beam_mesh_count": 16,
+      "beam_triangles": 192
+    },
+    "B": {
+      "glb": "beam_B_roughwood.glb",
+      "bytes": 3964744,
+      "beam_material": "WOOD01_B_rough_wood_PBR",
+      "beam_mesh_count": 16,
+      "beam_triangles": 192
+    },
+    "C": {
+      "glb": "beam_C_procedural.glb",
+      "bytes": 1021584,
+      "beam_material": "WOOD01_C_wave_baked",
+      "beam_mesh_count": 16,
+      "beam_triangles": 192
+    }
+  },
+  "source_sha256_after": "38acea0fac6720a7b853a2242a59fc3bdc34e0cb552b9f9774bd22e31e6effae",
+  "mesh_count": 37,
+  "triangles": 14054
+}
