@@ -1,0 +1,118 @@
+{
+  "result": "PASS",
+  "architecture": "three real module pivot nodes and three owned mesh nodes + one shared frame",
+  "source_sha256": "38acea0fac6720a7b853a2242a59fc3bdc34e0cb552b9f9774bd22e31e6effae",
+  "reference_art01_glb_sha256": "2bbf4e5d20734b1d0948ea7b1c321d569611087fc059ae50531ece23100a2020",
+  "art01_reference_frame_9_meshes_exact_native_payloads": true,
+  "art01_reference_wall_clay_exact_native_payload": true,
+  "frame_same_A_B": true,
+  "module_world_bay_bounds": [
+    {
+      "name": "MOD01_Bay_1_Infill",
+      "world_min": [
+        2.47000026702881,
+        0.25,
+        1.21666669845581
+      ],
+      "world_max": [
+        2.63000011444092,
+        2.29999995231628,
+        3.65000009536743
+      ],
+      "owner_parent": "MOD01_Bay_1_Pivot",
+      "triangles": 10
+    },
+    {
+      "name": "MOD01_Bay_2_Infill",
+      "world_min": [
+        2.47000026702881,
+        0.25,
+        -1.21666669845581
+      ],
+      "world_max": [
+        2.63000011444092,
+        2.29999995231628,
+        1.21666669845581
+      ],
+      "owner_parent": "MOD01_Bay_2_Pivot",
+      "triangles": 8
+    },
+    {
+      "name": "MOD01_Bay_3_Infill",
+      "world_min": [
+        2.47000026702881,
+        0.25,
+        -3.65000009536743
+      ],
+      "world_max": [
+        2.63000011444092,
+        2.29999995231628,
+        -1.21666669845581
+      ],
+      "owner_parent": "MOD01_Bay_3_Pivot",
+      "triangles": 10
+    }
+  ],
+  "no_coplanar_internal_clay_caps": true,
+  "middle_module_remove_reinstall_frame_unchanged": true,
+  "mesh_count": [
+    10,
+    12
+  ],
+  "triangle_count": [
+    120,
+    136
+  ],
+  "material_count": 2,
+  "surface_count": [
+    10,
+    12
+  ],
+  "bounds": {
+    "min": [
+      2.47000002861023,
+      0.239999994635582,
+      -3.73000001907349
+    ],
+    "max": [
+      2.69000005722046,
+      2.38000011444092,
+      3.73000001907349
+    ]
+  },
+  "pivot": [
+    0,
+    0,
+    0
+  ],
+  "image_metrics": {
+    "blender_side": {
+      "mean_absolute_rgb_difference_0_255": 0.006635561342592592
+    },
+    "blender_iso": {
+      "mean_absolute_rgb_difference_0_255": 0.04215639467592593
+    },
+    "blender_detail": {
+      "mean_absolute_rgb_difference_0_255": 2.4594907407407408e-05
+    },
+    "blender_distance300": {
+      "mean_absolute_rgb_difference_0_255": 0.0017954282407407409
+    },
+    "godot_side": {
+      "mean_absolute_rgb_difference_0_255": 0.0
+    },
+    "godot_iso": {
+      "mean_absolute_rgb_difference_0_255": 1.5190972222222223e-05
+    },
+    "godot_detail": {
+      "mean_absolute_rgb_difference_0_255": 6.510416666666667e-05
+    },
+    "godot_distance300": {
+      "mean_absolute_rgb_difference_0_255": 0.0
+    }
+  },
+  "glb_bytes": {
+    "A": 13148,
+    "B": 15872
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "result": "PASS",
+  "definition": "three separate meshes, union evaluated after coincident-vertex welding conceptually; mesh datablocks remain separate",
+  "faces_triangles": 28,
+  "unique_triangles": 28,
+  "edge_multiplicities": {
+    "2": 42
+  },
+  "nonmanifold_or_open_union_edges": 0,
+  "duplicate_coplanar_triangles": 0,
+  "modules": [
+    {
+      "id": "MOD01_Bay_1",
+      "triangles": 10,
+      "world_range_y": [
+        -3.65,
+        -1.21667
+      ]
+    },
+    {
+      "id": "MOD01_Bay_2",
+      "triangles": 8,
+      "world_range_y": [
+        -1.21667,
+        1.21667
+      ]
+    },
+    {
+      "id": "MOD01_Bay_3",
+      "triangles": 10,
+      "world_range_y": [
+        1.21667,
+        3.65
+      ]
+    }
+  ],
+  "mesh_datablocks_welded": false
+}

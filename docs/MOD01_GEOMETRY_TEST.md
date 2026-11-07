@@ -1,0 +1,20 @@
+# MOD-01 – Messung, Vergleich und Fugenprüfung
+
+Originaldaten: ART-01-B-GLB `art01_B_timber_frame.glb` mit **41 Cottage-Meshes/14.102 Dreiecken/43 Godot-Surfaces**. MOD-01 isoliert daraus **eine** positive-X-Wand, **nicht** das komplette Haus. Ein eigener Blender-Lauf liest Phase-9F-A-`.blend` (nicht speichernd), kopiert Putz/Eckpfosten/Platte und rekonstruiert die sechs ART-01-B-Member anhand ihrer *gespeicherten* Endpunkte. [Blender-Audit](../experiments/mod01_modular_wall_poc/assembly_audit.json) · [GLB-/Godot-Assertions](../experiments/mod01_modular_wall_poc/validation.json) · [analytischer Putzoberflächen-Verbund](../experiments/mod01_modular_wall_poc/surface_union.json).
+
+| Isolierte Wand | A: ART-01-B-Wand | B: MOD-01, gleicher Rahmen |
+|---|---:|---:|
+| Gemeinsames Fachwerk: Eckpfosten / Zwischenpfosten / Schwelle / Platte / Mittelriegel / Knieverbände | **2 / 2 / 1 / 1 / 1 / 2** | **gleich, 9 individuelle Rahmenmeshes** |
+| Gemeinsamer Rahmen: Dreiecke, Oak-Surfaces | 108 / 9 | **108 / 9** |
+| Putz: Meshes, Dreiecke, Clay-Surfaces | 1 / 12 / 1 | **3 / 28 / 3** |
+| Gesamt: Meshes / Dreiecke / Surfaces | **10 / 120 / 10** | **12 / 136 / 12** |
+| Materialdefinitionen / Root | 2 / `(0,0,0)` | **2 / `(0,0,0)`** |
+| GLB-Bytes | **13.148** | **15.872** (+2.724) |
+
+**Ursprungsnachweis:** Die 9 tatsächlich verwendeten Rahmen-Meshes des historischen ART-01-B-GLB entsprechen **exakt** dem isolierten A und dem modularen B in nativen GLB-POSITION-/Index-Payloads, Material und Transform (gerundet auf 5 Dezimalstellen); ebenso das **eine Putzmesh** der A-Referenz. B ersetzt nur dieses Putzmesh durch drei separate Putzmeshes mit 10+8+10 Dreiecken. Im Godot-Import A/B Bounds identisch: X `2,47…2,69`, Y `0,24…2,38`, Z `−3,73…3,73`. Putzfüllung X `2,47…2,63`, Godot-Höhe `0,25…2,30`, Blender-Länge Y `−3,65…+3,65`. Alle sechs neuen Rahmenmember gehören dem **einen** SharedFrame, nicht den Modulen. Keine doppelten Zwischenpfosten/Materialdaten; keine Änderungen an der ursprünglichen Cottage- oder ART-01-GLB-Datei.
+
+**Warum +16 statt +24 Putzdreiecke?** Drei vollständig geschlossene Quader hätten 36 Dreiecke und zwei Paare koplanarer innerer Abschlussflächen. Der Assembler nimmt nur an den zwei **inneren** Gefachgrenzen die Endkappen heraus: Außenmodul 10 + Mitte 8 + Außenmodul 10 = **28 Dreiecke**. Die übrigen Front-, Rück-, Ober- und Unterseiten stoßen in denselben Y-Grenzen ohne Weltkoordinaten-Spalt. Unabhängiger Flächentest bildet aus den **drei getrennten lokalen Modulmeshes** einen nur mathematischen Weltoberflächen-Verbund: **28 eindeutige Dreiecke, 42 geometrische Kanten je genau zweimal benutzt, null offene/nichtmannigfaltige Verbundkanten, null doppelte koplanare Dreiecke**. Die Meshdatablocks werden **nicht** tatsächlich verschweißt – einzeln montierte Innenmodule bleiben an ihren Nachbarseiten offen, der zusammengesetzte Verbund ist flächengeschlossen. Zu prüfen in einer späteren produktiven Lösung: Innen-/Außenlaibungen bei Öffnungen und echte gewinkelte Wände.
+
+**Frame-Anschluss/Wechsel:** A und B teilen die 9 Rahmen-Blender-Objekte exakt; ihre Geometrie-Fingerprints vor Entfernen des mittleren Moduls, nach Entfernen und nach Wiederinstallation sowie deren Blender-Objekt-IDs bleiben unverändert. Bay 2 wird neu als eigener Pivot + Mesh mit gleichem `WALL_PLAIN`-Definitionstyp und Montagepunkt gebaut; isolierte [Öffnung](../experiments/mod01_modular_wall_poc/screenshots/middle_removed.png) und [wieder geschlossene Wand](../experiments/mod01_modular_wall_poc/screenshots/middle_restored.png) sind echt gerendert. Alle Rahmenhölzer behalten je genau eine 12-Dreieck-Box; wie in ART-01 gibt es verdeckte Kontakt-/Überlappungsflächen zwischen Holz und Putz, **keine** neue Optimierungs-/Booleans-Pipeline.
+
+**Quelle:** Phase-9F-`.blend` SHA-256 vor/nach `38acea0fac6720a7b853a2242a59fc3bdc34e0cb552b9f9774bd22e31e6effae`. Godot 4.7 stable importiert A/B ohne Fehlermeldungen. Baseline-Quellmeshes, Roof-Modul, Collector und existierende Exportskripte unverändert. Die 16 zusätzlichen Putzdreiecke gelten **nur für die isolierte Wand**, nicht als bereits integrierter Vollhauswert.

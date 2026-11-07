@@ -1,0 +1,509 @@
+{
+  "source_sha256_before": "38acea0fac6720a7b853a2242a59fc3bdc34e0cb552b9f9774bd22e31e6effae",
+  "art01_geometry_sha256": "48325036ea1d55bd9ece7b5d60cea1c1da1b52a91232d8b28e6764534b5e324a",
+  "reference_glb_sha256": "2bbf4e5d20734b1d0948ea7b1c321d569611087fc059ae50531ece23100a2020",
+  "wall_measurement": {
+    "x_center": 2.5500000715255737,
+    "x_min": 2.4700000286102295,
+    "x_max": 2.630000114440918,
+    "y_edges": [
+      -3.6500000953674316,
+      -1.2166666984558105,
+      1.2166666984558105,
+      3.6500000953674316
+    ],
+    "bottom": 0.25,
+    "top": 2.299999952316284,
+    "height": 2.049999952316284,
+    "thickness": 0.16000008583068848
+  },
+  "shared_frame": {
+    "owner": "MOD01_SharedFrame",
+    "members": [
+      {
+        "name": "08A_CornerPost.012",
+        "triangles": 12,
+        "material": "09J_A_weathered_oak_constant"
+      },
+      {
+        "name": "08A_CornerPost.013",
+        "triangles": 12,
+        "material": "09J_A_weathered_oak_constant"
+      },
+      {
+        "name": "08A_SideWallPlate.006",
+        "triangles": 12,
+        "material": "09J_A_weathered_oak_constant"
+      },
+      {
+        "name": "ART01_SideSill",
+        "triangles": 12,
+        "material": "09J_A_weathered_oak_constant"
+      },
+      {
+        "name": "ART01_MidRail",
+        "triangles": 12,
+        "material": "09J_A_weathered_oak_constant"
+      },
+      {
+        "name": "ART01_IntermediatePost_1",
+        "triangles": 12,
+        "material": "09J_A_weathered_oak_constant"
+      },
+      {
+        "name": "ART01_IntermediatePost_2",
+        "triangles": 12,
+        "material": "09J_A_weathered_oak_constant"
+      },
+      {
+        "name": "ART01_KneeBrace_1",
+        "triangles": 12,
+        "material": "09J_A_weathered_oak_constant"
+      },
+      {
+        "name": "ART01_KneeBrace_2",
+        "triangles": 12,
+        "material": "09J_A_weathered_oak_constant"
+      }
+    ],
+    "mesh_count": 9,
+    "triangles": 108,
+    "fingerprint_before": "488909c5e6cd3e5141675ac88b033711805c94628c0fbfa3cbc55cea44d1d83b",
+    "fingerprint_after": "488909c5e6cd3e5141675ac88b033711805c94628c0fbfa3cbc55cea44d1d83b"
+  },
+  "reused_module_definition": {
+    "type": "WALL_PLAIN",
+    "height": 2.049999952316284,
+    "thickness": 0.16000008583068848,
+    "python_class": "WallPlain",
+    "material": "09I_A_clay_constant"
+  },
+  "instances": [
+    {
+      "id": "MOD01_Bay_1",
+      "type": "WALL_PLAIN",
+      "width_m": 2.433333396911621,
+      "height_m": 2.049999952316284,
+      "thickness_m": 0.16000008583068848,
+      "local_origin": [
+        0,
+        0,
+        0
+      ],
+      "world_mount": [
+        2.5500000715255737,
+        -3.6500000953674316,
+        0.25
+      ],
+      "axes_world": {
+        "u_horizontal": [
+          0,
+          1,
+          0
+        ],
+        "v_vertical": [
+          0,
+          0,
+          1
+        ],
+        "n_outward": [
+          1,
+          0,
+          0
+        ]
+      },
+      "connectors_local": {
+        "left": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2.049999952316284,
+            0
+          ]
+        ],
+        "right": [
+          [
+            2.433333396911621,
+            0,
+            0
+          ],
+          [
+            2.433333396911621,
+            2.049999952316284,
+            0
+          ]
+        ],
+        "lower_edge": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            2.433333396911621,
+            0,
+            0
+          ]
+        ],
+        "upper_edge": [
+          [
+            0,
+            2.049999952316284,
+            0
+          ],
+          [
+            2.433333396911621,
+            2.049999952316284,
+            0
+          ]
+        ]
+      },
+      "materials": {
+        "infill": "09I_A_clay_constant"
+      },
+      "owned_meshes": [
+        "MOD01_Bay_1_Infill"
+      ],
+      "assembled_cap_left": true,
+      "assembled_cap_right": false,
+      "blender_collection": "MOD01_Bay_1_Collection",
+      "pivot_object": "MOD01_Bay_1_Pivot",
+      "triangles": 10
+    },
+    {
+      "id": "MOD01_Bay_2",
+      "type": "WALL_PLAIN",
+      "width_m": 2.433333396911621,
+      "height_m": 2.049999952316284,
+      "thickness_m": 0.16000008583068848,
+      "local_origin": [
+        0,
+        0,
+        0
+      ],
+      "world_mount": [
+        2.5500000715255737,
+        -1.2166666984558105,
+        0.25
+      ],
+      "axes_world": {
+        "u_horizontal": [
+          0,
+          1,
+          0
+        ],
+        "v_vertical": [
+          0,
+          0,
+          1
+        ],
+        "n_outward": [
+          1,
+          0,
+          0
+        ]
+      },
+      "connectors_local": {
+        "left": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2.049999952316284,
+            0
+          ]
+        ],
+        "right": [
+          [
+            2.433333396911621,
+            0,
+            0
+          ],
+          [
+            2.433333396911621,
+            2.049999952316284,
+            0
+          ]
+        ],
+        "lower_edge": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            2.433333396911621,
+            0,
+            0
+          ]
+        ],
+        "upper_edge": [
+          [
+            0,
+            2.049999952316284,
+            0
+          ],
+          [
+            2.433333396911621,
+            2.049999952316284,
+            0
+          ]
+        ]
+      },
+      "materials": {
+        "infill": "09I_A_clay_constant"
+      },
+      "owned_meshes": [
+        "MOD01_Bay_2_Infill"
+      ],
+      "assembled_cap_left": false,
+      "assembled_cap_right": false,
+      "blender_collection": "MOD01_Bay_2_Collection",
+      "pivot_object": "MOD01_Bay_2_Pivot",
+      "triangles": 8
+    },
+    {
+      "id": "MOD01_Bay_3",
+      "type": "WALL_PLAIN",
+      "width_m": 2.433333396911621,
+      "height_m": 2.049999952316284,
+      "thickness_m": 0.16000008583068848,
+      "local_origin": [
+        0,
+        0,
+        0
+      ],
+      "world_mount": [
+        2.5500000715255737,
+        1.2166666984558105,
+        0.25
+      ],
+      "axes_world": {
+        "u_horizontal": [
+          0,
+          1,
+          0
+        ],
+        "v_vertical": [
+          0,
+          0,
+          1
+        ],
+        "n_outward": [
+          1,
+          0,
+          0
+        ]
+      },
+      "connectors_local": {
+        "left": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2.049999952316284,
+            0
+          ]
+        ],
+        "right": [
+          [
+            2.433333396911621,
+            0,
+            0
+          ],
+          [
+            2.433333396911621,
+            2.049999952316284,
+            0
+          ]
+        ],
+        "lower_edge": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            2.433333396911621,
+            0,
+            0
+          ]
+        ],
+        "upper_edge": [
+          [
+            0,
+            2.049999952316284,
+            0
+          ],
+          [
+            2.433333396911621,
+            2.049999952316284,
+            0
+          ]
+        ]
+      },
+      "materials": {
+        "infill": "09I_A_clay_constant"
+      },
+      "owned_meshes": [
+        "MOD01_Bay_3_Infill"
+      ],
+      "assembled_cap_left": false,
+      "assembled_cap_right": true,
+      "blender_collection": "MOD01_Bay_3_Collection",
+      "pivot_object": "MOD01_Bay_3_Pivot",
+      "triangles": 10
+    }
+  ],
+  "module_pivot_convention": "local u=world +Y, v=world +Z, n=world +X; pivot=(x_center,left_y,wall_bottom)",
+  "export": {
+    "format": "GLB",
+    "native_blender": true,
+    "use_selection": true,
+    "export_yup": true,
+    "export_apply": false
+  },
+  "standalone_module": {
+    "contract": {
+      "id": "MOD01_PreviewSingle",
+      "type": "WALL_PLAIN",
+      "width_m": 2.433333396911621,
+      "height_m": 2.049999952316284,
+      "thickness_m": 0.16000008583068848,
+      "local_origin": [
+        0,
+        0,
+        0
+      ],
+      "world_mount": [
+        2.5500000715255737,
+        -3.6500000953674316,
+        0.25
+      ],
+      "axes_world": {
+        "u_horizontal": [
+          0,
+          1,
+          0
+        ],
+        "v_vertical": [
+          0,
+          0,
+          1
+        ],
+        "n_outward": [
+          1,
+          0,
+          0
+        ]
+      },
+      "connectors_local": {
+        "left": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2.049999952316284,
+            0
+          ]
+        ],
+        "right": [
+          [
+            2.433333396911621,
+            0,
+            0
+          ],
+          [
+            2.433333396911621,
+            2.049999952316284,
+            0
+          ]
+        ],
+        "lower_edge": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            2.433333396911621,
+            0,
+            0
+          ]
+        ],
+        "upper_edge": [
+          [
+            0,
+            2.049999952316284,
+            0
+          ],
+          [
+            2.433333396911621,
+            2.049999952316284,
+            0
+          ]
+        ]
+      },
+      "materials": {
+        "infill": "09I_A_clay_constant"
+      },
+      "owned_meshes": [
+        "MOD01_PreviewSingle_Infill"
+      ],
+      "assembled_cap_left": true,
+      "assembled_cap_right": true,
+      "blender_collection": "MOD01_PreviewSingle_Collection",
+      "pivot_object": "MOD01_PreviewSingle_Pivot",
+      "triangles": 12
+    },
+    "triangles": 12,
+    "closed_caps": 2
+  },
+  "exploded_preview_offsets_m": [
+    0.0,
+    0.25,
+    0.5
+  ],
+  "opening_test": {
+    "removed_id": "MOD01_Bay_2",
+    "reinstalled_id": "MOD01_Bay_2",
+    "same_definition": true,
+    "frame_same_object_ids": true,
+    "frame_sha_before_after": "488909c5e6cd3e5141675ac88b033711805c94628c0fbfa3cbc55cea44d1d83b",
+    "connector_and_pivot_roundtrip": true
+  },
+  "A": {
+    "mesh_count": 10,
+    "triangles": 120,
+    "materials": [
+      "09I_A_clay_constant",
+      "09J_A_weathered_oak_constant"
+    ],
+    "glb_sha256": "235cd933c94511e613541d64cb9b15ce44ca6fa5d4568c853b2c33a981a546cf",
+    "glb_bytes": 13148
+  },
+  "B": {
+    "mesh_count": 12,
+    "triangles": 136,
+    "materials": [
+      "09I_A_clay_constant",
+      "09J_A_weathered_oak_constant"
+    ],
+    "glb_sha256": "d828612aaffd728fa6c20f538188cdc28be3a1e2a4d60d196544e2d15bc5130e",
+    "glb_bytes": 15872
+  },
+  "source_sha256_after": "38acea0fac6720a7b853a2242a59fc3bdc34e0cb552b9f9774bd22e31e6effae"
+}
