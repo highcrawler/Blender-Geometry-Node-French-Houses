@@ -1,0 +1,83 @@
+{
+  "result": "PASS",
+  "source_sha256": "38acea0fac6720a7b853a2242a59fc3bdc34e0cb552b9f9774bd22e31e6effae",
+  "A_byteidentical_MOD01_reference": true,
+  "frame_native_glb_payload_9_meshes_identical_A_B": true,
+  "neighbor_infill_native_glb_payloads_identical_A_B": true,
+  "true_aperture_Godot_triangle_rays": {
+    "A": {
+      "center_front_back_hits": 2,
+      "off_aperture_front_back_hits": 2
+    },
+    "B": {
+      "center_front_back_hits": 0,
+      "off_aperture_front_back_hits": 2
+    },
+    "C": {
+      "center_front_back_hits": 0,
+      "off_aperture_front_back_hits": 2
+    }
+  },
+  "correctly_oriented_sealed_reveals": true,
+  "shared_frame_and_neighbors_unchanged_on_swap_back": true,
+  "restored_wall_Blender_pixels_identical_to_A": true,
+  "mesh_count": [
+    12,
+    16,
+    5
+  ],
+  "triangle_count": [
+    136,
+    204,
+    80
+  ],
+  "surface_count": [
+    12,
+    16,
+    5
+  ],
+  "material_count": 2,
+  "main_wall_bounds": {
+    "min": [
+      2.47000002861023,
+      0.239999994635582,
+      -3.73000001907349
+    ],
+    "max": [
+      2.69000005722046,
+      2.38000011444092,
+      3.73000001907349
+    ]
+  },
+  "image_metrics": {
+    "blender_side": {
+      "mean_absolute_rgb_difference_0_255": 0.7285
+    },
+    "blender_iso": {
+      "mean_absolute_rgb_difference_0_255": 0.41057
+    },
+    "blender_detail": {
+      "mean_absolute_rgb_difference_0_255": 4.49188
+    },
+    "blender_distance300": {
+      "mean_absolute_rgb_difference_0_255": 0.17996
+    },
+    "godot_side": {
+      "mean_absolute_rgb_difference_0_255": 0.1639
+    },
+    "godot_iso": {
+      "mean_absolute_rgb_difference_0_255": 0.1171
+    },
+    "godot_detail": {
+      "mean_absolute_rgb_difference_0_255": 1.12511
+    },
+    "godot_distance300": {
+      "mean_absolute_rgb_difference_0_255": 0.04249
+    }
+  },
+  "glb_bytes": {
+    "A": 15872,
+    "B": 21588,
+    "C": 8052
+  }
+}

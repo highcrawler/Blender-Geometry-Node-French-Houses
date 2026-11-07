@@ -1,0 +1,74 @@
+00:01.256  blend            | Read blend: "/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/wooden_roof_system_09f/three_owned_cottages.blend"
+/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/mod02_window_module/spike.py:35: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.use_nodes=True;m.diffuse_color=(*rgb,1)
+00:06.146  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/mod02_window_module/screenshots/A_side.png'
+00:10.720  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/mod02_window_module/screenshots/A_iso.png'
+00:16.116  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/mod02_window_module/screenshots/A_detail.png'
+00:20.514  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/mod02_window_module/screenshots/A_distance300.png'
+00:25.213  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/mod02_window_module/screenshots/B_side.png'
+00:29.852  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/mod02_window_module/screenshots/B_iso.png'
+00:35.259  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/mod02_window_module/screenshots/B_detail.png'
+00:39.687  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/mod02_window_module/screenshots/B_distance300.png'
+00:44.906  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/mod02_window_module/screenshots/B_window_front.png'
+00:50.104  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/mod02_window_module/screenshots/B_window_oblique.png'
+00:55.505  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/mod02_window_module/screenshots/B_reveal_detail.png'
+01:00.324  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/mod02_window_module/screenshots/C_single_front.png'
+01:05.026  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/mod02_window_module/screenshots/C_single_oblique.png'
+01:10.033  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/mod02_window_module/screenshots/C_single_back.png'
+INFO Draco is available, use library at /snap/blender/7803/lib/libbf_intern_draco_bridge.so
+INFO MeshOptimizer is available, use library at /snap/blender/7803/lib/libbf_intern_meshopt_bridge.so
+19:39:59 | INFO: Starting glTF 2.0 export
+19:39:59 | INFO: Extracting primitive: 08A_08A_CornerPost.004
+19:39:59 | INFO: Primitives created: 1
+19:39:59 | INFO: Extracting primitive: 08A_08A_CornerPost.005
+19:39:59 | INFO: Primitives created: 1
+19:39:59 | INFO: Extracting primitive: 08A_08A_SideWallPlate.002
+19:39:59 | INFO: Primitives created: 1
+19:39:59 | INFO: Extracting primitive: ART01_IntermediatePost_1
+19:39:59 | INFO: Primitives created: 1
+19:39:59 | INFO: Extracting primitive: ART01_IntermediatePost_2
+19:39:59 | INFO: Primitives created: 1
+19:39:59 | INFO: Extracting primitive: ART01_KneeBrace_1
+19:39:59 | INFO: Primitives created: 1
+19:39:59 | INFO: Extracting primitive: ART01_KneeBrace_2
+19:39:59 | INFO: Primitives created: 1
+19:39:59 | INFO: Extracting primitive: ART01_MidRail
+19:39:59 | INFO: Primitives created: 1
+19:39:59 | INFO: Extracting primitive: ART01_SideSill
+19:39:59 | INFO: Primitives created: 1
+19:39:59 | INFO: Extracting primitive: MOD01_Bay_1_Infill
+19:39:59 | INFO: Primitives created: 1
+19:39:59 | INFO: Extracting primitive: MOD01_Bay_2_head
+19:39:59 | INFO: Primitives created: 1
+19:39:59 | INFO: Extracting primitive: MOD01_Bay_2_Infill
+19:39:59 | INFO: Primitives created: 1
+19:39:59 | INFO: Extracting primitive: MOD01_Bay_2_left_jamb
+19:39:59 | INFO: Primitives created: 1
+19:39:59 | INFO: Extracting primitive: MOD01_Bay_2_right_jamb
+19:39:59 | INFO: Primitives created: 1
+19:39:59 | INFO: Extracting primitive: MOD01_Bay_2_sill
+19:39:59 | INFO: Primitives created: 1
+19:39:59 | INFO: Extracting primitive: MOD01_Bay_3_Infill
+19:39:59 | INFO: Primitives created: 1
+19:39:59 | INFO: Finished glTF 2.0 export in 0.04867410659790039 s
+
+MOD02_EXPORT B {'meshes': 16, 'triangles': 204, 'glb_bytes': 21588, 'glb_sha256': '910ae4ff6904ae08839ef1dfc974e80217d310802827f589bae0cdce2f10efb9', 'materials': ['09I_A_clay_constant', '09J_A_weathered_oak_constant']}
+19:39:59 | INFO: Starting glTF 2.0 export
+19:39:59 | INFO: Extracting primitive: MOD02_StandaloneWindow_head
+19:39:59 | INFO: Primitives created: 1
+19:39:59 | INFO: Extracting primitive: MOD02_StandaloneWindow_Infill
+19:39:59 | INFO: Primitives created: 1
+19:39:59 | INFO: Extracting primitive: MOD02_StandaloneWindow_left_jamb
+19:39:59 | INFO: Primitives created: 1
+19:39:59 | INFO: Extracting primitive: MOD02_StandaloneWindow_right_jamb
+19:39:59 | INFO: Primitives created: 1
+19:39:59 | INFO: Extracting primitive: MOD02_StandaloneWindow_sill
+19:39:59 | INFO: Primitives created: 1
+19:39:59 | INFO: Finished glTF 2.0 export in 0.007826805114746094 s
+
+MOD02_EXPORT C {'meshes': 5, 'triangles': 80, 'glb_bytes': 8052, 'glb_sha256': '8d9b089faf54d6eaafe8adaa9eb33ea162ba98f7a9c6b9ece5e22843ab773aa7', 'materials': ['09I_A_clay_constant', '09J_A_weathered_oak_constant']}
+01:15.126  render           | Saved: '/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/mod02_window_module/screenshots/A_restored.png'
+MOD02_BLENDER_PASS {'A': {'meshes': 12, 'triangles': 136, 'glb_bytes': 15872, 'glb_sha256': 'd828612aaffd728fa6c20f538188cdc28be3a1e2a4d60d196544e2d15bc5130e'}, 'B': {'meshes': 16, 'triangles': 204, 'glb_bytes': 21588, 'glb_sha256': '910ae4ff6904ae08839ef1dfc974e80217d310802827f589bae0cdce2f10efb9', 'materials': ['09I_A_clay_constant', '09J_A_weathered_oak_constant']}, 'C': {'meshes': 5, 'triangles': 80, 'glb_bytes': 8052, 'glb_sha256': '8d9b089faf54d6eaafe8adaa9eb33ea162ba98f7a9c6b9ece5e22843ab773aa7', 'materials': ['09I_A_clay_constant', '09J_A_weathered_oak_constant']}} {'restored_type': 'WALL_PLAIN', 'frame_hash_unchanged': True, 'frame_object_ids_unchanged': True, 'neighbor_pivot_ids_unchanged': True, 'connectors_equal': True}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:34:58)
+
+Blender quit

@@ -1,0 +1,55 @@
+{
+  "result": "PASS",
+  "source_window_width_m": 0.7786666870117189,
+  "source_window_height_m": 0.6969999837875367,
+  "local_opening": [
+    0.8273333549499511,
+    1.60600004196167,
+    1.1124999785423277,
+    1.8094999623298644
+  ],
+  "world_opening": {
+    "x_through": [
+      2.4700000286102295,
+      2.630000114440918
+    ],
+    "y_left_right": [
+      -0.38933334350585946,
+      0.38933334350585946
+    ],
+    "z_bottom_top": [
+      1.3624999785423277,
+      2.0594999623298644
+    ]
+  },
+  "opening_center_ray_hits_front_back_plaster": 0,
+  "independent_reveal_quads": 4,
+  "front_back_and_reveal_winding_correct": true,
+  "wood_inset_into_aperture_m": 0.003,
+  "wood_clear_of_shared_rail_and_plate": true,
+  "assembled_plaster_triangles": 48,
+  "assembled_edge_multiplicities": {
+    "2": 72
+  },
+  "duplicate_assembled_triangles": 0,
+  "open_assembled_edges": 0,
+  "standalone_window_plaster_triangles": 32,
+  "standalone_edge_multiplicities": {
+    "2": 48
+  },
+  "module_counts": [
+    {
+      "type": "WALL_PLAIN",
+      "triangles": 10
+    },
+    {
+      "type": "WALL_WINDOW",
+      "triangles": 28
+    },
+    {
+      "type": "WALL_PLAIN",
+      "triangles": 10
+    }
+  ],
+  "mesh_datablocks_welded": false
+}
