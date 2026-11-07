@@ -1,0 +1,60 @@
+{
+  "result": "PASS",
+  "source_sha256": "38acea0fac6720a7b853a2242a59fc3bdc34e0cb552b9f9774bd22e31e6effae",
+  "reference_A_byteidentical_MOD02": true,
+  "only_one_midrail_mesh_changes": true,
+  "same_B_C_geometry": true,
+  "Godot_color_and_tangent_normal_1024x512_imported": true,
+  "beam_vertices": [
+    8,
+    236,
+    236
+  ],
+  "beam_triangles": [
+    12,
+    468,
+    468
+  ],
+  "wall_triangles": [
+    204,
+    660,
+    660
+  ],
+  "glb_bytes": [
+    21588,
+    54020,
+    218448
+  ],
+  "captured_image_mean_absolute_rgb_0_255": {
+    "godot_distance300_AB": 0.0047,
+    "godot_distance300_BC": 0.008105,
+    "godot_distance300_AC": 0.011443,
+    "godot_side_AB": 0.001071,
+    "godot_side_BC": 0.032327,
+    "godot_side_AC": 0.033363,
+    "godot_detail_AB": 0.073243,
+    "godot_detail_BC": 0.222197,
+    "godot_detail_AC": 0.282403,
+    "godot_macro_AB": 0.257169,
+    "godot_macro_BC": 0.814231,
+    "godot_macro_AC": 0.99821,
+    "godot_isolated_AB": 0.010064,
+    "godot_isolated_BC": 0.03218,
+    "godot_isolated_AC": 0.040875,
+    "blender_distance300_AB": 0.018268,
+    "blender_distance300_BC": 0.01385,
+    "blender_distance300_AC": 0.029533,
+    "blender_side_AB": 0.066994,
+    "blender_side_BC": 0.055362,
+    "blender_side_AC": 0.11441,
+    "blender_joint_AB": 0.089965,
+    "blender_joint_BC": 0.180817,
+    "blender_joint_AC": 0.25076,
+    "blender_macro_AB": 0.470778,
+    "blender_macro_BC": 0.732458,
+    "blender_macro_AC": 1.165115,
+    "blender_isolated_AB": 0.038143,
+    "blender_isolated_BC": 0.0604,
+    "blender_isolated_AC": 0.087497
+  }
+}

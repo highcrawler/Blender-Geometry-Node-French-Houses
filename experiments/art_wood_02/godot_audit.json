@@ -1,0 +1,1723 @@
+{
+  "beam_A.glb": {
+    "aperture_probe": {
+      "center_front_back_hits": 0,
+      "off_aperture_front_back_hits": 2
+    },
+    "bounds_max": [
+      2.69000005722046,
+      2.38000011444092,
+      3.73000001907349
+    ],
+    "bounds_min": [
+      2.47000002861023,
+      0.239999994635582,
+      -3.73000001907349
+    ],
+    "materials": {
+      "09I_A_clay_constant": {
+        "albedo": [
+          0.715240895748138,
+          0.649956464767456,
+          0.565728425979614,
+          1.0
+        ],
+        "albedo_texture": {
+          "present": false
+        },
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "normal_enabled": false,
+        "normal_texture": {
+          "present": false
+        },
+        "roughness": 1.0,
+        "roughness_texture": {
+          "present": false
+        },
+        "surfaces": 3,
+        "triangles": 48
+      },
+      "09J_A_weathered_oak_constant": {
+        "albedo": [
+          0.473120659589767,
+          0.388572871685028,
+          0.307485222816467,
+          1.0
+        ],
+        "albedo_texture": {
+          "present": false
+        },
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "normal_enabled": false,
+        "normal_texture": {
+          "present": false
+        },
+        "roughness": 1.0,
+        "roughness_texture": {
+          "present": false
+        },
+        "surfaces": 13,
+        "triangles": 156
+      }
+    },
+    "mesh_details": [
+      {
+        "name": "08A_CornerPost_012",
+        "owner_parent": "MOD01_WallRoot",
+        "position": [
+          2.54999995231628,
+          1.31000006198883,
+          3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.62999987602234,
+          2.38000011444092,
+          3.73000001907349
+        ],
+        "world_min": [
+          2.47000002861023,
+          0.240000009536743,
+          3.57000017166138
+        ]
+      },
+      {
+        "name": "08A_CornerPost_013",
+        "owner_parent": "MOD01_WallRoot",
+        "position": [
+          2.54999995231628,
+          1.31000006198883,
+          -3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.62999987602234,
+          2.38000011444092,
+          -3.57000017166138
+        ],
+        "world_min": [
+          2.47000002861023,
+          0.240000009536743,
+          -3.73000001907349
+        ]
+      },
+      {
+        "name": "08A_SideWallPlate_006",
+        "owner_parent": "MOD01_WallRoot",
+        "position": [
+          2.61500000953674,
+          2.29999995231628,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.6800000667572,
+          2.36500000953674,
+          3.65000009536743
+        ],
+        "world_min": [
+          2.54999995231628,
+          2.23499989509583,
+          -3.65000009536743
+        ]
+      },
+      {
+        "name": "ART01_IntermediatePost_1",
+        "owner_parent": "MOD01_WallRoot",
+        "position": [
+          2.61500000953674,
+          1.30750000476837,
+          1.21666669845581
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.67499995231628,
+          2.29999995231628,
+          1.27666664123535
+        ],
+        "world_min": [
+          2.5550000667572,
+          0.315000057220459,
+          1.15666675567627
+        ]
+      },
+      {
+        "name": "ART01_IntermediatePost_2",
+        "owner_parent": "MOD01_WallRoot",
+        "position": [
+          2.61500000953674,
+          1.30750000476837,
+          -1.21666669845581
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.67499995231628,
+          2.29999995231628,
+          -1.15666675567627
+        ],
+        "world_min": [
+          2.5550000667572,
+          0.315000057220459,
+          -1.27666664123535
+        ]
+      },
+      {
+        "name": "ART01_KneeBrace_1",
+        "owner_parent": "MOD01_WallRoot",
+        "position": [
+          2.61500000953674,
+          1.8237498998642,
+          1.65466666221619
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.66000008583069,
+          2.30634212493896,
+          2.12495708465576
+        ],
+        "world_min": [
+          2.5699999332428,
+          1.34115767478943,
+          1.1843763589859
+        ]
+      },
+      {
+        "name": "ART01_KneeBrace_2",
+        "owner_parent": "MOD01_WallRoot",
+        "position": [
+          2.61500000953674,
+          1.8237498998642,
+          -1.65466666221619
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.66000008583069,
+          2.30634212493896,
+          -1.1843763589859
+        ],
+        "world_min": [
+          2.5699999332428,
+          1.34115767478943,
+          -2.12495684623718
+        ]
+      },
+      {
+        "name": "ART01_MidRail",
+        "owner_parent": "MOD01_WallRoot",
+        "position": [
+          2.60700011253357,
+          1.17250001430511,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.66700029373169,
+          1.23250007629395,
+          3.65000009536743
+        ],
+        "world_min": [
+          2.54699993133545,
+          1.11249995231628,
+          -3.65000009536743
+        ]
+      },
+      {
+        "name": "ART01_SideSill",
+        "owner_parent": "MOD01_WallRoot",
+        "position": [
+          2.61500000953674,
+          0.314999997615814,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.69000005722046,
+          0.389999985694885,
+          3.65000009536743
+        ],
+        "world_min": [
+          2.53999996185303,
+          0.239999994635582,
+          -3.65000009536743
+        ]
+      },
+      {
+        "name": "MOD01_Bay_1_Infill",
+        "owner_parent": "MOD01_Bay_1_Pivot",
+        "position": [
+          2.55000019073486,
+          0.25,
+          3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 10,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.63000011444092,
+          2.29999995231628,
+          3.65000009536743
+        ],
+        "world_min": [
+          2.47000026702881,
+          0.25,
+          1.21666669845581
+        ]
+      },
+      {
+        "name": "MOD01_Bay_2_head",
+        "owner_parent": "MOD01_Bay_2_Pivot",
+        "position": [
+          2.61500024795532,
+          2.10150003433228,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.66000032424927,
+          2.14650011062622,
+          0.464333325624466
+        ],
+        "world_min": [
+          2.57000017166138,
+          2.05649995803833,
+          -0.464333325624466
+        ]
+      },
+      {
+        "name": "MOD01_Bay_2_Infill",
+        "owner_parent": "MOD01_Bay_2_Pivot",
+        "position": [
+          2.55000019073486,
+          0.25,
+          1.21666669845581
+        ],
+        "surfaces": 1,
+        "triangles": 28,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.63000011444092,
+          2.29999995231628,
+          1.21666669845581
+        ],
+        "world_min": [
+          2.47000026702881,
+          0.25,
+          -1.21666669845581
+        ]
+      },
+      {
+        "name": "MOD01_Bay_2_left_jamb",
+        "owner_parent": "MOD01_Bay_2_Pivot",
+        "position": [
+          2.61500024795532,
+          1.71099996566772,
+          0.42383337020874
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.65250015258789,
+          2.05949997901917,
+          0.461333394050598
+        ],
+        "world_min": [
+          2.57750034332275,
+          1.36249995231628,
+          0.386333346366882
+        ]
+      },
+      {
+        "name": "MOD01_Bay_2_right_jamb",
+        "owner_parent": "MOD01_Bay_2_Pivot",
+        "position": [
+          2.61500024795532,
+          1.71099996566772,
+          -0.42383337020874
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.65250015258789,
+          2.05949997901917,
+          -0.386333346366882
+        ],
+        "world_min": [
+          2.57750034332275,
+          1.36249995231628,
+          -0.461333394050598
+        ]
+      },
+      {
+        "name": "MOD01_Bay_2_sill",
+        "owner_parent": "MOD01_Bay_2_Pivot",
+        "position": [
+          2.62500023841858,
+          1.31550002098083,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.67500019073486,
+          1.36549997329712,
+          0.49933335185051
+        ],
+        "world_min": [
+          2.57500028610229,
+          1.26550006866455,
+          -0.49933335185051
+        ]
+      },
+      {
+        "name": "MOD01_Bay_3_Infill",
+        "owner_parent": "MOD01_Bay_3_Pivot",
+        "position": [
+          2.55000019073486,
+          0.25,
+          -1.21666669845581
+        ],
+        "surfaces": 1,
+        "triangles": 10,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.63000011444092,
+          2.29999995231628,
+          -1.21666669845581
+        ],
+        "world_min": [
+          2.47000026702881,
+          0.25,
+          -3.65000009536743
+        ]
+      }
+    ],
+    "mesh_nodes": 16,
+    "module_pivots": [
+      {
+        "basis_x": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "basis_y": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "basis_z": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "global_position": [
+          2.55000019073486,
+          0.25,
+          3.65000009536743
+        ],
+        "local_position": [
+          2.55000019073486,
+          0.25,
+          3.65000009536743
+        ],
+        "name": "MOD01_Bay_1_Pivot"
+      },
+      {
+        "basis_x": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "basis_y": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "basis_z": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "global_position": [
+          2.55000019073486,
+          0.25,
+          1.21666669845581
+        ],
+        "local_position": [
+          2.55000019073486,
+          0.25,
+          1.21666669845581
+        ],
+        "name": "MOD01_Bay_2_Pivot"
+      },
+      {
+        "basis_x": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "basis_y": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "basis_z": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "global_position": [
+          2.55000019073486,
+          0.25,
+          -1.21666669845581
+        ],
+        "local_position": [
+          2.55000019073486,
+          0.25,
+          -1.21666669845581
+        ],
+        "name": "MOD01_Bay_3_Pivot"
+      }
+    ],
+    "null_material_surfaces": 0,
+    "root_children": [
+      {
+        "name": "MOD01_WallRoot",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "surfaces": 16,
+    "triangles": 204
+  },
+  "beam_B.glb": {
+    "aperture_probe": {
+      "center_front_back_hits": 0,
+      "off_aperture_front_back_hits": 2
+    },
+    "bounds_max": [
+      2.69000005722046,
+      2.38000011444092,
+      3.73000001907349
+    ],
+    "bounds_min": [
+      2.47000002861023,
+      0.239999994635582,
+      -3.73000001907349
+    ],
+    "materials": {
+      "09I_A_clay_constant": {
+        "albedo": [
+          0.715240895748138,
+          0.649956464767456,
+          0.565728425979614,
+          1.0
+        ],
+        "albedo_texture": {
+          "present": false
+        },
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "normal_enabled": false,
+        "normal_texture": {
+          "present": false
+        },
+        "roughness": 1.0,
+        "roughness_texture": {
+          "present": false
+        },
+        "surfaces": 3,
+        "triangles": 48
+      },
+      "09J_A_weathered_oak_constant": {
+        "albedo": [
+          0.473120659589767,
+          0.388572871685028,
+          0.307485222816467,
+          1.0
+        ],
+        "albedo_texture": {
+          "present": false
+        },
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "normal_enabled": false,
+        "normal_texture": {
+          "present": false
+        },
+        "roughness": 1.0,
+        "roughness_texture": {
+          "present": false
+        },
+        "surfaces": 13,
+        "triangles": 612
+      }
+    },
+    "mesh_details": [
+      {
+        "name": "08A_CornerPost_012",
+        "owner_parent": "MOD01_WallRoot",
+        "position": [
+          2.54999995231628,
+          1.31000006198883,
+          3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.62999987602234,
+          2.38000011444092,
+          3.73000001907349
+        ],
+        "world_min": [
+          2.47000002861023,
+          0.240000009536743,
+          3.57000017166138
+        ]
+      },
+      {
+        "name": "08A_CornerPost_013",
+        "owner_parent": "MOD01_WallRoot",
+        "position": [
+          2.54999995231628,
+          1.31000006198883,
+          -3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.62999987602234,
+          2.38000011444092,
+          -3.57000017166138
+        ],
+        "world_min": [
+          2.47000002861023,
+          0.240000009536743,
+          -3.73000001907349
+        ]
+      },
+      {
+        "name": "08A_SideWallPlate_006",
+        "owner_parent": "MOD01_WallRoot",
+        "position": [
+          2.61500000953674,
+          2.29999995231628,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.6800000667572,
+          2.36500000953674,
+          3.65000009536743
+        ],
+        "world_min": [
+          2.54999995231628,
+          2.23499989509583,
+          -3.65000009536743
+        ]
+      },
+      {
+        "name": "ART01_IntermediatePost_1",
+        "owner_parent": "MOD01_WallRoot",
+        "position": [
+          2.61500000953674,
+          1.30750000476837,
+          1.21666669845581
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.67499995231628,
+          2.29999995231628,
+          1.27666664123535
+        ],
+        "world_min": [
+          2.5550000667572,
+          0.315000057220459,
+          1.15666675567627
+        ]
+      },
+      {
+        "name": "ART01_IntermediatePost_2",
+        "owner_parent": "MOD01_WallRoot",
+        "position": [
+          2.61500000953674,
+          1.30750000476837,
+          -1.21666669845581
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.67499995231628,
+          2.29999995231628,
+          -1.15666675567627
+        ],
+        "world_min": [
+          2.5550000667572,
+          0.315000057220459,
+          -1.27666664123535
+        ]
+      },
+      {
+        "name": "ART01_KneeBrace_1",
+        "owner_parent": "MOD01_WallRoot",
+        "position": [
+          2.61500000953674,
+          1.8237498998642,
+          1.65466666221619
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.66000008583069,
+          2.30634212493896,
+          2.12495708465576
+        ],
+        "world_min": [
+          2.5699999332428,
+          1.34115767478943,
+          1.1843763589859
+        ]
+      },
+      {
+        "name": "ART01_KneeBrace_2",
+        "owner_parent": "MOD01_WallRoot",
+        "position": [
+          2.61500000953674,
+          1.8237498998642,
+          -1.65466666221619
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.66000008583069,
+          2.30634212493896,
+          -1.1843763589859
+        ],
+        "world_min": [
+          2.5699999332428,
+          1.34115767478943,
+          -2.12495684623718
+        ]
+      },
+      {
+        "name": "ART01_MidRail",
+        "owner_parent": "MOD01_WallRoot",
+        "position": [
+          2.60700011253357,
+          1.17250001430511,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 468,
+        "uv_count": 934,
+        "uv_max": [
+          0.995000004768372,
+          0.995000004768372
+        ],
+        "uv_min": [
+          0.00499999988824129,
+          0.00499999523162842
+        ],
+        "world_max": [
+          2.66737365722656,
+          1.23267090320587,
+          3.65000009536743
+        ],
+        "world_min": [
+          2.54658889770508,
+          1.11207628250122,
+          -3.65000009536743
+        ]
+      },
+      {
+        "name": "ART01_SideSill",
+        "owner_parent": "MOD01_WallRoot",
+        "position": [
+          2.61500000953674,
+          0.314999997615814,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.69000005722046,
+          0.389999985694885,
+          3.65000009536743
+        ],
+        "world_min": [
+          2.53999996185303,
+          0.239999994635582,
+          -3.65000009536743
+        ]
+      },
+      {
+        "name": "MOD01_Bay_1_Infill",
+        "owner_parent": "MOD01_Bay_1_Pivot",
+        "position": [
+          2.55000019073486,
+          0.25,
+          3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 10,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.63000011444092,
+          2.29999995231628,
+          3.65000009536743
+        ],
+        "world_min": [
+          2.47000026702881,
+          0.25,
+          1.21666669845581
+        ]
+      },
+      {
+        "name": "MOD01_Bay_2_head",
+        "owner_parent": "MOD01_Bay_2_Pivot",
+        "position": [
+          2.61500024795532,
+          2.10150003433228,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.66000032424927,
+          2.14650011062622,
+          0.464333325624466
+        ],
+        "world_min": [
+          2.57000017166138,
+          2.05649995803833,
+          -0.464333325624466
+        ]
+      },
+      {
+        "name": "MOD01_Bay_2_Infill",
+        "owner_parent": "MOD01_Bay_2_Pivot",
+        "position": [
+          2.55000019073486,
+          0.25,
+          1.21666669845581
+        ],
+        "surfaces": 1,
+        "triangles": 28,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.63000011444092,
+          2.29999995231628,
+          1.21666669845581
+        ],
+        "world_min": [
+          2.47000026702881,
+          0.25,
+          -1.21666669845581
+        ]
+      },
+      {
+        "name": "MOD01_Bay_2_left_jamb",
+        "owner_parent": "MOD01_Bay_2_Pivot",
+        "position": [
+          2.61500024795532,
+          1.71099996566772,
+          0.42383337020874
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.65250015258789,
+          2.05949997901917,
+          0.461333394050598
+        ],
+        "world_min": [
+          2.57750034332275,
+          1.36249995231628,
+          0.386333346366882
+        ]
+      },
+      {
+        "name": "MOD01_Bay_2_right_jamb",
+        "owner_parent": "MOD01_Bay_2_Pivot",
+        "position": [
+          2.61500024795532,
+          1.71099996566772,
+          -0.42383337020874
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.65250015258789,
+          2.05949997901917,
+          -0.386333346366882
+        ],
+        "world_min": [
+          2.57750034332275,
+          1.36249995231628,
+          -0.461333394050598
+        ]
+      },
+      {
+        "name": "MOD01_Bay_2_sill",
+        "owner_parent": "MOD01_Bay_2_Pivot",
+        "position": [
+          2.62500023841858,
+          1.31550002098083,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.67500019073486,
+          1.36549997329712,
+          0.49933335185051
+        ],
+        "world_min": [
+          2.57500028610229,
+          1.26550006866455,
+          -0.49933335185051
+        ]
+      },
+      {
+        "name": "MOD01_Bay_3_Infill",
+        "owner_parent": "MOD01_Bay_3_Pivot",
+        "position": [
+          2.55000019073486,
+          0.25,
+          -1.21666669845581
+        ],
+        "surfaces": 1,
+        "triangles": 10,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.63000011444092,
+          2.29999995231628,
+          -1.21666669845581
+        ],
+        "world_min": [
+          2.47000026702881,
+          0.25,
+          -3.65000009536743
+        ]
+      }
+    ],
+    "mesh_nodes": 16,
+    "module_pivots": [
+      {
+        "basis_x": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "basis_y": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "basis_z": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "global_position": [
+          2.55000019073486,
+          0.25,
+          3.65000009536743
+        ],
+        "local_position": [
+          2.55000019073486,
+          0.25,
+          3.65000009536743
+        ],
+        "name": "MOD01_Bay_1_Pivot"
+      },
+      {
+        "basis_x": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "basis_y": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "basis_z": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "global_position": [
+          2.55000019073486,
+          0.25,
+          1.21666669845581
+        ],
+        "local_position": [
+          2.55000019073486,
+          0.25,
+          1.21666669845581
+        ],
+        "name": "MOD01_Bay_2_Pivot"
+      },
+      {
+        "basis_x": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "basis_y": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "basis_z": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "global_position": [
+          2.55000019073486,
+          0.25,
+          -1.21666669845581
+        ],
+        "local_position": [
+          2.55000019073486,
+          0.25,
+          -1.21666669845581
+        ],
+        "name": "MOD01_Bay_3_Pivot"
+      }
+    ],
+    "null_material_surfaces": 0,
+    "root_children": [
+      {
+        "name": "MOD01_WallRoot",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "surfaces": 16,
+    "triangles": 660
+  },
+  "beam_C.glb": {
+    "aperture_probe": {
+      "center_front_back_hits": 0,
+      "off_aperture_front_back_hits": 2
+    },
+    "bounds_max": [
+      2.69000005722046,
+      2.38000011444092,
+      3.73000001907349
+    ],
+    "bounds_min": [
+      2.47000002861023,
+      0.239999994635582,
+      -3.73000001907349
+    ],
+    "materials": {
+      "09I_A_clay_constant": {
+        "albedo": [
+          0.715240895748138,
+          0.649956464767456,
+          0.565728425979614,
+          1.0
+        ],
+        "albedo_texture": {
+          "present": false
+        },
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "normal_enabled": false,
+        "normal_texture": {
+          "present": false
+        },
+        "roughness": 1.0,
+        "roughness_texture": {
+          "present": false
+        },
+        "surfaces": 3,
+        "triangles": 48
+      },
+      "09J_A_weathered_oak_constant": {
+        "albedo": [
+          0.473120659589767,
+          0.388572871685028,
+          0.307485222816467,
+          1.0
+        ],
+        "albedo_texture": {
+          "present": false
+        },
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "normal_enabled": false,
+        "normal_texture": {
+          "present": false
+        },
+        "roughness": 1.0,
+        "roughness_texture": {
+          "present": false
+        },
+        "surfaces": 12,
+        "triangles": 144
+      },
+      "ART_WOOD_02_C_natural_oak": {
+        "albedo": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "albedo_texture": {
+          "class": "CompressedTexture2D",
+          "height": 512,
+          "present": true,
+          "width": 1024
+        },
+        "class": "StandardMaterial3D",
+        "metallic": 0.0,
+        "normal_enabled": true,
+        "normal_texture": {
+          "class": "CompressedTexture2D",
+          "height": 512,
+          "present": true,
+          "width": 1024
+        },
+        "roughness": 1.0,
+        "roughness_texture": {
+          "present": false
+        },
+        "surfaces": 1,
+        "triangles": 468
+      }
+    },
+    "mesh_details": [
+      {
+        "name": "08A_CornerPost_012",
+        "owner_parent": "MOD01_WallRoot",
+        "position": [
+          2.54999995231628,
+          1.31000006198883,
+          3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.62999987602234,
+          2.38000011444092,
+          3.73000001907349
+        ],
+        "world_min": [
+          2.47000002861023,
+          0.240000009536743,
+          3.57000017166138
+        ]
+      },
+      {
+        "name": "08A_CornerPost_013",
+        "owner_parent": "MOD01_WallRoot",
+        "position": [
+          2.54999995231628,
+          1.31000006198883,
+          -3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.62999987602234,
+          2.38000011444092,
+          -3.57000017166138
+        ],
+        "world_min": [
+          2.47000002861023,
+          0.240000009536743,
+          -3.73000001907349
+        ]
+      },
+      {
+        "name": "08A_SideWallPlate_006",
+        "owner_parent": "MOD01_WallRoot",
+        "position": [
+          2.61500000953674,
+          2.29999995231628,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.6800000667572,
+          2.36500000953674,
+          3.65000009536743
+        ],
+        "world_min": [
+          2.54999995231628,
+          2.23499989509583,
+          -3.65000009536743
+        ]
+      },
+      {
+        "name": "ART01_IntermediatePost_1",
+        "owner_parent": "MOD01_WallRoot",
+        "position": [
+          2.61500000953674,
+          1.30750000476837,
+          1.21666669845581
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.67499995231628,
+          2.29999995231628,
+          1.27666664123535
+        ],
+        "world_min": [
+          2.5550000667572,
+          0.315000057220459,
+          1.15666675567627
+        ]
+      },
+      {
+        "name": "ART01_IntermediatePost_2",
+        "owner_parent": "MOD01_WallRoot",
+        "position": [
+          2.61500000953674,
+          1.30750000476837,
+          -1.21666669845581
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.67499995231628,
+          2.29999995231628,
+          -1.15666675567627
+        ],
+        "world_min": [
+          2.5550000667572,
+          0.315000057220459,
+          -1.27666664123535
+        ]
+      },
+      {
+        "name": "ART01_KneeBrace_1",
+        "owner_parent": "MOD01_WallRoot",
+        "position": [
+          2.61500000953674,
+          1.8237498998642,
+          1.65466666221619
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.66000008583069,
+          2.30634212493896,
+          2.12495708465576
+        ],
+        "world_min": [
+          2.5699999332428,
+          1.34115767478943,
+          1.1843763589859
+        ]
+      },
+      {
+        "name": "ART01_KneeBrace_2",
+        "owner_parent": "MOD01_WallRoot",
+        "position": [
+          2.61500000953674,
+          1.8237498998642,
+          -1.65466666221619
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.66000008583069,
+          2.30634212493896,
+          -1.1843763589859
+        ],
+        "world_min": [
+          2.5699999332428,
+          1.34115767478943,
+          -2.12495684623718
+        ]
+      },
+      {
+        "name": "ART01_MidRail",
+        "owner_parent": "MOD01_WallRoot",
+        "position": [
+          2.60700011253357,
+          1.17250001430511,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 468,
+        "uv_count": 934,
+        "uv_max": [
+          0.995000004768372,
+          0.995000004768372
+        ],
+        "uv_min": [
+          0.00499999988824129,
+          0.00499999523162842
+        ],
+        "world_max": [
+          2.66737365722656,
+          1.23267090320587,
+          3.65000009536743
+        ],
+        "world_min": [
+          2.54658889770508,
+          1.11207628250122,
+          -3.65000009536743
+        ]
+      },
+      {
+        "name": "ART01_SideSill",
+        "owner_parent": "MOD01_WallRoot",
+        "position": [
+          2.61500000953674,
+          0.314999997615814,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.69000005722046,
+          0.389999985694885,
+          3.65000009536743
+        ],
+        "world_min": [
+          2.53999996185303,
+          0.239999994635582,
+          -3.65000009536743
+        ]
+      },
+      {
+        "name": "MOD01_Bay_1_Infill",
+        "owner_parent": "MOD01_Bay_1_Pivot",
+        "position": [
+          2.55000019073486,
+          0.25,
+          3.65000009536743
+        ],
+        "surfaces": 1,
+        "triangles": 10,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.63000011444092,
+          2.29999995231628,
+          3.65000009536743
+        ],
+        "world_min": [
+          2.47000026702881,
+          0.25,
+          1.21666669845581
+        ]
+      },
+      {
+        "name": "MOD01_Bay_2_head",
+        "owner_parent": "MOD01_Bay_2_Pivot",
+        "position": [
+          2.61500024795532,
+          2.10150003433228,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.66000032424927,
+          2.14650011062622,
+          0.464333325624466
+        ],
+        "world_min": [
+          2.57000017166138,
+          2.05649995803833,
+          -0.464333325624466
+        ]
+      },
+      {
+        "name": "MOD01_Bay_2_Infill",
+        "owner_parent": "MOD01_Bay_2_Pivot",
+        "position": [
+          2.55000019073486,
+          0.25,
+          1.21666669845581
+        ],
+        "surfaces": 1,
+        "triangles": 28,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.63000011444092,
+          2.29999995231628,
+          1.21666669845581
+        ],
+        "world_min": [
+          2.47000026702881,
+          0.25,
+          -1.21666669845581
+        ]
+      },
+      {
+        "name": "MOD01_Bay_2_left_jamb",
+        "owner_parent": "MOD01_Bay_2_Pivot",
+        "position": [
+          2.61500024795532,
+          1.71099996566772,
+          0.42383337020874
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.65250015258789,
+          2.05949997901917,
+          0.461333394050598
+        ],
+        "world_min": [
+          2.57750034332275,
+          1.36249995231628,
+          0.386333346366882
+        ]
+      },
+      {
+        "name": "MOD01_Bay_2_right_jamb",
+        "owner_parent": "MOD01_Bay_2_Pivot",
+        "position": [
+          2.61500024795532,
+          1.71099996566772,
+          -0.42383337020874
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.65250015258789,
+          2.05949997901917,
+          -0.386333346366882
+        ],
+        "world_min": [
+          2.57750034332275,
+          1.36249995231628,
+          -0.461333394050598
+        ]
+      },
+      {
+        "name": "MOD01_Bay_2_sill",
+        "owner_parent": "MOD01_Bay_2_Pivot",
+        "position": [
+          2.62500023841858,
+          1.31550002098083,
+          0.0
+        ],
+        "surfaces": 1,
+        "triangles": 12,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.67500019073486,
+          1.36549997329712,
+          0.49933335185051
+        ],
+        "world_min": [
+          2.57500028610229,
+          1.26550006866455,
+          -0.49933335185051
+        ]
+      },
+      {
+        "name": "MOD01_Bay_3_Infill",
+        "owner_parent": "MOD01_Bay_3_Pivot",
+        "position": [
+          2.55000019073486,
+          0.25,
+          -1.21666669845581
+        ],
+        "surfaces": 1,
+        "triangles": 10,
+        "uv_count": 0,
+        "uv_max": [],
+        "uv_min": [],
+        "world_max": [
+          2.63000011444092,
+          2.29999995231628,
+          -1.21666669845581
+        ],
+        "world_min": [
+          2.47000026702881,
+          0.25,
+          -3.65000009536743
+        ]
+      }
+    ],
+    "mesh_nodes": 16,
+    "module_pivots": [
+      {
+        "basis_x": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "basis_y": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "basis_z": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "global_position": [
+          2.55000019073486,
+          0.25,
+          3.65000009536743
+        ],
+        "local_position": [
+          2.55000019073486,
+          0.25,
+          3.65000009536743
+        ],
+        "name": "MOD01_Bay_1_Pivot"
+      },
+      {
+        "basis_x": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "basis_y": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "basis_z": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "global_position": [
+          2.55000019073486,
+          0.25,
+          1.21666669845581
+        ],
+        "local_position": [
+          2.55000019073486,
+          0.25,
+          1.21666669845581
+        ],
+        "name": "MOD01_Bay_2_Pivot"
+      },
+      {
+        "basis_x": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "basis_y": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "basis_z": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "global_position": [
+          2.55000019073486,
+          0.25,
+          -1.21666669845581
+        ],
+        "local_position": [
+          2.55000019073486,
+          0.25,
+          -1.21666669845581
+        ],
+        "name": "MOD01_Bay_3_Pivot"
+      }
+    ],
+    "null_material_surfaces": 0,
+    "root_children": [
+      {
+        "name": "MOD01_WallRoot",
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "surfaces": 16,
+    "triangles": 660
+  }
+}

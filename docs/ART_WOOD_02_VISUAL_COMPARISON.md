@@ -1,0 +1,11 @@
+# ART-WOOD-02 – A/B/C-Art-Gate, nicht nur Shader-Funktionstest
+
+[**Echte Vergleichstafel A/B/C aus Blender 5.2.2 und Godot 4.7**](../experiments/art_wood_02/screenshots/comparison_board.png). Dieselben Kameras und Lichtquellen je Engine; A/B/C an derselben Wand. Alle drei Varianten zeigen ausschließlich **einen** Riegel, während die übrigen Fachwerkhölzer gleich bleiben. Bei ~300px **Wand**breite ist ein 12-cm-Querschnitt nur etwa fünf Pixel hoch. Die isolierte Balken- und Makroansicht zeigen technische Details, können den Art-Gate bei Spielentfernung **nicht ersetzen**.
+
+**A – flaches Original:** sauberer langer gleichmäßiger Quader und konstantes braunes Oak. Als Ausgangsmaterial unverändert, aber laut Projektleiter selbst **nicht akzeptabel**.
+
+**B – kleine handwerkliche Geometrie:** beim Makro leichte Kanten-/Silhouettenbrechung und drei unterschiedlich tiefe, sparsam gesetzte Behauungsfacetten; Cloud-Verformung und zweistufiger Bevel tatsächlich im Godot-GLB. In der üblichen Godot-Spielkamera **nur minimaler Pixelunterschied gegenüber A**, kein überzeugender Art-Gewinn. Visueller Gewinn steht in keinem Verhältnis zu +456 Dreiecken eines einzigen Balkens. B besteht das Art-Gate **nicht**.
+
+**C – B plus wenige gebrochene Risse, warme Alterung, Normalmap:** Im Godot-Makro liest sich eine segmentierte dunkle Prüfung unter der Fensterbank und die Oberfläche ist nicht mehr reiner Vollton. Gegenüber den gleichmäßigen Voronoi-Zebrastreifen von ART-BEAM-01 ist die Maske seltener und richtiger orientiert. Trotzdem wirken die Einschnitte noch **überwiegend wie aufgedruckte Striche auf einem fast perfekt geraden Balken**; keine überzeugende Behauung/Alterung an der Silhouette. In der echten Spielkamera ist die Differenz zum Original gering; der Charakter der gesamten Fachwerkwand bleibt flach. C ist ein sichtbarer **Makro-Fortschritt**, aber **kein optisch überzeugender Endbalken**.
+
+**Entscheidung nach hartem Gate: ARTISTIC RESULT: NONE ACCEPTABLE.** A ist steril; B unter Distanz unsichtbar; C nahe besser, doch bei Spielentfernung nicht deutlich natürlicher. Künstlerische Arbeiten an weiterer Architektur bleiben gesperrt, unabhängig davon, dass A/B/C technisch korrekt in Godot ankommen.

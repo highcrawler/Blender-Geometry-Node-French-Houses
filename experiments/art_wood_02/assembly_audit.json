@@ -1,0 +1,201 @@
+{
+  "source_sha256_before": "38acea0fac6720a7b853a2242a59fc3bdc34e0cb552b9f9774bd22e31e6effae",
+  "MOD02_reference_sha256": "910ae4ff6904ae08839ef1dfc974e80217d310802827f589bae0cdce2f10efb9",
+  "beam": {
+    "name": "ART01_MidRail",
+    "endpoints_world": [
+      [
+        2.6070001125335693,
+        -3.6500000953674316,
+        1.1725000143051147
+      ],
+      [
+        2.6070001125335693,
+        3.6500000953674316,
+        1.1725000143051147
+      ]
+    ],
+    "length_m": 7.300000062707352,
+    "thickness_m": 0.12,
+    "local_Z_world": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "local_X_world": [
+      -1.0,
+      0.0,
+      8.74227694680485e-08
+    ],
+    "local_Y_world": [
+      8.742278367890322e-08,
+      -1.3435884227419592e-07,
+      1.0
+    ],
+    "original_vertices": 8,
+    "original_triangles": 12,
+    "material": "09J_A_weathered_oak_constant"
+  },
+  "variants": {
+    "A": {
+      "brace_vertices": 8,
+      "brace_triangles": 12,
+      "wall_triangles": 204,
+      "mesh_count": 16,
+      "material_count": 2,
+      "texture_count": 0,
+      "glb_bytes": 21588,
+      "glb_sha256": "910ae4ff6904ae08839ef1dfc974e80217d310802827f589bae0cdce2f10efb9",
+      "brace_matrix": [
+        [
+          -1.000000238418579,
+          8.742279078433057e-08,
+          0.0,
+          2.6070001125335693
+        ],
+        [
+          0.0,
+          -1.3435885648505064e-07,
+          1.0000001192092896,
+          0.0
+        ],
+        [
+          8.742279078433057e-08,
+          1.0000001192092896,
+          -1.3435885648505064e-07,
+          1.1725000143051147
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "endpoints_unchanged": true,
+      "untouched_digest": "90ce3e9528c1b4d54261ce0bfb19c6d57861109537a3592a3ac6c341842de177",
+      "end_plane_z": [
+        -3.6500000953674316,
+        3.6500000953674316
+      ]
+    },
+    "B": {
+      "brace_vertices": 236,
+      "brace_triangles": 468,
+      "wall_triangles": 660,
+      "mesh_count": 16,
+      "material_count": 2,
+      "texture_count": 0,
+      "glb_bytes": 54020,
+      "glb_sha256": "93f2f81b189e1d26fd5b19681f921e50f907dbc46130372f98a25f83953f408a",
+      "brace_matrix": [
+        [
+          -1.000000238418579,
+          8.742279078433057e-08,
+          0.0,
+          2.6070001125335693
+        ],
+        [
+          0.0,
+          -1.3435885648505064e-07,
+          1.0000001192092896,
+          0.0
+        ],
+        [
+          8.742279078433057e-08,
+          1.0000001192092896,
+          -1.3435885648505064e-07,
+          1.1725000143051147
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "endpoints_unchanged": true,
+      "untouched_digest": "90ce3e9528c1b4d54261ce0bfb19c6d57861109537a3592a3ac6c341842de177",
+      "end_plane_z": [
+        -3.6500000953674316,
+        3.6500000953674316
+      ]
+    },
+    "C": {
+      "brace_vertices": 236,
+      "brace_triangles": 468,
+      "wall_triangles": 660,
+      "mesh_count": 16,
+      "material_count": 3,
+      "texture_count": 2,
+      "glb_bytes": 218448,
+      "glb_sha256": "60f478ba63e07dd340b5c95cdec902c0997916d6d726cc31ee7b5bf1d2664af6",
+      "brace_matrix": [
+        [
+          -1.000000238418579,
+          8.742279078433057e-08,
+          0.0,
+          2.6070001125335693
+        ],
+        [
+          0.0,
+          -1.3435885648505064e-07,
+          1.0000001192092896,
+          0.0
+        ],
+        [
+          8.742279078433057e-08,
+          1.0000001192092896,
+          -1.3435885648505064e-07,
+          1.1725000143051147
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "endpoints_unchanged": true,
+      "untouched_digest": "90ce3e9528c1b4d54261ce0bfb19c6d57861109537a3592a3ac6c341842de177",
+      "end_plane_z": [
+        -3.6500000953674316,
+        3.6500000953674316
+      ]
+    }
+  },
+  "modifiers": {
+    "longitudinal_subdivision_cuts": 15,
+    "displace_type": "CLOUDS",
+    "displace_strength_m": 0.003,
+    "clouds_scale_m": 0.72,
+    "end_fade_m": 0.55,
+    "bevel_width_m": 0.004,
+    "bevel_segments": 2,
+    "bevel_limit_radians": 0.5,
+    "applied_before_export": true,
+    "hewn_top_facets": 3,
+    "max_facet_depth_m": 0.011,
+    "watertight_positive_volume": true,
+    "end_plane_z": [
+      -3.6500000953674316,
+      3.6500000953674316
+    ],
+    "uv": {
+      "longitudinal_axis": "local Z \u2192 atlas U",
+      "face_strips": 4,
+      "world_u_length_m": 7.300000062707352,
+      "atlas_uv_layer": "WOOD02_LocalZ_LongAxis"
+    }
+  },
+  "bake": {
+    "material": "ART_WOOD_02_C_natural_oak",
+    "color": "/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/art_wood_02/textures/natural_oak_color_1024x512.png",
+    "normal": "/home/alexander-both/Dokumente/Generation/ircss-fork/experiments/art_wood_02/textures/natural_oak_normal_1024x512.png",
+    "normal_strength": 0.7,
+    "roughness": 1.0,
+    "metallic": 0,
+    "pipeline": "deterministic procedural atlas rasterization; direct native GLB image/normal nodes; no bake required"
+  },
+  "source_sha256_after": "38acea0fac6720a7b853a2242a59fc3bdc34e0cb552b9f9774bd22e31e6effae"
+}

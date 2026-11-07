@@ -1,0 +1,116 @@
+{
+  "seed": 715021,
+  "resolution": [
+    1024,
+    512
+  ],
+  "mapping": "longitudinal local +Z -> U across 1024px; four faces each 128px in V",
+  "oak_role_rgb_8bit": [
+    123,
+    94,
+    68
+  ],
+  "hewing_marks": 28,
+  "crack_chains": [
+    {
+      "face_band": 0,
+      "from_px": 172,
+      "to_px": 335,
+      "segments": [
+        [
+          172,
+          226
+        ],
+        [
+          261,
+          282
+        ],
+        [
+          310,
+          335
+        ]
+      ],
+      "center_y_px": 54
+    },
+    {
+      "face_band": 1,
+      "from_px": 525,
+      "to_px": 679,
+      "segments": [
+        [
+          525,
+          559
+        ],
+        [
+          581,
+          622
+        ],
+        [
+          642,
+          679
+        ]
+      ],
+      "center_y_px": 199
+    },
+    {
+      "face_band": 1,
+      "from_px": 587,
+      "to_px": 770,
+      "segments": [
+        [
+          587,
+          612
+        ],
+        [
+          650,
+          682
+        ],
+        [
+          713,
+          751
+        ]
+      ],
+      "center_y_px": 193
+    },
+    {
+      "face_band": 2,
+      "from_px": 445,
+      "to_px": 596,
+      "segments": [
+        [
+          445,
+          496
+        ],
+        [
+          523,
+          579
+        ]
+      ],
+      "center_y_px": 341
+    },
+    {
+      "face_band": 1,
+      "from_px": 162,
+      "to_px": 848,
+      "segments": [
+        [
+          162,
+          292
+        ],
+        [
+          449,
+          508
+        ],
+        [
+          737,
+          848
+        ]
+      ],
+      "center_y_px": 191,
+      "principal": true
+    }
+  ],
+  "color_bytes": 102333,
+  "normal_bytes": 61507,
+  "rasterizer": "Pillow; no Blender shader bake or third-party textures"
+}
